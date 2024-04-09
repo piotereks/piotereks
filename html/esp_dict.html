@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordReference Search</title>
+</head>
+<body>
+    <h1>WordReference Search</h1>
+    <form id="searchForm">
+        <label for="word">Enter a word:</label>
+        <input type="text" id="word" name="word">
+        <button type="submit">Search</button>
+    </form>
+    
+    <div>
+        <div id="definitionFrame"></div>
+        <div id="synonymFrame"></div>
+    </div>
+
+    <script>
+        document.getElementById("searchForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var word = document.getElementById("word").value;
+            var definitionUrl = "https://www.wordreference.com/definicion/" + encodeURIComponent(word);
+            var synonymUrl = "https://www.wordreference.com/es/en/translation.asp?spen=" + encodeURIComponent(word);
+            fetchAndDisplay(definitionUrl, "definitionFrame", '#otherDicts');
+            fetchAndDisplay(synonymUrl, "synonymFrame", '#articleWRD');
+        });
+
+
+        function fetchAndDisplay(url, targetElementId, querySelectorName) {
+            fetch(url)
+                .then(response => response.text())
+                .then(html => {
+                    var parser = new DOMParser();
+                    var doc = parser.parseFromString(html, 'text/html');
+                    var content = doc.querySelector(querySelectorName);
+                    document.getElementById(targetElementId).innerHTML = content ? content.innerHTML : "No content found.";
+                })
+                .catch(error => {
+                    console.error('Error fetching content:', error);
+                    document.getElementById(targetElementId).textContent = "Error fetching content.";
+                });
+        }
+    </script>
+</body>
+</html>
