@@ -14,7 +14,8 @@
     </form>
     
     <div>
-        <div id="definitionFrame"></div>
+        <div id="orgLinks"></div>
+		<div id="definitionFrame"></div>
         <div id="synonymFrame"></div>
     </div>
 
@@ -24,19 +25,39 @@
             var word = document.getElementById("word").value;
             var definitionUrl = "https://www.wordreference.com/definicion/" + encodeURIComponent(word);
             var synonymUrl = "https://www.wordreference.com/es/en/translation.asp?spen=" + encodeURIComponent(word);
-            fetchAndDisplay(definitionUrl, "definitionFrame", '#otherDicts');
+			var linksHTML = '<a href="' + definitionUrl + '"> ESES: '+ word +'</a><br/>'
+			linksHTML += '<a href="' + synonymUrl + '"> ESEN: '+ word +'</a>'
+			document.getElementById('orgLinks').innerHTML = linksHTML;
+            fetchAndDisplay(definitionUrl, "definitionFrame", '#otherDicts','#noTransFound');
             fetchAndDisplay(synonymUrl, "synonymFrame", '#articleWRD');
         });
 
 
-        function fetchAndDisplay(url, targetElementId, querySelectorName) {
+        function fetchAndDisplay(url, targetElementId, querySelectorName, alternateSelector) {
             fetch(url)
                 .then(response => response.text())
                 .then(html => {
                     var parser = new DOMParser();
                     var doc = parser.parseFromString(html, 'text/html');
                     var content = doc.querySelector(querySelectorName);
-                    document.getElementById(targetElementId).innerHTML = content ? content.innerHTML : "No content found.";
+					var alternateContent = doc.querySelector(alternateSelector);
+					console.log(content);
+					console.log(alternateContent);
+					
+
+					if (alternateContent) {
+						document.getElementById(targetElementId).innerHTML = alternateContent? alternateContent.innerHTML : "No content found.";
+						alternateContent.innerHTML = '';
+					}
+					else
+					{
+						document.getElementById(targetElementId).innerHTML = content ? content.innerHTML :  "No content found.";
+					};
+					if (alternateContent) {
+						
+					console.log('inside');
+					};
+                    console.log('after');
                 })
                 .catch(error => {
                     console.error('Error fetching content:', error);
@@ -46,3 +67,6 @@
     </script>
 </body>
 </html>
+
+
+
