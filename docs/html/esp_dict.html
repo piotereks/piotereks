@@ -15,21 +15,25 @@
     
     <div>
         <div id="orgLinks"></div>
-		<div id="definitionFrame"></div>
-        <div id="synonymFrame"></div>
+		<div id="defFrame"></div>
+        <div id="spenFrame"></div>
+        <div id="raeFrame"></div>
     </div>
 
     <script>
         document.getElementById("searchForm").addEventListener("submit", function(event) {
             event.preventDefault();
             var word = document.getElementById("word").value;
-            var definitionUrl = "https://www.wordreference.com/definicion/" + encodeURIComponent(word);
-            var synonymUrl = "https://www.wordreference.com/es/en/translation.asp?spen=" + encodeURIComponent(word);
-			var linksHTML = '<a href="' + definitionUrl + '"> ESES: '+ word +'</a><br/>'
-			linksHTML += '<a href="' + synonymUrl + '"> ESEN: '+ word +'</a>'
+            var defUrl = "https://www.wordreference.com/definicion/" + encodeURIComponent(word);
+            var spenUrl = "https://www.wordreference.com/es/en/translation.asp?spen=" + encodeURIComponent(word);
+            var raeUrl = "https://dle.rae.es/" + encodeURIComponent(word);
+			var linksHTML = '<a href="' + defUrl + '"> ESES: '+ word +'</a><br/>'
+			linksHTML += '<a href="' + spenUrl + '"> ESEN: '+ word +'</a>'
+			linksHTML += '<a href="' + raeUrl + '"> ESEN: '+ word +'</a>'
 			document.getElementById('orgLinks').innerHTML = linksHTML;
-            fetchAndDisplay(definitionUrl, "definitionFrame", '#otherDicts','#noTransFound');
-            fetchAndDisplay(synonymUrl, "synonymFrame", '#articleWRD');
+            fetchAndDisplay(defUrl, "defFrame", '#otherDicts','#noTransFound');
+            fetchAndDisplay(spenUrl, "spenFrame", '#articleWRD');
+            fetchAndDisplay(raeUrl, "raeFrame", '#resultados');
         });
 
 
