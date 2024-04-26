@@ -74,7 +74,10 @@
     <div id="orgLinks" class="text-center mb-4">
         <a id="defLink" href="#" class="btn btn-secondary mr-2" target="_blank"> ESES </a>
         <a id="spenLink" href="#" class="btn btn-secondary mr-2" target="_blank"> ESEN </a>
-        <a id="raeLink" href="#" class="btn btn-secondary" target="_blank"> RAE </a>
+        <a id="raeLink" href="#" class="btn btn-secondary mr-2" target="_blank"> RAE </a>
+        <a id="sinLink" href="#" class="btn btn-secondary mr-2" target="_blank"> sinon </a>
+        <!--a id="graLink" href="#" class="btn btn-secondary mr-2" target="_blank"> gram </a-->
+        <a id="conLink" href="#" class="btn btn-secondary mr-2" target="_blank"> conjug </a>
     </div>
 
     <button class="collapsible btn btn-light btn-sm" id="defFrameBtn">definicion</button>
@@ -83,8 +86,8 @@
     <button class="collapsible btn btn-light btn-sm" id="spenFrameBtn">Esp&#x25BA;Eng</button>
     <div class="content" id="spenFrameContent"></div>
 
-    <button class="collapsible btn btn-light btn-sm" id="raeFrameBtn">RAE def</button>
-    <div class="content" id="raeFrameContent"></div>
+    <!--button class="collapsible btn btn-light btn-sm" id="raeFrameBtn">RAE def</button>
+    <div class="content" id="raeFrameContent"></div!-->
 
     <!-- Highlight.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
@@ -142,9 +145,26 @@
             var defUrl = "https://www.wordreference.com/definicion/" + encodeURIComponent(word);
             var spenUrl = "https://www.wordreference.com/es/en/translation.asp?spen=" + encodeURIComponent(word);
             var raeUrl = "https://dle.rae.es/" + encodeURIComponent(word);
-            fetchAndDisplay(defUrl, "defFrameContent", '#otherDicts', '#noTransFound', "defLink");
-            fetchAndDisplay(spenUrl, "spenFrameContent", '#articleWRD', undefined, "spenLink");
-            fetchAndDisplay(raeUrl, "raeFrameContent", '#resultados', undefined, "raeLink");
+            var sinUrl = "https://www.wordreference.com/sinonimos/" + encodeURIComponent(word);
+            //var graUrl = "https://www.wordreference.com/gramatica/" + encodeURIComponent(word);
+            var conUrl = "https://www.wordreference.com/conj/esverbs.aspx?v=" + encodeURIComponent(word);
+            //document.getElementById(sinLink).href = sinUrl;
+            //document.getElementById(graLink).href = graUrl;
+            //document.getElementById(conLink).href = conUrl;
+            document.getElementById("defLink").href = defUrl;
+            document.getElementById("spenLink").href = spenUrl;
+            document.getElementById("raeLink").href = raeUrl;
+            document.getElementById("sinLink").href = sinUrl;
+            //document.getElementById("graLink").href = graUrl;
+            document.getElementById("conLink").href = conUrl;
+
+            fetchAndDisplay(defUrl, "defFrameContent", '#otherDicts', '#noTransFound');
+            fetchAndDisplay(spenUrl, "spenFrameContent", '#articleWRD', undefined);
+            //fetchAndDisplay(raeUrl, "raeFrameContent", '#resultados', undefined);
+            //fetchAndDisplay(sinUrl, "undefined", '#otherDicts', '#noTransFound', "sinLink");
+            //fetchAndDisplay(graUrl, "undefined", '#otherDicts', '#noTransFound', "graLink");
+            //fetchAndDisplay(conUrl, "undefined", '#otherDicts', '#noTransFound', "conLink");
+            
         }
 
         function fetchAndDisplay(url, targetElementId, querySelectorName, alternateSelector, linkId) {
@@ -159,12 +179,12 @@
                     if (alternateContent) {
                         document.getElementById(targetElementId).innerHTML = alternateContent ? alternateContent.innerHTML : "No content found.";
                         alternateContent.innerHTML = '';
-                    } else {
+                    } else if (targetElementId) {
                         document.getElementById(targetElementId).innerHTML = content ? content.innerHTML : "No content found.";
                     }
 
                     // Update link href
-                    document.getElementById(linkId).href = url;
+                    //document.getElementById(linkId).href = url;
                 })
                 .catch(error => {
                     console.error('Error fetching content:', error);
