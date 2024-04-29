@@ -9,6 +9,65 @@
     <!-- GitHub Light theme CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/github.min.css">
     <style>
+    h4 {
+    background-color: #e0e0e8;
+    font-weight: bold;
+    text-align: center;
+    padding: 1px;
+    margin-top: 8px;
+    margin-bottom: 1px;
+}
+
+#forceDesktop {
+    font-weight: bold;
+}
+
+#conjtable {
+    margin-left: 3em;
+}
+
+ol li {
+    margin-top: 1px;
+}
+
+.aa table.neoConj {
+    border-collapse: collapse;
+}
+
+.aa .neoConj td,
+.aa .neoConj th {
+    text-align: left;
+    padding: 2px;
+}
+
+.LineBreak {
+    clear: both;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    background-color: #d1d1d1;
+    height: 1px;
+    display: inline-block;
+}
+
+.aa {
+    margin-bottom: 1em;
+    clear: both;
+}
+
+.infl {
+    display: inline-block;
+    margin: 6px 0 3px;
+    padding: 5px 8px;
+    border: solid #000 1px;
+    border-radius: 3px;
+}
+
+.infl b {
+    color: #000;
+    font-weight: bold;
+}
+
         .collapsible {
             cursor: pointer;
             user-select: none;
@@ -89,6 +148,13 @@
     <!--button class="collapsible btn btn-light btn-sm" id="raeFrameBtn">RAE def</button>
     <div class="content" id="raeFrameContent"></div!-->
 
+    <button class="collapsible btn btn-light btn-sm" id="sinFrameBtn">sinonimos</button>
+    <div class="content" id="sinFrameContent"></div>
+
+    <button class="collapsible btn btn-light btn-sm" id="conFrameBtn">conjugar</button>
+    <div class="content" id="conFrameContent"></div>
+
+
     <!-- Highlight.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
     <script>
@@ -161,10 +227,12 @@
             fetchAndDisplay(defUrl, "defFrameContent", '#otherDicts', '#noTransFound');
             fetchAndDisplay(spenUrl, "spenFrameContent", '#articleWRD', undefined);
             //fetchAndDisplay(raeUrl, "raeFrameContent", '#resultados', undefined);
-            //fetchAndDisplay(sinUrl, "undefined", '#otherDicts', '#noTransFound', "sinLink");
+            fetchAndDisplay(sinUrl, "sinFrameContent", '#article', '#noTransFound', "sinLink");
             //fetchAndDisplay(graUrl, "undefined", '#otherDicts', '#noTransFound', "graLink");
-            //fetchAndDisplay(conUrl, "undefined", '#otherDicts', '#noTransFound', "conLink");
+            fetchAndDisplay(conUrl, "conFrameContent", '#contenttable > tbody > tr > td > table > tbody > tr > td:nth-child(2)', '#noTransFound', "conLink");
             
+            // document.querySelector("#container > div.content")
+            // document.querySelector("#contenttable > tbody > tr > td > table > tbody > tr > td:nth-child(2)")
         }
 
         function fetchAndDisplay(url, targetElementId, querySelectorName, alternateSelector, linkId) {
