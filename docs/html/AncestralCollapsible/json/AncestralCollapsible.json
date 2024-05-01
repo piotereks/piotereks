@@ -1,0 +1,135 @@
+{
+ "name": "Piotr Ryszard Sakowski",
+ "gender": "male",
+ "born": "1973",
+ "died": "",
+ "gramps_id": "I0000",
+ "children": [
+  {
+   "name": "Ryszard Sakowski",
+   "gender": "male",
+   "born": "1941",
+   "died": "",
+   "gramps_id": "I0004",
+   "children": [
+    {
+     "name": "Franciszek Sakowski",
+     "gender": "male",
+     "born": "1910",
+     "died": "1980",
+     "gramps_id": "I0009",
+     "children": [
+      {
+       "name": "Grzegorz Sakowski",
+       "gender": "male",
+       "born": "1853",
+       "died": "1910",
+       "gramps_id": "I0050",
+       "children": [
+        {
+         "name": "NN",
+         "gender": "male",
+         "born": "",
+         "died": "",
+         "gramps_id": "I0052"
+        },
+        {
+         "name": "Maryanna Sakowska",
+         "gender": "female",
+         "born": "1830",
+         "died": "",
+         "gramps_id": "I0053"
+        }
+       ]
+      },
+      {
+       "name": "Marcjanna Sakowska",
+       "gender": "female",
+       "born": "",
+       "died": "",
+       "gramps_id": "I0051"
+      }
+     ]
+    },
+    {
+     "name": "Genowefa Sakowska",
+     "gender": "female",
+     "born": "1921",
+     "died": "2001",
+     "gramps_id": "I0008",
+     "children": [
+      {
+       "name": "Ignacy Piekarzewski",
+       "gender": "male",
+       "born": "1870",
+       "died": "",
+       "gramps_id": "I0011",
+       "children": [
+        {
+         "name": "Piotr Piekarzewski",
+         "gender": "male",
+         "born": "",
+         "died": "",
+         "gramps_id": "I0040"
+        },
+        {
+         "name": "Franciszka Pecyńska",
+         "gender": "female",
+         "born": "",
+         "died": "",
+         "gramps_id": "I0041"
+        }
+       ]
+      },
+      {
+       "name": "Stanisława Piekarzewska",
+       "gender": "female",
+       "born": "1892",
+       "died": "",
+       "gramps_id": "I0012",
+       "children": [
+        {
+         "name": "Mikołaj Dzikowski",
+         "gender": "male",
+         "born": "",
+         "died": "",
+         "gramps_id": "I0042"
+        },
+        {
+         "name": "Zofia Dzikowska",
+         "gender": "female",
+         "born": "1859",
+         "died": "",
+         "gramps_id": "I0043"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Romana Marianna Sakowska",
+   "gender": "female",
+   "born": "1943",
+   "died": "",
+   "gramps_id": "I0005",
+   "children": [
+    {
+     "name": "Kazimierz Figat",
+     "gender": "male",
+     "born": "1906",
+     "died": "",
+     "gramps_id": "I0025"
+    },
+    {
+     "name": "Anna Figat",
+     "gender": "female",
+     "born": "1908",
+     "died": "1957",
+     "gramps_id": "I0026"
+    }
+   ]
+  }
+ ]
+}
