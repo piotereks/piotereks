@@ -3,61 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WordReference Search</title>
+    <title>WordRef Search</title>
+    <!-- Minimal Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- GitHub Light theme CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/github.min.css">
+    <style>
+    h4 {
+    background-color: #e0e0e8;
+    font-weight: bold;
+    text-align: center;
+    padding: 1px;
+    margin-top: 8px;
+    margin-bottom: 1px;
+}
+
+#forceDesktop {
+    font-weight: bold;
+}
+
+#conjtable {
+    margin-left: 3em;
+}
+
+ol li {
+    margin-top: 1px;
+}
+
+.aa table.neoConj {
+    border-collapse: collapse;
+}
+
+.aa .neoConj td,
+.aa .neoConj th {
+    text-align: left;
+    padding: 2px;
+}
+
+.LineBreak {
+    clear: both;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    background-color: #d1d1d1;
+    height: 1px;
+    display: inline-block;
+}
+
+.aa {
+    margin-bottom: 1em;
+    clear: both;
+}
+
+.infl {
+    display: inline-block;
+    margin: 6px 0 3px;
+    padding: 5px 8px;
+    border: solid #000 1px;
+    border-radius: 3px;
+}
+
+.infl b {
+    color: #000;
+    font-weight: bold;
+}
+
+        .collapsible {
+            cursor: pointer;
+            user-select: none;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            outline: none;
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+
+        .collapsible:hover {
+            background-color: #e3e3e3;
+        }
+
+        .btn-sm {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .collapsible::after {
+            content: '\25BC'; /* Down arrow */
+            float: right;
+        }
+
+        .active::after {
+            content: '\25B2'; /* Up arrow */
+        }
+
+        .title {
+            font-size: 1.4rem; /* Adjust the font size as needed */
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.2rem; /* Adjust the font size as needed */
+            margin-bottom: 2px;
+        }
+    </style>
 </head>
+
+
 <body>
-    <h1>WordReference Search</h1>
-    <form id="searchForm">
-        <label for="word">Enter a word:</label>
-        <input type="text" id="word" name="word">
-        <button type="submit">Search</button>
+    <h1 class="text-center title">WordRef Search</h1>
+    <form id="searchForm" class="form-inline justify-content-center mb-4">
+        <label for="word" class="mr-sm-2">Enter a word:</label>
+        <input type="text" id="word" name="word" class="form-control mr-sm-2">
+        <button type="submit" class="btn btn-primary">Search</button>
     </form>
-    
-    <div>
-        <div id="orgLinks"></div>
-		<div id="definitionFrame"></div>
-        <div id="synonymFrame"></div>
+
+    <div id="orgLinks" class="text-center mb-4">
+        <a id="defLink" href="#" class="btn btn-secondary mr-2" target="_blank"> ESES </a>
+        <a id="spenLink" href="#" class="btn btn-secondary mr-2" target="_blank"> ESEN </a>
+        <a id="raeLink" href="#" class="btn btn-secondary mr-2" target="_blank"> RAE </a>
+        <a id="sinLink" href="#" class="btn btn-secondary mr-2" target="_blank"> sinon </a>
+        <!--a id="graLink" href="#" class="btn btn-secondary mr-2" target="_blank"> gram </a-->
+        <a id="conLink" href="#" class="btn btn-secondary mr-2" target="_blank"> conjug </a>
     </div>
 
+    <button class="collapsible btn btn-light btn-sm" id="defFrameBtn">definicion</button>
+    <div class="content" id="defFrameContent"></div>
+
+    <button class="collapsible btn btn-light btn-sm" id="spenFrameBtn">Esp&#x25BA;Eng</button>
+    <div class="content" id="spenFrameContent"></div>
+
+    <!--button class="collapsible btn btn-light btn-sm" id="raeFrameBtn">RAE def</button>
+    <div class="content" id="raeFrameContent"></div!-->
+
+    <button class="collapsible btn btn-light btn-sm" id="sinFrameBtn">sinonimos</button>
+    <div class="content" id="sinFrameContent"></div>
+
+    <button class="collapsible btn btn-light btn-sm" id="conFrameBtn">conjugar</button>
+    <div class="content" id="conFrameContent"></div>
+
+
+    <!-- Highlight.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
     <script>
-        document.getElementById("searchForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            var word = document.getElementById("word").value;
-            var definitionUrl = "https://www.wordreference.com/definicion/" + encodeURIComponent(word);
-            var synonymUrl = "https://www.wordreference.com/es/en/translation.asp?spen=" + encodeURIComponent(word);
-			var linksHTML = '<a href="' + definitionUrl + '"> ESES: '+ word +'</a><br/>'
-			linksHTML += '<a href="' + synonymUrl + '"> ESEN: '+ word +'</a>'
-			document.getElementById('orgLinks').innerHTML = linksHTML;
-            fetchAndDisplay(definitionUrl, "definitionFrame", '#otherDicts','#noTransFound');
-            fetchAndDisplay(synonymUrl, "synonymFrame", '#articleWRD');
+        // Initialize highlight.js
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
         });
 
+        // Function to get URL parameter value by name
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        };
 
-        function fetchAndDisplay(url, targetElementId, querySelectorName, alternateSelector) {
+        // Get the 'word' parameter from the URL, if it exists
+        var urlWord = getUrlParameter('word');
+        if (urlWord !== '') {
+            document.getElementById('word').value = urlWord;
+            // Manually trigger the search when the word parameter is in the URL
+            searchWord(urlWord);
+        }
+
+        document.getElementById("searchForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var word = document.getElementById("word").value;
+            searchWord(word);
+        });
+
+        // Toggle visibility of collapsible content
+        var collapsibles = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < collapsibles.length; i++) {
+            collapsibles[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+
+        // Manually trigger opening of the first section when the page is loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            var firstCollapsible = document.getElementById("defFrameBtn");
+            firstCollapsible.click();
+        });
+
+        function searchWord(word) {
+            var defUrl = "https://www.wordreference.com/definicion/" + encodeURIComponent(word);
+            var spenUrl = "https://www.wordreference.com/es/en/translation.asp?spen=" + encodeURIComponent(word);
+            var raeUrl = "https://dle.rae.es/" + encodeURIComponent(word);
+            var sinUrl = "https://www.wordreference.com/sinonimos/" + encodeURIComponent(word);
+            //var graUrl = "https://www.wordreference.com/gramatica/" + encodeURIComponent(word);
+            var conUrl = "https://www.wordreference.com/conj/esverbs.aspx?v=" + encodeURIComponent(word);
+            //document.getElementById(sinLink).href = sinUrl;
+            //document.getElementById(graLink).href = graUrl;
+            //document.getElementById(conLink).href = conUrl;
+            document.getElementById("defLink").href = defUrl;
+            document.getElementById("spenLink").href = spenUrl;
+            document.getElementById("raeLink").href = raeUrl;
+            document.getElementById("sinLink").href = sinUrl;
+            //document.getElementById("graLink").href = graUrl;
+            document.getElementById("conLink").href = conUrl;
+
+            fetchAndDisplay(defUrl, "defFrameContent", '#otherDicts', '#noTransFound');
+            fetchAndDisplay(spenUrl, "spenFrameContent", '#articleWRD', undefined);
+            //fetchAndDisplay(raeUrl, "raeFrameContent", '#resultados', undefined);
+            fetchAndDisplay(sinUrl, "sinFrameContent", '#article', '#noTransFound', "sinLink");
+            //fetchAndDisplay(graUrl, "undefined", '#otherDicts', '#noTransFound', "graLink");
+            fetchAndDisplay(conUrl, "conFrameContent", '#contenttable > tbody > tr > td > table > tbody > tr > td:nth-child(2)', '#noTransFound', "conLink");
+            
+            // document.querySelector("#container > div.content")
+            // document.querySelector("#contenttable > tbody > tr > td > table > tbody > tr > td:nth-child(2)")
+        }
+
+        function fetchAndDisplay(url, targetElementId, querySelectorName, alternateSelector, linkId) {
             fetch(url)
                 .then(response => response.text())
                 .then(html => {
                     var parser = new DOMParser();
                     var doc = parser.parseFromString(html, 'text/html');
                     var content = doc.querySelector(querySelectorName);
-					var alternateContent = doc.querySelector(alternateSelector);
-					console.log(content);
-					console.log(alternateContent);
-					
+                    var alternateContent = doc.querySelector(alternateSelector);
 
-					if (alternateContent) {
-						document.getElementById(targetElementId).innerHTML = alternateContent? alternateContent.innerHTML : "No content found.";
-						alternateContent.innerHTML = '';
-					}
-					else
-					{
-						document.getElementById(targetElementId).innerHTML = content ? content.innerHTML :  "No content found.";
-					};
-					if (alternateContent) {
-						
-					console.log('inside');
-					};
-                    console.log('after');
+                    if (alternateContent) {
+                        document.getElementById(targetElementId).innerHTML = alternateContent ? alternateContent.innerHTML : "No content found.";
+                        alternateContent.innerHTML = '';
+                    } else if (targetElementId) {
+                        document.getElementById(targetElementId).innerHTML = content ? content.innerHTML : "No content found.";
+                    }
+
+                    // Update link href
+                    //document.getElementById(linkId).href = url;
                 })
                 .catch(error => {
                     console.error('Error fetching content:', error);
@@ -67,6 +262,3 @@
     </script>
 </body>
 </html>
-
-
-
