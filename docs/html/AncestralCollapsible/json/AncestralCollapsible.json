@@ -12,45 +12,7 @@
    "died": "",
    "gramps_id": "I0004",
    "children": [
-    {
-     "name": "Franciszek Sakowski",
-     "gender": "male",
-     "born": "1910",
-     "died": "1980",
-     "gramps_id": "I0009",
-     "children": [
-      {
-       "name": "Grzegorz Sakowski",
-       "gender": "male",
-       "born": "1853",
-       "died": "1910",
-       "gramps_id": "I0050",
-       "children": [
-        {
-         "name": "NN",
-         "gender": "male",
-         "born": "",
-         "died": "",
-         "gramps_id": "I0052"
-        },
-        {
-         "name": "Maryanna Sakowska",
-         "gender": "female",
-         "born": "1830",
-         "died": "",
-         "gramps_id": "I0053"
-        }
-       ]
-      },
-      {
-       "name": "Marcjanna Sakowska",
-       "gender": "female",
-       "born": "",
-       "died": "",
-       "gramps_id": "I0051"
-      }
-     ]
-    },
+
     {
      "name": "Genowefa Sakowska",
      "gender": "female",
@@ -68,14 +30,14 @@
         {
          "name": "Piotr Piekarzewski",
          "gender": "male",
-         "born": "",
+         "born": "1826",
          "died": "",
          "gramps_id": "I0040"
         },
         {
          "name": "Franciszka Pecyńska",
          "gender": "female",
-         "born": "",
+         "born": "1832",
          "died": "",
          "gramps_id": "I0041"
         }
@@ -91,16 +53,48 @@
         {
          "name": "Mikołaj Dzikowski",
          "gender": "male",
-         "born": "",
+         "born": "1857",
          "died": "",
-         "gramps_id": "I0042"
+         "gramps_id": "I0042",
+         "children": [
+          {
+           "name": "Kazimierz Dzikowski",
+           "gender": "male",
+           "born": "1820",
+           "died": "",
+           "gramps_id": "I0055"
+          },
+          {
+           "name": "Julianna Gos",
+           "gender": "female",
+           "born": "1826",
+           "died": "",
+           "gramps_id": "I0056"
+          }
+         ]
         },
         {
-         "name": "Zofia Dzikowska",
+         "name": "Zofia Jaworska",
          "gender": "female",
          "born": "1859",
          "died": "",
-         "gramps_id": "I0043"
+         "gramps_id": "I0043",
+         "children": [
+          {
+           "name": "Antoni Jaworski",
+           "gender": "male",
+           "born": "",
+           "died": "",
+           "gramps_id": "I0057"
+          },
+          {
+           "name": "Marianna Zaraś",
+           "gender": "female",
+           "born": "",
+           "died": "",
+           "gramps_id": "I0058"
+          }
+         ]
         }
        ]
       }
