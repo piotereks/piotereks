@@ -12,7 +12,45 @@
    "died": "",
    "gramps_id": "I0004",
    "children": [
-
+    {
+     "name": "Franciszek Sakowski",
+     "gender": "male",
+     "born": "1910",
+     "died": "1980",
+     "gramps_id": "I0009",
+     "children": [
+      {
+       "name": "Grzegorz Sakowski",
+       "gender": "male",
+       "born": "1853",
+       "died": "1910",
+       "gramps_id": "I0050",
+       "children": [
+        {
+         "name": "NN",
+         "gender": "male",
+         "born": "",
+         "died": "",
+         "gramps_id": "I0052"
+        },
+        {
+         "name": "Maryanna Sakowska",
+         "gender": "female",
+         "born": "1830",
+         "died": "",
+         "gramps_id": "I0053"
+        }
+       ]
+      },
+      {
+       "name": "Marcjanna Sakowska",
+       "gender": "female",
+       "born": "",
+       "died": "",
+       "gramps_id": "I0051"
+      }
+     ]
+    },
     {
      "name": "Genowefa Sakowska",
      "gender": "female",
