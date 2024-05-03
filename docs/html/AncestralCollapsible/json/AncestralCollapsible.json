@@ -12,47 +12,9 @@
    "died": "",
    "gramps_id": "I0004",
    "children": [
+
     {
-     "name": "Franciszek Sakowski",
-     "gender": "male",
-     "born": "1910",
-     "died": "1980",
-     "gramps_id": "I0009",
-     "children": [
-      {
-       "name": "Grzegorz Sakowski",
-       "gender": "male",
-       "born": "1853",
-       "died": "1910",
-       "gramps_id": "I0050",
-       "children": [
-        {
-         "name": "NN",
-         "gender": "male",
-         "born": "",
-         "died": "",
-         "gramps_id": "I0052"
-        },
-        {
-         "name": "Maryanna Sakowska",
-         "gender": "female",
-         "born": "1830",
-         "died": "",
-         "gramps_id": "I0053"
-        }
-       ]
-      },
-      {
-       "name": "Marcjanna Sakowska",
-       "gender": "female",
-       "born": "",
-       "died": "",
-       "gramps_id": "I0051"
-      }
-     ]
-    },
-    {
-     "name": "Genowefa Sakowska",
+     "name": "Genowefa Piekarzewska",
      "gender": "female",
      "born": "1921",
      "died": "2001",
@@ -82,7 +44,7 @@
        ]
       },
       {
-       "name": "Stanisława Piekarzewska",
+       "name": "Stanisława Dzikowska",
        "gender": "female",
        "born": "1892",
        "died": "",
@@ -115,22 +77,54 @@
          "name": "Zofia Jaworska",
          "gender": "female",
          "born": "1859",
-         "died": "",
+         "died": "1924",
          "gramps_id": "I0043",
          "children": [
           {
            "name": "Antoni Jaworski",
            "gender": "male",
-           "born": "",
+           "born": "1823",
            "died": "",
-           "gramps_id": "I0057"
+           "gramps_id": "I0057",
+           "children": [
+            {
+             "name": "Maciej Jaworski",
+             "gender": "male",
+             "born": "",
+             "died": "",
+             "gramps_id": "I0072"
+            },
+            {
+             "name": "Apolonia Jaworska",
+             "gender": "female",
+             "born": "",
+             "died": "",
+             "gramps_id": "I0073"
+            }
+           ]
           },
           {
            "name": "Marianna Zaraś",
            "gender": "female",
-           "born": "",
+           "born": "1823",
            "died": "",
-           "gramps_id": "I0058"
+           "gramps_id": "I0058",
+           "children": [
+            {
+             "name": "Marian Zaraś",
+             "gender": "male",
+             "born": "",
+             "died": "",
+             "gramps_id": "I0074"
+            },
+            {
+             "name": "Apolonia Zaraś",
+             "gender": "female",
+             "born": "",
+             "died": "",
+             "gramps_id": "I0075"
+            }
+           ]
           }
          ]
         }
@@ -152,14 +146,78 @@
      "gender": "male",
      "born": "1906",
      "died": "",
-     "gramps_id": "I0025"
+     "gramps_id": "I0025",
+     "children": [
+      {
+       "name": "Jan Figat",
+       "gender": "male",
+       "born": "1873",
+       "died": "",
+       "gramps_id": "I0010",
+       "children": [
+        {
+         "name": "Józef Figat",
+         "gender": "male",
+         "born": "1841",
+         "died": "",
+         "gramps_id": "I0068"
+        },
+        {
+         "name": "Justyna Nosek",
+         "gender": "female",
+         "born": "1840",
+         "died": "",
+         "gramps_id": "I0069"
+        }
+       ]
+      },
+      {
+       "name": "Rozalia Żach",
+       "gender": "female",
+       "born": "1874",
+       "died": "1959",
+       "gramps_id": "I0013",
+       "children": [
+        {
+         "name": "Wojciech Żach",
+         "gender": "male",
+         "born": "1849",
+         "died": "",
+         "gramps_id": "I0070"
+        },
+        {
+         "name": "Korzeb Jadwiga",
+         "gender": "female",
+         "born": "1848",
+         "died": "",
+         "gramps_id": "I0071"
+        }
+       ]
+      }
+     ]
     },
     {
-     "name": "Anna Figat",
+     "name": "Anna Zyśk",
      "gender": "female",
      "born": "1908",
      "died": "1957",
-     "gramps_id": "I0026"
+     "gramps_id": "I0026",
+     "children": [
+      {
+       "name": "Antoni Zyśk",
+       "gender": "male",
+       "born": "1863",
+       "died": "",
+       "gramps_id": "I0066"
+      },
+      {
+       "name": "Marcjanna Sokołowska",
+       "gender": "female",
+       "born": "1873",
+       "died": "",
+       "gramps_id": "I0067"
+      }
+     ]
     }
    ]
   }
