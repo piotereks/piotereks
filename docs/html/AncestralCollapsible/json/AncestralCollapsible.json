@@ -130,10 +130,26 @@
              "gender": "male",
              "born": "",
              "died": "",
-             "gramps_id": "I0072"
+             "gramps_id": "I0072",
+             "children": [
+              {
+               "name": "Franciszek Jaworski",
+               "gender": "male",
+               "born": "",
+               "died": "",
+               "gramps_id": "I0105"
+              },
+              {
+               "name": "Eleonora Jaworska",
+               "gender": "female",
+               "born": "",
+               "died": "",
+               "gramps_id": "I0106"
+              }
+             ]
             },
             {
-             "name": "Apolonia Jaworska",
+             "name": "Apolonia Zych",
              "gender": "female",
              "born": "",
              "died": "",
@@ -347,16 +363,48 @@
         {
          "name": "Stanisław Zyśk",
          "gender": "male",
-         "born": "",
+         "born": "1843",
          "died": "",
-         "gramps_id": "I0089"
+         "gramps_id": "I0089",
+         "children": [
+          {
+           "name": "Jan Zyśk",
+           "gender": "male",
+           "born": "1820",
+           "died": "",
+           "gramps_id": "I0095"
+          },
+          {
+           "name": "Franciszka Kucharczyk/Kucharek",
+           "gender": "female",
+           "born": "1818",
+           "died": "",
+           "gramps_id": "I0096"
+          }
+         ]
         },
         {
          "name": "Anna Mikołajczyk",
          "gender": "female",
-         "born": "",
+         "born": "1844",
          "died": "",
-         "gramps_id": "I0090"
+         "gramps_id": "I0090",
+         "children": [
+          {
+           "name": "Wojciech Sobiewski",
+           "gender": "male",
+           "born": "",
+           "died": "",
+           "gramps_id": "I0098"
+          },
+          {
+           "name": "Katarzyna Ferenc",
+           "gender": "female",
+           "born": "",
+           "died": "",
+           "gramps_id": "I0097"
+          }
+         ]
         }
        ]
       },
@@ -370,16 +418,48 @@
         {
          "name": "Stefan Sokołowski",
          "gender": "male",
-         "born": "1821",
+         "born": "1812",
          "died": "",
-         "gramps_id": "I0091"
+         "gramps_id": "I0091",
+         "children": [
+          {
+           "name": "Jan Sokołowski",
+           "gender": "male",
+           "born": "",
+           "died": "",
+           "gramps_id": "I0099"
+          },
+          {
+           "name": "Katarzyna Sokołowska",
+           "gender": "female",
+           "born": "",
+           "died": "",
+           "gramps_id": "I0100"
+          }
+         ]
         },
         {
          "name": "Rozalia Borowa",
          "gender": "female",
          "born": "1846",
          "died": "",
-         "gramps_id": "I0092"
+         "gramps_id": "I0092",
+         "children": [
+          {
+           "name": "Paweł Borowy",
+           "gender": "male",
+           "born": "",
+           "died": "",
+           "gramps_id": "I0101"
+          },
+          {
+           "name": "Katarzyna Fidura",
+           "gender": "female",
+           "born": "",
+           "died": "",
+           "gramps_id": "I0102"
+          }
+         ]
         }
        ]
       }
