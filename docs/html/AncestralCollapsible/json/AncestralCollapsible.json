@@ -219,16 +219,48 @@
           {
            "name": "Maciej Figat",
            "gender": "male",
-           "born": "1800",
+           "born": "",
            "died": "",
-           "gramps_id": "I0076"
+           "gramps_id": "I0076",
+           "children": [
+            {
+             "name": "Paweł Figat",
+             "gender": "male",
+             "born": "",
+             "died": "1814",
+             "gramps_id": "I0110"
+            },
+            {
+             "name": "Agata Żach",
+             "gender": "female",
+             "born": "",
+             "died": "",
+             "gramps_id": "I0111"
+            }
+           ]
           },
           {
            "name": "Katarzyna Sobieska",
            "gender": "female",
            "born": "1810",
            "died": "",
-           "gramps_id": "I0077"
+           "gramps_id": "I0077",
+           "children": [
+            {
+             "name": "Maciej Sobieski",
+             "gender": "male",
+             "born": "",
+             "died": "",
+             "gramps_id": "I0112"
+            },
+            {
+             "name": "Ewa Piórkowska",
+             "gender": "female",
+             "born": "",
+             "died": "",
+             "gramps_id": "I0113"
+            }
+           ]
           }
          ]
         },
@@ -272,7 +304,7 @@
          "gramps_id": "I0070",
          "children": [
           {
-           "name": "Żach Jan",
+           "name": "Jan Żach",
            "gender": "male",
            "born": "",
            "died": "1865",
