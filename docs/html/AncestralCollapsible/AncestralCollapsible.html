@@ -11,7 +11,8 @@
   <body>
     <div id="body">
       <div id="start">
-       <h1>Interaktywne drzewo dla Piotr Ryszard Sakowski</h1>
+       <h1>Drzewo genealogiczne dla Piotr Ryszard Sakowski</h1>
+        <a id="lastupdate"></a>
       </div>
       <div id="chart">
       </div>
@@ -56,7 +57,7 @@
         $.get("last_update_date.txt", function(data) {
           var updatedDate = data.trim();
           // Update the title with the fetched date
-          $("#treeTitle").text("Ancestral Collapsible Tree - " + updatedDate);
+          $("#lastupdate").text("Ostatnia aktualizacja - " + updatedDate);
         });
       });
     </script>
