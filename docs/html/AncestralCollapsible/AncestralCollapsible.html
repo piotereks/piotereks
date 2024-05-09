@@ -11,7 +11,7 @@
   <body>
     <div id="body">
       <div id="start">
-       <h1 id="lastupdate">Drzewo genealogiczne dla Piotr Ryszard Sakowski - xstatnia aktualizacja</h1>
+       <h2 id="lastupdate">Drzewo genealogiczne dla Piotr Ryszard Sakowski</h2>
       </div>
       <div id="chart">
       </div>
@@ -56,7 +56,7 @@
         $.get("last_updated_date.txt", function(data) {
           var updatedDate = data.trim();
           // Update the title with the fetched date
-          $("#lastupdate").text("Drzewo genealogiczne dla Piotr Ryszard Sakowski - " + updatedDate);
+          $("#lastupdate").text("Drzewo genealogiczne dla Piotr Ryszard Sakowski - aktualizacja:" + updatedDate);
         });
       });
     </script>
