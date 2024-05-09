@@ -16,28 +16,28 @@
       <div id="chart">
       </div>
       <div id="end">
-       <h3>Kliknij elementy żeby rozwinąć/zwinąć : 
+       <h3>Kliknij elementy żeby rozwinąć/zwinąć :
         <svg width="80" height="20">
          <g>
           <rect x="0" y="0" width="80" height="20" style="fill:#B4C4D9;stroke-width:1;stroke:#BBBBBB" />
           <image x="2" y="4" xlink:href="images/male.png" height="12" width="12"></image>
           <text x="15" y="15" font-vamily="Verdana" font-size="10" fill="black">(+)rozwiń</text>
          </g>
-        </svg> 
+        </svg>
         <svg width="80" height="20">
          <g>
            <rect x="0" y="0" width="80" height="20" style="fill:#ffffff;stroke-width:1;stroke:#BBBBBB" />
           <image x="2" y="4" xlink:href="images/male.png" height="12" width="12"></image>
           <text x="15" y="15" font-vamily="Verdana" font-size="10" fill="black">(-)zwiń</text>
          </g>
-        </svg> 
+        </svg>
         <svg width="80" height="20">
          <g>
            <rect x="0" y="0" width="80" height="20" style="fill:#F0D5D7;stroke-width:1;stroke:#BBBBBB" />
           <image x="2" y="4" xlink:href="images/female.png" height="12" width="12"></image>
           <text x="15" y="15" font-vamily="Verdana" font-size="10" fill="black">(+)rozwiń</text>
          </g>
-        </svg> 
+        </svg>
         <svg width="80" height="20">
          <g>
            <rect x="0" y="0" width="80" height="20" style="fill:#ffffff;stroke-width:1;stroke:#BBBBBB" />
@@ -50,6 +50,16 @@
     </div>
     <div id="testString">
     </div>
+        <script type="text/javascript">
+      $(document).ready(function() {
+        // Fetch the updated date from updated.txt
+        $.get("last_update_date.txt", function(data) {
+          var updatedDate = data.trim();
+          // Update the title with the fetched date
+          $("#treeTitle").text("Ancestral Collapsible Tree - " + updatedDate);
+        });
+      });
+    </script>
     <script type="text/javascript" src="js/AncestralCollapsible.js"></script>
   </body>
 </html>
