@@ -402,16 +402,48 @@
           {
            "name": "Zyśk, Jan",
            "gender": "male",
-           "born": "1820",
+           "born": "1821",
            "died": "",
-           "gramps_id": "I0095"
+           "gramps_id": "I0095",
+           "children": [
+            {
+             "name": "Zyśk, Kazimierz",
+             "gender": "male",
+             "born": "",
+             "died": "",
+             "gramps_id": "I0117"
+            },
+            {
+             "name": "Agata, Warych",
+             "gender": "female",
+             "born": "",
+             "died": "",
+             "gramps_id": "I0118"
+            }
+           ]
           },
           {
-           "name": "Kucharczyk/Kucharek, Franciszka",
+           "name": "Kucharczyk, Franciszka",
            "gender": "female",
-           "born": "1818",
+           "born": "1820",
            "died": "",
-           "gramps_id": "I0096"
+           "gramps_id": "I0096",
+           "children": [
+            {
+             "name": "Kucharczyk, Jan",
+             "gender": "male",
+             "born": "1797",
+             "died": "",
+             "gramps_id": "I0119"
+            },
+            {
+             "name": "Arażnik, Marianna",
+             "gender": "female",
+             "born": "1799",
+             "died": "",
+             "gramps_id": "I0120"
+            }
+           ]
           }
          ]
         },
