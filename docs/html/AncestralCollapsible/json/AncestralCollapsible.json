@@ -98,16 +98,48 @@
           {
            "name": "Dzikowski, Kazimierz",
            "gender": "male",
-           "born": "1820",
+           "born": "",
            "died": "",
-           "gramps_id": "I0055"
+           "gramps_id": "I0055",
+           "children": [
+            {
+             "name": "Dzikowski, Jan",
+             "gender": "male",
+             "born": "",
+             "died": "",
+             "gramps_id": "I0142"
+            },
+            {
+             "name": "Rak 'z Raków', Julianna",
+             "gender": "female",
+             "born": "",
+             "died": "",
+             "gramps_id": "I0143"
+            }
+           ]
           },
           {
-           "name": "Gos, Julianna",
+           "name": "Zabielska/Romańśka/Szemborska, Julianna",
            "gender": "female",
-           "born": "1826",
+           "born": "",
            "died": "",
-           "gramps_id": "I0056"
+           "gramps_id": "I0056",
+           "children": [
+            {
+             "name": "Szemborski, Piotr",
+             "gender": "male",
+             "born": "",
+             "died": "",
+             "gramps_id": "I0144"
+            },
+            {
+             "name": "Gos, Anna",
+             "gender": "female",
+             "born": "",
+             "died": "",
+             "gramps_id": "I0145"
+            }
+           ]
           }
          ]
         },
@@ -121,7 +153,7 @@
           {
            "name": "Jaworski, Antoni",
            "gender": "male",
-           "born": "1823",
+           "born": "1824",
            "died": "",
            "gramps_id": "I0057",
            "children": [
