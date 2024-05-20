@@ -37,7 +37,7 @@
          "name": "Sakowska, Marianna",
          "gender": "female",
          "born": "",
-         "died": "",
+         "died": "1899",
          "gramps_id": "I0053"
         }
        ]
@@ -101,21 +101,21 @@
        "name": "Dzikowska, Stanisława",
        "gender": "female",
        "born": "1892",
-       "died": "",
+       "died": "1945",
        "gramps_id": "I0012",
        "children": [
         {
          "name": "Dzikowski, Mikołaj",
          "gender": "male",
          "born": "1857",
-         "died": "",
+         "died": "1928",
          "gramps_id": "I0042",
          "children": [
           {
            "name": "Dzikowski, Kazimierz",
            "gender": "male",
            "born": "",
-           "died": "",
+           "died": "1898",
            "gramps_id": "I0055",
            "children": [
             {
@@ -138,7 +138,7 @@
            "name": "Zabielska/Romańśka/Szemborska, Julianna",
            "gender": "female",
            "born": "",
-           "died": "",
+           "died": "1897",
            "gramps_id": "I0056",
            "children": [
             {
@@ -316,7 +316,7 @@
          "name": "Nosek, Justyna",
          "gender": "female",
          "born": "1840",
-         "died": "",
+         "died": "1901",
          "gramps_id": "I0069",
          "children": [
           {
@@ -327,7 +327,7 @@
            "gramps_id": "I0078"
           },
           {
-           "name": "Grochowska/'Niewiadomy', Katarzyna",
+           "name": "Grochowska, Katarzyna",
            "gender": "female",
            "born": "1800",
            "died": "",
