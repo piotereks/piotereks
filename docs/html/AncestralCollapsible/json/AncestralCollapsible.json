@@ -298,8 +298,17 @@
              "name": "Sobieski, Maciej",
              "gender": "male",
              "born": "1756",
-             "died": "",
-             "gramps_id": "I0112"
+             "died": "1833",
+             "gramps_id": "I0112",
+             "children": [
+              {
+               "name": "Sobieski, Kazimierz",
+               "gender": "male",
+               "born": "",
+               "died": "",
+               "gramps_id": "I0185"
+              }
+             ]
             },
             {
              "name": "Piórkowska, Ewa",
@@ -434,8 +443,8 @@
         {
          "name": "Korzeb, Jadwiga",
          "gender": "female",
-         "born": "1846",
-         "died": "",
+         "born": "1843",
+         "died": "1911",
          "gramps_id": "I0071",
          "children": [
           {
@@ -448,9 +457,25 @@
             {
              "name": "Korzeb, Wawrzyniec",
              "gender": "male",
-             "born": "",
-             "died": "",
-             "gramps_id": "I0085"
+             "born": "1772",
+             "died": "1839",
+             "gramps_id": "I0085",
+             "children": [
+              {
+               "name": "Korzeb, Ignacy",
+               "gender": "male",
+               "born": "",
+               "died": "1833",
+               "gramps_id": "I0217"
+              },
+              {
+               "name": "Figat, Jadwiga",
+               "gender": "female",
+               "born": "",
+               "died": "1833",
+               "gramps_id": "I0218"
+              }
+             ]
             },
             {
              "name": "Borowa, Katarzyna",
@@ -471,14 +496,14 @@
             {
              "name": "Dzieniszewski, Wojciech",
              "gender": "male",
-             "born": "",
+             "born": "1775",
              "died": "",
              "gramps_id": "I0087"
             },
             {
-             "name": "Domalewska, Rozalia",
+             "name": "Domalewska/Ożarowska/Przychodzień/Piotrowska, Rozalia",
              "gender": "female",
-             "born": "",
+             "born": "1781",
              "died": "",
              "gramps_id": "I0088"
             }
