@@ -364,11 +364,11 @@
            "name": "Żach, Jan",
            "gender": "male",
            "born": "1818",
-           "died": "1865",
+           "died": "1854",
            "gramps_id": "I0081",
            "children": [
             {
-             "name": "Żach/Zach, Antoni",
+             "name": "Żach, Antoni",
              "gender": "male",
              "born": "1786",
              "died": "",
@@ -391,50 +391,18 @@
            "gramps_id": "I0082",
            "children": [
             {
-             "name": "Majewski, Stanisław (błąd)",
+             "name": "Majewski, Stanisław (popraw metrykę)",
              "gender": "male",
-             "born": "1786",
+             "born": "",
              "died": "",
-             "gramps_id": "I0136",
-             "children": [
-              {
-               "name": "Majewski, Michał",
-               "gender": "male",
-               "born": "",
-               "died": "",
-               "gramps_id": "I0138"
-              },
-              {
-               "name": "Kamieńska, Ewa",
-               "gender": "female",
-               "born": "",
-               "died": "",
-               "gramps_id": "I0139"
-              }
-             ]
+             "gramps_id": "I0136"
             },
             {
-             "name": "Politowska, Ewa",
+             "name": "Polita/Politowska, Ewa",
              "gender": "female",
-             "born": "1776",
+             "born": "",
              "died": "",
-             "gramps_id": "I0137",
-             "children": [
-              {
-               "name": "Politowski, Michał",
-               "gender": "male",
-               "born": "",
-               "died": "",
-               "gramps_id": "I0140"
-              },
-              {
-               "name": "Koparska, Kunegunda",
-               "gender": "female",
-               "born": "",
-               "died": "",
-               "gramps_id": "I0141"
-              }
-             ]
+             "gramps_id": "I0137"
             }
            ]
           }
@@ -469,7 +437,7 @@
                "gramps_id": "I0217"
               },
               {
-               "name": "Figat, Jadwiga",
+               "name": "Korzeb, Jadwiga",
                "gender": "female",
                "born": "",
                "died": "1833",
