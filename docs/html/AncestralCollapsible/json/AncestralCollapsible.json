@@ -585,21 +585,21 @@
          ]
         },
         {
-         "name": "Sobiewska, Anna",
+         "name": "Sobiewska, Anna (2ga)",
          "gender": "female",
          "born": "1844",
          "died": "",
          "gramps_id": "I0090",
          "children": [
           {
-           "name": "Sobieski, Wojciech",
+           "name": "Sobieski/Sobiewski, Wojciech",
            "gender": "male",
            "born": "1802",
            "died": "",
            "gramps_id": "I0098",
            "children": [
             {
-             "name": "Sobieski/Sobiewski, Maciej",
+             "name": "Sobieski/Sobiewska, Maciej",
              "gender": "male",
              "born": "",
              "died": "",
@@ -624,8 +624,8 @@
             {
              "name": "Ferenc, Jakub",
              "gender": "male",
-             "born": "1784",
-             "died": "",
+             "born": "",
+             "died": "1846",
              "gramps_id": "I0123",
              "children": [
               {
