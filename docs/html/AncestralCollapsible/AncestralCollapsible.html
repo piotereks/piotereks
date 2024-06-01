@@ -3,45 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ancestral Collapsible</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/moguncja/css/moguncja.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/moguncja/js/moguncja.min.js" defer></script>
+    <title>Genealogia Sakowscy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #272822;
+            color: #f8f8f2;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar .container {
+            display: flex;
+            justify-content: center;
+            padding: 14px 20px;
+        }
+        .navbar .navbar-item {
+            color: #f8f8f2;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar .navbar-item:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            color: #66d9ef;
+        }
+        p {
+            color: #a6e22e;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            color: #f92672;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background-color: #333;
+            color: #f8f8f2;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
 <nav class="navbar">
     <div class="container">
-        <div class="navbar-brand">
-            <a href="index.html" class="navbar-item">Home</a>
-        </div>
         <div class="navbar-menu">
             <div class="navbar-end">
-                <a href="renamed_AncestralCollapsible.html" class="navbar-item">Renamed Ancestral Collapsible</a>
-                <a href="Sakowski_heatmap.html" class="navbar-item">Heatmap</a>
-                <a href="Sakowski_dynamicweb/tree_svg.html?p=person.html&idx=175&ndx=34" class="navbar-item">Tree SVG</a>
+                <a href="#" class="navbar-item" onclick="scrollToContent()">Home</a>
+                <a href="renamed_AncestralCollapsible.html" class="navbar-item" onclick="loadPage('renamed_AncestralCollapsible.html')">Drzewo Sakowskich</a>
+                <a href="../Sakowski_dynamicweb/tree_svg.html?p=person.html&idx=175&ndx=34" class="navbar-item" onclick="loadPage('../Sakowski_dynamicweb/tree_svg.html?p=person.html&idx=175&ndx=34')">Portal genealogiczny rodziny Sakowskich</a>
+                <a href="../Sakowski_heatmap.html" class="navbar-item" onclick="loadPage('../Sakowski_heatmap.html')">Mapa rodziny Sakowskich</a>
             </div>
         </div>
     </div>
 </nav>
 
-<section class="section">
-    <div class="container">
-        <h1 class="title">Ancestral Collapsible</h1>
-        <p class="subtitle">Explore your ancestry with the collapsible tree view.</p>
-        
-        <!-- Your content goes here -->
-        
-    </div>
-</section>
+<div class="container" id="content">
+    <h1>Genealogia Sakowscy</h1>
+    <p>Nawiguj poprzez informacje genealogiczne</p>
+    <ul>
+        <li><a href="renamed_AncestralCollapsible.html" target="_self">Drzewo Sakowskich</a></li>
+		<li><a href="../Sakowski_dynamicweb/tree_svg.html?p=person.html&idx=175&ndx=34" target="_self">Portal genealogiczny rodziny Sakowskich</a></li>
+        <li><a href="../Sakowski_heatmap.html" target="_self">Mapa rodziny Sakowskich</a></li>
+    </ul>
+</div>
 
-<footer class="footer">
-    <div class="content has-text-centered">
-        <p>
-            <strong>Ancestral Collapsible</strong> by <a href="https://github.com/your-profile">Your Name</a>. The source code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
-        </p>
-    </div>
-</footer>
+<div class="footer">
+    <p>&copy; Piotr Sakowski 2024</p>
+</div>
+
+<script>
+    function scrollToContent() {
+        document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function loadPage(url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('content').innerHTML = data;
+                scrollToContent();
+            })
+            .catch(error => console.error('Error:', error));
+        return false; // Prevent default link behavior
+    }
+</script>
 
 </body>
 </html>
