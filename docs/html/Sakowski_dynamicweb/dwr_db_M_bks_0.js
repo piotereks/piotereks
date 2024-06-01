@@ -73,7 +73,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 11,
+"bk_idx": 10,
 "cita": [],
 "note": "",
 "rect": [
@@ -87,7 +87,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 11,
+"bk_idx": 10,
 "cita": [],
 "note": "",
 "rect": [
@@ -115,7 +115,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 11,
+"bk_idx": 10,
 "cita": [],
 "note": "",
 "rect": [
@@ -185,7 +185,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 11,
+"bk_idx": 10,
 "cita": [],
 "note": "",
 "rect": [
@@ -269,7 +269,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 7,
+"bk_idx": 6,
 "cita": [],
 "note": "",
 "rect": [
@@ -311,7 +311,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 11,
+"bk_idx": 10,
 "cita": [],
 "note": "",
 "rect": [
@@ -325,7 +325,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 12,
+"bk_idx": 11,
 "cita": [],
 "note": "",
 "rect": [
@@ -353,7 +353,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 11,
+"bk_idx": 10,
 "cita": [],
 "note": "",
 "rect": [
@@ -409,7 +409,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 11,
+"bk_idx": 10,
 "cita": [],
 "note": "",
 "rect": [
@@ -437,7 +437,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 9,
+"bk_idx": 8,
 "cita": [],
 "note": "",
 "rect": [
@@ -465,7 +465,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 11,
+"bk_idx": 10,
 "cita": [],
 "note": "",
 "rect": [
@@ -535,7 +535,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 12,
+"bk_idx": 11,
 "cita": [],
 "note": "",
 "rect": [
@@ -577,7 +577,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 13,
+"bk_idx": 12,
 "cita": [],
 "note": "",
 "rect": [
@@ -605,7 +605,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 14,
+"bk_idx": 13,
 "cita": [],
 "note": "",
 "rect": [
@@ -617,7 +617,7 @@ M_bks_0 = [
 "thumb": "thumb/4/e/f98456f79ed69a0611e16b4f8e4-5,4-52,32.png"
 },
 {
-"bk_idx": 14,
+"bk_idx": 13,
 "cita": [],
 "note": "",
 "rect": [
@@ -673,7 +673,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 13,
+"bk_idx": 12,
 "cita": [],
 "note": "",
 "rect": [
@@ -825,7 +825,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 10,
+"bk_idx": 9,
 "cita": [],
 "note": "",
 "rect": [
@@ -861,20 +861,6 @@ M_bks_0 = [
 100
 ],
 "thumb": "thumb/9/1/f8d9b2ae54b5eea18c4d1798519-50,46-100,100.png"
-}
-],
-[
-{
-"bk_idx": 0,
-"cita": [],
-"note": "",
-"rect": [
-2,
-3,
-50,
-96
-],
-"thumb": "thumb/1/b/f987988fb8e54637101bd3930b1-2,3-50,96.png"
 }
 ],
 [
@@ -963,7 +949,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 13,
+"bk_idx": 12,
 "cita": [],
 "note": "",
 "rect": [
@@ -1043,7 +1029,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 13,
+"bk_idx": 12,
 "cita": [],
 "note": "",
 "rect": [
@@ -1115,24 +1101,24 @@ M_bks_0 = [
 "cita": [],
 "note": "",
 "rect": [
-11,
-45,
-100,
-100
-],
-"thumb": "thumb/c/4/f8d9da5d3196b00ecd93a8c8e4c-11,45-100,100.png"
-},
-{
-"bk_idx": 1,
-"cita": [],
-"note": "",
-"rect": [
 16,
 8,
 91,
 52
 ],
 "thumb": "thumb/c/4/f8d9da5d3196b00ecd93a8c8e4c-16,8-91,52.png"
+},
+{
+"bk_idx": 1,
+"cita": [],
+"note": "",
+"rect": [
+11,
+45,
+100,
+100
+],
+"thumb": "thumb/c/4/f8d9da5d3196b00ecd93a8c8e4c-11,45-100,100.png"
 }
 ],
 [
@@ -1249,7 +1235,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 8,
+"bk_idx": 7,
 "cita": [],
 "note": "",
 "rect": [
@@ -1263,7 +1249,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 6,
+"bk_idx": 5,
 "cita": [],
 "note": "",
 "rect": [
@@ -1277,7 +1263,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 17,
+"bk_idx": 16,
 "cita": [],
 "note": "",
 "rect": [
@@ -1291,7 +1277,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 16,
+"bk_idx": 15,
 "cita": [],
 "note": "",
 "rect": [

@@ -39,16 +39,17 @@ F_attr_0 = [
 {
 "cita": [],
 "note": "",
-"type": "Father's Age",
+"type": "Wiek ojca",
 "value": "39"
 },
 {
 "cita": [],
 "note": "",
-"type": "Mother's Age",
+"type": "Wiek matki",
 "value": "17"
 }
 ],
+[],
 [],
 [],
 [],

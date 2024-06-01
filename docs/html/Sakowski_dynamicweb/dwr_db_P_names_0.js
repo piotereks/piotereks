@@ -5,42 +5,49 @@ P_names_0 = [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Bisztynek, woj. Warmi\u0144sko-mazurskie, Polska"
+"name": "Auvergne"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "B\u0142\u0119dnica, gm. Jasienica (lub Ma\u0142kinia g\u00f3rna), pow. ostrowski, woj. mazowieckie"
+"name": "Bisztynek"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Brok, pow. ostrowski, woj. mazowieckie"
+"name": "B\u0142\u0119dnica"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Czerwin, woj. mazowieckie"
+"name": "Brok"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Czuraj (od 1922 w Broku), pow.ostrowski, woj.mazowieckie"
+"name": "Czerwin"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Feliksowo (cze\u015b\u0107 Kaczkowa), pow. ostrowski, woj. mazowieckie"
+"name": "Czuraj (od 1922 w Broku)"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "Feliksowo (cze\u015b\u0107 Kaczkowa)"
 }
 ],
 [
@@ -54,14 +61,168 @@ P_names_0 = [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Garlino (Zalesie) pow. m\u0142awski, woj. mazowieckie"
+"name": "Garlino"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Glina, gm. Ma\u0142kinia G\u00f3rna, pow. ostrowski, woj. mazowieckie"
+"name": "Glina"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Biskupiec"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Bisztynek"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Brok"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Czerwin"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Go\u0142dap"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Goworowo"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Karniewo"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Kos\u00f3w Lacki"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Ma\u0142a Wie\u015b"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Ma\u0142kinia G\u00f3rna"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Ma\u0142y P\u0142ock"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Mochowo"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Nowe Piekuty"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Ostr\u00f3w Mazowiecka"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. P\u0142oniawy-Bramura"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Sadowne"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Stawiski"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Szelk\u00f3w"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Szyd\u0142owo"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Warszawa"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Wroc\u0142aw"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "gm. Zar\u0119by Ko\u015bcielne"
 }
 ],
 [
@@ -75,259 +236,411 @@ P_names_0 = [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Goworowo, woj. mazowieckie"
+"name": "Goworowo"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Jasienica, gm. Ostr\u00f3w Mazowiecka, pow. ostrowski, woj. mazowieckie"
+"name": "Hamburg"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Jawory, Goworowo, woj. mazowieckie"
+"name": "Jasienica"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Jelonki, powiat Ostr\u00f3w Mazowiecka, woj. mazowieckie"
+"name": "Jawory Stare"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Kaczkowo, pow. ostrowski, woj. mazowieckie"
+"name": "Jelonki"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Ka\u0144kowo, gm. Ma\u0142kinia G\u00f3rna, pow. ostrowski, woj. mazowieckie"
+"name": "Kaczkowo Nowe"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Kobu\u0142ty, gm. Biskupiec, pow. olszty\u0144ski, woj. warmi\u0144sko-mazurskie"
+"name": "Kaczkowo Stare"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Korzeniste, pow. kole\u0144ski, gm. Ma\u0142y P\u0142ock, woj. podlaskie"
+"name": "Ka\u0144kowo"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Kutyski, gm. kos\u00f3w \u0142\u0105cki, pow. soko\u0142owski, woj. mazowieckie"
+"name": "Kobu\u0142ty"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Le\u015bniewo, pow. makowski, woj. mazowieckie"
+"name": "Korzeniste"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Ludwinowo, Goworowo, woj. mazowieckie"
+"name": "Ko\u015bci\u00f3\u0142 \u015bw. Jakuba, Warszawa-Ochota"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Magnuszew, parafia Szelk\u00f3w, pow. makowski, woj. mazowieckie"
+"name": "Kutyski"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Ma\u0142kinia G\u00f3rna, pow. ostrowski, woj. mazowieckie"
+"name": "Le\u015bniewo"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Ma\u0142kinia-Ma\u0142a-Przew\u00f3z , gm. Ma\u0142kinia G\u00f3rna, pow. ostrowski, woj. Mazowieckie"
+"name": "Ludwinowo"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Nakwasin, pow. p\u0142ocki, woj.mazowieckie"
+"name": "Magnuszew"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Niesk\u00f3rz, gm. Ostr\u00f3w Maz, pow. ostrowski, woj. mazowieckie"
+"name": "Ma\u0142kinia G\u00f3rna"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Nowe Kaczkowo, Brok, woj. mazowieckie"
+"name": "Ma\u0142kinia Ma\u0142a-Przew\u00f3z"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Ob\u00f3z koncentracyjny Neuengamme, Hamburg, Niemcy"
+"name": "Nakwasin"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Or\u0142o, pow. ostrowski, woj. mazowieckie"
+"name": "Niemcy"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Orszymowo, pow. p\u0142ocki, woj. mazowieckie"
+"name": "Niesk\u00f3rz"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Osiek gm. Mochowo, pow. sierpiecki, woj. mazowieckie"
+"name": "Nowa Z\u0142otoria"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "parafia \u015bw. Jakuba, Ochota, Warszawa, woj. mazowieckie"
+"name": "Ob\u00f3z koncentracyjny Neuengamme"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Perki, pow. p\u0142ocki, woj.  mazowieckie"
+"name": "Or\u0142o"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "P\u0142atkownica, gm. Sadowne,  pow. w\u0119growski, woj. mazowieckie"
+"name": "Orszymowo"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Poryte, gm. Stawiski, pow. kole\u0144ski, woj. podlaskie"
+"name": "Osiek"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Prosty\u0144, gm. Ma\u0142kinia G\u00f3rna, pow. ostrowski, woj. mazowieckie"
+"name": "Perki"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "R\u0119bisze (Kolonia), pow. ostro\u0142\u0119cki, woj. mazowieckie"
+"name": "P\u0142atkownica"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Romans Sur Is\u00e8re, Auvergne-Rh\u00f4ne-Alpes, 26100, France"
+"name": "P\u0142oniawy-Bramura"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Sumi\u0119\u017cnie, gm. Ma\u0142kinia G\u00f3rna, pow. ostrowski, woj. mazowieckie"
+"name": "Poryte"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Szwelice, gm. Karniewo, pow. makowski, woj. mazowiecki"
+"name": "pow. bartoszycki"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Ugniewo, gm. Ostr\u00f3w Maz, pow. ostrowski, woj. mazowieckie"
+"name": "pow. go\u0142dapski"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Warszawa, Polska"
+"name": "pow. kolne\u0144ski"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Wierzbowizna, parafia Piekuty, gm. Nowe Piekuty,  pow. wysokiemazowiecki, woj. podlaskie"
+"name": "pow. makowski"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "W\u00f3lka Brzezi\u0144ska,  gm. Goworowo, pow. ostro\u0142\u0119cki, woj. mazowieckie"
+"name": "pow. m\u0142awski"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Wroc\u0142aw, dolno\u015bl\u0105skie, Polska"
+"name": "pow. nowomiejski"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Zar\u0119by Ko\u015bcielne, pow. ostrowski, woj. mazowieckie"
+"name": "pow. olszty\u0144ski"
 }
 ],
 [
 {
 "date": "",
 "date_sdn": 0,
-"name": "Z\u0142otoria Nowa, pow. ostrowski, woj.mazowieckie"
+"name": "pow. ostro\u0142\u0119cki"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "pow. ostrowski"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "pow. p\u0142ocki"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "pow. sierpecki"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "pow. soko\u0142owski"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "pow. w\u0119growski"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "pow. wysokomazowiecki"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "Prosty\u0144"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "R\u0119bisze-Kolonia"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "Romans Sur Is\u00e8re"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "Sumi\u0119\u017cne"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "Szwelice"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "Ugniewo"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "Warszawa"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "Wierzbowizna"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "woj. dolno\u015bl\u0105skie"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "woj. mazowieckie"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "woj. podlaskie"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "woj. warmi\u0144sko-mazurskie"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "W\u00f3lka Brzezi\u0144ska"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "Wroc\u0142aw"
+},
+{
+"date": "",
+"date_sdn": 0,
+"name": "Wroc\u0142aw"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "Zar\u0119by Ko\u015bcielne"
 }
 ]
 ]

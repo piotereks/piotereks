@@ -6,7 +6,6 @@ S_title_0 = [
 "Akta stanu cywilnego parafii rzymskokatolickiej w Jelonkach powiat Ostr\u00f3w Mazowiecka",
 "Akta stanu cywilnego Parafii Rzymskokatolickiej w Zar\u0119bach Ko\u015bcielnych",
 "Archiwum Diecezjalne P\u0142ock",
-"Calculated Date Estimates",
 "Instytu Pami\u0119ci Narodowej - straty.pl",
 "Ksi\u0119gi Metrykalne P\u0142atkownica, gm. Sadowne, pow. w\u0119growski, woj. mazowieckie",
 "ksi\u0119gi metrykalne, par \u015bw. Jakuba, Ochota, Warszawa",

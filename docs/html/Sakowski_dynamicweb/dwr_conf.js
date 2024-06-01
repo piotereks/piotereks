@@ -4,27 +4,27 @@ DWR_VERSION_410 = true;
 DWR_VERSION_412 = true;
 DWR_VERSION_420 = true;
 DWR_VERSION_500 = true;
-TITLE = "My Family Tree";
+TITLE = "Drzewo Sakowskich";
 SPLIT = 5000;
 DB_SIZES = {
-    "C": 251,
-    "F": 64,
-    "I": 271,
-    "M": 87,
-    "N": 55,
-    "P": 47,
+    "C": 98,
+    "F": 65,
+    "I": 274,
+    "M": 86,
+    "N": 56,
+    "P": 91,
     "R": 0,
-    "S": 19
+    "S": 18
 };NB_GENERATIONS_MAX = 10;
 PAGES_FILE = ["index.html", "", "tree_svg.html"];
-PAGES_TITLE = ["Home", "Indexes", "Tree"];
-PAGES_FILE_INDEX = ["surnames.html", "persons.html", "sources.html", "medias.html", "places.html", "address.html"];
-PAGES_TITLE_INDEX = ["Surnames", "Individuals", "Sources", "Media", "Places", "Addresses"];
+PAGES_TITLE = ["DynWeb|Home", "Indexes", "Tree"];
+PAGES_FILE_INDEX = ["surnames.html", "persons.html", "families.html", "sources.html", "medias.html", "places.html", "address.html"];
+PAGES_TITLE_INDEX = ["Nazwiska", "Osoby", "Rodziny", "Źródła", "Media", "Miejsca", "Adresy"];
 SVG_TREE_TYPES_NAMES = ["Ascending tree", "Descending tree", "Descending tree with spouses", "Ascending and descending tree", "Ascending and descending tree with spouses"];
-SVG_TREE_SHAPES_NAMES = ["Vertical (↓)", "Vertical (↑)", "Horizontal (→)", "Horizontal (←)", "Full Circle", "Half Circle", "Quadrant"];
+SVG_TREE_SHAPES_NAMES = ["Pionowo (↓)", "Pionowo (↑)", "Poziomo (→)", "Poziomo (←)", "Pełny okrąg", "Półokrąg", "Kwadrant"];
 SVG_TREE_DISTRIB_ASC_NAMES = ["Size proportional to number of ancestors", "Homogeneous parents distribution"];
-SVG_TREE_DISTRIB_DSC_NAMES = ["Size proportional to number of descendants", "Homogeneous children distribution"];
-SVG_TREE_BACKGROUND_NAMES = ["Gender colors", "Generation based gradient", "Age based gradient", "Single main (filter) color", "Time period based gradient", "White", "Color scheme classic report", "Color scheme classic view"];
+SVG_TREE_DISTRIB_DSC_NAMES = ["Rozmiar proporcjonalny do liczby potomków", "Jednorodny rozkład dzieci"];
+SVG_TREE_BACKGROUND_NAMES = ["Kolory płci", "Gradient bazujący na generacjach", "Age based gradient", "Pojedyńczy główny kolor (filtru)", "Gradient oparty na czasie", "Biały", "Schemat koloru klasycznego raportu", "Schemat koloru klasycznego widoku"];
 SVG_TREE_BACKGROUND_GENDER = 0;
 SVG_TREE_BACKGROUND_GENERATION = 1;
 SVG_TREE_BACKGROUND_AGE = 2;
@@ -33,16 +33,16 @@ SVG_TREE_BACKGROUND_PERIOD = 4;
 SVG_TREE_BACKGROUND_WHITE = 5;
 SVG_TREE_BACKGROUND_SCHEME1 = 6;
 SVG_TREE_BACKGROUND_SCHEME2 = 7;
-SVG_TREE_TYPE = 4;
+SVG_TREE_TYPE = 3;
 SVG_TREE_SHAPE = 4;
-SVG_TREE_DISTRIB_ASC = 0;
+SVG_TREE_DISTRIB_ASC = 1;
 SVG_TREE_DISTRIB_DSC = 0;
 SVG_TREE_BACKGROUND = 1;
 SVG_TREE_COLOR1 = "#EF2929";
 SVG_TREE_COLOR2 = "#3D37E9";
 SVG_TREE_SHOW_DUP = true;
 SVG_TREE_COLOR_DUP = "#888A85";
-CHART_BACKGROUND_NAMES = ["Single main (filter) color", "Gender colors", "Gradient", "Color scheme classic report", "Color scheme classic view", "White"];
+CHART_BACKGROUND_NAMES = ["Pojedyńczy główny kolor (filtru)", "Kolory płci", "Gradient", "Schemat koloru klasycznego raportu", "Schemat koloru klasycznego widoku", "Biały"];
 CHART_BACKGROUND_GENDER = 1;
 CHART_BACKGROUND_GRADIENT = 2;
 CHART_BACKGROUND_SINGLE = 0;
@@ -76,22 +76,22 @@ INDEX_FAMILIES_TYPE=true;
 INDEX_SOURCES_TYPE=true;
 INDEX_PLACES_TYPE=true;
 INDEX_SHOW_DATES=true;
-INDEX_SHOW_PARTNER=false;
-INDEX_SHOW_PARENTS=false;
+INDEX_SHOW_PARTNER=true;
+INDEX_SHOW_PARENTS=true;
 INDEX_SHOW_PATH=false;
 INDEX_SHOW_BKREF_TYPE=false;
 INDEX_DEFAULT_SIZE = 0;
 INDEXES_SIZES = [[10, 50, 100, 500, 1000, 5000], ['10', '50', '100', '500', '1000', '5000']];
 SHOW_ALL_SIBLINGS=false;
 INC_EVENTS=false;
-INC_FAMILIES=false;
+INC_FAMILIES=true;
 INC_SOURCES=true;
 INC_MEDIA=true;
 INC_PLACES=true;
 INC_REPOSITORIES=false;
 INC_NOTES=true;
 INC_ADDRESSES=true;
-MAP_PLACE=false;
+MAP_PLACE=true;
 MAP_FAMILY=true;
 MAP_SERVICE="OpenStreetMap";
 SOURCE_AUTHOR_IN_TITLE=false;
@@ -100,9 +100,9 @@ INC_CHANGE_TIME=true;
 HIDE_GID=true;
 INC_PAGECONF = true;
 __ = {
-"(b. %(birthdate)s, d. %(deathdate)s)": "(b. %(birthdate)s, d. %(deathdate)s)",
-"(b. %s)": "(b. %s)",
-"(d. %s)": "(d. %s)",
+"(b. %(birthdate)s, d. %(deathdate)s)": "(Ur: %(birthdate)s, Zm: %(deathdate)s)",
+"(b. %s)": "(ur. %s)",
+"(d. %s)": "(zm. %s)",
 "(filtered from _MAX_ total entries)": "(filtered from _MAX_ total entries)",
 "(m. %s)": "(m. %s)",
 "(sort by name)": "(sort by name)",
@@ -110,111 +110,111 @@ __ = {
 ": activate to sort column ascending": ": activate to sort column ascending",
 ": activate to sort column descending": ": activate to sort column descending",
 "<p>This page provides the SVG raw code.<br>Copy the contents into a text editor and save as an SVG file.<br>Make sure that the text editor encoding is UTF-8.</p>": "<p>This page provides the SVG raw code.<br>Copy the contents into a text editor and save as an SVG file.<br>Make sure that the text editor encoding is UTF-8.</p>",
-"Abbreviation": "Abbreviation",
-"Address": "Address",
-"Addresses": "Addresses",
-"Age at death": "Age at death",
-"Alternate Marriage": "Alternate Marriage",
+"Abbreviation": "Skrót",
+"Address": "Adres",
+"Addresses": "Adresy",
+"Age at death": "Wiek w momencie śmierci",
+"Alternate Marriage": "Zawarcie małżeństwa alternatywnego",
 "Alternate Name": "Alternate Name",
-"Ancestors": "Ancestors",
-"Associations": "Associations",
-"Attribute": "Attribute",
-"Attributes": "Attributes",
-"Author": "Author",
-"Background": "Background",
-"Baptism": "Baptism",
-"Birth": "Birth",
-"Burial": "Burial",
-"Call Name": "Call Name",
-"Call Number": "Call Number",
-"Cause Of Death": "Cause Of Death",
-"Children": "Children",
-"Christening": "Christening",
-"Citation": "Citation",
-"Citations": "Citations",
+"Ancestors": "Przodkowie",
+"Associations": "Zależności",
+"Attribute": "Atrybut",
+"Attributes": "Atrybuty",
+"Author": "Autor",
+"Background": "Tło",
+"Baptism": "Baptyzm",
+"Birth": "Narodziny",
+"Burial": "Pogrzeb",
+"Call Name": "Używane imię",
+"Call Number": "Numer odniesienia",
+"Cause Of Death": "Powód śmierci",
+"Children": "Dzieci",
+"Christening": "Chrzest",
+"Citation": "Cytat",
+"Citations": "Cytaty",
 "Click on the map to show it full-screen": "Click on the map to show it full-screen",
-"Code": "Code",
-"Configuration": "Configuration",
+"Code": "Kod",
+"Configuration": "Konfiguracja",
 "Configure": "Configure",
-"Count": "Count",
-"Cremation": "Cremation",
-"Date": "Date",
-"Death": "Death",
-"Descendants": "Descendants",
-"Description": "Description",
+"Count": "Ilość",
+"Cremation": "Kremacja",
+"Date": "Data",
+"Death": "Śmierć",
+"Descendants": "Potomkowie",
+"Description": "Opis",
 "DynamicWeb_report#Help": "DynamicWeb_report#Help",
-"Enclosed By": "Enclosed By",
-"Engagement": "Engagement",
-"Event": "Event",
-"Events": "Events",
+"Enclosed By": "Zawiera się w",
+"Engagement": "Zaręczyny",
+"Event": "Zdarzenie",
+"Events": "Wydarzenia",
 "Examples": "Examples",
 "F": "F",
 "Families Index": "Families Index",
-"Families": "Families",
+"Families": "Rodziny",
 "Family Nick Name": "Family Nick Name",
-"Father": "Father",
-"Female": "Female",
+"Father": "Ojciec",
+"Female": "Kobieta",
 "File ready": "File ready",
-"Gender": "Gender",
-"Help": "Help",
-"ID": "ID",
-"Include Place map on Place Pages": "Include Place map on Place Pages",
+"Gender": "Płeć",
+"Help": "Pomoc",
+"ID": "Identyfikator",
+"Include Place map on Place Pages": "Dodaj mapę miejsc na stronach miejsc",
 "Include dates columns on the index pages": "Include dates columns on the index pages",
-"Include a column for parents on the index pages": "Include a column for parents on the index pages",
+"Include a column for parents on the index pages": "Dodaj kolumnę z informacją o rodzicach na stronach indeksów",
 "Include a column for media path on the index pages": "Include a column for media path on the index pages",
-"Include a column for partners on the index pages": "Include a column for partners on the index pages",
+"Include a column for partners on the index pages": "Dodaj kolumnę z informacją o partnerach na stronach indeksów",
 "Include a map in the individuals and family pages": "Include a map in the individuals and family pages",
 "Include half and/ or step-siblings on the individual pages": "Include half and/ or step-siblings on the individual pages",
 "Include references in indexes": "Include references in indexes",
 "Indexes": "Indexes",
-"Individuals": "Individuals",
+"Individuals": "Osoby",
 "Insert sources author in the sources title": "Insert sources author in the sources title",
-"Last Modified": "Last Modified",
-"Latitude": "Latitude",
-"Link": "Link",
-"Loading...": "Loading...",
-"Location": "Location",
-"Longitude": "Longitude",
+"Last Modified": "Ostatnio modyfikowany",
+"Latitude": "Szerokość geogr.",
+"Link": "Odnośnik",
+"Loading...": "Ładowanie...",
+"Location": "Położenie",
+"Longitude": "Długość geogr.",
 "M": "M",
-"Male": "Male",
-"Map": "Map",
-"Marriage": "Marriage",
+"Male": "Mężczyzna",
+"Map": "Mapa",
+"Marriage": "Małżeństwo",
 "Maximize": "Maximize",
 "Media Index": "Media Index",
 "Media Type": "Media Type",
 "Media": "Media",
-"Mother": "Mother",
-"Name": "Name",
-"Nick Name": "Nick Name",
+"Mother": "Matka",
+"Name": "Nazwa",
+"Nick Name": "Przezwisko",
 "No data available in table": "No data available in table",
-"No matches found": "No matches found",
+"No matches found": "Nie odnaleziono dopasowań",
 "No matching records found": "No matching records found",
 "No matching surname.": "No matching surname.",
-"None": "None",
-"Notes": "Notes",
-"Number": "Number",
+"None": "Brak",
+"Notes": "Notatki",
+"Number": "Numer",
 "OK": "OK",
 "Other participants": "Other participants",
-"Parents": "Parents",
-"Path": "Path",
+"Parents": "Rodzice",
+"Path": "Ścieżka",
 "Person page": "Person page",
 "Person to search for": "Person to search for",
-"Person": "Person",
+"Person": "Osoba",
 "Persons Index": "Persons Index",
 "Persons": "Persons",
-"Place": "Place",
+"Place": "Miejsce",
 "Places Index": "Places Index",
-"Places": "Places",
+"Places": "Miejsca",
 "Preparing file ...": "Preparing file ...",
-"Processing...": "Processing...",
-"Publication information": "Publication information",
-"References": "References",
+"Processing...": "Przetwarzanie...",
+"Publication information": "Informacje o wydaniu",
+"References": "Odwołania",
 "Relationship to Father": "Relationship to Father",
 "Relationship to Mother": "Relationship to Mother",
-"Relationship": "Relationship",
+"Relationship": "Związek",
 "Repositories Index": "Repositories Index",
-"Repositories": "Repositories",
-"Repository": "Repository",
+"Repositories": "Repozytoria",
+"Repository": "Repozytorium",
 "Restore": "Restore",
 "Restore default settings": "Restore default settings",
 "Show last modification time": "Show last modification time",
@@ -237,20 +237,20 @@ __ = {
 "Show duplicates": "Show duplicates",
 "Showing 0 to 0 of 0 entries": "Showing 0 to 0 of 0 entries",
 "Showing _START_ to _END_ of _TOTAL_ entries": "Showing _START_ to _END_ of _TOTAL_ entries",
-"Siblings": "Siblings",
+"Siblings": "Rodzeństwo",
 "Sort by:": "Sort by:",
-"Source": "Source",
+"Source": "Źródło",
 "Sources Index": "Sources Index",
-"Sources": "Sources",
-"Spouses": "Spouses",
+"Sources": "Źródła",
+"Spouses": "Małżonkowie",
 "Suppress Gramps ID": "Suppress Gramps ID",
-"Surname": "Surname",
+"Surname": "Nazwisko",
 "Surnames Index": "Surnames Index",
-"Surnames": "Surnames",
-"Title": "Title",
-"Type": "Type",
+"Surnames": "Nazwiska",
+"Title": "Tytuł",
+"Type": "Rodzaj",
 "U": "U",
-"Unknown": "Unknown",
+"Unknown": "Nieznany",
 "Use tabbed panels instead of sections": "Use tabbed panels instead of sections",
 "Use the search box above in order to find a person.": "Use the search box above in order to find a person.",
 "Use a table format for the surnames index": "Use a table format for the surnames index",
@@ -263,9 +263,9 @@ __ = {
 "Used for person": "Used for person",
 "Used for place": "Used for place",
 "Used for source": "Used for source",
-"Value": "Value",
+"Value": "Wartość",
 "Web Link": "Web Link",
-"Web Links": "Web Links",
+"Web Links": "Linki web",
 "Whether to use a special color for the persons that appear several times in the SVG tree": "Whether to use a special color for the persons that appear several times in the SVG tree",
 "Without name": "Without name",
 "Without surname": "Without surname",
@@ -273,52 +273,53 @@ __ = {
 "Zoom in": "Zoom in",
 "Zoom out": "Zoom out",
 "all": "all",
-"Unknown": "Unknown",
-"Custom": "Custom",
-"Adopted": "Adopted",
-"Birth": "Birth",
-"Death": "Death",
-"Adult Christening": "Adult Christening",
-"Baptism": "Baptism",
-"Bar Mitzvah": "Bar Mitzvah",
-"Bas Mitzvah": "Bat Mitzvah",
-"Blessing": "Blessing",
-"Burial": "Burial",
-"Cause Of Death": "Cause Of Death",
-"Census": "Census",
-"Christening": "Christening",
-"Confirmation": "Confirmation",
-"Cremation": "Cremation",
-"Degree": "Degree",
-"Education": "Education",
-"Elected": "Elected",
-"Emigration": "Emigration",
-"First Communion": "First Communion",
-"Immigration": "Immigration",
-"Graduation": "Graduation",
-"Medical Information": "Medical Information",
-"Military Service": "Military Service",
-"Naturalization": "Naturalization",
-"Nobility Title": "Nobility Title",
-"Number of Marriages": "Number of Marriages",
-"Occupation": "Occupation",
-"Ordination": "Ordination",
-"Probate": "Probate",
-"Property": "Property",
-"Religion": "Religion",
-"Residence": "Residence",
-"Retirement": "Retirement",
-"Will": "Will",
-"Marriage": "Marriage",
-"Marriage Settlement": "Marriage Settlement",
-"Marriage License": "Marriage License",
-"Marriage Contract": "Marriage Contract",
-"Marriage Banns": "Marriage Banns",
-"Engagement": "Engagement",
-"Divorce": "Divorce",
-"Divorce Filing": "Divorce Filing",
-"Annulment": "Annulment",
-"Alternate Marriage": "Alternate Marriage"
+"Unknown": "Nieznany",
+"Custom": "Własny",
+"Adopted": "Adoptowany(a)",
+"Birth": "Narodziny",
+"Death": "Śmierć",
+"Adult Christening": "Chrzest dorosłych",
+"Baptism": "Baptyzm",
+"Bar Mitzvah": "Bar micwa",
+"Bas Mitzvah": "Bar micwa",
+"Blessing": "Błogosławieństwo",
+"Burial": "Pogrzeb",
+"Cause Of Death": "Powód śmierci",
+"Census": "Spis ludności",
+"Christening": "Chrzest",
+"Confirmation": "Bierzmowanie",
+"Cremation": "Kremacja",
+"Degree": "Stopień naukowy",
+"Education": "Wykształcenie",
+"Elected": "Wybór na stanowisko",
+"Emigration": "Emigracja",
+"First Communion": "Pierwsza komunia",
+"Immigration": "Imigracja",
+"Graduation": "Wręczenie dyplomu",
+"Medical Information": "Informacje medyczne",
+"Military Service": "Służba wojskowa",
+"Naturalization": "Naturalizacja",
+"Nobility Title": "Nadanie tytułu szlacheckiego",
+"Number of Marriages": "Liczba małżeństw",
+"Occupation": "Zawód",
+"Ordination": "Święcenie",
+"Probate": "Poświadczenie",
+"Property": "Własność",
+"Religion": "Religia",
+"Residence": "Zamieszkanie",
+"Retirement": "Odejście na emeryturę",
+"Will": "Testament",
+"Marriage": "Małżeństwo",
+"Marriage Settlement": "Umowa małżeńska",
+"Marriage License": "Zezwolenie na małżeństwo",
+"Marriage Contract": "Kontrakt małżeński",
+"Marriage Banns": "Zapowiedzi przedślubne",
+"Engagement": "Zaręczyny",
+"Divorce": "Rozwód",
+"Divorce Filing": "Wniosek rozwodowy",
+"Annulment": "Zerwanie",
+"Alternate Marriage": "Zawarcie małżeństwa alternatywnego",
+"Stillbirth": "Martwy poród"
 };
 URLTYPE_UNKNOWN = -1;
 URLTYPE_CUSTOM = 0;
@@ -326,12 +327,12 @@ URLTYPE_EMAIL = 1;
 URLTYPE_WEB_HOME = 2;
 URLTYPE_WEB_SEARCH = 3;
 URLTYPE_WEB_FTP = 4;
-STREET = "Street";
-LOCALITY = "Locality";
-CITY = "City";
-PARISH = "Church Parish";
-COUNTY = "County";
-STATE = "State/ Province";
-POSTAL = "Postal Code";
-COUNTRY = "Country";
-PHONE = "Phone";
+STREET = "Ulica";
+LOCALITY = "Miejscowość";
+CITY = "Miasto";
+PARISH = "Parafia";
+COUNTY = "Powiat";
+STATE = "Województwo";
+POSTAL = "Kod pocztowy";
+COUNTRY = "Kraj";
+PHONE = "Telefon";

@@ -60,7 +60,6 @@ M_gramps_path_0 = [
 "1881 Dzikowski Miko\u0142aj Jaworska Zofia.jpg",
 "1887 80 Marianna Dzikowska Wicopolska Brzezi\u0144ska.jpg",
 "1892 338 Stanis\u0142awa_Dzikowska_metryka_urodzin.jpg",
-"1894 28 Antoni Zy\u015bk Marcjanna Soko\u0142owska MA.jpg",
 "1896 10 Figat Jan \u017bysk Rozalia MA.jpeg",
 "1897 61 Julianna Dzikowska Zabielska Szemborska ZG.jpg",
 "1898 224 Kazimierz Dzikowski ZG.jpg",

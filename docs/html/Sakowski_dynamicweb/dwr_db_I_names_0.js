@@ -7,7 +7,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ara\u017cnik, Marianna",
+"full": "Marianna Ara\u017cnik",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -16,7 +16,7 @@ I_names_0 = [
 "Ara\u017cnik"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -25,7 +25,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ara\u017cnik, Scholastyka",
+"full": "Scholastyka Ara\u017cnik",
 "given": "Scholastyka",
 "nick": "",
 "note": "",
@@ -34,7 +34,7 @@ I_names_0 = [
 "Ara\u017cnik"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -43,7 +43,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ara\u017cnik, Stefan Idzi",
+"full": "Stefan Idzi Ara\u017cnik",
 "given": "Stefan Idzi",
 "nick": "",
 "note": "",
@@ -52,7 +52,7 @@ I_names_0 = [
 "Ara\u017cnik"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -61,7 +61,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ara\u017cnik, Walenty",
+"full": "Walenty Ara\u017cnik",
 "given": "Walenty",
 "nick": "",
 "note": "",
@@ -70,7 +70,7 @@ I_names_0 = [
 "Ara\u017cnik"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -79,7 +79,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Archacka, Katarzyna",
+"full": "Katarzyna Archacka",
 "given": "Katarzyna",
 "nick": "",
 "note": "",
@@ -88,7 +88,7 @@ I_names_0 = [
 "Archacka"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -97,7 +97,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Bernat, Katarzyna",
+"full": "Katarzyna Bernat",
 "given": "Katarzyna",
 "nick": "",
 "note": "",
@@ -106,7 +106,7 @@ I_names_0 = [
 "Bernat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -115,7 +115,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Borowa, Katarzyna",
+"full": "Katarzyna Borowa",
 "given": "Katarzyna",
 "nick": "",
 "note": "",
@@ -124,7 +124,7 @@ I_names_0 = [
 "Borowa"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -133,7 +133,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Borowa, Rozalia",
+"full": "Rozalia Borowa",
 "given": "Rozalia",
 "nick": "",
 "note": "",
@@ -142,7 +142,7 @@ I_names_0 = [
 "Borowa"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -151,7 +151,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Borowy, Pawe\u0142",
+"full": "Pawe\u0142 Borowy",
 "given": "Pawe\u0142",
 "nick": "",
 "note": "",
@@ -160,7 +160,7 @@ I_names_0 = [
 "Borowy"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -169,7 +169,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Brzezi\u0144ski, J\u00f3zef",
+"full": "J\u00f3zef Brzezi\u0144ski",
 "given": "J\u00f3zef",
 "nick": "",
 "note": "",
@@ -178,7 +178,7 @@ I_names_0 = [
 "Brzezi\u0144ski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -187,7 +187,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Brz\u00f3zka, Zuzanna",
+"full": "Zuzanna Brz\u00f3zka",
 "given": "Zuzanna",
 "nick": "",
 "note": "",
@@ -196,7 +196,7 @@ I_names_0 = [
 "Brz\u00f3zka"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -205,7 +205,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Chojnacka, Rozalia",
+"full": "Rozalia Chojnacka",
 "given": "Rozalia",
 "nick": "",
 "note": "",
@@ -214,14 +214,14 @@ I_names_0 = [
 "Chojnacka"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewska, Rozalia",
+"full": "Rozalia Piekarzewska",
 "given": "Rozalia",
 "nick": "",
 "note": "",
@@ -230,7 +230,7 @@ I_names_0 = [
 "Piekarzewska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -239,7 +239,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Czarkowski, Andrzej",
+"full": "Andrzej Czarkowski",
 "given": "Andrzej",
 "nick": "",
 "note": "",
@@ -248,7 +248,7 @@ I_names_0 = [
 "Czarkowski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -257,7 +257,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Domalewska/O\u017carowska/Przychodzie\u0144/Piotrowska, Rozalia",
+"full": "Rozalia Domalewska/O\u017carowska/Przychodzie\u0144/Piotrowska",
 "given": "Rozalia",
 "nick": "",
 "note": "",
@@ -266,7 +266,7 @@ I_names_0 = [
 "Domalewska/O\u017carowska/Przychodzie\u0144/Piotrowska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -275,7 +275,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzieniszewska, Marianna",
+"full": "Marianna Dzieniszewska",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -284,7 +284,7 @@ I_names_0 = [
 "Dzieniszewska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -293,7 +293,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzieniszewska, Wiktoria",
+"full": "Wiktoria Dzieniszewska",
 "given": "Wiktoria",
 "nick": "",
 "note": "",
@@ -302,7 +302,7 @@ I_names_0 = [
 "Dzieniszewska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -311,7 +311,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzieniszewski, Andrzej",
+"full": "Andrzej Dzieniszewski",
 "given": "Andrzej",
 "nick": "",
 "note": "",
@@ -320,7 +320,7 @@ I_names_0 = [
 "Dzieniszewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -329,7 +329,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzieniszewski, Mateusz (1szy)",
+"full": "Mateusz (1szy) Dzieniszewski",
 "given": "Mateusz (1szy)",
 "nick": "",
 "note": "",
@@ -338,7 +338,7 @@ I_names_0 = [
 "Dzieniszewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -347,7 +347,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzieniszewski, Mateusz (2gi)",
+"full": "Mateusz (2gi) Dzieniszewski",
 "given": "Mateusz (2gi)",
 "nick": "",
 "note": "",
@@ -356,7 +356,7 @@ I_names_0 = [
 "Dzieniszewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -365,7 +365,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzieniszewski, Wojciech",
+"full": "Wojciech Dzieniszewski",
 "given": "Wojciech",
 "nick": "",
 "note": "",
@@ -374,7 +374,7 @@ I_names_0 = [
 "Dzieniszewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -383,7 +383,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzikowska, Apolonia",
+"full": "Apolonia Dzikowska",
 "given": "Apolonia",
 "nick": "",
 "note": "",
@@ -392,7 +392,7 @@ I_names_0 = [
 "Dzikowska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -401,7 +401,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzikowska, Helena",
+"full": "Helena Dzikowska",
 "given": "Helena",
 "nick": "",
 "note": "",
@@ -410,7 +410,7 @@ I_names_0 = [
 "Dzikowska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -419,7 +419,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzikowska, J\u00f3zefa",
+"full": "J\u00f3zefa Dzikowska",
 "given": "J\u00f3zefa",
 "nick": "",
 "note": "",
@@ -428,7 +428,7 @@ I_names_0 = [
 "Dzikowska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -437,7 +437,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzikowska, Ludwika",
+"full": "Ludwika Dzikowska",
 "given": "Ludwika",
 "nick": "",
 "note": "",
@@ -446,7 +446,7 @@ I_names_0 = [
 "Dzikowska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -455,7 +455,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzikowska, Marianna",
+"full": "Marianna Dzikowska",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -464,14 +464,14 @@ I_names_0 = [
 "Dzikowska"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Brzezi\u0144ska, Marianna",
+"full": "Marianna Brzezi\u0144ska",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -480,14 +480,14 @@ I_names_0 = [
 ""
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Wicopolska, Marianna",
+"full": "Marianna Wicopolska",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -496,7 +496,7 @@ I_names_0 = [
 "Wicopolska"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -505,7 +505,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzikowska, Stanis\u0142awa",
+"full": "Stanis\u0142awa Dzikowska",
 "given": "Stanis\u0142awa",
 "nick": "",
 "note": "",
@@ -514,14 +514,14 @@ I_names_0 = [
 "Dzikowska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewska, Stanis\u0142awa",
+"full": "Stanis\u0142awa Piekarzewska",
 "given": "Stanis\u0142awa",
 "nick": "",
 "note": "",
@@ -530,7 +530,7 @@ I_names_0 = [
 "Piekarzewska"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -539,7 +539,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzikowski, Antoni",
+"full": "Antoni Dzikowski",
 "given": "Antoni",
 "nick": "",
 "note": "",
@@ -548,7 +548,7 @@ I_names_0 = [
 "Dzikowski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -557,7 +557,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzikowski, Franciszek",
+"full": "Franciszek Dzikowski",
 "given": "Franciszek",
 "nick": "",
 "note": "",
@@ -566,7 +566,7 @@ I_names_0 = [
 "Dzikowski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -575,7 +575,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzikowski, Jan",
+"full": "Jan Dzikowski",
 "given": "Jan",
 "nick": "",
 "note": "",
@@ -584,7 +584,7 @@ I_names_0 = [
 "Dzikowski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -593,7 +593,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzikowski, Kazimierz",
+"full": "Kazimierz Dzikowski",
 "given": "Kazimierz",
 "nick": "",
 "note": "",
@@ -602,7 +602,7 @@ I_names_0 = [
 "Dzikowski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -611,7 +611,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzikowski, Miko\u0142aj",
+"full": "Miko\u0142aj Dzikowski",
 "given": "Miko\u0142aj",
 "nick": "",
 "note": "",
@@ -620,7 +620,7 @@ I_names_0 = [
 "Dzikowski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -629,7 +629,25 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ferenc, Adam",
+"full": "[\u017byj\u0105cy] Ferenc",
+"given": "[\u017byj\u0105cy]",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"Ferenc"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Adam Ferenc",
 "given": "Adam",
 "nick": "",
 "note": "",
@@ -638,7 +656,7 @@ I_names_0 = [
 "Ferenc"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -647,7 +665,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ferenc, Antoni",
+"full": "Antoni Ferenc",
 "given": "Antoni",
 "nick": "",
 "note": "",
@@ -656,7 +674,7 @@ I_names_0 = [
 "Ferenc"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -665,7 +683,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ferenc, Ewa",
+"full": "Ewa Ferenc",
 "given": "Ewa",
 "nick": "",
 "note": "",
@@ -674,7 +692,7 @@ I_names_0 = [
 "Ferenc"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -683,7 +701,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ferenc, Jadwiga",
+"full": "Jadwiga Ferenc",
 "given": "Jadwiga",
 "nick": "",
 "note": "",
@@ -692,7 +710,7 @@ I_names_0 = [
 "Ferenc"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -701,7 +719,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ferenc, Jakub",
+"full": "Jakub Ferenc",
 "given": "Jakub",
 "nick": "",
 "note": "",
@@ -710,7 +728,7 @@ I_names_0 = [
 "Ferenc"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -719,7 +737,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ferenc, Jan",
+"full": "Jan Ferenc",
 "given": "Jan",
 "nick": "",
 "note": "",
@@ -728,7 +746,7 @@ I_names_0 = [
 "Ferenc"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -737,7 +755,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ferenc, Jan",
+"full": "Jan Ferenc",
 "given": "Jan",
 "nick": "",
 "note": "",
@@ -746,7 +764,7 @@ I_names_0 = [
 "Ferenc"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -755,8 +773,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ferenc, Katarzyna (1sza)",
-"given": "Katarzyna (1sza)",
+"full": "Katarzyna (1Sza) Ferenc",
+"given": "Katarzyna (1Sza)",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -764,7 +782,7 @@ I_names_0 = [
 "Ferenc"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -773,8 +791,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ferenc, Katarzyna (2ga)",
-"given": "Katarzyna (2ga)",
+"full": "Katarzyna (2Ga) Ferenc",
+"given": "Katarzyna (2Ga)",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -782,7 +800,7 @@ I_names_0 = [
 "Ferenc"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -791,7 +809,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ferenc, Kazimierz",
+"full": "Kazimierz Ferenc",
 "given": "Kazimierz",
 "nick": "",
 "note": "",
@@ -800,7 +818,7 @@ I_names_0 = [
 "Ferenc"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -809,7 +827,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ferenc, Magdalena",
+"full": "Magdalena Ferenc",
 "given": "Magdalena",
 "nick": "",
 "note": "",
@@ -818,7 +836,7 @@ I_names_0 = [
 "Ferenc"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -827,7 +845,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ferenc, Pawe\u0142",
+"full": "Pawe\u0142 Ferenc",
 "given": "Pawe\u0142",
 "nick": "",
 "note": "",
@@ -836,7 +854,7 @@ I_names_0 = [
 "Ferenc"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -845,7 +863,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ferenc, Piotr",
+"full": "Piotr Ferenc",
 "given": "Piotr",
 "nick": "",
 "note": "",
@@ -854,7 +872,7 @@ I_names_0 = [
 "Ferenc"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -863,7 +881,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ferenc, Rozalia",
+"full": "Rozalia Ferenc",
 "given": "Rozalia",
 "nick": "",
 "note": "",
@@ -872,7 +890,7 @@ I_names_0 = [
 "Ferenc"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -881,7 +899,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Ferenc, Tomasz",
+"full": "Tomasz Ferenc",
 "given": "Tomasz",
 "nick": "",
 "note": "",
@@ -890,7 +908,7 @@ I_names_0 = [
 "Ferenc"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -899,7 +917,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Fidura, Katarzyna",
+"full": "Katarzyna Fidura",
 "given": "Katarzyna",
 "nick": "",
 "note": "",
@@ -908,7 +926,7 @@ I_names_0 = [
 "Fidura"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -917,8 +935,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] Figat",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -926,7 +944,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -935,8 +953,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] Figat",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -944,7 +962,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -953,8 +971,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] Figat",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -962,7 +980,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -971,8 +989,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] Figat",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -980,7 +998,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -989,8 +1007,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] Figat",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -998,7 +1016,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -1007,8 +1025,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] Figat",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -1016,7 +1034,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1025,7 +1043,25 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Aleksander (1szy)",
+"full": "[\u017byj\u0105cy] Figat",
+"given": "[\u017byj\u0105cy]",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"Figat"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Aleksander (1szy) Figat",
 "given": "Aleksander (1szy)",
 "nick": "",
 "note": "",
@@ -1034,7 +1070,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1043,7 +1079,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Aleksander (2gi)",
+"full": "Aleksander (2gi) Figat",
 "given": "Aleksander (2gi)",
 "nick": "",
 "note": "",
@@ -1052,7 +1088,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1061,7 +1097,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Anna",
+"full": "Anna Figat",
 "given": "Anna",
 "nick": "",
 "note": "",
@@ -1070,7 +1106,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1079,7 +1115,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Antoni",
+"full": "Antoni Figat",
 "given": "Antoni",
 "nick": "",
 "note": "",
@@ -1088,7 +1124,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1097,7 +1133,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Bronis\u0142aw",
+"full": "Bronis\u0142aw Figat",
 "given": "Bronis\u0142aw",
 "nick": "",
 "note": "",
@@ -1106,7 +1142,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1115,7 +1151,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, El\u017cbieta",
+"full": "El\u017cbieta Figat",
 "given": "El\u017cbieta",
 "nick": "",
 "note": "",
@@ -1124,7 +1160,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1133,7 +1169,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Ewa",
+"full": "Ewa Figat",
 "given": "Ewa",
 "nick": "",
 "note": "",
@@ -1142,7 +1178,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1151,7 +1187,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Franciszek",
+"full": "Franciszek Figat",
 "given": "Franciszek",
 "nick": "",
 "note": "",
@@ -1160,7 +1196,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1169,7 +1205,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Franciszek",
+"full": "Franciszek Figat",
 "given": "Franciszek",
 "nick": "",
 "note": "",
@@ -1178,7 +1214,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1187,25 +1223,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, ignacy",
-"given": "ignacy",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"Figat"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "Figat, Ignacy",
+"full": "Ignacy Figat",
 "given": "Ignacy",
 "nick": "",
 "note": "",
@@ -1214,7 +1232,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1223,7 +1241,25 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Jan",
+"full": "Ignacy Figat",
+"given": "Ignacy",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"Figat"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Jan Figat",
 "given": "Jan",
 "nick": "",
 "note": "",
@@ -1232,7 +1268,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1241,7 +1277,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Jan",
+"full": "Jan Figat",
 "given": "Jan",
 "nick": "",
 "note": "",
@@ -1250,7 +1286,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1259,7 +1295,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Janina",
+"full": "Janina Figat",
 "given": "Janina",
 "nick": "",
 "note": "",
@@ -1268,7 +1304,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1277,7 +1313,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, J\u00f3zef",
+"full": "J\u00f3zef Figat",
 "given": "J\u00f3zef",
 "nick": "",
 "note": "",
@@ -1286,7 +1322,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1295,7 +1331,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, J\u00f3zef",
+"full": "J\u00f3zef Figat",
 "given": "J\u00f3zef",
 "nick": "",
 "note": "",
@@ -1304,7 +1340,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1313,7 +1349,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Karolina",
+"full": "Karolina Figat",
 "given": "Karolina",
 "nick": "",
 "note": "",
@@ -1322,7 +1358,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1331,7 +1367,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Kazimierz",
+"full": "Kazimierz Figat",
 "given": "Kazimierz",
 "nick": "",
 "note": "",
@@ -1340,7 +1376,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1349,7 +1385,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Maciej",
+"full": "Maciej Figat",
 "given": "Maciej",
 "nick": "",
 "note": "",
@@ -1358,7 +1394,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1367,7 +1403,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Marianna",
+"full": "Marianna Figat",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -1376,7 +1412,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1385,7 +1421,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Marianna",
+"full": "Marianna Figat",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -1394,7 +1430,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1403,7 +1439,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Marianna",
+"full": "Marianna Figat",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -1412,7 +1448,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1421,7 +1457,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Marianna",
+"full": "Marianna Figat",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -1430,7 +1466,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1439,7 +1475,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Miko\u0142aj",
+"full": "Miko\u0142aj Figat",
 "given": "Miko\u0142aj",
 "nick": "",
 "note": "",
@@ -1448,7 +1484,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1457,7 +1493,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Pawe\u0142",
+"full": "Pawe\u0142 Figat",
 "given": "Pawe\u0142",
 "nick": "",
 "note": "",
@@ -1466,7 +1502,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1475,7 +1511,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Pawe\u0142",
+"full": "Pawe\u0142 Figat",
 "given": "Pawe\u0142",
 "nick": "",
 "note": "",
@@ -1484,7 +1520,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1493,7 +1529,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Rozalia",
+"full": "Rozalia Figat",
 "given": "Rozalia",
 "nick": "",
 "note": "",
@@ -1502,7 +1538,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1511,7 +1547,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Stanis\u0142aw",
+"full": "Stanis\u0142aw Figat",
 "given": "Stanis\u0142aw",
 "nick": "",
 "note": "",
@@ -1520,7 +1556,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1529,7 +1565,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Stanis\u0142aw",
+"full": "Stanis\u0142aw Figat",
 "given": "Stanis\u0142aw",
 "nick": "",
 "note": "",
@@ -1538,7 +1574,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1547,7 +1583,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Wiktoria",
+"full": "Wiktoria Figat",
 "given": "Wiktoria",
 "nick": "",
 "note": "",
@@ -1556,7 +1592,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1565,7 +1601,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, W\u0142adys\u0142aw",
+"full": "W\u0142adys\u0142aw Figat",
 "given": "W\u0142adys\u0142aw",
 "nick": "",
 "note": "",
@@ -1574,7 +1610,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1583,7 +1619,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, W\u0142adys\u0142awa",
+"full": "W\u0142adys\u0142awa Figat",
 "given": "W\u0142adys\u0142awa",
 "nick": "",
 "note": "",
@@ -1592,7 +1628,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1601,8 +1637,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat-Jeziorska, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] Figat-Jeziorska",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -1610,7 +1646,7 @@ I_names_0 = [
 "Figat-Jeziorska"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -1619,7 +1655,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Gos, Anna",
+"full": "Anna Gos",
 "given": "Anna",
 "nick": "",
 "note": "",
@@ -1628,7 +1664,7 @@ I_names_0 = [
 "Gos"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1637,7 +1673,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Grochowska, Katarzyna",
+"full": "Katarzyna Grochowska",
 "given": "Katarzyna",
 "nick": "",
 "note": "",
@@ -1646,14 +1682,14 @@ I_names_0 = [
 "Grochowska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Nosek, Katarzyna",
+"full": "Katarzyna Nosek",
 "given": "Katarzyna",
 "nick": "",
 "note": "",
@@ -1662,7 +1698,7 @@ I_names_0 = [
 "Nosek"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -1671,8 +1707,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Jadwiszczak, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] Jadwiszczak",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -1680,7 +1716,7 @@ I_names_0 = [
 "Jadwiszczak"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1689,7 +1725,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Jaworska, Eleonora",
+"full": "Eleonora Jaworska",
 "given": "Eleonora",
 "nick": "",
 "note": "",
@@ -1698,7 +1734,7 @@ I_names_0 = [
 "Jaworska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1707,7 +1743,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Jaworska, El\u017cbieta",
+"full": "El\u017cbieta Jaworska",
 "given": "El\u017cbieta",
 "nick": "",
 "note": "",
@@ -1716,7 +1752,7 @@ I_names_0 = [
 "Jaworska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1725,7 +1761,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Jaworska, Marianna",
+"full": "Marianna Jaworska",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -1734,7 +1770,7 @@ I_names_0 = [
 "Jaworska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1743,7 +1779,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Jaworska, Marianna",
+"full": "Marianna Jaworska",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -1752,7 +1788,7 @@ I_names_0 = [
 "Jaworska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1761,7 +1797,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Jaworska, Marianna",
+"full": "Marianna Jaworska",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -1770,14 +1806,14 @@ I_names_0 = [
 "Jaworska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Kuta, Marianna",
+"full": "Marianna Kuta",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -1786,7 +1822,7 @@ I_names_0 = [
 "Kuta"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -1795,7 +1831,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Jaworska, Zofia",
+"full": "Zofia Jaworska",
 "given": "Zofia",
 "nick": "",
 "note": "",
@@ -1804,14 +1840,14 @@ I_names_0 = [
 "Jaworska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Dzikowska, Zofia",
+"full": "Zofia Dzikowska",
 "given": "Zofia",
 "nick": "",
 "note": "",
@@ -1820,7 +1856,7 @@ I_names_0 = [
 "Dzikowska"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -1829,7 +1865,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Jaworska, Zofia",
+"full": "Zofia Jaworska",
 "given": "Zofia",
 "nick": "",
 "note": "",
@@ -1838,7 +1874,7 @@ I_names_0 = [
 "Jaworska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1847,8 +1883,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Jaworski, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] Jaworski",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -1856,7 +1892,7 @@ I_names_0 = [
 "Jaworski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1865,7 +1901,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Jaworski, Antoni",
+"full": "Antoni Jaworski",
 "given": "Antoni",
 "nick": "",
 "note": "",
@@ -1874,7 +1910,7 @@ I_names_0 = [
 "Jaworski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1883,7 +1919,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Jaworski, Franciszek",
+"full": "Franciszek Jaworski",
 "given": "Franciszek",
 "nick": "",
 "note": "",
@@ -1892,7 +1928,7 @@ I_names_0 = [
 "Jaworski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1901,7 +1937,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Jaworski, Maciej",
+"full": "Maciej Jaworski",
 "given": "Maciej",
 "nick": "",
 "note": "",
@@ -1910,7 +1946,7 @@ I_names_0 = [
 "Jaworski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1919,7 +1955,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Jaworski, Wojciech",
+"full": "Wojciech Jaworski",
 "given": "Wojciech",
 "nick": "",
 "note": "",
@@ -1928,7 +1964,7 @@ I_names_0 = [
 "Jaworski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1937,7 +1973,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Jusi\u0144ska, Ewa Beata",
+"full": "Ewa Beata Jusi\u0144ska",
 "given": "Ewa Beata",
 "nick": "",
 "note": "",
@@ -1946,14 +1982,14 @@ I_names_0 = [
 "Jusi\u0144ska"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "P\u0119cherzewska, Ewa Beata",
+"full": "Ewa Beata P\u0119cherzewska",
 "given": "Ewa Beata",
 "nick": "",
 "note": "",
@@ -1962,7 +1998,7 @@ I_names_0 = [
 "P\u0119cherzewska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1971,7 +2007,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Anna",
+"full": "Anna Korzeb",
 "given": "Anna",
 "nick": "",
 "note": "",
@@ -1980,7 +2016,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -1989,7 +2025,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Bart\u0142omiej",
+"full": "Bart\u0142omiej Korzeb",
 "given": "Bart\u0142omiej",
 "nick": "",
 "note": "",
@@ -1998,7 +2034,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2007,7 +2043,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, El\u017cbieta",
+"full": "El\u017cbieta Korzeb",
 "given": "El\u017cbieta",
 "nick": "",
 "note": "",
@@ -2016,7 +2052,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2025,7 +2061,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Franciszka",
+"full": "Franciszka Korzeb",
 "given": "Franciszka",
 "nick": "",
 "note": "",
@@ -2034,7 +2070,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2043,7 +2079,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Franciszka",
+"full": "Franciszka Korzeb",
 "given": "Franciszka",
 "nick": "",
 "note": "",
@@ -2052,7 +2088,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2061,7 +2097,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Gabriel",
+"full": "Gabriel Korzeb",
 "given": "Gabriel",
 "nick": "",
 "note": "",
@@ -2070,7 +2106,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2079,7 +2115,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Ignacy",
+"full": "Ignacy Korzeb",
 "given": "Ignacy",
 "nick": "",
 "note": "",
@@ -2088,7 +2124,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2097,7 +2133,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Jadwiga",
+"full": "Jadwiga Korzeb",
 "given": "Jadwiga",
 "nick": "",
 "note": "",
@@ -2106,7 +2142,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2115,7 +2151,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Jadwiga",
+"full": "Jadwiga Korzeb",
 "given": "Jadwiga",
 "nick": "",
 "note": "",
@@ -2124,14 +2160,14 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Jadwiga",
+"full": "Jadwiga Figat",
 "given": "Jadwiga",
 "nick": "",
 "note": "",
@@ -2140,7 +2176,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2149,7 +2185,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Jan",
+"full": "Jan Korzeb",
 "given": "Jan",
 "nick": "",
 "note": "",
@@ -2158,7 +2194,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2167,7 +2203,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, J\u00f3zef",
+"full": "J\u00f3zef Korzeb",
 "given": "J\u00f3zef",
 "nick": "",
 "note": "",
@@ -2176,7 +2212,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2185,7 +2221,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Maciej",
+"full": "Maciej Korzeb",
 "given": "Maciej",
 "nick": "",
 "note": "",
@@ -2194,7 +2230,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2203,7 +2239,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Magdalena",
+"full": "Magdalena Korzeb",
 "given": "Magdalena",
 "nick": "",
 "note": "",
@@ -2212,7 +2248,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2221,7 +2257,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Magdalena",
+"full": "Magdalena Korzeb",
 "given": "Magdalena",
 "nick": "",
 "note": "",
@@ -2230,7 +2266,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2239,7 +2275,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Marianna",
+"full": "Marianna Korzeb",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -2248,7 +2284,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2257,7 +2293,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Marianna",
+"full": "Marianna Korzeb",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -2266,7 +2302,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2275,7 +2311,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Micha\u0142",
+"full": "Micha\u0142 Korzeb",
 "given": "Micha\u0142",
 "nick": "",
 "note": "",
@@ -2284,7 +2320,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2293,7 +2329,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Miko\u0142aj",
+"full": "Miko\u0142aj Korzeb",
 "given": "Miko\u0142aj",
 "nick": "",
 "note": "",
@@ -2302,7 +2338,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2311,7 +2347,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Rozalia",
+"full": "Rozalia Korzeb",
 "given": "Rozalia",
 "nick": "",
 "note": "",
@@ -2320,7 +2356,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2329,7 +2365,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Seweryna",
+"full": "Seweryna Korzeb",
 "given": "Seweryna",
 "nick": "",
 "note": "",
@@ -2338,7 +2374,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2347,7 +2383,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Szymon",
+"full": "Szymon Korzeb",
 "given": "Szymon",
 "nick": "",
 "note": "",
@@ -2356,7 +2392,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2365,7 +2401,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Korzeb, Wawrzyniec",
+"full": "Wawrzyniec Korzeb",
 "given": "Wawrzyniec",
 "nick": "",
 "note": "",
@@ -2374,7 +2410,7 @@ I_names_0 = [
 "Korzeb"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2383,7 +2419,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Kossobucka, Marianna",
+"full": "Marianna Kossobucka",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -2392,7 +2428,7 @@ I_names_0 = [
 "Kossobucka"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2401,7 +2437,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Kossobucki, Jan",
+"full": "Jan Kossobucki",
 "given": "Jan",
 "nick": "",
 "note": "",
@@ -2410,7 +2446,7 @@ I_names_0 = [
 "Kossobucki"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2419,7 +2455,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Kucharczyk, Antoni",
+"full": "Antoni Kucharczyk",
 "given": "Antoni",
 "nick": "",
 "note": "",
@@ -2428,7 +2464,7 @@ I_names_0 = [
 "Kucharczyk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2437,7 +2473,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Kucharczyk, El\u017cbieta",
+"full": "El\u017cbieta Kucharczyk",
 "given": "El\u017cbieta",
 "nick": "",
 "note": "",
@@ -2446,7 +2482,7 @@ I_names_0 = [
 "Kucharczyk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2455,7 +2491,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Kucharczyk, El\u017cbieta",
+"full": "El\u017cbieta Kucharczyk",
 "given": "El\u017cbieta",
 "nick": "",
 "note": "",
@@ -2464,7 +2500,7 @@ I_names_0 = [
 "Kucharczyk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2473,7 +2509,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Kucharczyk, Franciszka",
+"full": "Franciszka Kucharczyk",
 "given": "Franciszka",
 "nick": "",
 "note": "",
@@ -2482,7 +2518,7 @@ I_names_0 = [
 "Kucharczyk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2491,7 +2527,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Kucharczyk, Idzi",
+"full": "Idzi Kucharczyk",
 "given": "Idzi",
 "nick": "",
 "note": "",
@@ -2500,7 +2536,7 @@ I_names_0 = [
 "Kucharczyk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2509,7 +2545,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Kucharczyk, Jan Nepomucen",
+"full": "Jan Nepomucen Kucharczyk",
 "given": "Jan Nepomucen",
 "nick": "",
 "note": "",
@@ -2518,7 +2554,7 @@ I_names_0 = [
 "Kucharczyk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2527,7 +2563,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Kucharczyk, Katarzyna",
+"full": "Katarzyna Kucharczyk",
 "given": "Katarzyna",
 "nick": "",
 "note": "",
@@ -2536,7 +2572,7 @@ I_names_0 = [
 "Kucharczyk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2545,7 +2581,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Kucharczyk, Ma\u0142gorzata",
+"full": "Ma\u0142gorzata Kucharczyk",
 "given": "Ma\u0142gorzata",
 "nick": "",
 "note": "",
@@ -2554,7 +2590,7 @@ I_names_0 = [
 "Kucharczyk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2563,7 +2599,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Kucharczyk, Szymon",
+"full": "Szymon Kucharczyk",
 "given": "Szymon",
 "nick": "",
 "note": "",
@@ -2572,7 +2608,7 @@ I_names_0 = [
 "Kucharczyk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2581,7 +2617,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Majewska, Katarzyna",
+"full": "Katarzyna Majewska",
 "given": "Katarzyna",
 "nick": "",
 "note": "",
@@ -2590,7 +2626,7 @@ I_names_0 = [
 "Majewska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2599,7 +2635,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Majewska, Marianna",
+"full": "Marianna Majewska",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -2608,7 +2644,7 @@ I_names_0 = [
 "Majewska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2617,7 +2653,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Majewski, Jan",
+"full": "Jan Majewski",
 "given": "Jan",
 "nick": "",
 "note": "",
@@ -2626,7 +2662,7 @@ I_names_0 = [
 "Majewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2635,7 +2671,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Majewski, Ludwik",
+"full": "Ludwik Majewski",
 "given": "Ludwik",
 "nick": "",
 "note": "",
@@ -2644,7 +2680,7 @@ I_names_0 = [
 "Majewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2653,8 +2689,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Majewski, Stanis\u0142aw (popraw metryk\u0119)",
-"given": "Stanis\u0142aw (popraw metryk\u0119)",
+"full": "Stanis\u0142aw (Popraw Metryk\u0119) Majewski",
+"given": "Stanis\u0142aw (Popraw Metryk\u0119)",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -2662,7 +2698,7 @@ I_names_0 = [
 "Majewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2671,7 +2707,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Miko\u0142ajczyk, Adam",
+"full": "Adam Miko\u0142ajczyk",
 "given": "Adam",
 "nick": "",
 "note": "",
@@ -2680,7 +2716,7 @@ I_names_0 = [
 "Miko\u0142ajczyk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2698,7 +2734,7 @@ I_names_0 = [
 "NN"
 ],
 "title": "",
-"type": "Unknown"
+"type": "Nieznany"
 }
 ],
 [
@@ -2716,7 +2752,7 @@ I_names_0 = [
 "NN"
 ],
 "title": "",
-"type": "Unknown"
+"type": "Nieznany"
 }
 ],
 [
@@ -2725,7 +2761,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Nosek, Jan",
+"full": "Jan Nosek",
 "given": "Jan",
 "nick": "",
 "note": "",
@@ -2734,7 +2770,7 @@ I_names_0 = [
 "Nosek"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2743,7 +2779,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Nosek, Justyna",
+"full": "Justyna Nosek",
 "given": "Justyna",
 "nick": "",
 "note": "",
@@ -2752,14 +2788,14 @@ I_names_0 = [
 "Nosek"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": ", Justyna Figat",
+"full": "Justyna Figat",
 "given": "Justyna",
 "nick": "",
 "note": "",
@@ -2768,14 +2804,14 @@ I_names_0 = [
 ""
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Czarkowska, Justyna",
+"full": "Justyna Czarkowska",
 "given": "Justyna",
 "nick": "",
 "note": "",
@@ -2784,7 +2820,7 @@ I_names_0 = [
 "Czarkowska"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -2793,7 +2829,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Nosek, Micha\u0142",
+"full": "Micha\u0142 Nosek",
 "given": "Micha\u0142",
 "nick": "",
 "note": "",
@@ -2802,7 +2838,7 @@ I_names_0 = [
 "Nosek"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2811,7 +2847,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Parys, \u0141ucja",
+"full": "\u0141ucja Parys",
 "given": "\u0141ucja",
 "nick": "",
 "note": "",
@@ -2820,7 +2856,7 @@ I_names_0 = [
 "Parys"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2829,77 +2865,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "P\u0119cherzewska, Zofia Teresa",
-"given": "Zofia Teresa",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"P\u0119cherzewska"
-],
-"title": "",
-"type": "Birth Name"
-},
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "Figat, Zofia Teresa",
-"given": "Zofia Teresa",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"Figat"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "P\u0119cherzewski, [Living]",
-"given": "[Living]",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"P\u0119cherzewski"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "P\u0119cherzewski, Ryszard",
-"given": "Ryszard",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"P\u0119cherzewski"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "Pecy\u0144ska, Franciszka",
+"full": "Franciszka Pecy\u0144ska",
 "given": "Franciszka",
 "nick": "",
 "note": "",
@@ -2908,14 +2874,14 @@ I_names_0 = [
 "Pecy\u0144ska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Peszczy\u0144ska, Franciszka",
+"full": "Franciszka Peszczy\u0144ska",
 "given": "Franciszka",
 "nick": "",
 "note": "",
@@ -2924,7 +2890,7 @@ I_names_0 = [
 "Peszczy\u0144ska"
 ],
 "title": "",
-"type": "Also Known As"
+"type": "Osoba tak\u017ce znana jako"
 }
 ],
 [
@@ -2933,7 +2899,77 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewska, Bronis\u0142wa",
+"full": "Zofia Teresa P\u0119cherzewska",
+"given": "Zofia Teresa",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"P\u0119cherzewska"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+},
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Zofia Teresa Figat",
+"given": "Zofia Teresa",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"Figat"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "[\u017byj\u0105cy] P\u0119cherzewski",
+"given": "[\u017byj\u0105cy]",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"P\u0119cherzewski"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Ryszard P\u0119cherzewski",
+"given": "Ryszard",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"P\u0119cherzewski"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Bronis\u0142wa Piekarzewska",
 "given": "Bronis\u0142wa",
 "nick": "",
 "note": "",
@@ -2942,7 +2978,7 @@ I_names_0 = [
 "Piekarzewska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -2951,7 +2987,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewska, Genowefa",
+"full": "Genowefa Piekarzewska",
 "given": "Genowefa",
 "nick": "",
 "note": "",
@@ -2960,14 +2996,14 @@ I_names_0 = [
 "Piekarzewska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sakowska, Genowefa",
+"full": "Genowefa Sakowska",
 "given": "Genowefa",
 "nick": "",
 "note": "",
@@ -2976,7 +3012,7 @@ I_names_0 = [
 "Sakowska"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -2985,7 +3021,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewska, Julianna",
+"full": "Julianna Piekarzewska",
 "given": "Julianna",
 "nick": "",
 "note": "",
@@ -2994,14 +3030,14 @@ I_names_0 = [
 "Piekarzewska"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zakrzewska, Julianna",
+"full": "Julianna Zakrzewska",
 "given": "Julianna",
 "nick": "",
 "note": "",
@@ -3010,7 +3046,7 @@ I_names_0 = [
 "Zakrzewska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3019,7 +3055,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewska, Rozalia 1sza",
+"full": "Rozalia Piekarzewska 1sza",
 "given": "Rozalia",
 "nick": "",
 "note": "",
@@ -3028,7 +3064,7 @@ I_names_0 = [
 "Piekarzewska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3037,7 +3073,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewska, Wronika",
+"full": "Wronika Piekarzewska",
 "given": "Wronika",
 "nick": "",
 "note": "",
@@ -3046,7 +3082,7 @@ I_names_0 = [
 "Piekarzewska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3055,7 +3091,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewski, Antoni",
+"full": "Antoni Piekarzewski",
 "given": "Antoni",
 "nick": "",
 "note": "",
@@ -3064,7 +3100,7 @@ I_names_0 = [
 "Piekarzewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3073,7 +3109,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewski, Antoni",
+"full": "Antoni Piekarzewski",
 "given": "Antoni",
 "nick": "",
 "note": "",
@@ -3082,7 +3118,7 @@ I_names_0 = [
 "Piekarzewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3091,7 +3127,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewski, Czes\u0142aw",
+"full": "Czes\u0142aw Piekarzewski",
 "given": "Czes\u0142aw",
 "nick": "",
 "note": "",
@@ -3100,7 +3136,7 @@ I_names_0 = [
 "Piekarzewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3109,7 +3145,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewski, Ignacy",
+"full": "Ignacy Piekarzewski",
 "given": "Ignacy",
 "nick": "",
 "note": "",
@@ -3118,7 +3154,7 @@ I_names_0 = [
 "Piekarzewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3127,7 +3163,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewski, Jan Boles\u0142aw",
+"full": "Jan Boles\u0142aw Piekarzewski",
 "given": "Jan Boles\u0142aw",
 "nick": "",
 "note": "",
@@ -3136,7 +3172,7 @@ I_names_0 = [
 "Piekarzewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3145,7 +3181,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewski, J\u00f3zef",
+"full": "J\u00f3zef Piekarzewski",
 "given": "J\u00f3zef",
 "nick": "",
 "note": "",
@@ -3154,7 +3190,7 @@ I_names_0 = [
 "Piekarzewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3163,7 +3199,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewski, Piotr",
+"full": "Piotr Piekarzewski",
 "given": "Piotr",
 "nick": "",
 "note": "",
@@ -3172,7 +3208,7 @@ I_names_0 = [
 "Piekarzewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3181,7 +3217,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewski, Stanis\u0142aw",
+"full": "Stanis\u0142aw Piekarzewski",
 "given": "Stanis\u0142aw",
 "nick": "",
 "note": "",
@@ -3190,7 +3226,7 @@ I_names_0 = [
 "Piekarzewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3199,7 +3235,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewski, Stefan",
+"full": "Stefan Piekarzewski",
 "given": "Stefan",
 "nick": "",
 "note": "",
@@ -3208,7 +3244,7 @@ I_names_0 = [
 "Piekarzewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3217,7 +3253,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Piekarzewski, W\u0142adys\u0142aw",
+"full": "W\u0142adys\u0142aw Piekarzewski",
 "given": "W\u0142adys\u0142aw",
 "nick": "",
 "note": "",
@@ -3226,7 +3262,7 @@ I_names_0 = [
 "Piekarzewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3235,7 +3271,25 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Pi\u00f3rkowska, Ewa",
+"full": "Wac\u0142aw Pietrzy\u0144ski",
+"given": "Wac\u0142aw",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"Pietrzy\u0144ski"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Ewa Pi\u00f3rkowska",
 "given": "Ewa",
 "nick": "",
 "note": "",
@@ -3244,7 +3298,7 @@ I_names_0 = [
 "Pi\u00f3rkowska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3253,7 +3307,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Polita/Politowska, Ewa",
+"full": "Ewa Polita/Politowska",
 "given": "Ewa",
 "nick": "",
 "note": "",
@@ -3262,7 +3316,7 @@ I_names_0 = [
 "Polita/Politowska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3271,16 +3325,16 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Rak, Julianna",
+"full": "Julianna Rak \"z Rak\u00f3w\"",
 "given": "Julianna",
 "nick": "",
 "note": "",
 "suffix": "",
 "surnames": [
-"Rak"
+"Rak \"z Rak\u00f3w\""
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3289,7 +3343,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Roma\u0144ski, Antoni",
+"full": "Antoni Roma\u0144ski",
 "given": "Antoni",
 "nick": "",
 "note": "",
@@ -3298,7 +3352,7 @@ I_names_0 = [
 "Roma\u0144ski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3307,8 +3361,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sakowska, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] Sakowska",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -3316,7 +3370,7 @@ I_names_0 = [
 "Sakowska"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -3325,8 +3379,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sakowska, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] Sakowska",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -3334,7 +3388,7 @@ I_names_0 = [
 "Sakowska"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -3343,8 +3397,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sakowska, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] Sakowska",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -3352,7 +3406,7 @@ I_names_0 = [
 "Sakowska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3361,7 +3415,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sakowska, Agata",
+"full": "Agata Sakowska",
 "given": "Agata",
 "nick": "",
 "note": "",
@@ -3370,7 +3424,7 @@ I_names_0 = [
 "Sakowska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3379,7 +3433,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sakowska, Marianna",
+"full": "Marianna Sakowska",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -3388,7 +3442,7 @@ I_names_0 = [
 "Sakowska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3397,8 +3451,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sakowski, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] Sakowski",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -3406,7 +3460,7 @@ I_names_0 = [
 "Sakowski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3415,8 +3469,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sakowski, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] Sakowski",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -3424,7 +3478,7 @@ I_names_0 = [
 "Sakowski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3433,8 +3487,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sakowski, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] Sakowski",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -3442,7 +3496,7 @@ I_names_0 = [
 "Sakowski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3451,8 +3505,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sakowski, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] Sakowski",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -3460,7 +3514,7 @@ I_names_0 = [
 "Sakowski"
 ],
 "title": "",
-"type": "Also Known As"
+"type": "Osoba tak\u017ce znana jako"
 }
 ],
 [
@@ -3469,7 +3523,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sakowski, Franciszek",
+"full": "Franciszek Sakowski",
 "given": "Franciszek",
 "nick": "",
 "note": "",
@@ -3478,7 +3532,7 @@ I_names_0 = [
 "Sakowski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3487,7 +3541,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sakowski, Grzegorz",
+"full": "Grzegorz Sakowski",
 "given": "Grzegorz",
 "nick": "",
 "note": "",
@@ -3496,7 +3550,7 @@ I_names_0 = [
 "Sakowski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3505,7 +3559,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieska, Anna",
+"full": "Anna Sobieska",
 "given": "Anna",
 "nick": "",
 "note": "",
@@ -3514,7 +3568,7 @@ I_names_0 = [
 "Sobieska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3523,7 +3577,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieska, Katarzyna Urszula",
+"full": "Katarzyna Urszula Sobieska",
 "given": "Katarzyna Urszula",
 "nick": "",
 "note": "",
@@ -3532,14 +3586,14 @@ I_names_0 = [
 "Sobieska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Katarzyna",
+"full": "Katarzyna Figat",
 "given": "Katarzyna",
 "nick": "",
 "note": "",
@@ -3548,7 +3602,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -3557,7 +3611,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieska, Regina",
+"full": "Regina Sobieska",
 "given": "Regina",
 "nick": "",
 "note": "",
@@ -3566,7 +3620,7 @@ I_names_0 = [
 "Sobieska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3575,7 +3629,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieska/Sobiewska, Ewa",
+"full": "Ewa Sobieska/Sobiewska",
 "given": "Ewa",
 "nick": "",
 "note": "",
@@ -3584,7 +3638,7 @@ I_names_0 = [
 "Sobieska/Sobiewska"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -3593,7 +3647,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieski, Adam",
+"full": "Adam Sobieski",
 "given": "Adam",
 "nick": "",
 "note": "",
@@ -3602,7 +3656,7 @@ I_names_0 = [
 "Sobieski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3611,7 +3665,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieski, Anna (1sza)",
+"full": "Anna (1sza) Sobieski",
 "given": "Anna (1sza)",
 "nick": "",
 "note": "",
@@ -3620,7 +3674,7 @@ I_names_0 = [
 "Sobieski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3629,7 +3683,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieski, Franciszek",
+"full": "Franciszek Sobieski",
 "given": "Franciszek",
 "nick": "",
 "note": "",
@@ -3638,7 +3692,7 @@ I_names_0 = [
 "Sobieski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3647,7 +3701,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieski, Franciszka",
+"full": "Franciszka Sobieski",
 "given": "Franciszka",
 "nick": "",
 "note": "",
@@ -3656,7 +3710,7 @@ I_names_0 = [
 "Sobieski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3665,7 +3719,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieski, Joanna",
+"full": "Joanna Sobieski",
 "given": "Joanna",
 "nick": "",
 "note": "",
@@ -3674,7 +3728,7 @@ I_names_0 = [
 "Sobieski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3683,7 +3737,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieski, J\u00f3zef",
+"full": "J\u00f3zef Sobieski",
 "given": "J\u00f3zef",
 "nick": "",
 "note": "",
@@ -3692,7 +3746,7 @@ I_names_0 = [
 "Sobieski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3701,7 +3755,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieski, Kazimierz",
+"full": "Kazimierz Sobieski",
 "given": "Kazimierz",
 "nick": "",
 "note": "",
@@ -3710,7 +3764,7 @@ I_names_0 = [
 "Sobieski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3719,7 +3773,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieski, \u0141ukasz",
+"full": "\u0141ukasz Sobieski",
 "given": "\u0141ukasz",
 "nick": "",
 "note": "",
@@ -3728,7 +3782,7 @@ I_names_0 = [
 "Sobieski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3737,7 +3791,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieski, Maciej",
+"full": "Maciej Sobieski",
 "given": "Maciej",
 "nick": "",
 "note": "",
@@ -3746,7 +3800,7 @@ I_names_0 = [
 "Sobieski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3755,7 +3809,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieski, Marcjanna",
+"full": "Marcjanna Sobieski",
 "given": "Marcjanna",
 "nick": "",
 "note": "",
@@ -3764,7 +3818,7 @@ I_names_0 = [
 "Sobieski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3773,7 +3827,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieski, Marianna",
+"full": "Marianna Sobieski",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -3782,7 +3836,7 @@ I_names_0 = [
 "Sobieski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3791,7 +3845,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieski, Piotr (1szy)",
+"full": "Piotr (1szy) Sobieski",
 "given": "Piotr (1szy)",
 "nick": "",
 "note": "",
@@ -3800,7 +3854,7 @@ I_names_0 = [
 "Sobieski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3809,7 +3863,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieski, Piotr (2gi)",
+"full": "Piotr (2gi) Sobieski",
 "given": "Piotr (2gi)",
 "nick": "",
 "note": "",
@@ -3818,7 +3872,7 @@ I_names_0 = [
 "Sobieski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3827,7 +3881,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieski, Tomasz",
+"full": "Tomasz Sobieski",
 "given": "Tomasz",
 "nick": "",
 "note": "",
@@ -3836,7 +3890,7 @@ I_names_0 = [
 "Sobieski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3845,7 +3899,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieski/Sobiewska, Maciej",
+"full": "Maciej Sobieski/Sobiewska",
 "given": "Maciej",
 "nick": "",
 "note": "",
@@ -3854,7 +3908,7 @@ I_names_0 = [
 "Sobieski/Sobiewska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3863,7 +3917,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobieski/Sobiewski, Wojciech",
+"full": "Wojciech Sobieski/Sobiewski",
 "given": "Wojciech",
 "nick": "",
 "note": "",
@@ -3872,7 +3926,7 @@ I_names_0 = [
 "Sobieski/Sobiewski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -3881,8 +3935,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sobiewska, Anna (2ga)",
-"given": "Anna (2ga)",
+"full": "Anna (2Ga) Sobiewska",
+"given": "Anna (2Ga)",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -3890,14 +3944,14 @@ I_names_0 = [
 "Sobiewska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Anna",
+"full": "Anna Zy\u015bk",
 "given": "Anna",
 "nick": "",
 "note": "",
@@ -3906,14 +3960,14 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Miko\u0142ajczyk, Anna",
+"full": "Anna Miko\u0142ajczyk",
 "given": "Anna",
 "nick": "",
 "note": "",
@@ -3922,7 +3976,7 @@ I_names_0 = [
 "Miko\u0142ajczyk"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -3931,7 +3985,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Soko\u0142owska, Katarzyna",
+"full": "Katarzyna Soko\u0142owska",
 "given": "Katarzyna",
 "nick": "",
 "note": "",
@@ -3940,7 +3994,7 @@ I_names_0 = [
 "Soko\u0142owska"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -3949,7 +4003,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Soko\u0142owska, Marcjanna",
+"full": "Marcjanna Soko\u0142owska",
 "given": "Marcjanna",
 "nick": "",
 "note": "",
@@ -3958,14 +4012,14 @@ I_names_0 = [
 "Soko\u0142owska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Marcjanna",
+"full": "Marcjanna Zy\u015bk",
 "given": "Marcjanna",
 "nick": "",
 "note": "",
@@ -3974,7 +4028,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -3983,7 +4037,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Soko\u0142owski, Anna",
+"full": "Anna Soko\u0142owski",
 "given": "Anna",
 "nick": "",
 "note": "",
@@ -3992,7 +4046,7 @@ I_names_0 = [
 "Soko\u0142owski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4001,7 +4055,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Soko\u0142owski, Jan",
+"full": "Jan Soko\u0142owski",
 "given": "Jan",
 "nick": "",
 "note": "",
@@ -4010,7 +4064,7 @@ I_names_0 = [
 "Soko\u0142owski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4019,7 +4073,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Soko\u0142owski, Stefan",
+"full": "Stefan Soko\u0142owski",
 "given": "Stefan",
 "nick": "",
 "note": "",
@@ -4028,7 +4082,7 @@ I_names_0 = [
 "Soko\u0142owski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4037,25 +4091,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "\u015awiderska, Marianna",
-"given": "Marianna",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u015awiderska"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "Szemborski, Piotr",
+"full": "Piotr Szemborski",
 "given": "Piotr",
 "nick": "",
 "note": "",
@@ -4064,7 +4100,7 @@ I_names_0 = [
 "Szemborski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4073,7 +4109,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Szulejewska, Marianna",
+"full": "Marianna Szulejewska",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -4082,14 +4118,14 @@ I_names_0 = [
 "Szulejewska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Sakowska, Marianna",
+"full": "Marianna Sakowska",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -4098,7 +4134,7 @@ I_names_0 = [
 "Sakowska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4107,7 +4143,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Szulejewska, Wiktoria",
+"full": "Wiktoria Szulejewska",
 "given": "Wiktoria",
 "nick": "",
 "note": "",
@@ -4116,7 +4152,7 @@ I_names_0 = [
 "Szulejewska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4125,7 +4161,25 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Tomczyk, Ewa",
+"full": "Marianna \u015awiderska",
+"given": "Marianna",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u015awiderska"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Ewa Tomczyk",
 "given": "Ewa",
 "nick": "",
 "note": "",
@@ -4134,7 +4188,7 @@ I_names_0 = [
 "Tomczyk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4143,7 +4197,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Warych, Agata",
+"full": "Agata Warych",
 "given": "Agata",
 "nick": "",
 "note": "",
@@ -4152,7 +4206,7 @@ I_names_0 = [
 "Warych"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4161,7 +4215,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Wicopolski, Aleksander",
+"full": "Aleksander Wicopolski",
 "given": "Aleksander",
 "nick": "",
 "note": "",
@@ -4170,7 +4224,7 @@ I_names_0 = [
 "Wicopolski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4179,7 +4233,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Wicopolski, Stanis\u0142aw",
+"full": "Stanis\u0142aw Wicopolski",
 "given": "Stanis\u0142aw",
 "nick": "",
 "note": "",
@@ -4188,7 +4242,7 @@ I_names_0 = [
 "Wicopolski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4197,7 +4251,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Wilczy\u0144ska, Katarzyna",
+"full": "Katarzyna Wilczy\u0144ska",
 "given": "Katarzyna",
 "nick": "",
 "note": "",
@@ -4206,7 +4260,7 @@ I_names_0 = [
 "Wilczy\u0144ska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4215,8 +4269,8 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "W\u00f3lkiewicz, [Living]",
-"given": "[Living]",
+"full": "[\u017byj\u0105cy] W\u00f3lkiewicz",
+"given": "[\u017byj\u0105cy]",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -4224,7 +4278,7 @@ I_names_0 = [
 "W\u00f3lkiewicz"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4233,7 +4287,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "W\u00f3lkiewicz, Katarzyna",
+"full": "Katarzyna W\u00f3lkiewicz",
 "given": "Katarzyna",
 "nick": "",
 "note": "",
@@ -4242,7 +4296,7 @@ I_names_0 = [
 "W\u00f3lkiewicz"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4251,7 +4305,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zabielska/Roma\u0144\u015bka/Szemborska, Julianna",
+"full": "Julianna Zabielska/Roma\u0144\u015bka/Szemborska",
 "given": "Julianna",
 "nick": "",
 "note": "",
@@ -4260,7 +4314,7 @@ I_names_0 = [
 "Zabielska/Roma\u0144\u015bka/Szemborska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4269,7 +4323,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zabielski, Jan",
+"full": "Jan Zabielski",
 "given": "Jan",
 "nick": "",
 "note": "",
@@ -4278,7 +4332,7 @@ I_names_0 = [
 "Zabielski"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4287,455 +4341,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "\u017bach, Agata",
-"given": "Agata",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Anna",
-"given": "Anna",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Antoni",
-"given": "Antoni",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Antoni (1szy)",
-"given": "Antoni (1szy)",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Antoni (2gi)",
-"given": "Antoni (2gi)",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Barbara",
-"given": "Barbara",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Franciszek",
-"given": "Franciszek",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Franciszka",
-"given": "Franciszka",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Jan",
-"given": "Jan",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Jan",
-"given": "Jan",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, J\u00f3zef",
-"given": "J\u00f3zef",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, J\u00f3zef",
-"given": "J\u00f3zef",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, J\u00f3zefa",
-"given": "J\u00f3zefa",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Julianna",
-"given": "Julianna",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Katarzyna",
-"given": "Katarzyna",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Marcin",
-"given": "Marcin",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Marcjanna",
-"given": "Marcjanna",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Marianna",
-"given": "Marianna",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Piotr",
-"given": "Piotr",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Rozalia",
-"given": "Rozalia",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-},
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "Figat, Rozalia",
-"given": "Rozalia",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"Figat"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Stanis\u0142aw",
-"given": "Stanis\u0142aw",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Urban",
-"given": "Urban",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Wojciech",
-"given": "Wojciech",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "\u017bach, Wojciech",
-"given": "Wojciech",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"\u017bach"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "Zadro\u017cna, Urszula",
+"full": "Urszula Zadro\u017cna",
 "given": "Urszula",
 "nick": "",
 "note": "",
@@ -4744,7 +4350,7 @@ I_names_0 = [
 "Zadro\u017cna"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4753,7 +4359,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zalewska, Franciszka",
+"full": "Franciszka Zalewska",
 "given": "Franciszka",
 "nick": "",
 "note": "",
@@ -4762,7 +4368,7 @@ I_names_0 = [
 "Zalewska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4771,7 +4377,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zara\u015b, Apolonia",
+"full": "Apolonia Zara\u015b",
 "given": "Apolonia",
 "nick": "",
 "note": "",
@@ -4780,7 +4386,7 @@ I_names_0 = [
 "Zara\u015b"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4789,7 +4395,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zara\u015b, Marian",
+"full": "Marian Zara\u015b",
 "given": "Marian",
 "nick": "",
 "note": "",
@@ -4798,7 +4404,7 @@ I_names_0 = [
 "Zara\u015b"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4807,7 +4413,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zara\u015b, Marianna",
+"full": "Marianna Zara\u015b",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -4816,7 +4422,7 @@ I_names_0 = [
 "Zara\u015b"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4825,7 +4431,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zawistowska, Aniela Zofia",
+"full": "Aniela Zofia Zawistowska",
 "given": "Aniela Zofia",
 "nick": "",
 "note": "",
@@ -4834,7 +4440,7 @@ I_names_0 = [
 "Zawistowska"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4843,7 +4449,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zych, Apolonia",
+"full": "Apolonia Zych",
 "given": "Apolonia",
 "nick": "",
 "note": "",
@@ -4852,14 +4458,14 @@ I_names_0 = [
 "Zych"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Jaworska, Apolonia",
+"full": "Apolonia Jaworska",
 "given": "Apolonia",
 "nick": "",
 "note": "",
@@ -4868,7 +4474,7 @@ I_names_0 = [
 "Jaworska"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -4877,7 +4483,25 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Aleksander",
+"full": "[\u017byj\u0105cy] Zy\u015bk",
+"given": "[\u017byj\u0105cy]",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"Zy\u015bk"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Aleksander Zy\u015bk",
 "given": "Aleksander",
 "nick": "",
 "note": "",
@@ -4886,7 +4510,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4895,7 +4519,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Anna",
+"full": "Anna Zy\u015bk",
 "given": "Anna",
 "nick": "",
 "note": "",
@@ -4904,14 +4528,14 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 },
 {
 "call": "",
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Figat, Anna",
+"full": "Anna Figat",
 "given": "Anna",
 "nick": "",
 "note": "",
@@ -4920,7 +4544,7 @@ I_names_0 = [
 "Figat"
 ],
 "title": "",
-"type": "Married Name"
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
 }
 ],
 [
@@ -4929,7 +4553,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Anna",
+"full": "Anna Zy\u015bk",
 "given": "Anna",
 "nick": "",
 "note": "",
@@ -4938,7 +4562,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4947,7 +4571,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Antoni",
+"full": "Antoni Zy\u015bk",
 "given": "Antoni",
 "nick": "",
 "note": "",
@@ -4956,7 +4580,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4965,25 +4589,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Antoni",
-"given": "Antoni",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"Zy\u015bk"
-],
-"title": "",
-"type": "Birth Name"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "Zy\u015bk, Franciszek",
+"full": "Franciszek Zy\u015bk",
 "given": "Franciszek",
 "nick": "",
 "note": "",
@@ -4992,7 +4598,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -5001,7 +4607,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Franciszka",
+"full": "Franciszka Zy\u015bk",
 "given": "Franciszka",
 "nick": "",
 "note": "",
@@ -5010,7 +4616,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -5019,7 +4625,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Jan",
+"full": "Jan Zy\u015bk",
 "given": "Jan",
 "nick": "",
 "note": "",
@@ -5028,7 +4634,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -5037,7 +4643,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Jan",
+"full": "Jan Zy\u015bk",
 "given": "Jan",
 "nick": "",
 "note": "",
@@ -5046,7 +4652,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -5055,7 +4661,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Kazimierz",
+"full": "Kazimierz Zy\u015bk",
 "given": "Kazimierz",
 "nick": "",
 "note": "",
@@ -5064,7 +4670,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -5073,7 +4679,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Marian",
+"full": "Marian Zy\u015bk",
 "given": "Marian",
 "nick": "",
 "note": "",
@@ -5082,7 +4688,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -5091,7 +4697,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Marianna",
+"full": "Marianna Zy\u015bk",
 "given": "Marianna",
 "nick": "",
 "note": "",
@@ -5100,7 +4706,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -5109,7 +4715,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Marianna (1sza)",
+"full": "Marianna (1sza) Zy\u015bk",
 "given": "Marianna (1sza)",
 "nick": "",
 "note": "",
@@ -5118,7 +4724,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -5127,7 +4733,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Marianna (2ga)",
+"full": "Marianna (2ga) Zy\u015bk",
 "given": "Marianna (2ga)",
 "nick": "",
 "note": "",
@@ -5136,7 +4742,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -5145,7 +4751,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Marta",
+"full": "Marta Zy\u015bk",
 "given": "Marta",
 "nick": "",
 "note": "",
@@ -5154,7 +4760,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -5163,7 +4769,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, NN",
+"full": "NN Zy\u015bk",
 "given": "NN",
 "nick": "",
 "note": "",
@@ -5172,7 +4778,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Unknown"
+"type": "Nieznany"
 }
 ],
 [
@@ -5181,7 +4787,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Piotr",
+"full": "Piotr Zy\u015bk",
 "given": "Piotr",
 "nick": "",
 "note": "",
@@ -5190,7 +4796,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -5199,7 +4805,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Rozalia",
+"full": "Rozalia Zy\u015bk",
 "given": "Rozalia",
 "nick": "",
 "note": "",
@@ -5208,7 +4814,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -5217,7 +4823,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Stanis\u0142aw",
+"full": "Stanis\u0142aw Zy\u015bk",
 "given": "Stanis\u0142aw",
 "nick": "",
 "note": "",
@@ -5226,7 +4832,7 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -5235,7 +4841,7 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "Zy\u015bk, Stanis\u0142awa",
+"full": "Stanis\u0142awa Zy\u015bk",
 "given": "Stanis\u0142awa",
 "nick": "",
 "note": "",
@@ -5244,7 +4850,455 @@ I_names_0 = [
 "Zy\u015bk"
 ],
 "title": "",
-"type": "Birth Name"
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Agata \u017bach",
+"given": "Agata",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Anna \u017bach",
+"given": "Anna",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Antoni \u017bach",
+"given": "Antoni",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Antoni (1szy) \u017bach",
+"given": "Antoni (1szy)",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Antoni (2gi) \u017bach",
+"given": "Antoni (2gi)",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Barbara \u017bach",
+"given": "Barbara",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Franciszek \u017bach",
+"given": "Franciszek",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Franciszka \u017bach",
+"given": "Franciszka",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Jan \u017bach",
+"given": "Jan",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Jan \u017bach",
+"given": "Jan",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "J\u00f3zef \u017bach",
+"given": "J\u00f3zef",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "J\u00f3zef \u017bach",
+"given": "J\u00f3zef",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "J\u00f3zefa \u017bach",
+"given": "J\u00f3zefa",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Julianna \u017bach",
+"given": "Julianna",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Katarzyna \u017bach",
+"given": "Katarzyna",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Marcin \u017bach",
+"given": "Marcin",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Marcjanna \u017bach",
+"given": "Marcjanna",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Marianna \u017bach",
+"given": "Marianna",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Piotr \u017bach",
+"given": "Piotr",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Rozalia \u017bach",
+"given": "Rozalia",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+},
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Rozalia Figat",
+"given": "Rozalia",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"Figat"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Stanis\u0142aw \u017bach",
+"given": "Stanis\u0142aw",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Urban \u017bach",
+"given": "Urban",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Wojciech \u017bach",
+"given": "Wojciech",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Wojciech \u017bach",
+"given": "Wojciech",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko rodowe"
 }
 ]
 ]

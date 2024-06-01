@@ -28,9 +28,10 @@ N_surname_0 = [
 "NN",
 "Nosek",
 "Parys",
-"P\u0119cherzewski",
 "Pecy\u0144ska",
+"P\u0119cherzewski",
 "Piekarzewski",
+"Pietrzy\u0144ski",
 "Pi\u00f3rkowska",
 "Polita/Politowska",
 "Rak",
@@ -39,9 +40,9 @@ N_surname_0 = [
 "Sobieski/Sobiewska",
 "Sobiewski/Sobieski",
 "Soko\u0142owski",
-"\u015awiderska",
 "Szemborski",
 "Szulejewski",
+"\u015awiderska",
 "Tomczyk",
 "Warych",
 "Wicopolski",
@@ -49,12 +50,12 @@ N_surname_0 = [
 "W\u00f3lkiewicz",
 "Zabielska/Roma\u0144\u015bka/Szemborska",
 "Zabielski",
-"\u017bach",
 "Zadro\u017cna",
 "Zalewski",
 "Zara\u015b",
 "Zawistowska",
 "Zych",
-"Zy\u015bk"
+"Zy\u015bk",
+"\u017bach"
 ]
 Dwr.ScriptLoaded('dwr_db_N_surname_0.js');

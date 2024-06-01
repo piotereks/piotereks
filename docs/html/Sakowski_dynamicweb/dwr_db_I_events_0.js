@@ -13,9 +13,9 @@ I_events_0 = [
 "part_person": [
 0
 ],
-"place": 25,
+"place": 52,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -30,7 +30,7 @@ I_events_0 = [
 ],
 "place": -1,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -45,9 +45,9 @@ I_events_0 = [
 "part_person": [
 1
 ],
-"place": 25,
+"place": 52,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -60,9 +60,9 @@ I_events_0 = [
 "part_person": [
 1
 ],
-"place": 25,
+"place": 52,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -77,68 +77,14 @@ I_events_0 = [
 "part_person": [
 2
 ],
-"place": 25,
+"place": 52,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 }
 ],
-[
-{
-"cita": [
-92
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0477",
-"media": [],
-"part_family": [],
-"part_person": [
-3
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, birth date, from Brz\u00f3zka, Zuzanna\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-89
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0474",
-"media": [],
-"part_family": [],
-"part_person": [
-4
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant birth date, from Kossobucka, Marianna\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-42
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0427",
-"media": [],
-"part_family": [],
-"part_person": [
-5
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant birth date, from Dzikowska, Marianna\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
+[],
+[],
+[],
 [
 {
 "cita": [],
@@ -153,7 +99,7 @@ I_events_0 = [
 ],
 "place": -1,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -168,70 +114,17 @@ I_events_0 = [
 "part_person": [
 7
 ],
-"place": 23,
+"place": 49,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-63
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0448",
-"media": [],
-"part_family": [],
-"part_person": [
-7
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, birth date, from Soko\u0142owski, Stefan\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
-[
-{
-"cita": [
-70
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0455",
-"media": [],
-"part_family": [],
-"part_person": [
-8
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant birth date, from Soko\u0142owska, Marcjanna\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-41
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0426",
-"media": [],
-"part_family": [],
-"part_person": [
-9
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant birth date, from Dzikowska, Marianna\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
+[],
+[],
 [
 {
 "cita": [],
-"date": "before 1819-11-14",
+"date": "przed 1819-11-14",
 "date_sdn": 2385753,
 "descr": "nie \u017cy\u0142a podczas \u015blubu Marianny Ara\u017cnik",
 "gid": "E0184",
@@ -242,24 +135,7 @@ I_events_0 = [
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-93
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0478",
-"media": [],
-"part_family": [],
-"part_person": [
-10
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -274,9 +150,9 @@ I_events_0 = [
 "part_person": [
 11
 ],
-"place": 20,
+"place": 46,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -289,9 +165,9 @@ I_events_0 = [
 "part_person": [
 11
 ],
-"place": 37,
+"place": 78,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 },
 {
 "cita": [],
@@ -304,34 +180,16 @@ I_events_0 = [
 "part_person": [
 11
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 }
 ],
-[
-{
-"cita": [
-55
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0440",
-"media": [],
-"part_family": [],
-"part_person": [
-12
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, , from Nosek, Justyna\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
+[],
 [
 {
 "cita": [],
-"date": "about 1781",
+"date": "ok. 1781",
 "date_sdn": 2371558,
 "descr": "",
 "gid": "E0297",
@@ -342,30 +200,13 @@ I_events_0 = [
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-59
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0444",
-"media": [],
-"part_family": [],
-"part_person": [
-13
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-190
+37
 ],
 "date": "1811-04-14",
 "date_sdn": 2382617,
@@ -376,13 +217,13 @@ I_events_0 = [
 "part_person": [
 14
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
-"date": "before 1865",
+"date": "przed 1865",
 "date_sdn": 2402238,
 "descr": "",
 "gid": "E0122",
@@ -393,7 +234,7 @@ I_events_0 = [
 ],
 "place": -1,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -408,9 +249,9 @@ I_events_0 = [
 "part_person": [
 15
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -423,9 +264,9 @@ I_events_0 = [
 "part_person": [
 15
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -440,9 +281,9 @@ I_events_0 = [
 "part_person": [
 16
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -455,9 +296,9 @@ I_events_0 = [
 "part_person": [
 16
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -472,9 +313,9 @@ I_events_0 = [
 "part_person": [
 17
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -487,9 +328,9 @@ I_events_0 = [
 "part_person": [
 17
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -504,9 +345,9 @@ I_events_0 = [
 "part_person": [
 18
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -519,15 +360,15 @@ I_events_0 = [
 "part_person": [
 18
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [],
-"date": "about 1775",
+"date": "ok. 1775",
 "date_sdn": 2369366,
 "descr": "",
 "gid": "E0296",
@@ -538,30 +379,13 @@ I_events_0 = [
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-58
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0443",
-"media": [],
-"part_family": [],
-"part_person": [
-19
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-211
+58
 ],
 "date": "1894",
 "date_sdn": 2412830,
@@ -572,32 +396,15 @@ I_events_0 = [
 "part_person": [
 20
 ],
-"place": 12,
+"place": 36,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-30
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0415",
-"media": [],
-"part_family": [],
-"part_person": [
-20
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-215
+62
 ],
 "date": "1899",
 "date_sdn": 2414656,
@@ -608,26 +415,9 @@ I_events_0 = [
 "part_person": [
 21
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-31
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0416",
-"media": [],
-"part_family": [],
-"part_person": [
-21
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -646,7 +436,7 @@ I_events_0 = [
 ],
 "place": -1,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -663,9 +453,9 @@ I_events_0 = [
 "part_person": [
 23
 ],
-"place": 12,
+"place": 36,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -682,11 +472,11 @@ I_events_0 = [
 ],
 "place": -1,
 "text": "",
-"type": "Wdowa (Bride)"
+"type": "Wdowa (Panna m\u0142oda)"
 },
 {
 "cita": [
-207
+54
 ],
 "date": "1887-08-15",
 "date_sdn": 2410499,
@@ -697,32 +487,15 @@ I_events_0 = [
 "part_person": [
 24
 ],
-"place": 7,
+"place": 8,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-38
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0423",
-"media": [],
-"part_family": [],
-"part_person": [
-24
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-250
+97
 ],
 "date": "1892-09-18",
 "date_sdn": 2412360,
@@ -733,13 +506,13 @@ I_events_0 = [
 "part_person": [
 25
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
-"date": "from 1945-01-12 to 1945-02-03",
+"date": "od 1945-01-12 do 1945-02-03",
 "date_sdn": 2431468,
 "descr": "Zgin\u0119\u0142a od bomby na pocz\u0105tku offensywy &#8220;operacji styczniowej&#8221;. Bomba spad\u0142a z jednego z walcz\u0105cych samolot\u00f3w. Naoczny \u015bwiadek - Ryszard Sakowski. Mia\u0142 3 lata, ale to dok\u0142adnie pami\u0119ta. \u0141\u0105cznie z ekshumacj\u0105 z podw\u00f3rka ile\u015b dni po\u017aniej.",
 "gid": "E0214",
@@ -748,15 +521,15 @@ I_events_0 = [
 "part_person": [
 25
 ],
-"place": 20,
+"place": 46,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [
-209
+56
 ],
 "date": "1890",
 "date_sdn": 2411369,
@@ -767,13 +540,13 @@ I_events_0 = [
 "part_person": [
 26
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-208
+55
 ],
 "date": "1890",
 "date_sdn": 2411369,
@@ -784,15 +557,15 @@ I_events_0 = [
 "part_person": [
 26
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [
-217
+64
 ],
 "date": "1902",
 "date_sdn": 2415751,
@@ -803,47 +576,12 @@ I_events_0 = [
 "part_person": [
 27
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-32
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0417",
-"media": [],
-"part_family": [],
-"part_person": [
-27
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
-[
-{
-"cita": [
-98
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0483",
-"media": [],
-"part_family": [],
-"part_person": [
-28
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant death date, from Dzikowski, Kazimierz\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
+[],
 [
 {
 "cita": [],
@@ -856,13 +594,13 @@ I_events_0 = [
 "part_person": [
 29
 ],
-"place": 39,
+"place": 80,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-18
+17
 ],
 "date": "1898-10-20",
 "date_sdn": 2414583,
@@ -873,9 +611,9 @@ I_events_0 = [
 "part_person": [
 29
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -892,13 +630,13 @@ I_events_0 = [
 "part_person": [
 30
 ],
-"place": 21,
+"place": 47,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-242
+89
 ],
 "date": "1857-09-13",
 "date_sdn": 2399571,
@@ -909,9 +647,9 @@ I_events_0 = [
 "part_person": [
 30
 ],
-"place": 21,
+"place": 47,
 "text": "",
-"type": "Baptism"
+"type": "Baptyzm"
 },
 {
 "cita": [],
@@ -924,9 +662,9 @@ I_events_0 = [
 "part_person": [
 30
 ],
-"place": 12,
+"place": 36,
 "text": "",
-"type": "Residence"
+"type": "Zamieszkanie"
 },
 {
 "cita": [],
@@ -939,11 +677,12 @@ I_events_0 = [
 "part_person": [
 30
 ],
-"place": 21,
+"place": 47,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
+[],
 [
 {
 "cita": [],
@@ -954,28 +693,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-31
+32
 ],
-"place": 11,
+"place": 35,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-170
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0555",
-"media": [],
-"part_family": [],
-"part_person": [
-31
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -988,11 +710,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-32
+33
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -1003,11 +725,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-32
+33
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -1020,11 +742,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-33
+34
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -1035,11 +757,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-33
+34
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -1052,11 +774,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-34
+35
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -1069,15 +791,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-35
+36
 ],
-"place": 35,
+"place": 76,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-21
+20
 ],
 "date": "1846-04-19",
 "date_sdn": 2395406,
@@ -1086,11 +808,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-35
+36
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -1103,11 +825,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-36
+37
 ],
-"place": 11,
+"place": 35,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 },
 {
 "cita": [],
@@ -1118,11 +840,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-36
+37
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -1133,11 +855,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-36
+37
 ],
-"place": 40,
+"place": 81,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -1150,34 +872,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-37
+38
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Marriage"
-},
-{
-"cita": [
-172
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0557",
-"media": [],
-"part_family": [],
-"part_person": [
-37
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on sibling death date, from Ferenc, Jakub\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
 {
 "cita": [
-181
+28
 ],
 "date": "1812-01-29",
 "date_sdn": 2382907,
@@ -1186,15 +891,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-38
+39
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-182
+29
 ],
 "date": "1813-07-20",
 "date_sdn": 2383445,
@@ -1203,18 +908,18 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-38
+39
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [
-183,
-191
+30,
+38
 ],
 "date": "1814-05-08",
 "date_sdn": 2383737,
@@ -1223,15 +928,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-39
+40
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-183
+30
 ],
 "date": "1814-05-10",
 "date_sdn": 2383739,
@@ -1240,28 +945,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-39
+40
 ],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Baptism"
-},
-{
-"cita": [
-66
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0451",
-"media": [],
-"part_family": [],
-"part_person": [
-39
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Baptyzm"
 }
 ],
 [
@@ -1274,28 +962,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-40
+41
 ],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
-},
-{
-"cita": [
-168
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0553",
-"media": [],
-"part_family": [],
-"part_person": [
-40
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on sibling birth date, from Ferenc, Katarzyna (1sza)\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
@@ -1308,28 +979,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-41
+42
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-169
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0554",
-"media": [],
-"part_family": [],
-"part_person": [
-41
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -1342,28 +996,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-42
+43
 ],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
-},
-{
-"cita": [
-171
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0556",
-"media": [],
-"part_family": [],
-"part_person": [
-42
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on sibling death date, from Ferenc, Jakub\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
@@ -1376,11 +1013,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-43
+44
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -1393,11 +1030,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-44
+45
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -1408,51 +1045,16 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-44
-],
-"place": 22,
-"text": "",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-86
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0471",
-"media": [],
-"part_family": [],
-"part_person": [
 45
 ],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant death date, from Ferenc, Jakub\n</p>\n</div>\n</div>",
-"type": "Death"
+"place": 48,
+"text": "",
+"type": "\u015amier\u0107"
 }
 ],
-[
-{
-"cita": [
-71
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0456",
-"media": [],
-"part_family": [],
-"part_person": [
-46
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant birth date, from Soko\u0142owska, Marcjanna\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
+[],
+[],
+[],
 [],
 [],
 [],
@@ -1469,11 +1071,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-53
+55
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -1484,11 +1086,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-53
+55
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -1501,11 +1103,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-54
+56
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -1516,11 +1118,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-54
+56
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -1533,28 +1135,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-55
+57
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-121
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0506",
-"media": [],
-"part_family": [],
-"part_person": [
-55
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -1567,26 +1152,26 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-56
+58
 ],
-"place": 1,
+"place": 2,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 },
 {
 "cita": [],
-"date": "about 1864",
+"date": "ok. 1864",
 "date_sdn": 2401872,
 "descr": "",
 "gid": "E0243",
 "media": [],
 "part_family": [],
 "part_person": [
-56
+58
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 }
 ],
 [
@@ -1599,28 +1184,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-57
+59
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-119
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0504",
-"media": [],
-"part_family": [],
-"part_person": [
-57
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -1633,11 +1201,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-58
+60
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -1648,11 +1216,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-58
+60
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -1665,28 +1233,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-59
+61
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-120
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0505",
-"media": [],
-"part_family": [],
-"part_person": [
-59
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -1699,28 +1250,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-60
+62
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-112
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0497",
-"media": [],
-"part_family": [],
-"part_person": [
-60
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -1733,11 +1267,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-61
+63
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -1748,43 +1282,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-61
+63
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1848",
-"date_sdn": 2396028,
-"descr": "1848 akt 129",
-"gid": "E0248",
-"media": [],
-"part_family": [],
-"part_person": [
-62
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [],
-"date": "1856",
-"date_sdn": 2398950,
-"descr": "1856 akt 96",
-"gid": "E0250",
-"media": [],
-"part_family": [],
-"part_person": [
-62
-],
-"place": 14,
-"text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -1797,11 +1299,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-63
+64
 ],
-"place": 26,
+"place": 38,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -1812,17 +1314,49 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-63
+64
 ],
-"place": 26,
+"place": 38,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
+}
+],
+[
+{
+"cita": [],
+"date": "1848",
+"date_sdn": 2396028,
+"descr": "1848 akt 129",
+"gid": "E0248",
+"media": [],
+"part_family": [],
+"part_person": [
+65
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+},
+{
+"cita": [],
+"date": "1856",
+"date_sdn": 2398950,
+"descr": "1856 akt 96",
+"gid": "E0250",
+"media": [],
+"part_family": [],
+"part_person": [
+65
+],
+"place": 39,
+"text": "",
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [
-204
+51
 ],
 "date": "1873-03-24",
 "date_sdn": 2405242,
@@ -1831,11 +1365,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-64
+66
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -1846,28 +1380,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-64
+66
 ],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Baptism"
-},
-{
-"cita": [
-43
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0428",
-"media": [],
-"part_family": [],
-"part_person": [
-64
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Baptyzm"
 }
 ],
 [
@@ -1880,28 +1397,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-65
+67
 ],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
-},
-{
-"cita": [
-122
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0507",
-"media": [],
-"part_family": [],
-"part_person": [
-65
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on sibling birth date, from Figat, Maciej\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
@@ -1914,11 +1414,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-66
+68
 ],
-"place": 26,
+"place": 38,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -1929,17 +1429,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-66
+68
 ],
-"place": 26,
+"place": 38,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [
-193
+40
 ],
 "date": "1840-04-06",
 "date_sdn": 2393202,
@@ -1948,28 +1448,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-67
+69
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-46
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0431",
-"media": [],
-"part_family": [],
-"part_person": [
-67
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -1982,28 +1465,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-68
+70
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-111
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0496",
-"media": [],
-"part_family": [],
-"part_person": [
-68
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -2016,34 +1482,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-69
+71
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-116
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0501",
-"media": [],
-"part_family": [],
-"part_person": [
-69
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-221
+68
 ],
 "date": "1906-06-04",
 "date_sdn": 2417366,
@@ -2052,11 +1501,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-70
+72
 ],
-"place": 26,
+"place": 38,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -2067,17 +1516,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-70
+72
 ],
 "place": -1,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [
-176
+23
 ],
 "date": "1795",
 "date_sdn": 2376671,
@@ -2086,15 +1535,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-71
+73
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-19
+18
 ],
 "date": "1848-12-14",
 "date_sdn": 2396376,
@@ -2103,11 +1552,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-71
+73
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -2120,28 +1569,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-72
+74
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-110
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0495",
-"media": [],
-"part_family": [],
-"part_person": [
-72
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -2154,28 +1586,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-73
+75
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-117
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0502",
-"media": [],
-"part_family": [],
-"part_person": [
-73
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -2188,11 +1603,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-74
+76
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -2203,11 +1618,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-74
+76
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -2220,28 +1635,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-75
+77
 ],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
-},
-{
-"cita": [
-123
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0508",
-"media": [],
-"part_family": [],
-"part_person": [
-75
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on sibling birth date, from Figat, Maciej\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
@@ -2254,34 +1652,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-76
+78
 ],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
-},
-{
-"cita": [
-124
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0509",
-"media": [],
-"part_family": [],
-"part_person": [
-76
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on sibling birth date, from Figat, Maciej\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
 {
 "cita": [
-184
+31
 ],
 "date": "1814-01-08",
 "date_sdn": 2383617,
@@ -2290,11 +1671,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-77
+79
 ],
 "place": -1,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 },
 {
 "cita": [],
@@ -2305,11 +1686,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-77
+79
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 }
 ],
 [
@@ -2322,11 +1703,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-78
+80
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -2337,11 +1718,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-78
+80
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -2354,28 +1735,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-79
+81
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-118
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0503",
-"media": [],
-"part_family": [],
-"part_person": [
-79
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -2388,28 +1752,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-80
+82
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-113
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0498",
-"media": [],
-"part_family": [],
-"part_person": [
-80
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -2422,28 +1769,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-81
+83
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-115
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0500",
-"media": [],
-"part_family": [],
-"part_person": [
-81
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -2456,11 +1786,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-82
+84
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -2471,11 +1801,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-82
+84
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -2488,28 +1818,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-83
+85
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-109
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0494",
-"media": [],
-"part_family": [],
-"part_person": [
-83
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -2522,108 +1835,38 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-84
+86
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-114
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0499",
-"media": [],
-"part_family": [],
-"part_person": [
-84
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [],
-[
-{
-"cita": [
-101
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0486",
-"media": [],
-"part_family": [],
-"part_person": [
-86
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant death date, from Zabielska/Roma\u0144\u015bka/Szemborska, Julianna\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
+[],
 [
 {
 "cita": [],
-"date": "about 1800",
+"date": "ok. 1800",
 "date_sdn": 2378497,
 "descr": "",
 "gid": "E0161",
 "media": [],
 "part_family": [],
 "part_person": [
-87
+89
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-54
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0439",
-"media": [],
-"part_family": [],
-"part_person": [
-87
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
+[],
 [],
 [
 {
 "cita": [
-74
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0459",
-"media": [],
-"part_family": [],
-"part_person": [
-89
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant birth date, from Jaworski, Antoni\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-11
+10
 ],
 "date": "1772",
 "date_sdn": 2368270,
@@ -2632,34 +1875,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-90
+92
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-75
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0460",
-"media": [],
-"part_family": [],
-"part_person": [
-90
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-245
+92
 ],
 "date": "1823-07-20",
 "date_sdn": 2387097,
@@ -2668,15 +1894,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-91
+93
 ],
-"place": 36,
+"place": 77,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-245
+92
 ],
 "date": "1823-07-23",
 "date_sdn": 2387100,
@@ -2685,34 +1911,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-91
+93
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Baptism"
-},
-{
-"cita": [
-72
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0457",
-"media": [],
-"part_family": [],
-"part_person": [
-91
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Baptyzm"
 }
 ],
 [
 {
 "cita": [
-12
+11
 ],
 "date": "1774",
 "date_sdn": 2369001,
@@ -2721,28 +1930,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-92
+94
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-76
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0461",
-"media": [],
-"part_family": [],
-"part_person": [
-92
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -2755,11 +1947,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-93
+95
 ],
-"place": 43,
+"place": 88,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -2774,11 +1966,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-94
+96
 ],
-"place": 36,
+"place": 77,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -2789,47 +1981,47 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-94
+96
 ],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Baptism"
+"type": "Baptyzm"
 },
 {
 "cita": [],
-"date": "before 1881-11-21",
+"date": "przed 1881-11-21",
 "date_sdn": 2408406,
 "descr": "",
 "gid": "E0088",
 "media": [],
 "part_family": [],
 "part_person": [
-94
+96
 ],
-"place": 36,
+"place": 77,
 "text": "",
-"type": "Residence"
+"type": "Zamieszkanie"
 },
 {
 "cita": [],
-"date": "before 1924-03-00",
+"date": "przed 1924-03",
 "date_sdn": 2423846,
 "descr": "",
 "gid": "E0113",
 "media": [],
 "part_family": [],
 "part_person": [
-94
+96
 ],
 "place": -1,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [
-13
+12
 ],
 "date": "1776",
 "date_sdn": 2369731,
@@ -2838,35 +2030,18 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-95
+97
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-77
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0462",
-"media": [],
-"part_family": [],
-"part_person": [
-95
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [],
 [
 {
 "cita": [
-188
+35
 ],
 "date": "1824-10-20",
 "date_sdn": 2387555,
@@ -2875,49 +2050,14 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-97
+99
 ],
-"place": 36,
+"place": 77,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-36
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0421",
-"media": [],
-"part_family": [],
-"part_person": [
-97
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
-[
-{
-"cita": [
-73
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0458",
-"media": [],
-"part_family": [],
-"part_person": [
-98
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant birth date, from Jaworski, Antoni\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
+[],
 [
 {
 "cita": [],
@@ -2928,28 +2068,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-99
+101
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-48
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0433",
-"media": [],
-"part_family": [],
-"part_person": [
-99
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on sibling birth date, from Jaworska, El\u017cbieta\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -2962,11 +2085,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-100
+102
 ],
-"place": 36,
+"place": 77,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -2979,11 +2102,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-101
+103
 ],
-"place": 9,
+"place": 32,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 },
 {
 "cita": [],
@@ -2994,11 +2117,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-101
+103
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 }
 ],
 [
@@ -3011,11 +2134,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-102
+104
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -3026,11 +2149,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-102
+104
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -3043,28 +2166,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-103
+105
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-140
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0525",
-"media": [],
-"part_family": [],
-"part_person": [
-103
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -3077,28 +2183,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-104
+106
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-143
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0528",
-"media": [],
-"part_family": [],
-"part_person": [
-104
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -3111,28 +2200,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-105
+107
 ],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
-},
-{
-"cita": [
-139
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0524",
-"media": [],
-"part_family": [],
-"part_person": [
-105
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on sibling birth date, from Korzeb, Jadwiga\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
@@ -3145,11 +2217,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-106
+108
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -3160,11 +2232,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-106
+108
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -3177,51 +2249,34 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-107
+109
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-141
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0526",
-"media": [],
-"part_family": [],
-"part_person": [
-107
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [],
-"date": "before 1833-10-30",
+"date": "przed 1833-10-30",
 "date_sdn": 2390852,
 "descr": "informacja po\u015brednia z aktu \u015blubu syna Miko\u0142aja",
 "gid": "E0315",
 "media": [],
 "part_family": [],
 "part_person": [
-108
+110
 ],
 "place": -1,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [
-197
+44
 ],
 "date": "1843-09-30",
 "date_sdn": 2394474,
@@ -3230,15 +2285,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-109
+111
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-20
+19
 ],
 "date": "1911-02-19",
 "date_sdn": 2419087,
@@ -3247,28 +2302,28 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-109
+111
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [],
-"date": "before 1833-10-30",
+"date": "przed 1833-10-30",
 "date_sdn": 2390852,
 "descr": "informacja po\u015brednia z aktu \u015blubu syna Miko\u0142aja",
 "gid": "E0316",
 "media": [],
 "part_family": [],
 "part_person": [
-110
+112
 ],
 "place": -1,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -3281,34 +2336,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-111
+113
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-138
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0523",
-"media": [],
-"part_family": [],
-"part_person": [
-111
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-190
+37
 ],
 "date": "1802-03-06",
 "date_sdn": 2379291,
@@ -3317,28 +2355,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-112
+114
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-57
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0442",
-"media": [],
-"part_family": [],
-"part_person": [
-112
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -3351,28 +2372,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-113
+115
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-142
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0527",
-"media": [],
-"part_family": [],
-"part_person": [
-113
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -3385,28 +2389,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-114
+116
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-137
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0522",
-"media": [],
-"part_family": [],
-"part_person": [
-114
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -3419,28 +2406,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-115
+117
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-144
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0529",
-"media": [],
-"part_family": [],
-"part_person": [
-115
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -3453,28 +2423,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-116
+118
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-136
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0521",
-"media": [],
-"part_family": [],
-"part_person": [
-116
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -3487,26 +2440,26 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-117
+119
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 },
 {
 "cita": [],
-"date": "about 1762",
+"date": "ok. 1762",
 "date_sdn": 2364618,
 "descr": "",
 "gid": "E0318",
 "media": [],
 "part_family": [],
 "part_person": [
-117
+119
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 }
 ],
 [
@@ -3519,28 +2472,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-118
+120
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-134
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0519",
-"media": [],
-"part_family": [],
-"part_person": [
-118
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -3553,11 +2489,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-119
+121
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 },
 {
 "cita": [],
@@ -3568,28 +2504,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-119
+121
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-146
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0531",
-"media": [],
-"part_family": [],
-"part_person": [
-119
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -3602,28 +2521,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-120
+122
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-135
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0520",
-"media": [],
-"part_family": [],
-"part_person": [
-120
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -3636,11 +2538,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-121
+123
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -3651,11 +2553,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-121
+123
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -3668,17 +2570,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-122
+124
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [
-244
+91
 ],
 "date": "1772-08-06",
 "date_sdn": 2368488,
@@ -3687,11 +2589,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-123
+125
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -3702,66 +2604,31 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-123
+125
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [],
-"date": "about 1794",
+"date": "ok. 1794",
 "date_sdn": 2376306,
 "descr": "",
 "gid": "E0178",
 "media": [],
 "part_family": [],
 "part_person": [
-124
+126
 ],
-"place": 35,
+"place": 76,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-85
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0470",
-"media": [],
-"part_family": [],
-"part_person": [
-124
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
-[
-{
-"cita": [
-88
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0473",
-"media": [],
-"part_family": [],
-"part_person": [
-125
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant birth date, from Kossobucka, Marianna\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
+[],
 [
 {
 "cita": [],
@@ -3772,11 +2639,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-126
+128
 ],
-"place": 15,
+"place": 40,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -3789,28 +2656,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-127
+129
 ],
-"place": 15,
+"place": 40,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-162
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0547",
-"media": [],
-"part_family": [],
-"part_person": [
-127
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -3823,34 +2673,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-128
+130
 ],
-"place": 15,
+"place": 40,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-163
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0548",
-"media": [],
-"part_family": [],
-"part_person": [
-128
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-248
+95
 ],
 "date": "1820-10-30",
 "date_sdn": 2386104,
@@ -3859,53 +2692,18 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-129
+131
 ],
-"place": 15,
+"place": 40,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-65
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0450",
-"media": [],
-"part_family": [],
-"part_person": [
-129
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
+[],
 [
 {
 "cita": [
-90
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0475",
-"media": [],
-"part_family": [],
-"part_person": [
-130
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant birth date, from Kucharczyk, Jan Nepomucen\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-177
+24
 ],
 "date": "1796-05-16",
 "date_sdn": 2377172,
@@ -3914,28 +2712,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-131
+133
 ],
-"place": 15,
+"place": 40,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-83
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0468",
-"media": [],
-"part_family": [],
-"part_person": [
-131
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -3948,28 +2729,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-132
+134
 ],
-"place": 11,
+"place": 35,
 "text": "",
-"type": "Marriage"
-},
-{
-"cita": [
-164
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0549",
-"media": [],
-"part_family": [],
-"part_person": [
-132
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on sibling birth date, from Kucharczyk, Jan Nepomucen\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
@@ -3982,11 +2746,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-133
+135
 ],
-"place": 11,
+"place": 35,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 },
 {
 "cita": [],
@@ -3997,11 +2761,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-133
+135
 ],
-"place": 15,
+"place": 40,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -4014,34 +2778,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-134
+136
 ],
-"place": 15,
+"place": 40,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-161
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0546",
-"media": [],
-"part_family": [],
-"part_person": [
-134
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-185
+32
 ],
 "date": "1815-12-19",
 "date_sdn": 2384327,
@@ -4050,28 +2797,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-135
+137
 ],
-"place": 33,
+"place": 59,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-56
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0441",
-"media": [],
-"part_family": [],
-"part_person": [
-135
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -4084,28 +2814,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-136
+138
 ],
-"place": 33,
+"place": 59,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-152
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0537",
-"media": [],
-"part_family": [],
-"part_person": [
-136
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -4118,62 +2831,28 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-137
+139
 ],
-"place": 33,
+"place": 59,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-151
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0536",
-"media": [],
-"part_family": [],
-"part_person": [
-137
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [],
-"date": "estimated 1820",
+"date": "szacowany 1820",
 "date_sdn": 2385801,
 "descr": "",
 "gid": "E0327",
 "media": [],
 "part_family": [],
 "part_person": [
-138
+140
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-150
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0535",
-"media": [],
-"part_family": [],
-"part_person": [
-138
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -4186,28 +2865,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-139
+141
 ],
-"place": 30,
+"place": 57,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-96
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0481",
-"media": [],
-"part_family": [],
-"part_person": [
-139
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant birth date, from Majewska, Katarzyna\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -4220,51 +2882,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-140
-],
-"place": -1,
-"text": "",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-34
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0419",
-"media": [],
-"part_family": [],
-"part_person": [
-141
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, death date, from Sakowska, Marianna\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-103
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0488",
-"media": [],
-"part_family": [],
-"part_person": [
 142
 ],
 "place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, birth date, from Szulejewska, Wiktoria\n</p>\n</div>\n</div>",
-"type": "Death"
+"text": "",
+"type": "\u015amier\u0107"
 }
 ],
+[],
+[],
 [
 {
 "cita": [],
@@ -4275,34 +2901,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-143
+145
 ],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
-},
-{
-"cita": [
-129
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0514",
-"media": [],
-"part_family": [],
-"part_person": [
-143
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on sibling birth date, from Nosek, Justyna\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
 {
 "cita": [
-246
+93
 ],
 "date": "1840-03-01",
 "date_sdn": 2393166,
@@ -4311,11 +2920,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-144
+146
 ],
-"place": 17,
+"place": 42,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -4326,15 +2935,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-144
+146
 ],
-"place": 34,
+"place": 61,
 "text": "",
-"type": "Baptism"
+"type": "Baptyzm"
 },
 {
 "cita": [
-216
+63
 ],
 "date": "1901-06-11",
 "date_sdn": 2415547,
@@ -4343,111 +2952,94 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-144
+146
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [],
-"date": "about 1791",
+"date": "ok. 1791",
 "date_sdn": 2375210,
 "descr": "",
 "gid": "E0160",
 "media": [],
 "part_family": [],
 "part_person": [
-145
+147
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-53
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0438",
-"media": [],
-"part_family": [],
-"part_person": [
-145
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [],
-"date": "about 1793",
+"date": "ok. 1793",
 "date_sdn": 2375941,
 "descr": "",
 "gid": "E0192",
 "media": [],
 "part_family": [],
 "part_person": [
-146
+148
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-95
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0480",
-"media": [],
-"part_family": [],
-"part_person": [
-146
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [],
-"date": "1937-06-00",
+"date": "ok. 1832",
+"date_sdn": 2390184,
+"descr": "oszacowane w oparciu o metryk\u0119 Ignaca i Antoniego",
+"gid": "E0080",
+"media": [],
+"part_family": [],
+"part_person": [
+149
+],
+"place": -1,
+"text": "",
+"type": "Narodziny"
+}
+],
+[
+{
+"cita": [],
+"date": "1937-06",
 "date_sdn": 2428686,
 "descr": "",
 "gid": "E0048",
 "media": [],
 "part_family": [],
 "part_person": [
-147
+150
 ],
-"place": 26,
+"place": 38,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
-"date": "2021-03-00",
+"date": "2021-03",
 "date_sdn": 2459275,
 "descr": "",
 "gid": "E0058",
 "media": [],
 "part_family": [],
 "part_person": [
-147
+150
 ],
-"place": 9,
+"place": 32,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [],
@@ -4461,51 +3053,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-149
+152
 ],
-"place": 9,
+"place": 32,
 "text": "",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "about 1832",
-"date_sdn": 2390184,
-"descr": "oszacowane w oparciu o metryk\u0119 Ignaca i Antoniego",
-"gid": "E0080",
-"media": [],
-"part_family": [],
-"part_person": [
-150
-],
-"place": -1,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [
-29
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0414",
-"media": [],
-"part_family": [],
-"part_person": [
-150
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [
-238
+85
 ],
 "date": "1924-08-21",
 "date_sdn": 2424019,
@@ -4514,26 +3072,26 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-151
+153
 ],
-"place": 20,
+"place": 46,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 },
 {
 "cita": [],
-"date": "1924-01-00",
+"date": "1924-01",
 "date_sdn": 2423786,
 "descr": "",
 "gid": "E0037",
 "media": [],
 "part_family": [],
 "part_person": [
-151
+153
 ],
-"place": 20,
+"place": 46,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 }
 ],
 [
@@ -4546,11 +3104,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-152
+154
 ],
-"place": 20,
+"place": 46,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -4561,11 +3119,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-152
+154
 ],
-"place": 44,
+"place": 89,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 },
 {
 "cita": [],
@@ -4576,36 +3134,18 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-152
+154
 ],
-"place": 16,
+"place": 41,
 "text": "",
-"type": "Residence (Unknown)"
+"type": "Zamieszkanie (Nieznany)"
 }
 ],
+[],
 [
 {
 "cita": [
-23
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0408",
-"media": [],
-"part_family": [],
-"part_person": [
-153
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, birth date, from Piekarzewski, Ignacy\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-228
+75
 ],
 "date": "1912-06-27",
 "date_sdn": 2419581,
@@ -4614,15 +3154,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-154
+156
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-236
+83
 ],
 "date": "1913-12-06",
 "date_sdn": 2420108,
@@ -4631,17 +3171,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-154
+156
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [
-239
+86
 ],
 "date": "1928-03-17",
 "date_sdn": 2425323,
@@ -4650,26 +3190,26 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-155
+157
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 },
 {
 "cita": [],
-"date": "1927-07-00",
+"date": "1927-07",
 "date_sdn": 2425063,
 "descr": "",
 "gid": "E0039",
 "media": [],
 "part_family": [],
 "part_person": [
-155
+157
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 }
 ],
 [
@@ -4684,34 +3224,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-156
+158
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-35
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0420",
-"media": [],
-"part_family": [],
-"part_person": [
-156
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-16
+15
 ],
 "date": "1935-08-18",
 "date_sdn": 2428033,
@@ -4720,15 +3243,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-157
+159
 ],
-"place": 20,
+"place": 46,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-17
+16
 ],
 "date": "2017-06-30",
 "date_sdn": 2457935,
@@ -4737,32 +3260,14 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-157
+159
 ],
-"place": 6,
+"place": 7,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
-[
-{
-"cita": [
-105
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0490",
-"media": [],
-"part_family": [],
-"part_person": [
-158
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on sibling birth date, from Piekarzewska, Genowefa\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
+[],
 [
 {
 "cita": [],
@@ -4773,15 +3278,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-159
+161
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Baptism"
+"type": "Baptyzm"
 },
 {
 "cita": [
-243
+90
 ],
 "date": "1870-08-01",
 "date_sdn": 2404276,
@@ -4790,70 +3295,36 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-159
+161
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-22
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0407",
-"media": [],
-"part_family": [],
-"part_person": [
-159
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-219
+66
 ],
-"date": "1905-06-00",
+"date": "1905-06",
 "date_sdn": 2416998,
 "descr": "",
 "gid": "E0040",
 "media": [],
 "part_family": [],
 "part_person": [
-160
+162
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-26
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0411",
-"media": [],
-"part_family": [],
-"part_person": [
-160
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-234
+81
 ],
 "date": "1915-03-07",
 "date_sdn": 2420564,
@@ -4862,15 +3333,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-161
+163
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-235
+82
 ],
 "date": "1915-06-22",
 "date_sdn": 2420671,
@@ -4879,45 +3350,28 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-161
+163
 ],
 "place": -1,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [],
-"date": "from 1826 to 1836",
+"date": "od 1826 do 1836",
 "date_sdn": 2387993,
 "descr": "daty oszacowane o Ignacego i Antoniego",
 "gid": "E0079",
 "media": [],
 "part_family": [],
 "part_person": [
-162
+164
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-28
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0413",
-"media": [],
-"part_family": [],
-"part_person": [
-162
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -4932,34 +3386,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-163
+165
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-24
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0409",
-"media": [],
-"part_family": [],
-"part_person": [
-163
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-220
+67
 ],
 "date": "1902",
 "date_sdn": 2415751,
@@ -4968,34 +3405,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-164
+166
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-27
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0412",
-"media": [],
-"part_family": [],
-"part_person": [
-164
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-229
+76
 ],
 "date": "1911-06-25",
 "date_sdn": 2419213,
@@ -5004,15 +3424,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-165
+167
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-237
+84
 ],
 "date": "1911-09-05",
 "date_sdn": 2419285,
@@ -5021,104 +3441,34 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-165
+167
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
+[],
 [
 {
 "cita": [],
-"date": "about 1767",
+"date": "ok. 1767",
 "date_sdn": 2366444,
 "descr": "",
 "gid": "E0196",
 "media": [],
 "part_family": [],
 "part_person": [
-166
-],
-"place": -1,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [
-79
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0464",
-"media": [],
-"part_family": [],
-"part_person": [
-166
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-97
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0482",
-"media": [],
-"part_family": [],
-"part_person": [
-167
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant birth date, from Majewska, Katarzyna\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-99
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0484",
-"media": [],
-"part_family": [],
-"part_person": [
-168
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant death date, from Dzikowski, Kazimierz\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-102
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0487",
-"media": [],
-"part_family": [],
-"part_person": [
 169
 ],
 "place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, death date, from Zabielska/Roma\u0144\u015bka/Szemborska, Julianna\n</p>\n</div>\n</div>",
-"type": "Death"
+"text": "",
+"type": "Narodziny"
 }
 ],
+[],
+[],
+[],
 [],
 [],
 [],
@@ -5132,11 +3482,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-173
+176
 ],
-"place": 44,
+"place": 89,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -5147,11 +3497,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-173
+176
 ],
-"place": 44,
+"place": 89,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -5164,11 +3514,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-174
+177
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -5179,11 +3529,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-174
+177
 ],
-"place": 32,
+"place": 58,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [],
@@ -5193,7 +3543,7 @@ I_events_0 = [
 [
 {
 "cita": [
-224
+71
 ],
 "date": "1910-02-26",
 "date_sdn": 2418729,
@@ -5202,11 +3552,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-179
+182
 ],
-"place": 32,
+"place": 58,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -5217,17 +3567,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-179
+182
 ],
-"place": 0,
+"place": 1,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [
-240
+87
 ],
 "date": "1853-11-06",
 "date_sdn": 2398164,
@@ -5236,11 +3586,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-180
+183
 ],
-"place": 24,
-"text": "<div>\n<p>\n<b>Mother's Age</b>: 23\n</p>\n<p>\n<b>Witness</b>: Franciszek Ozdowski, gospodarz z Nakwasina, lat 38\n</p>\n<p>\n<b>Witness</b>: Tomasz Felczak, gospodarz z Nakwasina, lat 50\n</p>\n<p>\n<b>Witness</b>: akuszerka, Scholstyka Piwoczask/Pioczak (nie do ko\u0144ca czytelne)\n</p>\n</div>",
-"type": "Birth"
+"place": 50,
+"text": "<div>\n<p>\n<b>Wiek matki</b>: 23\n</p>\n<p>\n<b>\u015awiadek</b>: Franciszek Ozdowski, gospodarz z Nakwasina, lat 38\n</p>\n<p>\n<b>\u015awiadek</b>: Tomasz Felczak, gospodarz z Nakwasina, lat 50\n</p>\n<p>\n<b>\u015awiadek</b>: akuszerka, Scholstyka Piwoczask/Pioczak (nie do ko\u0144ca czytelne)\n</p>\n</div>",
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -5251,11 +3601,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-180
+183
 ],
-"place": 29,
+"place": 56,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -5268,11 +3618,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-181
+184
 ],
-"place": 11,
+"place": 35,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 },
 {
 "cita": [],
@@ -5283,34 +3633,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-181
+184
 ],
-"place": 11,
+"place": 35,
 "text": "",
-"type": "Marriage"
-},
-{
-"cita": [
-128
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0513",
-"media": [],
-"part_family": [],
-"part_person": [
-181
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on sibling birth date, from Sobieska, Katarzyna Urszula\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
 {
 "cita": [
-180
+27
 ],
 "date": "1809-10-07",
 "date_sdn": 2382063,
@@ -5319,28 +3652,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-182
+185
 ],
-"place": 1,
+"place": 2,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-52
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0437",
-"media": [],
-"part_family": [],
-"part_person": [
-182
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -5353,45 +3669,28 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-183
+186
 ],
-"place": 11,
+"place": 35,
 "text": "",
-"type": "Marriage"
-},
-{
-"cita": [
-127
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0512",
-"media": [],
-"part_family": [],
-"part_person": [
-183
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on sibling birth date, from Sobieska, Katarzyna Urszula\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
 {
 "cita": [],
-"date": "before 1836-06-25",
+"date": "przed 1836-06-25",
 "date_sdn": 2391821,
 "descr": "",
 "gid": "E0174",
 "media": [],
 "part_family": [],
 "part_person": [
-184
+187
 ],
 "place": -1,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -5404,11 +3703,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-185
+188
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -5419,11 +3718,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-185
+188
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -5436,28 +3735,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-186
+189
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-165
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0550",
-"media": [],
-"part_family": [],
-"part_person": [
-186
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -5470,28 +3752,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-187
+190
 ],
-"place": 11,
+"place": 35,
 "text": "",
-"type": "Marriage"
-},
-{
-"cita": [
-126
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0511",
-"media": [],
-"part_family": [],
-"part_person": [
-187
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on sibling birth date, from Sobieska, Katarzyna Urszula\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
@@ -5504,11 +3769,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-188
+191
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -5519,11 +3784,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-188
+191
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -5536,11 +3801,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-189
+192
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -5551,11 +3816,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-189
+192
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -5568,11 +3833,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-190
+193
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -5583,32 +3848,14 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-190
+193
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
-[
-{
-"cita": [
-125
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0510",
-"media": [],
-"part_family": [],
-"part_person": [
-191
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on descendant birth date, from Sobieski, Maciej\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
+[],
 [
 {
 "cita": [],
@@ -5619,32 +3866,32 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-192
+195
 ],
-"place": 15,
+"place": 40,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [],
-"date": "about 1756",
+"date": "ok. 1756",
 "date_sdn": 2362426,
 "descr": "prawdopodobnie w B\u0142\u0119dnicy",
 "gid": "E0195",
 "media": [],
 "part_family": [],
 "part_person": [
-193
+196
 ],
-"place": 1,
+"place": 2,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-192
+39
 ],
 "date": "1833-04-29",
 "date_sdn": 2390668,
@@ -5653,11 +3900,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-193
+196
 ],
-"place": 11,
+"place": 35,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -5670,11 +3917,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-194
+197
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -5685,11 +3932,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-194
+197
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -5702,11 +3949,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-195
+198
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -5717,11 +3964,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-195
+198
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -5734,11 +3981,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-196
+199
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -5749,11 +3996,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-196
+199
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -5766,28 +4013,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-197
+200
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-167
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0552",
-"media": [],
-"part_family": [],
-"part_person": [
-197
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -5800,53 +4030,18 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-198
+201
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-166
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0551",
-"media": [],
-"part_family": [],
-"part_person": [
-198
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
+[],
 [
 {
 "cita": [
-84
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0469",
-"media": [],
-"part_family": [],
-"part_person": [
-199
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, death date, from Sobieska/Sobiewska, Ewa\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-178
+25
 ],
 "date": "1802-03-22",
 "date_sdn": 2379307,
@@ -5855,34 +4050,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-200
+203
 ],
-"place": 1,
+"place": 2,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-67
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0452",
-"media": [],
-"part_family": [],
-"part_person": [
-200
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-247
+94
 ],
 "date": "1844-03-02",
 "date_sdn": 2394628,
@@ -5891,53 +4069,18 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-201
+204
 ],
-"place": 8,
+"place": 9,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-61
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0446",
-"media": [],
-"part_family": [],
-"part_person": [
-201
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
+[],
 [
 {
 "cita": [
-69
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0454",
-"media": [],
-"part_family": [],
-"part_person": [
-202
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant birth date, from Soko\u0142owski, Stefan\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-206
+53
 ],
 "date": "1876-07-04",
 "date_sdn": 2406440,
@@ -5946,15 +4089,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-203
+206
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-206
+53
 ],
 "date": "1876-07-14",
 "date_sdn": 2406450,
@@ -5963,28 +4106,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-203
+206
 ],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Baptism"
-},
-{
-"cita": [
-45
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0430",
-"media": [],
-"part_family": [],
-"part_person": [
-203
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Baptyzm"
 }
 ],
 [
@@ -5997,68 +4123,33 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-204
+207
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-173
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0558",
-"media": [],
-"part_family": [],
-"part_person": [
-204
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
-[
-{
-"cita": [
-68
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0453",
-"media": [],
-"part_family": [],
-"part_person": [
-205
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant birth date, from Soko\u0142owski, Stefan\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
+[],
 [
 {
 "cita": [],
-"date": "from 1812 to 1821",
+"date": "od 1812 do 1821",
 "date_sdn": 2382879,
 "descr": "brak lepszego potwierdzenia dat",
 "gid": "E0128",
 "media": [],
 "part_family": [],
 "part_person": [
-206
+209
 ],
-"place": 42,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nZ aktu \u015bubu:<br />\n\u0443\u0440\u043e\u0436\u0434\u0435\u043d\u043d\u043e\u043c\u044a \u0432 \u0434\u0435\u0440\u0435\u0432\u043d\u0438 \u0412\u0438\u0440\u0436\u0431\u043e\u0432\u0438\u0437\u043d\u0430, \u041f\u0440\u044b\u044f\u043e\u0434\u0430 \u041f\u0438\u044a\u043a\u0443\u0446\u043a\u044a, \u043d\u044b\u043d\u044a \u0432 \u0434\u0435\u0440\u0435\u0432\u043d\u0438\u0438 \u041a\u0430\u0447\u043a\u043e\u0432\u043e \u0436\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u0443\u044e\u0449\u0438\u043c\u044a.<br />\nUrodzony w wioce Wierzbowizna, parafia Piekutym, obecnie mieszkaj\u0105cy w wiosce Kaczkowo\n</p>\n</div>\n</div>",
-"type": "Birth"
+"place": 83,
+"text": "<div>\n<i class=\"NoteType\">\nNotatka zdarzenia\n</i>\n<div class=\"grampsstylednote\">\n<p>\nZ aktu \u015bubu:<br />\n\u0443\u0440\u043e\u0436\u0434\u0435\u043d\u043d\u043e\u043c\u044a \u0432 \u0434\u0435\u0440\u0435\u0432\u043d\u0438 \u0412\u0438\u0440\u0436\u0431\u043e\u0432\u0438\u0437\u043d\u0430, \u041f\u0440\u044b\u044f\u043e\u0434\u0430 \u041f\u0438\u044a\u043a\u0443\u0446\u043a\u044a, \u043d\u044b\u043d\u044a \u0432 \u0434\u0435\u0440\u0435\u0432\u043d\u0438\u0438 \u041a\u0430\u0447\u043a\u043e\u0432\u043e \u0436\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u0443\u044e\u0449\u0438\u043c\u044a.<br />\nUrodzony w wioce Wierzbowizna, parafia Piekutym, obecnie mieszkaj\u0105cy w wiosce Kaczkowo\n</p>\n</div>\n</div>",
+"type": "Narodziny"
 },
 {
 "cita": [
-203
+50
 ],
 "date": "1872-04-28",
 "date_sdn": 2404912,
@@ -6067,72 +4158,18 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-206
+209
 ],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
-},
-{
-"cita": [
-62
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0447",
-"media": [],
-"part_family": [],
-"part_person": [
-206
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
+[],
 [
 {
 "cita": [
-40
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0425",
-"media": [],
-"part_family": [],
-"part_person": [
-207
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant death date, from Wicopolski, Stanis\u0142aw\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-100
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0485",
-"media": [],
-"part_family": [],
-"part_person": [
-208
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant death date, from Zabielska/Roma\u0144\u015bka/Szemborska, Julianna\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-201
+48
 ],
 "date": "1868-01-06",
 "date_sdn": 2403338,
@@ -6141,11 +4178,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-209
+211
 ],
-"place": 29,
+"place": 56,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -6156,64 +4193,31 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-209
+211
 ],
-"place": 29,
+"place": 56,
 "text": "",
-"type": "Baptism"
-},
-{
-"cita": [
-33
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0418",
-"media": [],
-"part_family": [],
-"part_person": [
-209
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Baptyzm"
 }
 ],
 [
 {
 "cita": [],
-"date": "about 1836",
+"date": "ok. 1836",
 "date_sdn": 2391645,
 "descr": "",
 "gid": "E0204",
 "media": [],
 "part_family": [],
 "part_person": [
-210
+212
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-104
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0489",
-"media": [],
-"part_family": [],
-"part_person": [
-210
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
+[],
 [
 {
 "cita": [],
@@ -6224,83 +4228,31 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-211
+214
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-145
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0530",
-"media": [],
-"part_family": [],
-"part_person": [
-211
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [],
-"date": "about 1785",
+"date": "ok. 1785",
 "date_sdn": 2373019,
 "descr": "",
 "gid": "E0171",
 "media": [],
 "part_family": [],
 "part_person": [
-212
+215
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-82
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0467",
-"media": [],
-"part_family": [],
-"part_person": [
-212
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
-[
-{
-"cita": [
-39
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0424",
-"media": [],
-"part_family": [],
-"part_person": [
-213
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant death date, from Wicopolski, Stanis\u0142aw\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
+[],
 [
 {
 "cita": [],
@@ -6311,11 +4263,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-214
+217
 ],
-"place": 19,
+"place": 45,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -6328,33 +4280,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-215
+218
 ],
-"place": 2,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nZgon pierwszej \u017cony Stefana Soko\u0142owskiego:<br />\n1872\t28\tKatarzyna \tSoko\u0142owska [Inne nazwiska: Wilczy\u0144ska ] \tAndrzej\tAnastazja\t\tBrok\tKaczkowo<br />\nUrodziny - Czy nie jest za stara?<br />\n1810\t55\tKatarzyna \tWilczy\u0144ska\tAndrzej\tAnastazja\tZakrzewska\tAndrzejewo\tMroczki Przezdziecko\n</p>\n<p>\n&nbsp;\n</p>\n<p>\nDziecki z pierwszego ma\u0142\u017ce\u0144stwa<br />\nUrodziny:<br />\n1834\t6\tMarianna \tSoko\u0142owska [Inne nazwiska: Sobotowska ] \tStefan\tKatarzyna\tWilczy\u0144ska\tJasienica\tKalinowo<br />\n\u015bluby:<br />\n1862\t2\tKonstanty \tBramer\tKarol, Katarzyna Karczewska\tMarcjanna \tSoko\u0142owska\tStefan, Katarzyna Wilczynska\tBrok\t[ Miejscowo\u015b\u0107: Kaczkowo ]<br />\n1862\t68\tKonstanty \tSasinowski\tJan, Jozefata Kalinowska\tMa\u0142gorzata \tSoko\u0142owska\tStefan, Katarzyna Wilczynska\tBrok\t[ Miejscowo\u015b\u0107: Czuraj ]\n</p>\n<p>\n&nbsp;\n</p>\n</div>\n</div>",
-"type": "Death"
+"place": 3,
+"text": "<div>\n<i class=\"NoteType\">\nNotatka zdarzenia\n</i>\n<div class=\"grampsstylednote\">\n<p>\nZgon pierwszej \u017cony Stefana Soko\u0142owskiego:<br />\n1872\t28\tKatarzyna \tSoko\u0142owska [Inne nazwiska: Wilczy\u0144ska ] \tAndrzej\tAnastazja\t\tBrok\tKaczkowo<br />\nUrodziny - Czy nie jest za stara?<br />\n1810\t55\tKatarzyna \tWilczy\u0144ska\tAndrzej\tAnastazja\tZakrzewska\tAndrzejewo\tMroczki Przezdziecko\n</p>\n<p>\n&nbsp;\n</p>\n<p>\nDziecki z pierwszego ma\u0142\u017ce\u0144stwa<br />\nUrodziny:<br />\n1834\t6\tMarianna \tSoko\u0142owska [Inne nazwiska: Sobotowska ] \tStefan\tKatarzyna\tWilczy\u0144ska\tJasienica\tKalinowo<br />\n\u015bluby:<br />\n1862\t2\tKonstanty \tBramer\tKarol, Katarzyna Karczewska\tMarcjanna \tSoko\u0142owska\tStefan, Katarzyna Wilczynska\tBrok\t[ Miejscowo\u015b\u0107: Kaczkowo ]<br />\n1862\t68\tKonstanty \tSasinowski\tJan, Jozefata Kalinowska\tMa\u0142gorzata \tSoko\u0142owska\tStefan, Katarzyna Wilczynska\tBrok\t[ Miejscowo\u015b\u0107: Czuraj ]\n</p>\n<p>\n&nbsp;\n</p>\n</div>\n</div>",
+"type": "\u015amier\u0107"
 }
 ],
 [],
-[
-{
-"cita": [
-80
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0465",
-"media": [],
-"part_family": [],
-"part_person": [
-217
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, , from Zy\u015bk, Aleksander\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
+[],
 [
 {
 "cita": [],
@@ -6365,15 +4299,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-218
+221
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-213
+60
 ],
 "date": "1897-02-18",
 "date_sdn": 2413974,
@@ -6382,11 +4316,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-218
+221
 ],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -6399,931 +4333,35 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-219
-],
-"place": -1,
-"text": "",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-78
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0463",
-"media": [],
-"part_family": [],
-"part_person": [
-220
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, death date, from Figat, Pawe\u0142\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1879",
-"date_sdn": 2407351,
-"descr": "1879 akt 82",
-"gid": "E0271",
-"media": [],
-"part_family": [],
-"part_person": [
-221
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [
-130
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0515",
-"media": [],
-"part_family": [],
-"part_person": [
-221
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "about 1786",
-"date_sdn": 2373384,
-"descr": "",
-"gid": "E0191",
-"media": [],
-"part_family": [],
-"part_person": [
 222
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-94
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0479",
-"media": [],
-"part_family": [],
-"part_person": [
-222
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
+[],
+[],
+[],
+[],
 [
 {
 "cita": [],
-"date": "1872",
-"date_sdn": 2404794,
-"descr": "1872 akt 135",
-"gid": "E0269",
-"media": [],
-"part_family": [],
-"part_person": [
-223
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [],
-"date": "1873",
-"date_sdn": 2405160,
-"descr": "1873 akt 66",
-"gid": "E0277",
-"media": [],
-"part_family": [],
-"part_person": [
-223
-],
-"place": 14,
-"text": "",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1877",
-"date_sdn": 2406621,
-"descr": "1877 akt 17",
-"gid": "E0270",
-"media": [],
-"part_family": [],
-"part_person": [
-224
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [],
-"date": "1891",
-"date_sdn": 2411734,
-"descr": "1891 akt 98",
-"gid": "E0276",
-"media": [],
-"part_family": [],
-"part_person": [
-224
-],
-"place": 14,
-"text": "",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1851",
-"date_sdn": 2397124,
-"descr": "1851 akt 80",
-"gid": "E0321",
-"media": [],
-"part_family": [],
-"part_person": [
-225
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [],
-"date": "1856",
-"date_sdn": 2398950,
-"descr": "1856 akt 103 lub 162 (s\u0105 2 pozycje)",
-"gid": "E0324",
-"media": [],
-"part_family": [],
-"part_person": [
-225
-],
-"place": 14,
-"text": "",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "",
-"date_sdn": 0,
-"descr": "1897 akt 45",
-"gid": "E0274",
-"media": [],
-"part_family": [],
-"part_person": [
-226
-],
-"place": 2,
-"text": "",
-"type": "Marriage"
-},
-{
-"cita": [
-133
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0518",
-"media": [],
-"part_family": [],
-"part_person": [
-226
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on sibling birth date, from \u017bach, Rozalia\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1812",
-"date_sdn": 2382879,
-"descr": "1812 akt 116",
-"gid": "E0334",
-"media": [],
-"part_family": [],
-"part_person": [
-227
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [],
-"date": "1812",
-"date_sdn": 2382879,
-"descr": "1812 akt 56",
-"gid": "E0339",
-"media": [],
-"part_family": [],
-"part_person": [
-227
-],
-"place": 14,
-"text": "",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-186
-],
-"date": "1818-06-13",
-"date_sdn": 2385234,
-"descr": "",
-"gid": "E0158",
-"media": [],
-"part_family": [],
-"part_person": [
-228
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [
-199
-],
-"date": "1854-03-15",
-"date_sdn": 2398293,
-"descr": "",
-"gid": "E0123",
-"media": [],
-"part_family": [],
-"part_person": [
-228
-],
-"place": 14,
-"text": "",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1886",
-"date_sdn": 2409908,
-"descr": "1886 akt 18",
-"gid": "E0273",
-"media": [],
-"part_family": [],
-"part_person": [
-229
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [
-132
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0517",
-"media": [],
-"part_family": [],
-"part_person": [
-229
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1882",
-"date_sdn": 2408447,
-"descr": "1882 akt 35",
-"gid": "E0272",
-"media": [],
-"part_family": [],
-"part_person": [
-230
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [
-131
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0516",
-"media": [],
-"part_family": [],
-"part_person": [
-230
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1814",
-"date_sdn": 2383610,
-"descr": "1814 akt 104",
-"gid": "E0335",
-"media": [],
-"part_family": [],
-"part_person": [
-231
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [],
-"date": "1814",
-"date_sdn": 2383610,
-"descr": "1814 akt 146",
-"gid": "E0340",
-"media": [],
-"part_family": [],
-"part_person": [
-231
-],
-"place": 14,
-"text": "",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1852",
-"date_sdn": 2397489,
-"descr": "1852 akt 99",
-"gid": "E0322",
-"media": [],
-"part_family": [],
-"part_person": [
-232
-],
-"place": 14,
-"text": "",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1844",
-"date_sdn": 2394567,
-"descr": "1844 akt 43",
-"gid": "E0320",
-"media": [],
-"part_family": [],
-"part_person": [
-233
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [
-148
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0533",
-"media": [],
-"part_family": [],
-"part_person": [
-233
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1826",
-"date_sdn": 2387993,
-"descr": "1826 akt 93",
-"gid": "E0343",
-"media": [],
-"part_family": [],
-"part_person": [
-234
-],
-"place": 14,
-"text": "",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1808",
-"date_sdn": 2381418,
-"descr": "1808 akt 60",
-"gid": "E0333",
-"media": [],
-"part_family": [],
-"part_person": [
-235
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [
-153
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0538",
-"media": [],
-"part_family": [],
-"part_person": [
-235
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1815",
-"date_sdn": 2383975,
-"descr": "1815 akt 124",
-"gid": "E0336",
-"media": [],
-"part_family": [],
-"part_person": [
-236
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [
-154
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0539",
-"media": [],
-"part_family": [],
-"part_person": [
-236
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1868",
-"date_sdn": 2403333,
-"descr": "1868 akt 59",
-"gid": "E0268",
-"media": [],
-"part_family": [],
-"part_person": [
-237
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [],
-"date": "1869",
-"date_sdn": 2403699,
-"descr": "1869 akt 60",
-"gid": "E0275",
-"media": [],
-"part_family": [],
-"part_person": [
-237
-],
-"place": 14,
-"text": "",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1841",
-"date_sdn": 2393472,
-"descr": "1841 akt 75",
-"gid": "E0319",
-"media": [],
-"part_family": [],
-"part_person": [
-238
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [
-147
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0532",
-"media": [],
-"part_family": [],
-"part_person": [
-238
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-205
-],
-"date": "1874-05-15",
-"date_sdn": 2405659,
-"descr": "",
-"gid": "E0098",
-"media": [],
-"part_family": [],
-"part_person": [
-239
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [
-205
-],
-"date": "1959-08-03",
-"date_sdn": 2436784,
-"descr": "",
-"gid": "E0105",
-"media": [],
-"part_family": [],
-"part_person": [
-239
-],
-"place": 28,
-"text": "",
-"type": "Death"
-},
-{
-"cita": [
-205
-],
-"date": "1974-05-17",
-"date_sdn": 2442185,
-"descr": "",
-"gid": "E0106",
-"media": [],
-"part_family": [],
-"part_person": [
-239
-],
-"place": 2,
-"text": "",
-"type": "Baptism"
-}
-],
-[
-{
-"cita": [],
-"date": "estimated 1827",
-"date_sdn": 2388358,
-"descr": "",
-"gid": "E0325",
-"media": [],
-"part_family": [],
-"part_person": [
-240
-],
-"place": -1,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [],
-"date": "",
-"date_sdn": 0,
-"descr": "",
-"gid": "E0326",
-"media": [],
-"part_family": [],
-"part_person": [
-240
-],
-"place": -1,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [
-149
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0534",
-"media": [],
-"part_family": [],
-"part_person": [
-240
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1822",
-"date_sdn": 2386532,
-"descr": "1822 akt 48",
-"gid": "E0338",
-"media": [],
-"part_family": [],
-"part_person": [
-241
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [],
-"date": "1822",
-"date_sdn": 2386532,
-"descr": "1822 akt 14",
-"gid": "E0342",
-"media": [],
-"part_family": [],
-"part_person": [
-241
-],
-"place": 14,
-"text": "",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-232
-],
-"date": "1847-09-19",
-"date_sdn": 2395924,
-"descr": "ksi\u0119gi brok 1847 poz 122",
-"gid": "E0107",
-"media": [],
-"part_family": [],
-"part_person": [
-242
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [
-47
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0432",
-"media": [],
-"part_family": [],
-"part_person": [
-242
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "1821",
-"date_sdn": 2386167,
-"descr": "1821 akt 155",
-"gid": "E0337",
-"media": [],
-"part_family": [],
-"part_person": [
-243
-],
-"place": 14,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [],
-"date": "1821",
-"date_sdn": 2386167,
-"descr": "1821 akt 8",
-"gid": "E0341",
-"media": [],
-"part_family": [],
-"part_person": [
-243
-],
-"place": 14,
-"text": "",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-87
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0472",
-"media": [],
-"part_family": [],
-"part_person": [
-244
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant death date, from Ferenc, Jakub\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-91
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0476",
-"media": [],
-"part_family": [],
-"part_person": [
-245
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant birth date, from Kucharczyk, Jan Nepomucen\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-51
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0436",
-"media": [],
-"part_family": [],
-"part_person": [
-246
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant birth date, from Zara\u015b, Marianna\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [
-50
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0435",
-"media": [],
-"part_family": [],
-"part_person": [
-247
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, descendant birth date, from Zara\u015b, Marianna\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "about 1823",
+"date": "ok. 1823",
 "date_sdn": 2386897,
 "descr": "",
 "gid": "E0112",
 "media": [],
 "part_family": [],
 "part_person": [
-248
+227
 ],
-"place": 36,
+"place": 77,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-37
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0422",
-"media": [],
-"part_family": [],
-"part_person": [
-248
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
-[
-{
-"cita": [
-25
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0410",
-"media": [],
-"part_family": [],
-"part_person": [
-249
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, birth date, from Piekarzewski, Stanis\u0142aw\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
+[],
 [
 {
 "cita": [],
@@ -7334,34 +4372,18 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-250
+229
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-49
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0434",
-"media": [],
-"part_family": [],
-"part_person": [
-250
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, sibling birth date, from Jaworska, El\u017cbieta\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
+[],
 [
 {
 "cita": [
-230
+77
 ],
 "date": "1911-07-08",
 "date_sdn": 2419226,
@@ -7370,15 +4392,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-251
+231
 ],
-"place": 46,
+"place": 53,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-230
+77
 ],
 "date": "1911-07-09",
 "date_sdn": 2419227,
@@ -7387,15 +4409,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-251
+231
 ],
-"place": 45,
+"place": 90,
 "text": "",
-"type": "Baptism"
+"type": "Baptyzm"
 },
 {
 "cita": [
-9
+8
 ],
 "date": "1944-12-15",
 "date_sdn": 2431440,
@@ -7404,17 +4426,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-251
+231
 ],
-"place": 27,
+"place": 54,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
 {
 "cita": [
-222
+69
 ],
 "date": "1908-04-03",
 "date_sdn": 2418035,
@@ -7423,15 +4445,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-252
+232
 ],
-"place": 46,
+"place": 53,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-241
+88
 ],
 "date": "1957-03-29",
 "date_sdn": 2435927,
@@ -7440,15 +4462,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-252
+232
 ],
-"place": 41,
+"place": 82,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 },
 {
 "cita": [
-222
+69
 ],
 "date": "1908-04-04",
 "date_sdn": 2418036,
@@ -7457,11 +4479,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-252
+232
 ],
-"place": 45,
+"place": 90,
 "text": "",
-"type": "Baptism"
+"type": "Baptyzm"
 }
 ],
 [
@@ -7474,62 +4496,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-253
+233
 ],
-"place": 18,
+"place": 44,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-158
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0543",
-"media": [],
-"part_family": [],
-"part_person": [
-253
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
-[
-{
-"cita": [],
-"date": "from 1863 to 1965",
-"date_sdn": 2401507,
-"descr": "",
-"gid": "E0100",
-"media": [],
-"part_family": [],
-"part_person": [
-254
-],
-"place": -1,
-"text": "",
-"type": "Birth"
-},
-{
-"cita": [
-44
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0429",
-"media": [],
-"part_family": [],
-"part_person": [
-254
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -7542,28 +4513,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-255
+234
 ],
-"place": 15,
+"place": 40,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-160
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0545",
-"media": [],
-"part_family": [],
-"part_person": [
-255
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -7576,11 +4530,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-256
+235
 ],
-"place": 4,
+"place": 5,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -7591,11 +4545,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-256
+235
 ],
-"place": 14,
+"place": 39,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -7608,34 +4562,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-257
+236
 ],
-"place": 5,
+"place": 6,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-107
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0492",
-"media": [],
-"part_family": [],
-"part_person": [
-257
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-15
+14
 ],
 "date": "1821-03-25",
 "date_sdn": 2386250,
@@ -7644,28 +4581,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-258
+237
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-64
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0449",
-"media": [],
-"part_family": [],
-"part_person": [
-258
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -7678,11 +4598,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-259
+238
 ],
-"place": 38,
+"place": 79,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -7693,11 +4613,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-259
+238
 ],
-"place": 38,
+"place": 79,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -7710,28 +4630,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-260
+239
 ],
 "place": -1,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-81
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0466",
-"media": [],
-"part_family": [],
-"part_person": [
-260
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on a spouse's birth-related date, birth date, from Warych, Agata\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -7744,11 +4647,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-261
+240
 ],
-"place": 18,
+"place": 44,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -7759,11 +4662,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-261
+240
 ],
-"place": 18,
+"place": 44,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -7776,11 +4679,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-262
+241
 ],
-"place": 15,
+"place": 40,
 "text": "",
-"type": "Death"
+"type": "\u015amier\u0107"
 }
 ],
 [
@@ -7793,28 +4696,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-263
+242
 ],
-"place": 38,
+"place": 79,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-157
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0542",
-"media": [],
-"part_family": [],
-"part_person": [
-263
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -7827,28 +4713,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-264
+243
 ],
-"place": 18,
+"place": 44,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-159
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0544",
-"media": [],
-"part_family": [],
-"part_person": [
-264
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -7861,49 +4730,14 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-265
+244
 ],
-"place": 38,
+"place": 79,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-155
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0540",
-"media": [],
-"part_family": [],
-"part_person": [
-265
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
-[
-{
-"cita": [
-108
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0493",
-"media": [],
-"part_family": [],
-"part_person": [
-266
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on sibling birth date, from Zy\u015bk, Anna\n</p>\n</div>\n</div>",
-"type": "Death"
-}
-],
+[],
 [
 {
 "cita": [],
@@ -7914,28 +4748,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-267
+246
 ],
-"place": 38,
+"place": 79,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-156
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0541",
-"media": [],
-"part_family": [],
-"part_person": [
-267
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
@@ -7948,34 +4765,17 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-268
+247
 ],
-"place": 4,
+"place": 5,
 "text": "",
-"type": "Birth"
-},
-{
-"cita": [
-106
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0491",
-"media": [],
-"part_family": [],
-"part_person": [
-268
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Narodziny"
 }
 ],
 [
 {
 "cita": [
-196
+43
 ],
 "date": "1843-11-01",
 "date_sdn": 2394506,
@@ -7984,15 +4784,15 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-269
+248
 ],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [
-196
+43
 ],
 "date": "1843-11-02",
 "date_sdn": 2394507,
@@ -8001,28 +4801,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-269
+248
 ],
 "place": -1,
 "text": "",
-"type": "Baptism"
-},
-{
-"cita": [
-60
-],
-"date": "",
-"date_sdn": 0,
-"descr": "Estimated death date",
-"gid": "E0445",
-"media": [],
-"part_family": [],
-"part_person": [
-269
-],
-"place": -1,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nAdded death event based on birth date\n</p>\n</div>\n</div>",
-"type": "Death"
+"type": "Baptyzm"
 }
 ],
 [
@@ -8035,11 +4818,11 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
-270
+249
 ],
-"place": 46,
+"place": 53,
 "text": "",
-"type": "Birth"
+"type": "Narodziny"
 },
 {
 "cita": [],
@@ -8050,11 +4833,595 @@ I_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [
+249
+],
+"place": 53,
+"text": "",
+"type": "\u015amier\u0107"
+}
+],
+[],
+[
+{
+"cita": [],
+"date": "1879",
+"date_sdn": 2407351,
+"descr": "1879 akt 82",
+"gid": "E0271",
+"media": [],
+"part_family": [],
+"part_person": [
+251
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+}
+],
+[
+{
+"cita": [],
+"date": "ok. 1786",
+"date_sdn": 2373384,
+"descr": "",
+"gid": "E0191",
+"media": [],
+"part_family": [],
+"part_person": [
+252
+],
+"place": -1,
+"text": "",
+"type": "Narodziny"
+}
+],
+[
+{
+"cita": [],
+"date": "1872",
+"date_sdn": 2404794,
+"descr": "1872 akt 135",
+"gid": "E0269",
+"media": [],
+"part_family": [],
+"part_person": [
+253
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+},
+{
+"cita": [],
+"date": "1873",
+"date_sdn": 2405160,
+"descr": "1873 akt 66",
+"gid": "E0277",
+"media": [],
+"part_family": [],
+"part_person": [
+253
+],
+"place": 39,
+"text": "",
+"type": "\u015amier\u0107"
+}
+],
+[
+{
+"cita": [],
+"date": "1877",
+"date_sdn": 2406621,
+"descr": "1877 akt 17",
+"gid": "E0270",
+"media": [],
+"part_family": [],
+"part_person": [
+254
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+},
+{
+"cita": [],
+"date": "1891",
+"date_sdn": 2411734,
+"descr": "1891 akt 98",
+"gid": "E0276",
+"media": [],
+"part_family": [],
+"part_person": [
+254
+],
+"place": 39,
+"text": "",
+"type": "\u015amier\u0107"
+}
+],
+[
+{
+"cita": [],
+"date": "1851",
+"date_sdn": 2397124,
+"descr": "1851 akt 80",
+"gid": "E0321",
+"media": [],
+"part_family": [],
+"part_person": [
+255
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+},
+{
+"cita": [],
+"date": "1856",
+"date_sdn": 2398950,
+"descr": "1856 akt 103 lub 162 (s\u0105 2 pozycje)",
+"gid": "E0324",
+"media": [],
+"part_family": [],
+"part_person": [
+255
+],
+"place": 39,
+"text": "",
+"type": "\u015amier\u0107"
+}
+],
+[
+{
+"cita": [],
+"date": "",
+"date_sdn": 0,
+"descr": "1897 akt 45",
+"gid": "E0274",
+"media": [],
+"part_family": [],
+"part_person": [
+256
+],
+"place": 3,
+"text": "",
+"type": "Ma\u0142\u017ce\u0144stwo"
+}
+],
+[
+{
+"cita": [],
+"date": "1812",
+"date_sdn": 2382879,
+"descr": "1812 akt 116",
+"gid": "E0334",
+"media": [],
+"part_family": [],
+"part_person": [
+257
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+},
+{
+"cita": [],
+"date": "1812",
+"date_sdn": 2382879,
+"descr": "1812 akt 56",
+"gid": "E0339",
+"media": [],
+"part_family": [],
+"part_person": [
+257
+],
+"place": 39,
+"text": "",
+"type": "\u015amier\u0107"
+}
+],
+[
+{
+"cita": [
+33
+],
+"date": "1818-06-13",
+"date_sdn": 2385234,
+"descr": "",
+"gid": "E0158",
+"media": [],
+"part_family": [],
+"part_person": [
+258
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+},
+{
+"cita": [
+46
+],
+"date": "1854-03-15",
+"date_sdn": 2398293,
+"descr": "",
+"gid": "E0123",
+"media": [],
+"part_family": [],
+"part_person": [
+258
+],
+"place": 39,
+"text": "",
+"type": "\u015amier\u0107"
+}
+],
+[
+{
+"cita": [],
+"date": "1886",
+"date_sdn": 2409908,
+"descr": "1886 akt 18",
+"gid": "E0273",
+"media": [],
+"part_family": [],
+"part_person": [
+259
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+}
+],
+[
+{
+"cita": [],
+"date": "1882",
+"date_sdn": 2408447,
+"descr": "1882 akt 35",
+"gid": "E0272",
+"media": [],
+"part_family": [],
+"part_person": [
+260
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+}
+],
+[
+{
+"cita": [],
+"date": "1814",
+"date_sdn": 2383610,
+"descr": "1814 akt 104",
+"gid": "E0335",
+"media": [],
+"part_family": [],
+"part_person": [
+261
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+},
+{
+"cita": [],
+"date": "1814",
+"date_sdn": 2383610,
+"descr": "1814 akt 146",
+"gid": "E0340",
+"media": [],
+"part_family": [],
+"part_person": [
+261
+],
+"place": 39,
+"text": "",
+"type": "\u015amier\u0107"
+}
+],
+[
+{
+"cita": [],
+"date": "1852",
+"date_sdn": 2397489,
+"descr": "1852 akt 99",
+"gid": "E0322",
+"media": [],
+"part_family": [],
+"part_person": [
+262
+],
+"place": 39,
+"text": "",
+"type": "\u015amier\u0107"
+}
+],
+[
+{
+"cita": [],
+"date": "1844",
+"date_sdn": 2394567,
+"descr": "1844 akt 43",
+"gid": "E0320",
+"media": [],
+"part_family": [],
+"part_person": [
+263
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+}
+],
+[
+{
+"cita": [],
+"date": "1826",
+"date_sdn": 2387993,
+"descr": "1826 akt 93",
+"gid": "E0343",
+"media": [],
+"part_family": [],
+"part_person": [
+264
+],
+"place": 39,
+"text": "",
+"type": "\u015amier\u0107"
+}
+],
+[
+{
+"cita": [],
+"date": "1808",
+"date_sdn": 2381418,
+"descr": "1808 akt 60",
+"gid": "E0333",
+"media": [],
+"part_family": [],
+"part_person": [
+265
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+}
+],
+[
+{
+"cita": [],
+"date": "1815",
+"date_sdn": 2383975,
+"descr": "1815 akt 124",
+"gid": "E0336",
+"media": [],
+"part_family": [],
+"part_person": [
+266
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+}
+],
+[
+{
+"cita": [],
+"date": "1868",
+"date_sdn": 2403333,
+"descr": "1868 akt 59",
+"gid": "E0268",
+"media": [],
+"part_family": [],
+"part_person": [
+267
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+},
+{
+"cita": [],
+"date": "1869",
+"date_sdn": 2403699,
+"descr": "1869 akt 60",
+"gid": "E0275",
+"media": [],
+"part_family": [],
+"part_person": [
+267
+],
+"place": 39,
+"text": "",
+"type": "\u015amier\u0107"
+}
+],
+[
+{
+"cita": [],
+"date": "1841",
+"date_sdn": 2393472,
+"descr": "1841 akt 75",
+"gid": "E0319",
+"media": [],
+"part_family": [],
+"part_person": [
+268
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+}
+],
+[
+{
+"cita": [
+52
+],
+"date": "1874-05-15",
+"date_sdn": 2405659,
+"descr": "",
+"gid": "E0098",
+"media": [],
+"part_family": [],
+"part_person": [
+269
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+},
+{
+"cita": [
+52
+],
+"date": "1959-08-03",
+"date_sdn": 2436784,
+"descr": "",
+"gid": "E0105",
+"media": [],
+"part_family": [],
+"part_person": [
+269
+],
+"place": 55,
+"text": "",
+"type": "\u015amier\u0107"
+},
+{
+"cita": [
+52
+],
+"date": "1974-05-17",
+"date_sdn": 2442185,
+"descr": "",
+"gid": "E0106",
+"media": [],
+"part_family": [],
+"part_person": [
+269
+],
+"place": 3,
+"text": "",
+"type": "Baptyzm"
+}
+],
+[
+{
+"cita": [],
+"date": "szacowany 1827",
+"date_sdn": 2388358,
+"descr": "",
+"gid": "E0325",
+"media": [],
+"part_family": [],
+"part_person": [
 270
 ],
-"place": 46,
+"place": -1,
 "text": "",
-"type": "Death"
+"type": "Narodziny"
+},
+{
+"cita": [],
+"date": "",
+"date_sdn": 0,
+"descr": "",
+"gid": "E0326",
+"media": [],
+"part_family": [],
+"part_person": [
+270
+],
+"place": -1,
+"text": "",
+"type": "Narodziny"
+}
+],
+[
+{
+"cita": [],
+"date": "1822",
+"date_sdn": 2386532,
+"descr": "1822 akt 48",
+"gid": "E0338",
+"media": [],
+"part_family": [],
+"part_person": [
+271
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+},
+{
+"cita": [],
+"date": "1822",
+"date_sdn": 2386532,
+"descr": "1822 akt 14",
+"gid": "E0342",
+"media": [],
+"part_family": [],
+"part_person": [
+271
+],
+"place": 39,
+"text": "",
+"type": "\u015amier\u0107"
+}
+],
+[
+{
+"cita": [
+79
+],
+"date": "1847-09-19",
+"date_sdn": 2395924,
+"descr": "ksi\u0119gi brok 1847 poz 122",
+"gid": "E0107",
+"media": [],
+"part_family": [],
+"part_person": [
+272
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+}
+],
+[
+{
+"cita": [],
+"date": "1821",
+"date_sdn": 2386167,
+"descr": "1821 akt 155",
+"gid": "E0337",
+"media": [],
+"part_family": [],
+"part_person": [
+273
+],
+"place": 39,
+"text": "",
+"type": "Narodziny"
+},
+{
+"cita": [],
+"date": "1821",
+"date_sdn": 2386167,
+"descr": "1821 akt 8",
+"gid": "E0341",
+"media": [],
+"part_family": [],
+"part_person": [
+273
+],
+"place": 39,
+"text": "",
+"type": "\u015amier\u0107"
 }
 ]
 ]

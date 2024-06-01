@@ -4,7 +4,7 @@ F_events_0 = [
 [
 {
 "cita": [
-175
+22
 ],
 "date": "1795-08-11",
 "date_sdn": 2376893,
@@ -13,9 +13,9 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 11,
+"place": 35,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
@@ -30,7 +30,7 @@ F_events_0 = [
 "part_person": [],
 "place": -1,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [],
@@ -44,9 +44,9 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 34,
+"place": 61,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [],
@@ -61,9 +61,9 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 21,
+"place": 47,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
@@ -80,7 +80,7 @@ F_events_0 = [
 "part_person": [],
 "place": -1,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 },
 {
 "cita": [],
@@ -95,13 +95,13 @@ F_events_0 = [
 ],
 "place": -1,
 "text": "",
-"type": "Wdowa (Bride)"
+"type": "Wdowa (Panna m\u0142oda)"
 }
 ],
 [
 {
 "cita": [
-249
+96
 ],
 "date": "1881-11-21",
 "date_sdn": 2408406,
@@ -112,13 +112,13 @@ F_events_0 = [
 "part_person": [],
 "place": -1,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
 {
 "cita": [
-179
+26
 ],
 "date": "1809-01-22",
 "date_sdn": 2381805,
@@ -127,15 +127,15 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 22,
+"place": 48,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
 {
 "cita": [
-174
+21
 ],
 "date": "1779",
 "date_sdn": 2370827,
@@ -144,9 +144,9 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [],
@@ -154,7 +154,7 @@ F_events_0 = [
 [
 {
 "cita": [
-212
+59
 ],
 "date": "1896-02-03",
 "date_sdn": 2413593,
@@ -163,9 +163,9 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
@@ -182,14 +182,14 @@ F_events_0 = [
 "part_person": [],
 "place": -1,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [],
 [
 {
 "cita": [
-189
+36
 ],
 "date": "1827-02-04",
 "date_sdn": 2388392,
@@ -198,9 +198,9 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 11,
+"place": 35,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
@@ -215,7 +215,7 @@ F_events_0 = [
 "part_person": [],
 "place": -1,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
@@ -228,9 +228,9 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [],
@@ -244,9 +244,9 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 10,
-"text": "<div>\n<i class=\"NoteType\">\nEvent Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nhttps://geneteka.genealodzy.pl/index.php?op=gt&amp;lang=pol&amp;bdm=S&amp;w=07mz&amp;rid=S&amp;search_lastname=Jaworski&amp;search_name=Maciej&amp;search_lastname2=&amp;search_name2=apolonia&amp;from_date=&amp;to_date=&amp;rpp1=&amp;ordertable=\n</p>\n</div>\n</div>",
-"type": "Marriage"
+"place": 33,
+"text": "<div>\n<i class=\"NoteType\">\nNotatka zdarzenia\n</i>\n<div class=\"grampsstylednote\">\n<p>\nhttps://geneteka.genealodzy.pl/index.php?op=gt&amp;lang=pol&amp;bdm=S&amp;w=07mz&amp;rid=S&amp;search_lastname=Jaworski&amp;search_name=Maciej&amp;search_lastname2=&amp;search_name2=apolonia&amp;from_date=&amp;to_date=&amp;rpp1=&amp;ordertable=\n</p>\n</div>\n</div>",
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
@@ -259,15 +259,15 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 2,
-"text": "<div>\n<i class=\"NoteType\">\nPerson Note\n</i>\n<div class=\"grampsstylednote\">\n<p>\nNazwisko Figat i data \u015blubu s\u0105 w\u0105tpliwe. To by\u0142oby zbyt stare ma\u0142\u017ce\u0144stwo.<br />\nNie ma mo\u017cwo\u015bci weryfikcji poniewa\u017c akt \u015blubu jest tylko z indexu\n</p>\n</div>\n</div>",
-"type": "Marriage"
+"place": 3,
+"text": "<div>\n<i class=\"NoteType\">\nNotatka o osobie\n</i>\n<div class=\"grampsstylednote\">\n<p>\nNazwisko Figat i data \u015blubu s\u0105 w\u0105tpliwe. To by\u0142oby zbyt stare ma\u0142\u017ce\u0144stwo.<br />\nNie ma mo\u017cwo\u015bci weryfikcji poniewa\u017c akt \u015blubu jest tylko z indexu\n</p>\n</div>\n</div>",
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
 {
 "cita": [
-190
+37
 ],
 "date": "1830-01-04",
 "date_sdn": 2389457,
@@ -276,15 +276,15 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
 {
 "cita": [
-14
+13
 ],
 "date": "1798",
 "date_sdn": 2377767,
@@ -293,15 +293,15 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
 {
 "cita": [
-244
+91
 ],
 "date": "1832-11-07",
 "date_sdn": 2390495,
@@ -310,9 +310,9 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [],
@@ -320,7 +320,7 @@ F_events_0 = [
 [
 {
 "cita": [
-187
+34
 ],
 "date": "1819-11-14",
 "date_sdn": 2385753,
@@ -329,9 +329,9 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 11,
+"place": 35,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [],
@@ -343,7 +343,7 @@ F_events_0 = [
 [
 {
 "cita": [
-226
+73
 ],
 "date": "1910-07-04",
 "date_sdn": 2418857,
@@ -352,15 +352,15 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 10,
+"place": 33,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
 {
 "cita": [
-214
+61
 ],
 "date": "1899-01-18",
 "date_sdn": 2414673,
@@ -369,9 +369,9 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 13,
+"place": 37,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [],
@@ -385,9 +385,24 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 3,
+"place": 4,
 "text": "",
-"type": "Marriage (Groom)"
+"type": "Ma\u0142\u017ce\u0144stwo (Pan m\u0142ody)"
+}
+],
+[
+{
+"cita": [],
+"date": "1922",
+"date_sdn": 2423056,
+"descr": "1922 akt 40",
+"gid": "E0406",
+"media": [],
+"part_family": [],
+"part_person": [],
+"place": 60,
+"text": "",
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
@@ -400,9 +415,9 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 21,
+"place": 47,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [],
@@ -410,7 +425,7 @@ F_events_0 = [
 [
 {
 "cita": [
-224
+71
 ],
 "date": "1952-02-18",
 "date_sdn": 2434061,
@@ -419,15 +434,15 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 0,
+"place": 1,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
 {
 "cita": [
-218
+65
 ],
 "date": "1902-06-08",
 "date_sdn": 2415909,
@@ -436,9 +451,9 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 29,
+"place": 56,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [],
@@ -447,7 +462,7 @@ F_events_0 = [
 [
 {
 "cita": [
-191
+38
 ],
 "date": "1832-06-25",
 "date_sdn": 2390360,
@@ -456,16 +471,16 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [],
 [
 {
 "cita": [
-203
+50
 ],
 "date": "1872-04-28",
 "date_sdn": 2404912,
@@ -474,9 +489,9 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
@@ -491,7 +506,7 @@ F_events_0 = [
 "part_person": [],
 "place": -1,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [],
@@ -508,9 +523,63 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 21,
+"place": 47,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
+}
+],
+[],
+[],
+[
+{
+"cita": [
+78
+],
+"date": "1940-05-21",
+"date_sdn": 2429771,
+"descr": "",
+"gid": "E0156",
+"media": [],
+"part_family": [],
+"part_person": [],
+"place": 43,
+"text": "",
+"type": "Ma\u0142\u017ce\u0144stwo"
+}
+],
+[
+{
+"cita": [
+42
+],
+"date": "1842-11-13",
+"date_sdn": 2394153,
+"descr": "",
+"gid": "E0167",
+"media": [],
+"part_family": [],
+"part_person": [],
+"place": 35,
+"text": "",
+"type": "Ma\u0142\u017ce\u0144stwo"
+}
+],
+[],
+[
+{
+"cita": [
+49
+],
+"date": "1870-02-27",
+"date_sdn": 2404121,
+"descr": "",
+"gid": "E0133",
+"media": [],
+"part_family": [],
+"part_person": [],
+"place": 3,
+"text": "",
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
@@ -523,15 +592,15 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
 {
 "cita": [
-194
+41
 ],
 "date": "1840-02-24",
 "date_sdn": 2393160,
@@ -540,15 +609,15 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [
 {
 "cita": [
-200
+47
 ],
 "date": "1865-02-20",
 "date_sdn": 2402288,
@@ -557,79 +626,9 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 2,
+"place": 3,
 "text": "",
-"type": "Marriage"
-}
-],
-[],
-[
-{
-"cita": [
-231
-],
-"date": "1940-05-21",
-"date_sdn": 2429771,
-"descr": "",
-"gid": "E0156",
-"media": [],
-"part_family": [],
-"part_person": [],
-"place": 31,
-"text": "",
-"type": "Marriage"
-}
-],
-[
-{
-"cita": [
-8
-],
-"date": "1894-05-14",
-"date_sdn": 2412963,
-"descr": "1894 / UMZ-1894 / akt 28",
-"gid": "E0126",
-"media": [],
-"part_family": [],
-"part_person": [],
-"place": -1,
-"text": "",
-"type": "Marriage"
-}
-],
-[
-{
-"cita": [
-195
-],
-"date": "1842-11-13",
-"date_sdn": 2394153,
-"descr": "",
-"gid": "E0167",
-"media": [],
-"part_family": [],
-"part_person": [],
-"place": 11,
-"text": "",
-"type": "Marriage"
-}
-],
-[],
-[
-{
-"cita": [
-202
-],
-"date": "1870-02-27",
-"date_sdn": 2404121,
-"descr": "",
-"gid": "E0133",
-"media": [],
-"part_family": [],
-"part_person": [],
-"place": 2,
-"text": "",
-"type": "Marriage"
+"type": "Ma\u0142\u017ce\u0144stwo"
 }
 ]
 ]
