@@ -775,24 +775,24 @@ M_bks_0 = [
 "cita": [],
 "note": "",
 "rect": [
-49,
-45,
-96,
-96
-],
-"thumb": "thumb/c/f/f985219e348bcec71f681845fc-49,45-96,96.png"
-},
-{
-"bk_idx": 0,
-"cita": [],
-"note": "",
-"rect": [
 47,
 45,
 96,
 94
 ],
 "thumb": "thumb/c/f/f985219e348bcec71f681845fc-47,45-96,94.png"
+},
+{
+"bk_idx": 0,
+"cita": [],
+"note": "",
+"rect": [
+49,
+45,
+96,
+96
+],
+"thumb": "thumb/c/f/f985219e348bcec71f681845fc-49,45-96,96.png"
 }
 ],
 [
