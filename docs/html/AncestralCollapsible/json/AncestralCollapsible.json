@@ -1,14 +1,14 @@
 {
- "name": "Sakowski, Piotr Ryszard",
+ "name": "Sakowski, [Living]",
  "gender": "male",
- "born": "1973",
+ "born": "x",
  "died": "",
  "gramps_id": "I0000",
  "children": [
   {
-   "name": "Sakowski, Ryszard",
+   "name": "Sakowski, [Living]",
    "gender": "male",
-   "born": "1941",
+   "born": "x",
    "died": "",
    "gramps_id": "I0004",
    "children": [
@@ -237,9 +237,9 @@
    ]
   },
   {
-   "name": "Sakowska, Romana Marianna",
+   "name": "Sakowska, [Living]",
    "gender": "female",
-   "born": "1943",
+   "born": "x",
    "died": "",
    "gramps_id": "I0005",
    "children": [
