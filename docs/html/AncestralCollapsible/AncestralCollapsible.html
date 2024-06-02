@@ -144,6 +144,31 @@
                 "radius": HEATMAP_RADIUS}
         ).addTo(GrampsHeatmap);
     </script>
+<script>
+function loadContent(url) {
+  var container = document.getElementById('content');
+  var xhr = new XMLHttpRequest();
 
+  xhr.onreadystatechange = function() { 
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      // Create a new div element
+      var newDiv = document.createElement('div');
+      newDiv.innerHTML = xhr.responseText;
+
+      // Replace the old inner div with the new one
+      var oldInnerDiv = container.querySelector('.inner-div');
+      if (oldInnerDiv) {
+        container.replaceChild(newDiv, oldInnerDiv);
+      } else {
+        container.appendChild(newDiv);
+      }
+    }
+  };
+
+  xhr.open("GET", url, true);
+  xhr.setRequestHeader('Content-type', 'text/html');
+  xhr.send();
+}
+</script>
 </body>
 </html>
