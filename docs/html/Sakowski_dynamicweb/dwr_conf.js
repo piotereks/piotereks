@@ -7,14 +7,14 @@ DWR_VERSION_500 = true;
 TITLE = "Drzewo Sakowskich";
 SPLIT = 5000;
 DB_SIZES = {
-    "C": 98,
+    "C": 323,
     "F": 65,
     "I": 274,
-    "M": 86,
+    "M": 87,
     "N": 56,
     "P": 91,
     "R": 0,
-    "S": 18
+    "S": 19
 };NB_GENERATIONS_MAX = 10;
 PAGES_FILE = ["index.html", "", "tree_svg.html"];
 PAGES_TITLE = ["DynWeb|Home", "Indexes", "Tree"];
@@ -33,11 +33,11 @@ SVG_TREE_BACKGROUND_PERIOD = 4;
 SVG_TREE_BACKGROUND_WHITE = 5;
 SVG_TREE_BACKGROUND_SCHEME1 = 6;
 SVG_TREE_BACKGROUND_SCHEME2 = 7;
-SVG_TREE_TYPE = 3;
+SVG_TREE_TYPE = 4;
 SVG_TREE_SHAPE = 4;
 SVG_TREE_DISTRIB_ASC = 1;
 SVG_TREE_DISTRIB_DSC = 0;
-SVG_TREE_BACKGROUND = 1;
+SVG_TREE_BACKGROUND = 6;
 SVG_TREE_COLOR1 = "#EF2929";
 SVG_TREE_COLOR2 = "#3D37E9";
 SVG_TREE_SHOW_DUP = true;

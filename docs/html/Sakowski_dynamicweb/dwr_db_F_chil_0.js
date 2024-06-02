@@ -1260,6 +1260,7 @@ F_chil_0 = [
 "to_mother": "Urodziny"
 }
 ],
+[],
 [
 {
 "cita": [],
@@ -1298,22 +1299,21 @@ F_chil_0 = [
 },
 {
 "cita": [
-70
+295
 ],
-"index": 232,
+"index": 231,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 },
 {
 "cita": [],
-"index": 231,
+"index": 230,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 }
 ],
-[],
 [
 {
 "cita": [],
@@ -1349,7 +1349,7 @@ F_chil_0 = [
 [
 {
 "cita": [],
-"index": 230,
+"index": 233,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -1384,7 +1384,7 @@ F_chil_0 = [
 },
 {
 "cita": [],
-"index": 233,
+"index": 232,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"

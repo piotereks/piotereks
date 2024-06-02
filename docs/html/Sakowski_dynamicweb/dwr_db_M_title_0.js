@@ -60,6 +60,7 @@ M_title_0 = [
 "1881 Dzikowski Miko\u0142aj Jaworska Zofia",
 "1887 80 Marianna Dzikowska Wicopolska Brzezi\u0144ska",
 "1892 338 Stanis\u0142awa_Dzikowska_metryka_urodzin.jpg",
+"1894 28 Antoni Zy\u015bk Marcjanna Soko\u0142owska MA",
 "1896 10 Figat Jan \u017bysk Rozalia MA",
 "1897 61 Julianna Dzikowska Zabielska Szemborska ZG",
 "1898 224 Kazimierz Dzikowski ZG",

@@ -4483,24 +4483,6 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "[\u017byj\u0105cy] Zy\u015bk",
-"given": "[\u017byj\u0105cy]",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"Zy\u015bk"
-],
-"title": "",
-"type": "Nazwisko rodowe"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
 "full": "Aleksander Zy\u015bk",
 "given": "Aleksander",
 "nick": "",
@@ -4555,6 +4537,24 @@ I_names_0 = [
 "fam_nick": "",
 "full": "Anna Zy\u015bk",
 "given": "Anna",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"Zy\u015bk"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Antoni Zy\u015bk",
+"given": "Antoni",
 "nick": "",
 "note": "",
 "suffix": "",
