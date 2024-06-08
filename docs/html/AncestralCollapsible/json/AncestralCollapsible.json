@@ -1,26 +1,26 @@
 {
- "name": "Sakowski, [Living]",
+ "name": "Piotr Ryszard Sakowski",
  "gender": "male",
- "born": "x",
+ "born": "1973",
  "died": "",
  "gramps_id": "I0000",
  "children": [
   {
-   "name": "Sakowski, [Living]",
+   "name": "Ryszard Sakowski",
    "gender": "male",
-   "born": "x",
+   "born": "1941",
    "died": "",
    "gramps_id": "I0004",
    "children": [
     {
-     "name": "Sakowski, Franciszek",
+     "name": "Franciszek Sakowski",
      "gender": "male",
      "born": "1910",
      "died": "1980",
      "gramps_id": "I0009",
      "children": [
       {
-       "name": "Sakowski, Grzegorz",
+       "name": "Grzegorz Sakowski",
        "gender": "male",
        "born": "1853",
        "died": "1910",
@@ -34,16 +34,32 @@
          "gramps_id": "I0052"
         },
         {
-         "name": "Sakowska, Marianna",
+         "name": "Marianna Sakowska",
          "gender": "female",
          "born": "",
          "died": "1899",
-         "gramps_id": "I0053"
+         "gramps_id": "I0053",
+         "children": [
+          {
+           "name": "Filip Sakowski",
+           "gender": "male",
+           "born": "",
+           "died": "",
+           "gramps_id": "I0139"
+          },
+          {
+           "name": "Katarzyna Sakowska",
+           "gender": "female",
+           "born": "",
+           "died": "",
+           "gramps_id": "I0140"
+          }
+         ]
         }
        ]
       },
       {
-       "name": "Szulejewska, Marianna",
+       "name": "Marianna Szulejewska",
        "gender": "female",
        "born": "1868",
        "died": "",
@@ -57,7 +73,7 @@
          "gramps_id": "I0148"
         },
         {
-         "name": "Szulejewska, Wiktoria",
+         "name": "Wiktoria Szulejewska",
          "gender": "female",
          "born": "1836",
          "died": "",
@@ -68,28 +84,28 @@
      ]
     },
     {
-     "name": "Piekarzewska, Genowefa",
+     "name": "Genowefa Piekarzewska",
      "gender": "female",
      "born": "1921",
      "died": "2001",
      "gramps_id": "I0008",
      "children": [
       {
-       "name": "Piekarzewski, Ignacy",
+       "name": "Ignacy Piekarzewski",
        "gender": "male",
        "born": "1870",
        "died": "",
        "gramps_id": "I0011",
        "children": [
         {
-         "name": "Piekarzewski, Piotr",
+         "name": "Piotr Piekarzewski",
          "gender": "male",
          "born": "1826",
          "died": "",
          "gramps_id": "I0040"
         },
         {
-         "name": "Pecyńska, Franciszka",
+         "name": "Franciszka Pecyńska",
          "gender": "female",
          "born": "1832",
          "died": "",
@@ -98,35 +114,35 @@
        ]
       },
       {
-       "name": "Dzikowska, Stanisława",
+       "name": "Stanisława Dzikowska",
        "gender": "female",
        "born": "1892",
        "died": "1945",
        "gramps_id": "I0012",
        "children": [
         {
-         "name": "Dzikowski, Mikołaj",
+         "name": "Mikołaj Dzikowski",
          "gender": "male",
          "born": "1857",
          "died": "1928",
          "gramps_id": "I0042",
          "children": [
           {
-           "name": "Dzikowski, Kazimierz",
+           "name": "Kazimierz Dzikowski",
            "gender": "male",
            "born": "",
            "died": "1898",
            "gramps_id": "I0055",
            "children": [
             {
-             "name": "Dzikowski, Jan",
+             "name": "Jan Dzikowski",
              "gender": "male",
              "born": "",
              "died": "",
              "gramps_id": "I0142"
             },
             {
-             "name": "Rak 'z Raków', Julianna",
+             "name": "Julianna Rak 'z Raków'",
              "gender": "female",
              "born": "",
              "died": "",
@@ -135,21 +151,21 @@
            ]
           },
           {
-           "name": "Zabielska/Romańśka/Szemborska, Julianna",
+           "name": "Julianna Zabielska/Romańśka/Szemborska",
            "gender": "female",
            "born": "",
            "died": "1897",
            "gramps_id": "I0056",
            "children": [
             {
-             "name": "Szemborski, Piotr",
+             "name": "Piotr Szemborski",
              "gender": "male",
              "born": "",
              "died": "",
              "gramps_id": "I0144"
             },
             {
-             "name": "Gos, Anna",
+             "name": "Anna Gos",
              "gender": "female",
              "born": "",
              "died": "",
@@ -160,35 +176,35 @@
          ]
         },
         {
-         "name": "Jaworska, Zofia",
+         "name": "Zofia Jaworska",
          "gender": "female",
          "born": "1859",
          "died": "1924",
          "gramps_id": "I0043",
          "children": [
           {
-           "name": "Jaworski, Antoni",
+           "name": "Antoni Jaworski",
            "gender": "male",
            "born": "1824",
            "died": "",
            "gramps_id": "I0057",
            "children": [
             {
-             "name": "Jaworski, Maciej",
+             "name": "Maciej Jaworski",
              "gender": "male",
              "born": "",
              "died": "",
              "gramps_id": "I0072",
              "children": [
               {
-               "name": "Jaworski, Franciszek",
+               "name": "Franciszek Jaworski",
                "gender": "male",
                "born": "",
                "died": "",
                "gramps_id": "I0105"
               },
               {
-               "name": "Jaworska, Eleonora",
+               "name": "Eleonora Jaworska",
                "gender": "female",
                "born": "",
                "died": "",
@@ -197,7 +213,7 @@
              ]
             },
             {
-             "name": "Zych, Apolonia",
+             "name": "Apolonia Zych",
              "gender": "female",
              "born": "",
              "died": "",
@@ -206,21 +222,21 @@
            ]
           },
           {
-           "name": "Zaraś, Marianna",
+           "name": "Marianna Zaraś",
            "gender": "female",
            "born": "1823",
            "died": "",
            "gramps_id": "I0058",
            "children": [
             {
-             "name": "Zaraś, Marian",
+             "name": "Marian Zaraś",
              "gender": "male",
              "born": "",
              "died": "",
              "gramps_id": "I0074"
             },
             {
-             "name": "Zaraś, Apolonia",
+             "name": "Apolonia Zaraś",
              "gender": "female",
              "born": "",
              "died": "",
@@ -237,49 +253,49 @@
    ]
   },
   {
-   "name": "Sakowska, [Living]",
+   "name": "Romana Marianna Sakowska",
    "gender": "female",
-   "born": "x",
+   "born": "1943",
    "died": "",
    "gramps_id": "I0005",
    "children": [
     {
-     "name": "Figat, Kazimierz",
+     "name": "Kazimierz Figat",
      "gender": "male",
      "born": "1906",
      "died": "1951",
      "gramps_id": "I0025",
      "children": [
       {
-       "name": "Figat, Jan",
+       "name": "Jan Figat",
        "gender": "male",
        "born": "1873",
        "died": "",
        "gramps_id": "I0010",
        "children": [
         {
-         "name": "Figat, Józef",
+         "name": "Józef Figat",
          "gender": "male",
          "born": "1840",
          "died": "",
          "gramps_id": "I0068",
          "children": [
           {
-           "name": "Figat, Maciej",
+           "name": "Maciej Figat",
            "gender": "male",
            "born": "1795",
            "died": "1848",
            "gramps_id": "I0076",
            "children": [
             {
-             "name": "Figat, Paweł",
+             "name": "Paweł Figat",
              "gender": "male",
              "born": "",
              "died": "1814",
              "gramps_id": "I0110"
             },
             {
-             "name": "Żach, Agata",
+             "name": "Agata Żach",
              "gender": "female",
              "born": "",
              "died": "",
@@ -288,21 +304,21 @@
            ]
           },
           {
-           "name": "Sobieska, Katarzyna Urszula",
+           "name": "Katarzyna Urszula Sobieska",
            "gender": "female",
            "born": "1809",
            "died": "",
            "gramps_id": "I0077",
            "children": [
             {
-             "name": "Sobieski, Maciej",
+             "name": "Maciej Sobieski",
              "gender": "male",
              "born": "1756",
              "died": "1833",
              "gramps_id": "I0112",
              "children": [
               {
-               "name": "Sobieski, Kazimierz",
+               "name": "Kazimierz Sobieski",
                "gender": "male",
                "born": "",
                "died": "",
@@ -311,7 +327,7 @@
              ]
             },
             {
-             "name": "Piórkowska, Ewa",
+             "name": "Ewa Piórkowska",
              "gender": "female",
              "born": "1767",
              "died": "",
@@ -322,21 +338,21 @@
          ]
         },
         {
-         "name": "Nosek, Justyna",
+         "name": "Justyna Nosek",
          "gender": "female",
          "born": "1840",
          "died": "1901",
          "gramps_id": "I0069",
          "children": [
           {
-           "name": "Nosek, Michał",
+           "name": "Michał Nosek",
            "gender": "male",
            "born": "1791",
            "died": "",
            "gramps_id": "I0078"
           },
           {
-           "name": "Grochowska, Katarzyna",
+           "name": "Katarzyna Grochowska",
            "gender": "female",
            "born": "1800",
            "died": "",
@@ -347,35 +363,35 @@
        ]
       },
       {
-       "name": "Żach, Rozalia",
+       "name": "Rozalia Żach",
        "gender": "female",
        "born": "1874",
        "died": "1959",
        "gramps_id": "I0013",
        "children": [
         {
-         "name": "Żach, Wojciech",
+         "name": "Wojciech Żach",
          "gender": "male",
          "born": "1847",
          "died": "",
          "gramps_id": "I0070",
          "children": [
           {
-           "name": "Żach, Jan",
+           "name": "Jan Żach",
            "gender": "male",
            "born": "1818",
            "died": "1854",
            "gramps_id": "I0081",
            "children": [
             {
-             "name": "Żach, Antoni",
+             "name": "Antoni Żach",
              "gender": "male",
              "born": "1786",
              "died": "",
              "gramps_id": "I0134"
             },
             {
-             "name": "Parys, Łucja",
+             "name": "Łucja Parys",
              "gender": "female",
              "born": "1793",
              "died": "",
@@ -384,21 +400,21 @@
            ]
           },
           {
-           "name": "Majewska, Katarzyna",
+           "name": "Katarzyna Majewska",
            "gender": "female",
            "born": "1815",
            "died": "",
            "gramps_id": "I0082",
            "children": [
             {
-             "name": "Majewski, Stanisław (popraw metrykę)",
+             "name": "Stanisław (Popraw Metrykę) Majewski",
              "gender": "male",
              "born": "",
              "died": "",
              "gramps_id": "I0136"
             },
             {
-             "name": "Polita/Politowska, Ewa",
+             "name": "Ewa Polita/Politowska",
              "gender": "female",
              "born": "",
              "died": "",
@@ -409,35 +425,35 @@
          ]
         },
         {
-         "name": "Korzeb, Jadwiga",
+         "name": "Jadwiga Korzeb",
          "gender": "female",
          "born": "1843",
          "died": "1911",
          "gramps_id": "I0071",
          "children": [
           {
-           "name": "Korzeb, Józef",
+           "name": "Józef Korzeb",
            "gender": "male",
            "born": "1802",
            "died": "",
            "gramps_id": "I0083",
            "children": [
             {
-             "name": "Korzeb, Wawrzyniec",
+             "name": "Wawrzyniec Korzeb",
              "gender": "male",
              "born": "1772",
              "died": "1839",
              "gramps_id": "I0085",
              "children": [
               {
-               "name": "Korzeb, Ignacy",
+               "name": "Ignacy Korzeb",
                "gender": "male",
                "born": "",
                "died": "1833",
                "gramps_id": "I0217"
               },
               {
-               "name": "Korzeb, Jadwiga",
+               "name": "Jadwiga Korzeb",
                "gender": "female",
                "born": "",
                "died": "1833",
@@ -446,7 +462,7 @@
              ]
             },
             {
-             "name": "Borowa, Katarzyna",
+             "name": "Katarzyna Borowa",
              "gender": "female",
              "born": "",
              "died": "",
@@ -455,21 +471,21 @@
            ]
           },
           {
-           "name": "Dzieniszewska, Marianna",
+           "name": "Marianna Dzieniszewska",
            "gender": "female",
            "born": "1811",
            "died": "1865",
            "gramps_id": "I0084",
            "children": [
             {
-             "name": "Dzieniszewski, Wojciech",
+             "name": "Wojciech Dzieniszewski",
              "gender": "male",
              "born": "1775",
              "died": "",
              "gramps_id": "I0087"
             },
             {
-             "name": "Domalewska/Ożarowska/Przychodzień/Piotrowska, Rozalia",
+             "name": "Rozalia Domalewska/Ożarowska/Przychodzień/Piotrowska",
              "gender": "female",
              "born": "1781",
              "died": "",
@@ -484,42 +500,42 @@
      ]
     },
     {
-     "name": "Zyśk, Anna",
+     "name": "Anna Zyśk",
      "gender": "female",
      "born": "1908",
      "died": "1957",
      "gramps_id": "I0026",
      "children": [
       {
-       "name": "Zyśk, Antoni",
+       "name": "Antoni Zyśk",
        "gender": "male",
        "born": "1863",
        "died": "",
        "gramps_id": "I0066",
        "children": [
         {
-         "name": "Zyśk, Stanisław",
+         "name": "Stanisław Zyśk",
          "gender": "male",
          "born": "1843",
          "died": "",
          "gramps_id": "I0089",
          "children": [
           {
-           "name": "Zyśk, Jan",
+           "name": "Jan Zyśk",
            "gender": "male",
            "born": "1821",
            "died": "",
            "gramps_id": "I0095",
            "children": [
             {
-             "name": "Zyśk, Kazimierz",
+             "name": "Kazimierz Zyśk",
              "gender": "male",
              "born": "",
              "died": "",
              "gramps_id": "I0117"
             },
             {
-             "name": "Warych, Agata",
+             "name": "Agata Warych",
              "gender": "female",
              "born": "1785",
              "died": "",
@@ -528,28 +544,28 @@
            ]
           },
           {
-           "name": "Kucharczyk, Franciszka",
+           "name": "Franciszka Kucharczyk",
            "gender": "female",
            "born": "1820",
            "died": "",
            "gramps_id": "I0096",
            "children": [
             {
-             "name": "Kucharczyk, Jan Nepomucen",
+             "name": "Jan Nepomucen Kucharczyk",
              "gender": "male",
              "born": "1796",
              "died": "",
              "gramps_id": "I0119",
              "children": [
               {
-               "name": "Kucharczyk, Idzi",
+               "name": "Idzi Kucharczyk",
                "gender": "male",
                "born": "",
                "died": "",
                "gramps_id": "I0130"
               },
               {
-               "name": "Zalewska, Franciszka",
+               "name": "Franciszka Zalewska",
                "gender": "female",
                "born": "",
                "died": "",
@@ -558,21 +574,21 @@
              ]
             },
             {
-             "name": "Arażnik, Marianna",
+             "name": "Marianna Arażnik",
              "gender": "female",
              "born": "",
              "died": "",
              "gramps_id": "I0120",
              "children": [
               {
-               "name": "Arażnik, Walenty",
+               "name": "Walenty Arażnik",
                "gender": "male",
                "born": "",
                "died": "",
                "gramps_id": "I0132"
               },
               {
-               "name": "Brzózka, Zuzanna",
+               "name": "Zuzanna Brzózka",
                "gender": "female",
                "born": "1819",
                "died": "",
@@ -585,28 +601,28 @@
          ]
         },
         {
-         "name": "Sobiewska, Anna (2ga)",
+         "name": "Anna (2Ga) Sobiewska",
          "gender": "female",
          "born": "1844",
          "died": "",
          "gramps_id": "I0090",
          "children": [
           {
-           "name": "Sobieski/Sobiewski, Wojciech",
+           "name": "Wojciech Sobieski/Sobiewski",
            "gender": "male",
            "born": "1802",
            "died": "",
            "gramps_id": "I0098",
            "children": [
             {
-             "name": "Sobieski/Sobiewska, Maciej",
+             "name": "Maciej Sobieski/Sobiewska",
              "gender": "male",
              "born": "",
              "died": "",
              "gramps_id": "I0121"
             },
             {
-             "name": "Sobieska/Sobiewska, Ewa",
+             "name": "Ewa Sobieska/Sobiewska",
              "gender": "female",
              "born": "",
              "died": "1836",
@@ -615,28 +631,28 @@
            ]
           },
           {
-           "name": "Ferenc, Katarzyna (2ga)",
+           "name": "Katarzyna (2Ga) Ferenc",
            "gender": "female",
            "born": "1814",
            "died": "",
            "gramps_id": "I0097",
            "children": [
             {
-             "name": "Ferenc, Jakub",
+             "name": "Jakub Ferenc",
              "gender": "male",
              "born": "",
              "died": "1846",
              "gramps_id": "I0123",
              "children": [
               {
-               "name": "Ferenc, Tomasz",
+               "name": "Tomasz Ferenc",
                "gender": "male",
                "born": "",
                "died": "",
                "gramps_id": "I0126"
               },
               {
-               "name": "Zadrożna, Urszula",
+               "name": "Urszula Zadrożna",
                "gender": "female",
                "born": "",
                "died": "",
@@ -645,21 +661,21 @@
              ]
             },
             {
-             "name": "Kossobucka, Marianna",
+             "name": "Marianna Kossobucka",
              "gender": "female",
              "born": "1794",
              "died": "",
              "gramps_id": "I0124",
              "children": [
               {
-               "name": "Kossobucki, Jan",
+               "name": "Jan Kossobucki",
                "gender": "male",
                "born": "",
                "died": "",
                "gramps_id": "I0128"
               },
               {
-               "name": "Archacka, Katarzyna",
+               "name": "Katarzyna Archacka",
                "gender": "female",
                "born": "",
                "died": "",
@@ -674,28 +690,28 @@
        ]
       },
       {
-       "name": "Sokołowska, Marcjanna",
+       "name": "Marcjanna Sokołowska",
        "gender": "female",
        "born": "1876",
        "died": "",
        "gramps_id": "I0067",
        "children": [
         {
-         "name": "Sokołowski, Stefan",
+         "name": "Stefan Sokołowski",
          "gender": "male",
          "born": "1812",
          "died": "",
          "gramps_id": "I0091",
          "children": [
           {
-           "name": "Sokołowski, Jan",
+           "name": "Jan Sokołowski",
            "gender": "male",
            "born": "",
            "died": "",
            "gramps_id": "I0099"
           },
           {
-           "name": "Sokołowska, Katarzyna",
+           "name": "Katarzyna Sokołowska",
            "gender": "female",
            "born": "",
            "died": "",
@@ -704,21 +720,21 @@
          ]
         },
         {
-         "name": "Borowa, Rozalia",
+         "name": "Rozalia Borowa",
          "gender": "female",
          "born": "",
          "died": "",
          "gramps_id": "I0092",
          "children": [
           {
-           "name": "Borowy, Paweł",
+           "name": "Paweł Borowy",
            "gender": "male",
            "born": "",
            "died": "",
            "gramps_id": "I0101"
           },
           {
-           "name": "Fidura, Katarzyna",
+           "name": "Katarzyna Fidura",
            "gender": "female",
            "born": "",
            "died": "",

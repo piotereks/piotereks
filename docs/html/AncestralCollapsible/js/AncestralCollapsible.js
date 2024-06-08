@@ -41,11 +41,6 @@ d3.json("json/AncestralCollapsible.json", function(json) {
   if (root.children[0]) {
    toggle(root.children[0]);
 
-  if (root.children.length > 1) {
-    toggle(root.children[0]); 
-    toggle(root.children[1]); 
-   };
-   
    if (root.children[0].children) {
     if (root.children[0].children[0]) {
      toggle(root.children[0].children[0]);
