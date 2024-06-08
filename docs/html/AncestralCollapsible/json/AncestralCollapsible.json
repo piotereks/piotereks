@@ -1,14 +1,12 @@
 {
- "name": "Piotr Ryszard Sakowski",
- "gender": "male",
- "born": "1973",
+ "name": "[Żyjący] Sakowski",
+
  "died": "",
  "gramps_id": "I0000",
  "children": [
   {
-   "name": "Ryszard Sakowski",
-   "gender": "male",
-   "born": "1941",
+   "name": "[Żyjący]  Sakowski",
+
    "died": "",
    "gramps_id": "I0004",
    "children": [
@@ -253,9 +251,8 @@
    ]
   },
   {
-   "name": "Romana Marianna Sakowska",
-   "gender": "female",
-   "born": "1943",
+   "name": "[Żyjąca] Sakowska",
+
    "died": "",
    "gramps_id": "I0005",
    "children": [
