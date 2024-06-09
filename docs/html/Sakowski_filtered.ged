@@ -3,7 +3,7 @@
 2 VERS AIO64-5.2.2-r1-f905d14
 2 NAME Gramps
 1 DATE 9 JUN 2024
-2 TIME 00:28:29
+2 TIME 21:57:52
 1 SUBM @SUBM@
 1 FILE C:\Users\piote\OneDrive\Dokumenty\drzewa genealogiczne\PiotrSakowski_filtered.ged
 1 COPR Copyright (c) 2024 .
@@ -189,10 +189,6 @@
 2 SOUR @S0002@
 3 PAGE 1873 / UMZ-1873 / akt 69
 3 OBJE @O0004@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0290@
-2 SOUR @S0243@
 1 BAPM
 2 DATE 28 MAR 1873
 2 PLAC Brok, gm. Brok, pow. ostrowski, woj. mazowieckie
@@ -204,8 +200,8 @@
 2 PEDI birth
 1 FAMS @F0020@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0011@ INDI
 1 NAME Ignacy /Piekarzewski/
 2 TYPE birth
@@ -220,10 +216,6 @@
 2 SOUR @S0004@
 3 PAGE https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSXZ-99DV-Q?i=481&cat=598141 strona 482 poz 224
 3 OBJE @O0026@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0258@
-2 SOUR @S0243@
 1 BAPM
 2 DATE 7 AUG 1870
 2 PLAC Goworowo, gm. Goworowo, pow. ostrołęcki, woj. mazowieckie
@@ -234,8 +226,8 @@
 1 FAMS @F0003@
 1 FAMS @F0005@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0012@ INDI
 1 NAME Stanisława /Dzikowska/
 2 TYPE birth
@@ -331,18 +323,10 @@
 2 GIVN Julianna
 2 SURN Zakrzewska
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0259@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0260@
-2 SOUR @S0243@
 1 FAMS @F0005@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0015@ INDI
 1 NAME Władysław /Piekarzewski/
 2 TYPE birth
@@ -414,34 +398,22 @@
 3 STAE woj. mazowieckie
 2 SOUR @S0000@
 3 OBJE @O0010@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0261@
-2 SOUR @S0243@
 1 FAMC @F0003@
 2 PEDI birth
 1 FAMS @F0004@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0018@ INDI
 1 NAME Aniela Zofia /Zawistowska/
 2 TYPE birth
 2 GIVN Aniela Zofia
 2 SURN Zawistowska
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0262@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0263@
-2 SOUR @S0243@
 1 FAMS @F0004@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0019@ INDI
 1 NAME Józef /Piekarzewski/
 2 TYPE birth
@@ -547,15 +519,11 @@
 2 SOUR @S0000@
 3 PAGE 1905 / UMZ-1905 / 234
 3 OBJE @O0017@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0264@
-2 SOUR @S0243@
 1 FAMC @F0005@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0024@ INDI
 1 NAME Stefan /Piekarzewski/
 2 TYPE birth
@@ -567,15 +535,11 @@
 2 SOUR @S0000@
 3 PAGE 1905 / UMZ-1905 / 255
 3 OBJE @O0018@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0265@
-2 SOUR @S0243@
 1 FAMC @F0005@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0025@ INDI
 1 NAME Kazimierz /Figat/
 2 TYPE birth
@@ -826,10 +790,6 @@
 2 GIVN Ryszard
 2 SURN Pęcherzewski
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0266@
-2 SOUR @S0243@
 1 DEAT
 2 DATE 1993
 2 PLAC Gołdap, gm. Gołdap, pow. gołdapski, woj. warmińsko-mazurskie
@@ -838,8 +798,8 @@
 3 STAE woj. warmińsko-mazurskie
 1 FAMS @F0009@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0038@ INDI
 1 NAME Ewa Beata /Jusińska/
 2 TYPE married
@@ -883,14 +843,10 @@
 1 BIRT
 2 TYPE daty oszacowane o Ignacego i Antoniego
 2 DATE FROM 1826 TO 1836
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0267@
-2 SOUR @S0243@
 1 FAMS @F0010@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0041@ INDI
 1 NAME Franciszka /Pecyńska/
 2 TYPE birth
@@ -904,14 +860,10 @@
 1 BIRT
 2 TYPE oszacowane w oparciu o metrykę Ignaca i Antoniego
 2 DATE ABT 1832
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0268@
-2 SOUR @S0243@
 1 FAMS @F0010@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0042@ INDI
 1 NAME Mikołaj /Dzikowski/
 2 TYPE birth
@@ -1032,15 +984,11 @@
 3 STAE woj. mazowieckie
 2 SOUR @S0000@
 3 PAGE 1894 / UMZ-1894 / poz 243
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0269@
-2 SOUR @S0243@
 1 FAMC @F0011@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0046@ INDI
 1 NAME Helena /Dzikowska/
 2 TYPE birth
@@ -1054,16 +1002,12 @@
 3 STAE woj. mazowieckie
 2 SOUR @S0000@
 3 PAGE 1899 / UMZ-1899 / poz 84
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0270@
-2 SOUR @S0243@
 1 FAMC @F0011@
 2 PEDI birth
 1 FAMS @F0056@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0047@ INDI
 1 NAME Franciszek /Dzikowski/
 2 TYPE birth
@@ -1077,43 +1021,31 @@
 3 STAE woj. mazowieckie
 2 SOUR @S0000@
 3 PAGE 1902 / UMZ-1902 / poz 215
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0271@
-2 SOUR @S0243@
 1 FAMC @F0011@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0048@ INDI
 1 NAME Józefa /Dzikowska/
 2 TYPE birth
 2 GIVN Józefa
 2 SURN Dzikowska
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0272@
-2 SOUR @S0243@
 1 DEAT
 2 DATE 1883
 2 SOUR @S0003@
 1 FAMC @F0011@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0049@ INDI
 1 NAME Ludwika /Dzikowska/
 2 TYPE birth
 2 GIVN Ludwika
 2 SURN Dzikowska
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0273@
-2 SOUR @S0243@
 1 DEAT
 2 DATE 1885
 2 PLAC Jawory Stare, gm. Goworowo, pow. ostrołęcki, woj. mazowieckie
@@ -1124,8 +1056,8 @@
 1 FAMC @F0011@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0050@ INDI
 1 NAME Grzegorz /Sakowski/
 2 TYPE birth
@@ -1172,10 +1104,6 @@
 2 SOUR @S0009@
 3 PAGE 1868 akt 6
 3 OBJE @O0082@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0274@
-2 SOUR @S0243@
 1 BAPM
 2 DATE 9 JAN 1868
 2 PLAC Orszymowo, gm. Mała Wieś, pow. płocki, woj. mazowieckie
@@ -1185,25 +1113,17 @@
 2 PEDI birth
 1 FAMS @F0012@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0052@ INDI
 1 NAME  /NN/
 2 TYPE Unknown
 2 SURN NN
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0275@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0276@
-2 SOUR @S0243@
 1 FAMS @F0013@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0053@ INDI
 1 NAME Marianna /Sakowska/
 2 TYPE birth
@@ -1211,12 +1131,21 @@
 2 SURN Sakowska
 1 SEX F
 1 BIRT
-2 DATE about 1830 about 1824
+2 DATE 1830 lub 1824  lub 1826
+2 PLAC Janów, gm. Brochów, pow. sochaczewski, woj. mazowieckie
+3 MAP
+4 LATI N52.324613
+4 LONG E20.272908
+2 ADDR
+3 STAE woj. mazowieckie
 1 DEAT
 2 DATE 14 NOV 1899
 2 PLAC Perki, gm. Mała Wieś, pow. płocki, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
+2 SOUR @S0000@
+3 OBJE @O0053@
+3 OBJE @O0091@
 1 FAMC @F0057@
 2 PEDI birth
 1 FAMS @F0013@
@@ -1235,15 +1164,11 @@
 2 DATE 12 JUN 1872
 2 SOUR @S0004@
 3 OBJE @O0027@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0277@
-2 SOUR @S0243@
 1 FAMC @F0010@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0055@ INDI
 1 NAME Kazimierz /Dzikowski/
 2 TYPE birth
@@ -1307,16 +1232,12 @@
 2 SOUR @S0000@
 3 PAGE 1824 akt 189 strona 52
 3 OBJE @O0079@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0278@
-2 SOUR @S0243@
 1 FAMC @F0024@
 2 PEDI birth
 1 FAMS @F0015@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0058@ INDI
 1 NAME Marianna /Zaraś/
 2 TYPE birth
@@ -1328,16 +1249,12 @@
 2 PLAC Rębisze-Kolonia, gm. Goworowo, pow. ostrołęcki, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0279@
-2 SOUR @S0243@
 1 FAMC @F0025@
 2 PEDI birth
 1 FAMS @F0015@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0059@ INDI
 1 NAME Marianna /Dzikowska/
 2 TYPE married
@@ -1361,27 +1278,19 @@
 2 SOUR @S0011@
 3 PAGE 1887 akt 80  1887 / UMZ-1887
 3 OBJE @O0031@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0280@
-2 SOUR @S0243@
 1 FAMC @F0019@
 2 PEDI birth
 1 FAMS @F0016@
 1 FAMS @F0017@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0060@ INDI
 1 NAME Wojciech /Jaworski/
 2 TYPE birth
 2 GIVN Wojciech
 2 SURN Jaworski
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0387@
-2 SOUR @S0243@
 1 DEAT
 2 TYPE 1914 akt 241
 2 DATE 1914
@@ -1391,18 +1300,14 @@
 1 FAMC @F0015@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0061@ INDI
 1 NAME Stanisław /Wicopolski/
 2 TYPE birth
 2 GIVN Stanisław
 2 SURN Wicopolski
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0281@
-2 SOUR @S0243@
 1 DEAT
 2 TYPE wg księg parafi Karniewo rok 1919 poz 39
 2 DATE 19 AUG 1919
@@ -1413,98 +1318,60 @@
 2 PEDI birth
 1 FAMS @F0017@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0062@ INDI
 1 NAME Aleksander /Wicopolski/
 2 TYPE birth
 2 GIVN Aleksander
 2 SURN Wicopolski
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0282@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0283@
-2 SOUR @S0243@
 1 FAMS @F0018@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0063@ INDI
 1 NAME Marianna /Świderska/
 2 TYPE birth
 2 GIVN Marianna
 2 SURN Świderska
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0284@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0285@
-2 SOUR @S0243@
 1 FAMS @F0018@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0064@ INDI
 1 NAME Józef /Brzeziński/
 2 TYPE birth
 2 GIVN Józef
 2 SURN Brzeziński
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0286@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0287@
-2 SOUR @S0243@
 1 FAMS @F0019@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0065@ INDI
 1 NAME Katarzyna /Bernat/
 2 TYPE birth
 2 GIVN Katarzyna
 2 SURN Bernat
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0288@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0289@
-2 SOUR @S0243@
 1 FAMS @F0019@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0066@ INDI
-1 NAME Antoni /Zyśk/
+1 NAME [Żyjący] /Zyśk/
 2 TYPE birth
-2 GIVN Antoni
+2 GIVN [Żyjący]
 2 SURN Zyśk
 1 SEX M
-1 BIRT
-2 DATE FROM 1863 TO 1965
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0291@
-2 SOUR @S0243@
 1 FAMC @F0033@
 2 PEDI birth
 1 FAMS @F0021@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0067@ INDI
 1 NAME Marcjanna /Sokołowska/
 2 TYPE birth
@@ -1524,10 +1391,6 @@
 2 SOUR @S0002@
 3 PAGE 1876 / UMZ-1876 / akt 110
 3 OBJE @O0035@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0292@
-2 SOUR @S0243@
 1 BAPM
 2 DATE 14 JUL 1876
 2 PLAC Brok, gm. Brok, pow. ostrowski, woj. mazowieckie
@@ -1542,8 +1405,8 @@
 2 PEDI birth
 1 FAMS @F0021@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0068@ INDI
 1 NAME Józef /Figat/
 2 TYPE birth
@@ -1559,16 +1422,12 @@
 2 SOUR @S0002@
 3 PAGE 1840 / UMZ-1840  poz 69
 3 OBJE @O0029@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0293@
-2 SOUR @S0243@
 1 FAMC @F0026@
 2 PEDI birth
 1 FAMS @F0022@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0069@ INDI
 1 NAME Justyna /Nosek/
 2 TYPE birth
@@ -1628,16 +1487,12 @@
 3 PAGE 1984 Akt 22
 3 NOTE @N0013@
 3 OBJE @O0049@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0294@
-2 SOUR @S0243@
 1 FAMC @F0029@
 2 PEDI birth
 1 FAMS @F0023@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0071@ INDI
 1 NAME Jadwiga /Korzeb/
 2 TYPE birth
@@ -1675,16 +1530,12 @@
 1 BIRT
 2 TYPE Rodzice do potwierdzenia. Pośrednio podane imiona po "siostrach"
 2 DATE ok 1783 (+max 9 lat) - ok 1784 (+max 9 lat)
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0295@
-2 SOUR @S0243@
 1 FAMC @F0041@
 2 PEDI birth
 1 FAMS @F0024@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0073@ INDI
 1 NAME Apolonia /Zych/
 2 TYPE birth
@@ -1697,50 +1548,30 @@
 1 SEX F
 1 BIRT
 2 DATE ok 1793  (max 9 lat) albo 1781, 1787, albo 1784 (max9 lat)
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0296@
-2 SOUR @S0243@
 1 FAMS @F0024@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0074@ INDI
 1 NAME Marian /Zaraś/
 2 TYPE birth
 2 GIVN Marian
 2 SURN Zaraś
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0297@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0298@
-2 SOUR @S0243@
 1 FAMS @F0025@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0075@ INDI
 1 NAME Apolonia /Zaraś/
 2 TYPE birth
 2 GIVN Apolonia
 2 SURN Zaraś
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0299@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0300@
-2 SOUR @S0243@
 1 FAMS @F0025@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0076@ INDI
 1 NAME Maciej /Figat/
 2 TYPE birth
@@ -1787,16 +1618,12 @@
 2 SOUR @S0013@
 3 PAGE 1809 akt 51
 3 OBJE @O0076@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0301@
-2 SOUR @S0243@
 1 FAMC @F0043@
 2 PEDI birth
 1 FAMS @F0026@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0078@ INDI
 1 NAME Michał /Nosek/
 2 TYPE birth
@@ -1805,14 +1632,10 @@
 1 SEX M
 1 BIRT
 2 DATE ABT 1791
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0302@
-2 SOUR @S0243@
 1 FAMS @F0027@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0079@ INDI
 1 NAME Katarzyna /Grochowska/
 2 TYPE birth
@@ -1825,32 +1648,20 @@
 1 SEX F
 1 BIRT
 2 DATE ABT 1800
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0303@
-2 SOUR @S0243@
 1 FAMS @F0027@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0080@ INDI
 1 NAME Andrzej /Czarkowski/
 2 TYPE birth
 2 GIVN Andrzej
 2 SURN Czarkowski
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0304@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0305@
-2 SOUR @S0243@
 1 FAMS @F0028@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0081@ INDI
 1 NAME Jan /Żach/
 2 TYPE birth
@@ -1893,16 +1704,12 @@
 2 SOUR @S0017@
 3 PAGE 1815 akt 121
 3 OBJE @O0073@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0306@
-2 SOUR @S0243@
 1 FAMC @F0055@
 2 PEDI birth
 1 FAMS @F0029@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0083@ INDI
 1 NAME Józef /Korzeb/
 2 TYPE birth
@@ -1918,16 +1725,12 @@
 3 PAGE 1830 / UMZ-1830  / akt 3
 3 OBJE @O0033@
 3 OBJE @O0086@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0307@
-2 SOUR @S0243@
 1 FAMC @F0031@
 2 PEDI birth
 1 FAMS @F0030@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0084@ INDI
 1 NAME Marianna /Dzieniszewska/
 2 TYPE birth
@@ -2000,14 +1803,10 @@
 1 SEX M
 1 BIRT
 2 DATE ABT 1775
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0308@
-2 SOUR @S0243@
 1 FAMS @F0032@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0088@ INDI
 1 NAME Rozalia /Domalewska?Ożarowska?Przychodzień?Piotrowska/
 2 TYPE birth
@@ -2016,14 +1815,10 @@
 1 SEX F
 1 BIRT
 2 DATE ABT 1781
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0309@
-2 SOUR @S0243@
 1 FAMS @F0032@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0089@ INDI
 1 NAME Stanisław /Zyśk/
 2 TYPE birth
@@ -2038,10 +1833,6 @@
 2 SOUR @S0002@
 3 PAGE 1843 / UMZ-1843  akt 147
 3 OBJE @O0039@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0310@
-2 SOUR @S0243@
 1 BAPM
 2 DATE 2 NOV 1843
 2 SOUR @S0002@
@@ -2051,8 +1842,8 @@
 2 PEDI birth
 1 FAMS @F0033@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0090@ INDI
 1 NAME Anna (2Ga) /Sobiewska/
 2 TYPE birth
@@ -2075,17 +1866,13 @@
 2 SOUR @S0002@
 3 PAGE Księgi metrykalne Brok 1944 akt 46
 3 OBJE @O0052@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0311@
-2 SOUR @S0243@
 1 FAMC @F0037@
 2 PEDI birth
 1 FAMS @F0033@
 1 FAMS @F0035@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0091@ INDI
 1 NAME Stefan /Sokołowski/
 2 TYPE birth
@@ -2099,10 +1886,6 @@
 2 ADDR
 3 STAE woj. podlaskie
 2 NOTE @N0014@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0312@
-2 SOUR @S0243@
 1 EVEN
 2 TYPE Marriage
 2 DATE 28 APR 1872
@@ -2119,8 +1902,8 @@
 1 FAMS @F0034@
 1 FAMS @F0040@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0092@ INDI
 1 NAME Rozalia /Borowa/
 2 TYPE birth
@@ -2132,16 +1915,12 @@
 2 PLAC Małkinia Mała-Przewóz, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0313@
-2 SOUR @S0243@
 1 FAMC @F0039@
 2 PEDI birth
 1 FAMS @F0034@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0093@ INDI
 1 NAME Aleksander /Zyśk/
 2 TYPE birth
@@ -2182,17 +1961,13 @@
 2 GIVN Adam
 2 SURN Mikołajczyk
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0314@
-2 SOUR @S0243@
 1 DEAT
 2 TYPE w oparciu o notatkę z aktu śłubu Anny Mikołajczyk i Stanisława Zyśk
 2 DATE 1868
 1 FAMS @F0035@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0095@ INDI
 1 NAME Jan /Zyśk/
 2 TYPE birth
@@ -2206,16 +1981,12 @@
 3 STAE woj. mazowieckie
 2 SOUR @S0016@
 3 OBJE @O0084@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0315@
-2 SOUR @S0243@
 1 FAMC @F0046@
 2 PEDI birth
 1 FAMS @F0036@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0096@ INDI
 1 NAME Franciszka /Kucharczyk/
 2 TYPE birth
@@ -2230,16 +2001,12 @@
 2 SOUR @S0013@
 3 PAGE Księgi metrykalne Jasienica 1820 akt 47
 3 OBJE @O0056@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0316@
-2 SOUR @S0243@
 1 FAMC @F0047@
 2 PEDI birth
 1 FAMS @F0036@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0097@ INDI
 1 NAME Katarzyna (2Ga) /Ferenc/
 2 TYPE birth
@@ -2260,10 +2027,6 @@
 2 SOUR @S0002@
 3 PAGE 1814 akt 10
 3 OBJE @O0059@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0317@
-2 SOUR @S0243@
 1 BAPM
 2 DATE 10 MAY 1814
 2 PLAC Brok, gm. Brok, pow. ostrowski, woj. mazowieckie
@@ -2278,8 +2041,8 @@
 2 PEDI birth
 1 FAMS @F0037@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0098@ INDI
 1 NAME Wojciech /Sobieski?Sobiewski/
 2 TYPE birth
@@ -2295,98 +2058,58 @@
 2 SOUR @S0013@
 3 PAGE 1802 poz 74
 3 OBJE @O0058@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0318@
-2 SOUR @S0243@
 1 FAMC @F0048@
 2 PEDI birth
 1 FAMS @F0037@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0099@ INDI
 1 NAME Jan /Sokołowski/
 2 TYPE birth
 2 GIVN Jan
 2 SURN Sokołowski
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0319@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0320@
-2 SOUR @S0243@
 1 FAMS @F0038@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0100@ INDI
 1 NAME Katarzyna /Sokołowska/
 2 TYPE married
 2 GIVN Katarzyna
 2 SURN Sokołowska
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0321@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0322@
-2 SOUR @S0243@
 1 FAMS @F0038@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0101@ INDI
 1 NAME Paweł /Borowy/
 2 TYPE birth
 2 GIVN Paweł
 2 SURN Borowy
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0323@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0324@
-2 SOUR @S0243@
 1 FAMS @F0039@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0102@ INDI
 1 NAME Katarzyna /Fidura/
 2 TYPE birth
 2 GIVN Katarzyna
 2 SURN Fidura
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0325@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0326@
-2 SOUR @S0243@
 1 FAMS @F0039@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0103@ INDI
 1 NAME Katarzyna /Wilczyńska/
 2 TYPE birth
 2 GIVN Katarzyna
 2 SURN Wilczyńska
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0327@
-2 SOUR @S0243@
 1 DEAT
 2 TYPE Księgi Brok 1872 / UMZ-1872 akt 28
 2 DATE 1872
@@ -2398,8 +2121,8 @@
 2 NOTE @N0011@
 1 FAMS @F0040@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0104@ INDI
 1 NAME Marianna /Jaworska/
 2 TYPE birth
@@ -2414,10 +2137,6 @@
 2 SOUR @S0000@
 3 PAGE Księga Strona 36 akt 128 / family search 8021306, strona mikrofilmu: 116
 3 OBJE @O0041@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0328@
-2 SOUR @S0243@
 1 BAPM
 2 DATE 23 JUL 1823
 2 PLAC Goworowo, gm. Goworowo, pow. ostrołęcki, woj. mazowieckie
@@ -2429,44 +2148,28 @@
 1 FAMC @F0024@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0105@ INDI
 1 NAME Franciszek /Jaworski/
 2 TYPE birth
 2 GIVN Franciszek
 2 SURN Jaworski
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0329@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0330@
-2 SOUR @S0243@
 1 FAMS @F0041@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0106@ INDI
 1 NAME Eleonora /Jaworska/
 2 TYPE birth
 2 GIVN Eleonora
 2 SURN Jaworska
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0331@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0332@
-2 SOUR @S0243@
 1 FAMS @F0041@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0107@ INDI
 1 NAME Elżbieta /Jaworska/
 2 TYPE birth
@@ -2478,15 +2181,11 @@
 2 DATE 1772
 2 SOUR @S0000@
 3 OBJE @O0044@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0333@
-2 SOUR @S0243@
 1 FAMC @F0041@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0108@ INDI
 1 NAME Marianna /Jaworska/
 2 TYPE birth
@@ -2501,15 +2200,11 @@
 3 STAE woj. mazowieckie
 2 SOUR @S0000@
 3 OBJE @O0045@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0334@
-2 SOUR @S0243@
 1 FAMC @F0041@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0109@ INDI
 1 NAME Zofia /Jaworska/
 2 TYPE birth
@@ -2524,15 +2219,11 @@
 3 STAE woj. mazowieckie
 2 SOUR @S0000@
 3 OBJE @O0046@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0335@
-2 SOUR @S0243@
 1 FAMC @F0041@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0110@ INDI
 1 NAME Paweł /Figat/
 2 TYPE birth
@@ -2540,20 +2231,29 @@
 2 SURN Figat
 1 SEX M
 1 BIRT
-2 TYPE opcja: parafia Kaczkowo 1766 akt 7. Dopasowanie jedynie przez pasujący w
-3 CONC iek. Potrzeba metryki ślubu a potem chrztu.  Wyliczony wg zgonu rok to o
-3 CONC k 1769
-2 DATE opcja 1766
+2 TYPE wg PARAFIA-BROK.-KSIĘGA-OCHRZCZONYCH-1766–1772.pdf
+2 DATE 22 JAN 1766
+2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
+2 ADDR
+3 STAE woj. mazowieckie
+2 SOUR @S0002@
+3 PAGE PARAFIA-BROK.-KSIĘGA-OCHRZCZONYCH-1766–1772
+3 OBJE @O0092@
 1 DEAT
 2 TYPE Księgi Brok 1814 akt 114
 2 DATE 8 JAN 1814
+2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
+2 ADDR
+3 STAE woj. mazowieckie
 2 SOUR @S0002@
 3 PAGE 1814 akt 114
 3 OBJE @O0078@
+1 FAMC @F0066@
+2 PEDI birth
 1 FAMS @F0042@
 1 CHAN
-2 DATE 4 MAY 2024
-3 TIME 22:48:09
+2 DATE 9 JUN 2024
+3 TIME 21:39:14
 0 @I0111@ INDI
 1 NAME Agata /Żach/
 2 TYPE birth
@@ -2561,17 +2261,21 @@
 2 SURN Żach
 1 SEX F
 1 BIRT
-2 TYPE Szacowana data śmierci
+2 TYPE wg PARAFIA-BROK.-KSIĘGA-OCHRZCZONYCH-1766–1772.pdf
+2 DATE 12 FEB 1796
+2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
+2 ADDR
+3 STAE woj. mazowieckie
 2 NOTE @N0336@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0337@
-2 SOUR @S0243@
+2 SOUR @S0002@
+3 PAGE PARAFIA-BROK.-KSIĘGA-OCHRZCZONYCH-1766–1772
+3 OBJE @O0092@
+1 FAMC @F0067@
+2 PEDI birth
 1 FAMS @F0042@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0112@ INDI
 1 NAME Maciej /Sobieski/
 2 TYPE birth
@@ -2606,35 +2310,23 @@
 1 SEX F
 1 BIRT
 2 DATE ABT 1767
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0338@
-2 SOUR @S0243@
 1 FAMS @F0043@
 1 NOTE @N0018@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0114@ INDI
 1 NAME Katarzyna /Wólkiewicz/
 2 TYPE birth
 2 GIVN Katarzyna
 2 SURN Wólkiewicz
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0339@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0340@
-2 SOUR @S0243@
 1 FAMC @F0045@
 2 PEDI birth
 1 FAMS @F0044@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0115@ INDI
 1 NAME [Żyjący] /Wólkiewicz/
 2 TYPE birth
@@ -2663,14 +2355,10 @@
 1 SEX M
 1 BIRT
 2 DATE about 1773 or 1780
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0341@
-2 SOUR @S0243@
 1 FAMS @F0046@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0118@ INDI
 1 NAME Agata /Warych/
 2 TYPE birth
@@ -2679,14 +2367,10 @@
 1 SEX F
 1 BIRT
 2 DATE ABT 1785
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0342@
-2 SOUR @S0243@
 1 FAMS @F0046@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0119@ INDI
 1 NAME Jan Nepomucen /Kucharczyk/
 2 TYPE birth
@@ -2702,17 +2386,13 @@
 3 PAGE 1796 poz 82
 3 NOTE @N0016@
 3 OBJE @O0068@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0343@
-2 SOUR @S0243@
 1 FAMC @F0052@
 2 PEDI birth
 1 FAMS @F0047@
 1 NOTE @N0017@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0120@ INDI
 1 NAME Marianna /Arażnik/
 2 TYPE birth
@@ -2738,34 +2418,22 @@
 2 GIVN Maciej
 2 SURN Sobieski?Sobiewska
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0344@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0345@
-2 SOUR @S0243@
 1 FAMS @F0048@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0122@ INDI
 1 NAME Ewa /Sobieska?Sobiewska/
 2 TYPE married
 2 GIVN Ewa
 2 SURN Sobieska?Sobiewska
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0346@
-2 SOUR @S0243@
 1 DEAT
 2 DATE BEF 25 JUN 1836
 1 FAMS @F0048@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0123@ INDI
 1 NAME Jakub /Ferenc/
 2 TYPE birth
@@ -2801,16 +2469,12 @@
 2 PLAC Prostyń, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0347@
-2 SOUR @S0243@
 1 FAMC @F0051@
 2 PEDI birth
 1 FAMS @F0049@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0125@ INDI
 1 NAME Katarzyna (1Sza) /Ferenc/
 2 TYPE birth
@@ -2844,126 +2508,70 @@
 2 GIVN Tomasz
 2 SURN Ferenc
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0348@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0349@
-2 SOUR @S0243@
 1 FAMS @F0050@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0127@ INDI
 1 NAME Urszula /Zadrożna/
 2 TYPE birth
 2 GIVN Urszula
 2 SURN Zadrożna
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0350@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0351@
-2 SOUR @S0243@
 1 FAMS @F0050@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0128@ INDI
 1 NAME Jan /Kossobucki/
 2 TYPE birth
 2 GIVN Jan
 2 SURN Kossobucki
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0352@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0353@
-2 SOUR @S0243@
 1 FAMS @F0051@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0129@ INDI
 1 NAME Katarzyna /Archacka/
 2 TYPE birth
 2 GIVN Katarzyna
 2 SURN Archacka
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0354@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0355@
-2 SOUR @S0243@
 1 FAMS @F0051@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0130@ INDI
 1 NAME Idzi /Kucharczyk/
 2 TYPE birth
 2 GIVN Idzi
 2 SURN Kucharczyk
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0356@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0357@
-2 SOUR @S0243@
 1 FAMS @F0052@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0131@ INDI
 1 NAME Franciszka /Zalewska/
 2 TYPE birth
 2 GIVN Franciszka
 2 SURN Zalewska
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0358@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0359@
-2 SOUR @S0243@
 1 FAMS @F0052@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0132@ INDI
 1 NAME Walenty /Arażnik/
 2 TYPE birth
 2 GIVN Walenty
 2 SURN Arażnik
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0360@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0361@
-2 SOUR @S0243@
 1 FAMS @F0053@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0133@ INDI
 1 NAME Zuzanna /Brzózka/
 2 TYPE birth
@@ -2973,14 +2581,10 @@
 1 BIRT
 2 TYPE nie żyła podczas ślubu Marianny Arażnik
 2 DATE BEF 14 NOV 1819
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0362@
-2 SOUR @S0243@
 1 FAMS @F0053@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0134@ INDI
 1 NAME Antoni /Żach/
 2 TYPE birth
@@ -2989,14 +2593,10 @@
 1 SEX M
 1 BIRT
 2 DATE ABT 1786
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0363@
-2 SOUR @S0243@
 1 FAMS @F0054@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0135@ INDI
 1 NAME Łucja /Parys/
 2 TYPE birth
@@ -3005,14 +2605,10 @@
 1 SEX F
 1 BIRT
 2 DATE ABT 1793
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0364@
-2 SOUR @S0243@
 1 FAMS @F0054@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0136@ INDI
 1 NAME Stanisław (Popraw Metrykę) /Majewski/
 2 TYPE birth
@@ -3026,32 +2622,20 @@
 2 PLAC Osiek, gm. Mochowo, pow. sierpecki, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0365@
-2 SOUR @S0243@
 1 FAMS @F0055@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0137@ INDI
 1 NAME Ewa /Polita?Politowska/
 2 TYPE birth
 2 GIVN Ewa
 2 SURN Polita?Politowska
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0366@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0367@
-2 SOUR @S0243@
 1 FAMS @F0055@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0138@ INDI
 1 NAME Wacław /Pietrzyński/
 2 TYPE birth
@@ -3060,16 +2644,16 @@
 1 SEX M
 1 BIRT
 2 TYPE Szacowana data śmierci
-2 NOTE @N0479@
+2 NOTE @N0258@
 2 SOUR @S0243@
 1 DEAT
 2 TYPE Szacowana data śmierci
-2 NOTE @N0480@
+2 NOTE @N0259@
 2 SOUR @S0243@
 1 FAMS @F0056@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:24
 0 @I0139@ INDI
 1 NAME Filip /Sakowski/
 2 TYPE birth
@@ -3078,16 +2662,16 @@
 1 SEX M
 1 BIRT
 2 TYPE Szacowana data śmierci
-2 NOTE @N0481@
+2 NOTE @N0260@
 2 SOUR @S0243@
 1 DEAT
 2 TYPE Szacowana data śmierci
-2 NOTE @N0482@
+2 NOTE @N0261@
 2 SOUR @S0243@
 1 FAMS @F0057@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:24
 0 @I0140@ INDI
 1 NAME Katarzyna /Sakowska/
 2 TYPE married
@@ -3096,89 +2680,75 @@
 1 SEX F
 1 BIRT
 2 TYPE Szacowana data śmierci
-2 NOTE @N0483@
+2 NOTE @N0262@
 2 SOUR @S0243@
 1 DEAT
 2 TYPE Szacowana data śmierci
-2 NOTE @N0484@
+2 NOTE @N0263@
 2 SOUR @S0243@
 1 FAMS @F0057@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:24
+0 @I0141@ INDI
+1 NAME Michał /Figat/
+2 TYPE birth
+2 GIVN Michał
+2 SURN Figat
+1 SEX M
+1 BIRT
+2 TYPE Szacowana data śmierci
+2 NOTE @N0264@
+2 SOUR @S0243@
+1 DEAT
+2 TYPE Szacowana data śmierci
+2 NOTE @N0265@
+2 SOUR @S0243@
+1 FAMS @F0066@
+1 CHAN
+2 DATE 9 JUN 2024
+3 TIME 21:57:24
 0 @I0142@ INDI
 1 NAME Jan /Dzikowski/
 2 TYPE birth
 2 GIVN Jan
 2 SURN Dzikowski
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0368@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0369@
-2 SOUR @S0243@
 1 FAMS @F0058@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0143@ INDI
 1 NAME Julianna /Rak "z Raków"/
 2 TYPE birth
 2 GIVN Julianna
 2 SURN Rak "z Raków"
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0370@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0371@
-2 SOUR @S0243@
 1 FAMS @F0058@
 1 NOTE @N0024@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0144@ INDI
 1 NAME Piotr /Szemborski/
 2 TYPE birth
 2 GIVN Piotr
 2 SURN Szemborski
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0372@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0373@
-2 SOUR @S0243@
 1 FAMS @F0059@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0145@ INDI
 1 NAME Anna /Gos/
 2 TYPE birth
 2 GIVN Anna
 2 SURN Gos
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0374@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0375@
-2 SOUR @S0243@
 1 FAMS @F0059@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0146@ INDI
 1 NAME Jan /Zabielski/
 2 TYPE birth
@@ -3197,35 +2767,19 @@
 2 GIVN Antoni
 2 SURN Romański
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0376@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0377@
-2 SOUR @S0243@
 1 FAMS @F0061@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0148@ INDI
 1 NAME  /NN/
 2 TYPE Unknown
 2 SURN NN
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0378@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0379@
-2 SOUR @S0243@
 1 FAMS @F0062@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0149@ INDI
 1 NAME Wiktoria /Szulejewska/
 2 TYPE birth
@@ -3234,33 +2788,21 @@
 1 SEX F
 1 BIRT
 2 DATE ABT 1836
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0380@
-2 SOUR @S0243@
 1 FAMS @F0062@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0150@ INDI
 1 NAME Czesław /Piekarzewski/
 2 TYPE birth
 2 GIVN Czesław
 2 SURN Piekarzewski
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0381@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0382@
-2 SOUR @S0243@
 1 FAMC @F0003@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0151@ INDI
 1 NAME Antoni /Piekarzewski/
 2 TYPE birth
@@ -3297,15 +2839,11 @@
 2 ADDR
 3 CITY Brok
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0383@
-2 SOUR @S0243@
 1 FAMC @F0021@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0153@ INDI
 1 NAME Franciszek /Zyśk/
 2 TYPE birth
@@ -3342,15 +2880,11 @@
 2 PLAC Feliksowo (cześć Kaczkowa), Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0384@
-2 SOUR @S0243@
 1 FAMC @F0021@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0155@ INDI
 1 NAME Stanisława /Zyśk/
 2 TYPE birth
@@ -3380,20 +2914,12 @@
 2 GIVN NN
 2 SURN Zyśk
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0385@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0386@
-2 SOUR @S0243@
 1 FAMC @F0021@
 2 PEDI birth
 1 NOTE @N0021@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0157@ INDI
 1 NAME Marianna /Jaworska/
 2 TYPE birth
@@ -3404,10 +2930,6 @@
 2 GIVN Marianna
 2 SURN Kuta
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0388@
-2 SOUR @S0243@
 1 DEAT
 2 TYPE 1914 akt 231
 2 DATE 1941
@@ -3417,8 +2939,8 @@
 1 FAMC @F0015@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0158@ INDI
 1 NAME [Żyjący] /Jaworski/
 2 TYPE birth
@@ -3442,15 +2964,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0389@
-2 SOUR @S0243@
 1 FAMC @F0020@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0160@ INDI
 1 NAME Józef /Figat/
 2 TYPE birth
@@ -3463,15 +2981,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0391@
-2 SOUR @S0243@
 1 FAMC @F0020@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0161@ INDI
 1 NAME Marianna /Figat/
 2 TYPE birth
@@ -3484,15 +2998,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0390@
-2 SOUR @S0243@
 1 FAMC @F0020@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0162@ INDI
 1 NAME Franciszek /Figat/
 2 TYPE birth
@@ -3505,15 +3015,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0392@
-2 SOUR @S0243@
 1 FAMC @F0020@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0163@ INDI
 1 NAME Stanisław /Figat/
 2 TYPE birth
@@ -3526,15 +3032,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0393@
-2 SOUR @S0243@
 1 FAMC @F0020@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0164@ INDI
 1 NAME Władysława /Figat/
 2 TYPE birth
@@ -3547,15 +3049,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0394@
-2 SOUR @S0243@
 1 FAMC @F0020@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0165@ INDI
 1 NAME Franciszek /Figat/
 2 TYPE birth
@@ -3642,15 +3140,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0395@
-2 SOUR @S0243@
 1 FAMC @F0022@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0169@ INDI
 1 NAME Aleksander (2gi) /Figat/
 2 TYPE birth
@@ -3686,15 +3180,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0396@
-2 SOUR @S0243@
 1 FAMC @F0022@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0171@ INDI
 1 NAME Rozalia /Figat/
 2 TYPE birth
@@ -3707,15 +3197,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0397@
-2 SOUR @S0243@
 1 FAMC @F0022@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0172@ INDI
 1 NAME Wiktoria /Figat/
 2 TYPE birth
@@ -3751,15 +3237,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0398@
-2 SOUR @S0243@
 1 FAMC @F0022@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0174@ INDI
 1 NAME Antoni /Figat/
 2 TYPE birth
@@ -3837,15 +3319,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0399@
-2 SOUR @S0243@
 1 FAMC @F0026@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0178@ INDI
 1 NAME Ignacy /Figat/
 2 TYPE birth
@@ -3869,15 +3347,6 @@
 1 CHAN
 2 DATE 31 MAY 2024
 3 TIME 16:47:38
-0 @I0179@ INDI
-1 NAME [Żyjący] /Figat/
-2 TYPE birth
-2 GIVN [Żyjący]
-2 SURN Figat
-1 SEX M
-1 CHAN
-2 DATE 24 MAY 2024
-3 TIME 23:37:12
 0 @I0180@ INDI
 1 NAME Elżbieta /Figat/
 2 TYPE birth
@@ -3913,29 +3382,17 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0400@
-2 SOUR @S0243@
 1 FAMC @F0042@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0182@ INDI
 1 NAME Jan /Figat/
 2 TYPE birth
 2 GIVN Jan
 2 SURN Figat
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0401@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0402@
-2 SOUR @S0243@
 1 EVEN 1825 akt 3
 2 TYPE Marriage
 2 DATE 1825
@@ -3947,22 +3404,14 @@
 1 FAMC @F0042@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0183@ INDI
 1 NAME Marianna /Figat/
 2 TYPE birth
 2 GIVN Marianna
 2 SURN Figat
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0403@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0404@
-2 SOUR @S0243@
 1 EVEN 1830 akt 18
 2 TYPE Marriage
 2 DATE 1830
@@ -3974,22 +3423,14 @@
 1 FAMC @F0042@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0184@ INDI
 1 NAME Mikołaj /Figat/
 2 TYPE birth
 2 GIVN Mikołaj
 2 SURN Figat
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0405@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0406@
-2 SOUR @S0243@
 1 EVEN 1843 akt 21
 2 TYPE Marriage
 2 DATE 1843
@@ -4001,37 +3442,25 @@
 1 FAMC @F0042@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0185@ INDI
 1 NAME Kazimierz /Sobieski/
 2 TYPE birth
 2 GIVN Kazimierz
 2 SURN Sobieski
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0407@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0408@
-2 SOUR @S0243@
 1 FAMS @F0063@
 1 NOTE @N0026@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0186@ INDI
 1 NAME Szymon /Korzeb/
 2 TYPE birth
 2 GIVN Szymon
 2 SURN Korzeb
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0435@
-2 SOUR @S0243@
 1 DEAT
 2 TYPE 1854 akt 150
 2 DATE 1854
@@ -4041,18 +3470,14 @@
 1 FAMC @F0031@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0187@ INDI
 1 NAME Łukasz /Sobieski/
 2 TYPE birth
 2 GIVN Łukasz
 2 SURN Sobieski
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0409@
-2 SOUR @S0243@
 1 DEAT
 2 TYPE 1842 akt 64
 2 DATE 1842
@@ -4062,22 +3487,14 @@
 1 FAMC @F0043@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0188@ INDI
 1 NAME Franciszek /Sobieski/
 2 TYPE birth
 2 GIVN Franciszek
 2 SURN Sobieski
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0410@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0411@
-2 SOUR @S0243@
 1 EVEN 1818 akt 14
 2 TYPE Marriage
 2 DATE 1818
@@ -4087,22 +3504,14 @@
 1 FAMC @F0043@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0189@ INDI
 1 NAME Regina /Sobieska/
 2 TYPE birth
 2 GIVN Regina
 2 SURN Sobieska
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0412@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0413@
-2 SOUR @S0243@
 1 EVEN 1813 akt 16
 2 TYPE Marriage
 2 DATE 1813
@@ -4112,22 +3521,14 @@
 1 FAMC @F0043@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0190@ INDI
 1 NAME Anna /Sobieska/
 2 TYPE birth
 2 GIVN Anna
 2 SURN Sobieska
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0414@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0415@
-2 SOUR @S0243@
 1 EVEN 1821 akt 35
 2 TYPE Marriage
 2 DATE 1821
@@ -4145,8 +3546,8 @@
 1 FAMC @F0043@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0191@ INDI
 1 NAME Mateusz (1szy) /Dzieniszewski/
 2 TYPE birth
@@ -4176,14 +3577,6 @@
 2 GIVN Jan
 2 SURN Nosek
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0416@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0417@
-2 SOUR @S0243@
 1 EVEN 1866 akt 26
 2 TYPE Marriage
 2 DATE 1866
@@ -4195,8 +3588,8 @@
 1 FAMC @F0027@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0193@ INDI
 1 NAME Marianna /Żach/
 2 TYPE birth
@@ -4278,15 +3671,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0418@
-2 SOUR @S0243@
 1 FAMC @F0023@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0197@ INDI
 1 NAME Józef /Żach/
 2 TYPE birth
@@ -4299,15 +3688,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0419@
-2 SOUR @S0243@
 1 FAMC @F0023@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0198@ INDI
 1 NAME Jan /Żach/
 2 TYPE birth
@@ -4320,29 +3705,17 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0420@
-2 SOUR @S0243@
 1 FAMC @F0023@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0199@ INDI
 1 NAME Franciszek /Żach/
 2 TYPE birth
 2 GIVN Franciszek
 2 SURN Żach
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0421@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0422@
-2 SOUR @S0243@
 1 EVEN 1897 akt 45
 2 TYPE Marriage
 2 PLAC Brok, gm. Brok, pow. ostrowski, woj. mazowieckie
@@ -4353,8 +3726,8 @@
 1 FAMC @F0023@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0200@ INDI
 1 NAME Michał /Korzeb/
 2 TYPE birth
@@ -4367,15 +3740,11 @@
 2 PLAC Glina, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0423@
-2 SOUR @S0243@
 1 FAMC @F0030@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0201@ INDI
 1 NAME Rozalia /Korzeb/
 2 TYPE birth
@@ -4388,15 +3757,11 @@
 2 PLAC Glina, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0424@
-2 SOUR @S0243@
 1 FAMC @F0030@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0202@ INDI
 1 NAME Marianna /Korzeb/
 2 TYPE birth
@@ -4409,15 +3774,11 @@
 2 PLAC Glina, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0425@
-2 SOUR @S0243@
 1 FAMC @F0030@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0203@ INDI
 1 NAME Magdalena /Korzeb/
 2 TYPE birth
@@ -4427,15 +3788,11 @@
 1 BIRT
 2 TYPE 1846 akt 70
 2 DATE 1846
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0426@
-2 SOUR @S0243@
 1 FAMC @F0030@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0204@ INDI
 1 NAME Jan /Korzeb/
 2 TYPE birth
@@ -4448,15 +3805,11 @@
 2 PLAC Glina, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0427@
-2 SOUR @S0243@
 1 FAMC @F0030@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0205@ INDI
 1 NAME Seweryna /Korzeb/
 2 TYPE birth
@@ -4509,14 +3862,6 @@
 2 GIVN Franciszka
 2 SURN Korzeb
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0428@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0429@
-2 SOUR @S0243@
 1 EVEN 1847 akt 17
 2 TYPE Marriage
 2 DATE 1847
@@ -4528,8 +3873,8 @@
 1 FAMC @F0030@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0208@ INDI
 1 NAME Franciszka /Korzeb/
 2 TYPE birth
@@ -4565,15 +3910,11 @@
 2 PLAC Glina, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0430@
-2 SOUR @S0243@
 1 FAMC @F0031@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0210@ INDI
 1 NAME Gabriel /Korzeb/
 2 TYPE birth
@@ -4586,15 +3927,11 @@
 2 PLAC Glina, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0431@
-2 SOUR @S0243@
 1 FAMC @F0031@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0211@ INDI
 1 NAME Maciej /Korzeb/
 2 TYPE birth
@@ -4607,15 +3944,11 @@
 2 PLAC Glina, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0432@
-2 SOUR @S0243@
 1 FAMC @F0031@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0212@ INDI
 1 NAME Elżbieta /Korzeb/
 2 TYPE birth
@@ -4628,15 +3961,11 @@
 2 PLAC Glina, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0433@
-2 SOUR @S0243@
 1 FAMC @F0031@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0213@ INDI
 1 NAME Magdalena /Korzeb/
 2 TYPE birth
@@ -4649,15 +3978,11 @@
 2 PLAC Glina, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0434@
-2 SOUR @S0243@
 1 FAMC @F0031@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0214@ INDI
 1 NAME Andrzej /Dzieniszewski/
 2 TYPE birth
@@ -4733,17 +4058,13 @@
 2 GIVN Ignacy
 2 SURN Korzeb
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0436@
-2 SOUR @S0243@
 1 DEAT
 2 TYPE informacja pośrednia z aktu ślubu syna Mikołaja
 2 DATE BEF 30 OCT 1833
 1 FAMS @F0064@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0218@ INDI
 1 NAME Jadwiga /Korzeb/
 2 TYPE married
@@ -4754,18 +4075,14 @@
 2 GIVN Jadwiga
 2 SURN Figat
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0437@
-2 SOUR @S0243@
 1 DEAT
 2 TYPE informacja pośrednia z aktu ślubu syna Mikołaja
 2 DATE BEF 30 OCT 1833
 1 FAMS @F0064@
 1 NOTE @N0030@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0219@ INDI
 1 NAME Ewa /Tomczyk/
 2 TYPE birth
@@ -4774,15 +4091,11 @@
 1 SEX F
 1 BIRT
 2 DATE 18 DEC 1789
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0438@
-2 SOUR @S0243@
 1 FAMS @F0065@
 1 NOTE @N0029@
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0220@ INDI
 1 NAME Mikołaj /Korzeb/
 2 TYPE birth
@@ -4791,10 +4104,6 @@
 1 SEX M
 1 BIRT
 2 DATE 7 SEP 1795
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0439@
-2 SOUR @S0243@
 1 EVEN 1833 akt 23
 2 TYPE Marriage
 2 DATE 1833
@@ -4804,8 +4113,8 @@
 1 FAMC @F0064@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0221@ INDI
 1 NAME Marianna /Korzeb/
 2 TYPE birth
@@ -4835,15 +4144,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0440@
-2 SOUR @S0243@
 1 FAMC @F0029@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0223@ INDI
 1 NAME Julianna /Żach/
 2 TYPE birth
@@ -4856,15 +4161,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0441@
-2 SOUR @S0243@
 1 FAMC @F0029@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0224@ INDI
 1 NAME Barbara /Żach/
 2 TYPE birth
@@ -4894,10 +4195,6 @@
 2 GIVN Józefa
 2 SURN Żach
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0442@
-2 SOUR @S0243@
 1 DEAT
 2 TYPE 1852 akt 99
 2 DATE 1852
@@ -4907,8 +4204,8 @@
 1 FAMC @F0029@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0226@ INDI
 1 NAME Stanisław /Żach/
 2 TYPE birth
@@ -4917,18 +4214,14 @@
 1 SEX M
 1 BIRT
 2 DATE EST 1827
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0443@
-2 SOUR @S0243@
 1 EVEN
 2 TYPE Unknown
 2 NOTE @N0257@
 1 FAMC @F0054@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0227@ INDI
 1 NAME Ludwik /Majewski/
 2 TYPE birth
@@ -4937,15 +4230,11 @@
 1 SEX M
 1 BIRT
 2 DATE EST 1820
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0444@
-2 SOUR @S0243@
 1 FAMC @F0055@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0228@ INDI
 1 NAME Jan /Majewski/
 2 TYPE birth
@@ -4958,15 +4247,11 @@
 2 PLAC Płatkownica, gm. Sadowne, pow. węgrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0445@
-2 SOUR @S0243@
 1 FAMC @F0055@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0229@ INDI
 1 NAME Marianna /Majewska/
 2 TYPE birth
@@ -4979,15 +4264,11 @@
 2 PLAC Płatkownica, gm. Sadowne, pow. węgrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0446@
-2 SOUR @S0243@
 1 FAMC @F0055@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0230@ INDI
 1 NAME Marcin /Żach/
 2 TYPE birth
@@ -5000,15 +4281,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0447@
-2 SOUR @S0243@
 1 FAMC @F0054@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0231@ INDI
 1 NAME Franciszka /Żach/
 2 TYPE birth
@@ -5067,15 +4344,11 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0448@
-2 SOUR @S0243@
 1 FAMC @F0054@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0234@ INDI
 1 NAME Wojciech /Żach/
 2 TYPE birth
@@ -5128,10 +4401,6 @@
 2 GIVN Katarzyna
 2 SURN Żach
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0449@
-2 SOUR @S0243@
 1 DEAT
 2 TYPE 1826 akt 93
 2 DATE 1826
@@ -5141,8 +4410,8 @@
 1 FAMC @F0054@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0237@ INDI
 1 NAME Marta /Zyśk/
 2 TYPE birth
@@ -5155,15 +4424,11 @@
 2 PLAC Sumiężne, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0450@
-2 SOUR @S0243@
 1 FAMC @F0033@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0238@ INDI
 1 NAME Jan /Zyśk/
 2 TYPE birth
@@ -5199,15 +4464,11 @@
 2 PLAC Sumiężne, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0451@
-2 SOUR @S0243@
 1 FAMC @F0033@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0240@ INDI
 1 NAME Marianna (1sza) /Zyśk/
 2 TYPE birth
@@ -5220,15 +4481,11 @@
 2 PLAC Sumiężne, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0452@
-2 SOUR @S0243@
 1 FAMC @F0033@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0241@ INDI
 1 NAME Anna /Zyśk/
 2 TYPE birth
@@ -5241,15 +4498,11 @@
 2 PLAC Kutyski, gm. Kosów Lacki, pow. sokołowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0453@
-2 SOUR @S0243@
 1 FAMC @F0033@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0242@ INDI
 1 NAME Marianna (2ga) /Zyśk/
 2 TYPE birth
@@ -5262,15 +4515,11 @@
 2 PLAC Kutyski, gm. Kosów Lacki, pow. sokołowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0454@
-2 SOUR @S0243@
 1 FAMC @F0033@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0243@ INDI
 1 NAME Marian /Zyśk/
 2 TYPE birth
@@ -5300,10 +4549,6 @@
 2 GIVN Marianna
 2 SURN Zyśk
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0455@
-2 SOUR @S0243@
 1 DEAT
 2 TYPE 1853 akt 50
 2 DATE 1853
@@ -5313,8 +4558,8 @@
 1 FAMC @F0036@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0245@ INDI
 1 NAME Antoni /Zyśk/
 2 TYPE birth
@@ -5327,15 +4572,11 @@
 2 PLAC Kańkowo, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0456@
-2 SOUR @S0243@
 1 FAMC @F0036@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0246@ INDI
 1 NAME Elżbieta /Kucharczyk/
 2 TYPE birth
@@ -5348,15 +4589,11 @@
 2 PLAC Kańkowo, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0458@
-2 SOUR @S0243@
 1 FAMC @F0047@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0247@ INDI
 1 NAME Szymon /Kucharczyk/
 2 TYPE birth
@@ -5369,15 +4606,11 @@
 2 PLAC Kańkowo, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0457@
-2 SOUR @S0243@
 1 FAMC @F0047@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0248@ INDI
 1 NAME Elżbieta /Kucharczyk/
 2 TYPE birth
@@ -5390,29 +4623,17 @@
 2 PLAC Kańkowo, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0459@
-2 SOUR @S0243@
 1 FAMC @F0047@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0249@ INDI
 1 NAME Katarzyna /Kucharczyk/
 2 TYPE birth
 2 GIVN Katarzyna
 2 SURN Kucharczyk
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0460@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0461@
-2 SOUR @S0243@
 1 EVEN 1818 akt 14
 2 TYPE Marriage
 2 DATE 1818
@@ -5422,18 +4643,14 @@
 1 FAMC @F0052@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0250@ INDI
 1 NAME Małgorzata /Kucharczyk/
 2 TYPE birth
 2 GIVN Małgorzata
 2 SURN Kucharczyk
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0462@
-2 SOUR @S0243@
 1 DEAT
 2 TYPE 1842 akt 20
 2 DATE 1842
@@ -5449,8 +4666,8 @@
 1 FAMC @F0052@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0251@ INDI
 1 NAME Scholastyka /Arażnik/
 2 TYPE birth
@@ -5486,25 +4703,17 @@
 2 PLAC Nieskórz, gm. Ostrów Mazowiecka, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0463@
-2 SOUR @S0243@
 1 FAMC @F0053@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0253@ INDI
 1 NAME Antoni /Kucharczyk/
 2 TYPE birth
 2 GIVN Antoni
 2 SURN Kucharczyk
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0464@
-2 SOUR @S0243@
 1 DEAT
 2 TYPE 1842 akt 20
 2 DATE 1842
@@ -5514,8 +4723,8 @@
 1 FAMC @F0052@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0254@ INDI
 1 NAME Adam /Sobieski/
 2 TYPE birth
@@ -5574,15 +4783,11 @@
 2 PLAC Małkinia Górna, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0465@
-2 SOUR @S0243@
 1 FAMC @F0037@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0257@ INDI
 1 NAME Józef /Sobieski/
 2 TYPE birth
@@ -5641,15 +4846,11 @@
 2 PLAC Małkinia Górna, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0466@
-2 SOUR @S0243@
 1 FAMC @F0037@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0260@ INDI
 1 NAME Piotr (1szy) /Sobieski/
 2 TYPE birth
@@ -5708,15 +4909,11 @@
 2 PLAC Małkinia Górna, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0467@
-2 SOUR @S0243@
 1 FAMC @F0037@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0263@ INDI
 1 NAME Marcjanna /Sobieski/
 2 TYPE birth
@@ -5746,14 +4943,6 @@
 2 GIVN Kazimierz
 2 SURN Ferenc
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0468@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0469@
-2 SOUR @S0243@
 1 EVEN 1866 akt 22
 2 TYPE Marriage
 2 DATE 1866
@@ -5765,8 +4954,8 @@
 1 FAMC @F0049@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0265@ INDI
 1 NAME Jan /Ferenc/
 2 TYPE birth
@@ -5885,25 +5074,17 @@
 2 PLAC Małkinia Górna, gm. Małkinia Górna, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0470@
-2 SOUR @S0243@
 1 FAMC @F0049@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0271@ INDI
 1 NAME Jadwiga /Ferenc/
 2 TYPE birth
 2 GIVN Jadwiga
 2 SURN Ferenc
 1 SEX F
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0471@
-2 SOUR @S0243@
 1 DEAT
 2 TYPE 1828 akt 18
 2 DATE 1828
@@ -5913,8 +5094,8 @@
 1 FAMC @F0049@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0272@ INDI
 1 NAME Adam /Ferenc/
 2 TYPE birth
@@ -5927,29 +5108,17 @@
 2 PLAC Jasienica, gm. Ostrów Mazowiecka, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0472@
-2 SOUR @S0243@
 1 FAMC @F0050@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0273@ INDI
 1 NAME Paweł /Ferenc/
 2 TYPE birth
 2 GIVN Paweł
 2 SURN Ferenc
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0473@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0474@
-2 SOUR @S0243@
 1 EVEN 1819 akt 14
 2 TYPE Marriage
 2 DATE 1819
@@ -5961,18 +5130,14 @@
 1 FAMC @F0050@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0274@ INDI
 1 NAME Piotr /Ferenc/
 2 TYPE birth
 2 GIVN Piotr
 2 SURN Ferenc
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0475@
-2 SOUR @S0243@
 1 DEAT
 2 TYPE 1812 akt 4
 2 DATE 1812
@@ -5982,22 +5147,14 @@
 1 FAMC @F0050@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0275@ INDI
 1 NAME Jan /Ferenc/
 2 TYPE birth
 2 GIVN Jan
 2 SURN Ferenc
 1 SEX M
-1 BIRT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0476@
-2 SOUR @S0243@
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0477@
-2 SOUR @S0243@
 1 EVEN 1846 akt 33
 2 TYPE Marriage
 2 DATE 1846
@@ -6007,8 +5164,8 @@
 1 FAMC @F0050@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
 0 @I0276@ INDI
 1 NAME Anna /Sokołowski/
 2 TYPE birth
@@ -6021,15 +5178,73 @@
 2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
 2 ADDR
 3 STAE woj. mazowieckie
-1 DEAT
-2 TYPE Szacowana data śmierci
-2 NOTE @N0478@
-2 SOUR @S0243@
 1 FAMC @F0034@
 2 PEDI birth
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:10
+0 @I0277@ INDI
+1 NAME Elżbieta /Nasiadczyna/
+2 TYPE married
+2 GIVN Elżbieta
+2 SURN Nasiadczyna
+1 NAME Elżbieta /Figat/
+2 TYPE married
+2 GIVN Elżbieta
+2 SURN Figat
+1 SEX F
+1 BIRT
+2 TYPE Szacowana data śmierci
+2 NOTE @N0266@
+2 SOUR @S0243@
+1 DEAT
+2 TYPE Szacowana data śmierci
+2 NOTE @N0267@
+2 SOUR @S0243@
+1 FAMS @F0066@
+1 CHAN
+2 DATE 9 JUN 2024
+3 TIME 21:57:24
+0 @I0278@ INDI
+1 NAME Adam /Żach/
+2 TYPE birth
+2 GIVN Adam
+2 SURN Żach
+1 SEX M
+1 BIRT
+2 TYPE Szacowana data śmierci
+2 NOTE @N0268@
+2 SOUR @S0243@
+1 DEAT
+2 TYPE Szacowana data śmierci
+2 NOTE @N0269@
+2 SOUR @S0243@
+1 FAMS @F0067@
+1 CHAN
+2 DATE 9 JUN 2024
+3 TIME 21:57:24
+0 @I0279@ INDI
+1 NAME Helena /Nasiadczanka?Nasiadczan/
+2 TYPE birth
+2 GIVN Helena
+2 SURN Nasiadczanka?Nasiadczan
+1 NAME Helena /Żach/
+2 TYPE married
+2 GIVN Helena
+2 SURN Żach
+1 SEX F
+1 BIRT
+2 TYPE Szacowana data śmierci
+2 NOTE @N0270@
+2 SOUR @S0243@
+1 DEAT
+2 TYPE Szacowana data śmierci
+2 NOTE @N0271@
+2 SOUR @S0243@
+1 FAMS @F0067@
+1 CHAN
+2 DATE 9 JUN 2024
+3 TIME 21:57:24
 0 @F0000@ FAM
 1 HUSB @I0000@
 1 WIFE @I0001@
@@ -6311,11 +5526,6 @@
 0 @F0021@ FAM
 1 HUSB @I0066@
 1 WIFE @I0067@
-1 MARR
-2 TYPE 1894 / UMZ-1894 / akt 28
-2 DATE 14 MAY 1894
-2 SOUR @S0002@
-3 OBJE @O0034@
 1 CHIL @I0156@
 1 CHIL @I0152@
 1 CHIL @I0153@
@@ -6650,7 +5860,7 @@
 1 HUSB @I0110@
 1 WIFE @I0111@
 1 MARR
-2 TYPE 1790 poz 28 (idx)
+2 TYPE błąd - to była Agata Żach a nie jak w , 1790 poz 28 (idx) Agata Zadrożna
 2 DATE 1790
 1 CHIL @I0076@
 1 CHIL @I0180@
@@ -6939,6 +6149,38 @@
 1 CHAN
 2 DATE 26 MAY 2024
 3 TIME 10:14:31
+0 @F0066@ FAM
+1 HUSB @I0141@
+1 WIFE @I0277@
+1 MARR
+2 TYPE Nasiadczyna to nazwisko wdowie, wg. PARAFIA-BROK.-KSIĘGA-ZAŚLUBIN-1740–1
+3 CONC 780.pdf
+2 DATE 14 FEB 1762
+2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
+2 ADDR
+3 STAE woj. mazowieckie
+2 SOUR @S0002@
+3 PAGE PARAFIA-BROK.-KSIĘGA-ZAŚLUBIN-1740–1780.pdf
+3 OBJE @O0093@
+1 CHIL @I0110@
+1 CHAN
+2 DATE 9 JUN 2024
+3 TIME 21:39:14
+0 @F0067@ FAM
+1 HUSB @I0278@
+1 WIFE @I0279@
+1 MARR
+2 TYPE wg PARAFIA-BROK.-KSIĘGA-ZAŚLUBIN-1740–1780.pdf
+2 DATE 24 JAN 1976
+2 PLAC Kaczkowo Stare, gm. Brok, pow. ostrowski, woj. mazowieckie
+2 ADDR
+3 STAE woj. mazowieckie
+2 SOUR @S0002@
+3 OBJE @O0093@
+1 CHIL @I0111@
+1 CHAN
+2 DATE 9 JUN 2024
+3 TIME 21:50:07
 0 @S0000@ SOUR
 1 TITL Akta stanu cywilnego parafii rzymskokatolickiej w Goworowie powiat Ostró
 2 CONC w Mazowiecka
@@ -8393,8 +7635,8 @@
 0 @S0243@ SOUR
 1 TITL Obliczanie dat szacunkowych
 1 CHAN
-2 DATE 8 JUN 2024
-3 TIME 23:22:33
+2 DATE 9 JUN 2024
+3 TIME 21:57:24
 0 @N0000@ NOTE https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSL5-JVLN?cat=5981
 1 CONC 41
 0 @N0001@ NOTE https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSL5-JVJP?mode=g&c
@@ -8810,342 +8052,36 @@
 0 @N0257@ NOTE Obiekty wskazywane przez tą notatkę nie istniały, dlatego zostały o
 1 CONC ne stworzone podczas pracy narzędzia Sprawdź i Napraw bazę danych na 08.
 1 CONC 06.2024 23:17:05.
-0 @N0258@ NOTE Added death event based on Data urodzenia
-0 @N0259@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data urodzenia, from Ignacy Piekarzewski
-0 @N0260@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data urodzenia, from Ignacy Piekarzewski
-0 @N0261@ NOTE Added death event based on Data urodzenia
+0 @N0258@ NOTE Added birth event based on data związana z narodzinami małżonka/par
+1 CONC tnera, Data urodzenia, from Helena Dzikowska
+0 @N0259@ NOTE Added death event based on data związana z narodzinami małżonka/par
+1 CONC tnera, Data urodzenia, from Helena Dzikowska
+0 @N0260@ NOTE Added birth event based on data związana z narodzinami małżonka/par
+1 CONC tnera, data śmierci potomka, from Marianna Sakowska
+0 @N0261@ NOTE Added death event based on data związana z narodzinami małżonka/par
+1 CONC tnera, data śmierci potomka, from Marianna Sakowska
 0 @N0262@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data urodzenia, from Stanisław Piekarzewski
+1 CONC tnera, data śmierci potomka, from Marianna Sakowska
 0 @N0263@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data urodzenia, from Stanisław Piekarzewski
-0 @N0264@ NOTE Added death event based on Data urodzenia
-0 @N0265@ NOTE Added death event based on Data urodzenia
-0 @N0266@ NOTE Added birth event based on Data śmierci
-0 @N0267@ NOTE Added death event based on Data urodzenia
-0 @N0268@ NOTE Added death event based on Data urodzenia
-0 @N0269@ NOTE Added death event based on Data urodzenia
-0 @N0270@ NOTE Added death event based on Data urodzenia
-0 @N0271@ NOTE Added death event based on Data urodzenia
-0 @N0272@ NOTE Added birth event based on Data śmierci
-0 @N0273@ NOTE Added birth event based on Data śmierci
-0 @N0274@ NOTE Added death event based on Data urodzenia
-0 @N0275@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data śmierci, from Marianna Sakowska
-0 @N0276@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data śmierci, from Marianna Sakowska
-0 @N0277@ NOTE Added death event based on Data urodzenia
-0 @N0278@ NOTE Added death event based on Data urodzenia
-0 @N0279@ NOTE Added death event based on Data urodzenia
-0 @N0280@ NOTE Added death event based on Data urodzenia
-0 @N0281@ NOTE Added birth event based on Data śmierci
-0 @N0282@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Stanisław Wicopolski
-0 @N0283@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Stanisław Wicopolski
-0 @N0284@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Stanisław Wicopolski
-0 @N0285@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Stanisław Wicopolski
-0 @N0286@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Marianna Dzikowska
-0 @N0287@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Marianna Dzikowska
-0 @N0288@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Marianna Dzikowska
-0 @N0289@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Marianna Dzikowska
-0 @N0290@ NOTE Added death event based on Data urodzenia
-0 @N0291@ NOTE Added death event based on Data urodzenia
-0 @N0292@ NOTE Added death event based on Data urodzenia
-0 @N0293@ NOTE Added death event based on Data urodzenia
-0 @N0294@ NOTE Added death event based on Data urodzenia
-0 @N0295@ NOTE Added death event based on data urodzenia rodzeństwa, from Elżbiet
-1 CONC a Jaworska
-0 @N0296@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia rodzeństwa, from Elżbieta Jaworska
-0 @N0297@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Marianna Zaraś
-0 @N0298@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Marianna Zaraś
-0 @N0299@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Marianna Zaraś
-0 @N0300@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Marianna Zaraś
-0 @N0301@ NOTE Added death event based on Data urodzenia
-0 @N0302@ NOTE Added death event based on Data urodzenia
-0 @N0303@ NOTE Added death event based on Data urodzenia
-0 @N0304@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, , from Justyna Nosek
-0 @N0305@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, , from Justyna Nosek
-0 @N0306@ NOTE Added death event based on Data urodzenia
-0 @N0307@ NOTE Added death event based on Data urodzenia
-0 @N0308@ NOTE Added death event based on Data urodzenia
-0 @N0309@ NOTE Added death event based on Data urodzenia
-0 @N0310@ NOTE Added death event based on Data urodzenia
-0 @N0311@ NOTE Added death event based on Data urodzenia
-0 @N0312@ NOTE Added death event based on Data urodzenia
-0 @N0313@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data urodzenia, from Stefan Sokołowski
-0 @N0314@ NOTE Added birth event based on Data śmierci
-0 @N0315@ NOTE Added death event based on Data urodzenia
-0 @N0316@ NOTE Added death event based on Data urodzenia
-0 @N0317@ NOTE Added death event based on Data urodzenia
-0 @N0318@ NOTE Added death event based on Data urodzenia
-0 @N0319@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Stefan Sokołowski
-0 @N0320@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Stefan Sokołowski
-0 @N0321@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Stefan Sokołowski
-0 @N0322@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Stefan Sokołowski
-0 @N0323@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Anna Sokołowski
-0 @N0324@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Anna Sokołowski
-0 @N0325@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Anna Sokołowski
-0 @N0326@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Anna Sokołowski
-0 @N0327@ NOTE Added birth event based on Data śmierci
-0 @N0328@ NOTE Added death event based on Data urodzenia
-0 @N0329@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Marianna Jaworska
-0 @N0330@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Marianna Jaworska
-0 @N0331@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Marianna Jaworska
-0 @N0332@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Marianna Jaworska
-0 @N0333@ NOTE Added death event based on Data urodzenia
-0 @N0334@ NOTE Added death event based on Data urodzenia
-0 @N0335@ NOTE Added death event based on Data urodzenia
+1 CONC tnera, data śmierci potomka, from Marianna Sakowska
+0 @N0264@ NOTE Added birth event based on data związana z narodzinami małżonka/par
+1 CONC tnera, data urodzenia potomka, from Paweł Figat
+0 @N0265@ NOTE Added death event based on data związana z narodzinami małżonka/par
+1 CONC tnera, data urodzenia potomka, from Paweł Figat
+0 @N0266@ NOTE Added birth event based on data związana z narodzinami małżonka/par
+1 CONC tnera, data urodzenia potomka, from Paweł Figat
+0 @N0267@ NOTE Added death event based on data związana z narodzinami małżonka/par
+1 CONC tnera, data urodzenia potomka, from Paweł Figat
+0 @N0268@ NOTE Added birth event based on data związana z narodzinami małżonka/par
+1 CONC tnera, data urodzenia potomka, from Agata Żach
+0 @N0269@ NOTE Added death event based on data związana z narodzinami małżonka/par
+1 CONC tnera, data urodzenia potomka, from Agata Żach
+0 @N0270@ NOTE Added birth event based on data związana z narodzinami małżonka/par
+1 CONC tnera, data urodzenia potomka, from Agata Żach
+0 @N0271@ NOTE Added death event based on data związana z narodzinami małżonka/par
+1 CONC tnera, data urodzenia potomka, from Agata Żach
 0 @N0336@ NOTE Added birth event based on data związana z narodzinami małżonka/par
 1 CONC tnera, Data śmierci, from Paweł Figat
-0 @N0337@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data śmierci, from Paweł Figat
-0 @N0338@ NOTE Added death event based on Data urodzenia
-0 @N0339@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, , from Aleksander Zyśk
-0 @N0340@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, , from Aleksander Zyśk
-0 @N0341@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data urodzenia, from Agata Warych
-0 @N0342@ NOTE Added death event based on Data urodzenia
-0 @N0343@ NOTE Added death event based on Data urodzenia
-0 @N0344@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data śmierci, from Ewa Sobieska/Sobiewska
-0 @N0345@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data śmierci, from Ewa Sobieska/Sobiewska
-0 @N0346@ NOTE Added birth event based on Data śmierci
-0 @N0347@ NOTE Added death event based on Data urodzenia
-0 @N0348@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Jakub Ferenc
-0 @N0349@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Jakub Ferenc
-0 @N0350@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Jakub Ferenc
-0 @N0351@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Jakub Ferenc
-0 @N0352@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Marianna Kossobucka
-0 @N0353@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Marianna Kossobucka
-0 @N0354@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Marianna Kossobucka
-0 @N0355@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Marianna Kossobucka
-0 @N0356@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Jan Nepomucen Kucharczyk
-0 @N0357@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Jan Nepomucen Kucharczyk
-0 @N0358@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Jan Nepomucen Kucharczyk
-0 @N0359@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Jan Nepomucen Kucharczyk
-0 @N0360@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data urodzenia, from Zuzanna Brzózka
-0 @N0361@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data urodzenia, from Zuzanna Brzózka
-0 @N0362@ NOTE Added death event based on Data urodzenia
-0 @N0363@ NOTE Added death event based on Data urodzenia
-0 @N0364@ NOTE Added death event based on Data urodzenia
-0 @N0365@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Katarzyna Majewska
-0 @N0366@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Katarzyna Majewska
-0 @N0367@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data urodzenia potomka, from Katarzyna Majewska
-0 @N0368@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Kazimierz Dzikowski
-0 @N0369@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Kazimierz Dzikowski
-0 @N0370@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Kazimierz Dzikowski
-0 @N0371@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Kazimierz Dzikowski
-0 @N0372@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Julianna Zabielska/Romańśka/Szemborska
-0 @N0373@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Julianna Zabielska/Romańśka/Szemborska
-0 @N0374@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Julianna Zabielska/Romańśka/Szemborska
-0 @N0375@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Julianna Zabielska/Romańśka/Szemborska
-0 @N0376@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data śmierci, from Julianna Zabielska/Romańśka/Szemborska
-0 @N0377@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data śmierci, from Julianna Zabielska/Romańśka/Szemborska
-0 @N0378@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data urodzenia, from Wiktoria Szulejewska
-0 @N0379@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data urodzenia, from Wiktoria Szulejewska
-0 @N0380@ NOTE Added death event based on Data urodzenia
-0 @N0381@ NOTE Added birth event based on data urodzenia rodzeństwa, from Władysła
-1 CONC w Piekarzewski
-0 @N0382@ NOTE Added death event based on data urodzenia rodzeństwa, from Władysła
-1 CONC w Piekarzewski
-0 @N0383@ NOTE Added death event based on Data urodzenia
-0 @N0384@ NOTE Added death event based on Data urodzenia
-0 @N0385@ NOTE Added birth event based on data urodzenia rodzeństwa, from Rozali
-1 CONC a Zyśk
-0 @N0386@ NOTE Added death event based on data urodzenia rodzeństwa, from Rozali
-1 CONC a Zyśk
-0 @N0387@ NOTE Added birth event based on Data śmierci
-0 @N0388@ NOTE Added birth event based on Data śmierci
-0 @N0389@ NOTE Added death event based on Data urodzenia
-0 @N0390@ NOTE Added death event based on Data urodzenia
-0 @N0391@ NOTE Added death event based on Data urodzenia
-0 @N0392@ NOTE Added death event based on Data urodzenia
-0 @N0393@ NOTE Added death event based on Data urodzenia
-0 @N0394@ NOTE Added death event based on Data urodzenia
-0 @N0395@ NOTE Added death event based on Data urodzenia
-0 @N0396@ NOTE Added death event based on Data urodzenia
-0 @N0397@ NOTE Added death event based on Data urodzenia
-0 @N0398@ NOTE Added death event based on Data urodzenia
-0 @N0399@ NOTE Added death event based on Data urodzenia
-0 @N0400@ NOTE Added death event based on Data urodzenia
-0 @N0401@ NOTE Added birth event based on data urodzenia rodzeństwa, from Maciej F
-1 CONC igat
-0 @N0402@ NOTE Added death event based on data urodzenia rodzeństwa, from Maciej F
-1 CONC igat
-0 @N0403@ NOTE Added birth event based on data urodzenia rodzeństwa, from Maciej F
-1 CONC igat
-0 @N0404@ NOTE Added death event based on data urodzenia rodzeństwa, from Maciej F
-1 CONC igat
-0 @N0405@ NOTE Added birth event based on data urodzenia rodzeństwa, from Maciej F
-1 CONC igat
-0 @N0406@ NOTE Added death event based on data urodzenia rodzeństwa, from Maciej F
-1 CONC igat
-0 @N0407@ NOTE Added birth event based on data urodzenia potomka, from Maciej Sobi
-1 CONC eski
-0 @N0408@ NOTE Added death event based on data urodzenia potomka, from Maciej Sobi
-1 CONC eski
-0 @N0409@ NOTE Added birth event based on Data śmierci
-0 @N0410@ NOTE Added birth event based on data urodzenia rodzeństwa, from Katarzyn
-1 CONC a Urszula Sobieska
-0 @N0411@ NOTE Added death event based on data urodzenia rodzeństwa, from Katarzyn
-1 CONC a Urszula Sobieska
-0 @N0412@ NOTE Added birth event based on data urodzenia rodzeństwa, from Katarzyn
-1 CONC a Urszula Sobieska
-0 @N0413@ NOTE Added death event based on data urodzenia rodzeństwa, from Katarzyn
-1 CONC a Urszula Sobieska
-0 @N0414@ NOTE Added birth event based on data urodzenia rodzeństwa, from Katarzyn
-1 CONC a Urszula Sobieska
-0 @N0415@ NOTE Added death event based on data urodzenia rodzeństwa, from Katarzyn
-1 CONC a Urszula Sobieska
-0 @N0416@ NOTE Added birth event based on data urodzenia rodzeństwa, from Justyn
-1 CONC a Nosek
-0 @N0417@ NOTE Added death event based on data urodzenia rodzeństwa, from Justyn
-1 CONC a Nosek
-0 @N0418@ NOTE Added death event based on Data urodzenia
-0 @N0419@ NOTE Added death event based on Data urodzenia
-0 @N0420@ NOTE Added death event based on Data urodzenia
-0 @N0421@ NOTE Added birth event based on data urodzenia rodzeństwa, from Mariann
-1 CONC a Żach
-0 @N0422@ NOTE Added death event based on data urodzenia rodzeństwa, from Mariann
-1 CONC a Żach
-0 @N0423@ NOTE Added death event based on Data urodzenia
-0 @N0424@ NOTE Added death event based on Data urodzenia
-0 @N0425@ NOTE Added death event based on Data urodzenia
-0 @N0426@ NOTE Added death event based on Data urodzenia
-0 @N0427@ NOTE Added death event based on Data urodzenia
-0 @N0428@ NOTE Added birth event based on data urodzenia rodzeństwa, from Michał K
-1 CONC orzeb
-0 @N0429@ NOTE Added death event based on data urodzenia rodzeństwa, from Michał K
-1 CONC orzeb
-0 @N0430@ NOTE Added death event based on Data urodzenia
-0 @N0431@ NOTE Added death event based on Data urodzenia
-0 @N0432@ NOTE Added death event based on Data urodzenia
-0 @N0433@ NOTE Added death event based on Data urodzenia
-0 @N0434@ NOTE Added death event based on Data urodzenia
-0 @N0435@ NOTE Added birth event based on Data śmierci
-0 @N0436@ NOTE Added birth event based on Data śmierci
-0 @N0437@ NOTE Added birth event based on Data śmierci
-0 @N0438@ NOTE Added death event based on Data urodzenia
-0 @N0439@ NOTE Added death event based on Data urodzenia
-0 @N0440@ NOTE Added death event based on Data urodzenia
-0 @N0441@ NOTE Added death event based on Data urodzenia
-0 @N0442@ NOTE Added birth event based on Data śmierci
-0 @N0443@ NOTE Added death event based on Data urodzenia
-0 @N0444@ NOTE Added death event based on Data urodzenia
-0 @N0445@ NOTE Added death event based on Data urodzenia
-0 @N0446@ NOTE Added death event based on Data urodzenia
-0 @N0447@ NOTE Added death event based on Data urodzenia
-0 @N0448@ NOTE Added death event based on Data urodzenia
-0 @N0449@ NOTE Added birth event based on Data śmierci
-0 @N0450@ NOTE Added death event based on Data urodzenia
-0 @N0451@ NOTE Added death event based on Data urodzenia
-0 @N0452@ NOTE Added death event based on Data urodzenia
-0 @N0453@ NOTE Added death event based on Data urodzenia
-0 @N0454@ NOTE Added death event based on Data urodzenia
-0 @N0455@ NOTE Added birth event based on Data śmierci
-0 @N0456@ NOTE Added death event based on Data urodzenia
-0 @N0457@ NOTE Added death event based on Data urodzenia
-0 @N0458@ NOTE Added death event based on Data urodzenia
-0 @N0459@ NOTE Added death event based on Data urodzenia
-0 @N0460@ NOTE Added birth event based on data urodzenia rodzeństwa, from Jan Nepo
-1 CONC mucen Kucharczyk
-0 @N0461@ NOTE Added death event based on data urodzenia rodzeństwa, from Jan Nepo
-1 CONC mucen Kucharczyk
-0 @N0462@ NOTE Added birth event based on Data śmierci
-0 @N0463@ NOTE Added death event based on Data urodzenia
-0 @N0464@ NOTE Added birth event based on Data śmierci
-0 @N0465@ NOTE Added death event based on Data urodzenia
-0 @N0466@ NOTE Added death event based on Data urodzenia
-0 @N0467@ NOTE Added death event based on Data urodzenia
-0 @N0468@ NOTE Added birth event based on data śmierci rodzeństwa, from Jadwiga Fe
-1 CONC renc
-0 @N0469@ NOTE Added death event based on data śmierci rodzeństwa, from Jadwiga Fe
-1 CONC renc
-0 @N0470@ NOTE Added death event based on Data urodzenia
-0 @N0471@ NOTE Added birth event based on Data śmierci
-0 @N0472@ NOTE Added death event based on Data urodzenia
-0 @N0473@ NOTE Added birth event based on data śmierci rodzeństwa, from Jakub Fere
-1 CONC nc
-0 @N0474@ NOTE Added death event based on data śmierci rodzeństwa, from Jakub Fere
-1 CONC nc
-0 @N0475@ NOTE Added birth event based on Data śmierci
-0 @N0476@ NOTE Added birth event based on data śmierci rodzeństwa, from Jakub Fere
-1 CONC nc
-0 @N0477@ NOTE Added death event based on data śmierci rodzeństwa, from Jakub Fere
-1 CONC nc
-0 @N0478@ NOTE Added death event based on Data urodzenia
-0 @N0479@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data urodzenia, from Helena Dzikowska
-0 @N0480@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, Data urodzenia, from Helena Dzikowska
-0 @N0481@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Marianna Sakowska
-0 @N0482@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Marianna Sakowska
-0 @N0483@ NOTE Added birth event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Marianna Sakowska
-0 @N0484@ NOTE Added death event based on data związana z narodzinami małżonka/par
-1 CONC tnera, data śmierci potomka, from Marianna Sakowska
 0 @O0000@ OBJE
 1 FILE c:\users\piote\onedrive\dokumenty\drzewa genealogiczne\dokumenty zrodlowe\1892 338 Stanisława_Dzikowska_metryka_urodzin.jpg
 2 FORM jpg
@@ -9517,6 +8453,13 @@
 1 CHAN
 2 DATE 8 JUN 2024
 3 TIME 23:19:06
+0 @O0053@ OBJE
+1 FILE c:\users\piote\onedrive\dokumenty\drzewa genealogiczne\dokumenty zrodlowe\1899 103 Marianna Sakowska ZG wersja 1.jpeg
+2 FORM jpeg
+2 TITL 1899 103 Marianna Sakowska ZG wersja 1
+1 CHAN
+2 DATE 9 JUN 2024
+3 TIME 19:42:22
 0 @O0054@ OBJE
 1 FILE c:\users\piote\onedrive\dokumenty\drzewa genealogiczne\dokumenty zrodlowe\1897 61 Julianna Dzikowska Zabielska Szemborska ZG.jpg
 2 FORM jpg
@@ -9776,4 +8719,25 @@
 1 CHAN
 2 DATE 8 JUN 2024
 3 TIME 23:19:07
+0 @O0091@ OBJE
+1 FILE c:\users\piote\onedrive\dokumenty\drzewa genealogiczne\dokumenty zrodlowe\1899 103 Marianna Sakowska ZG wersja 2.jpg
+2 FORM jpg
+2 TITL 1899 103 Marianna Sakowska ZG wersja 2
+1 CHAN
+2 DATE 9 JUN 2024
+3 TIME 19:42:37
+0 @O0092@ OBJE
+1 FILE c:\users\piote\onedrive\dokumenty\drzewa genealogiczne\dokumenty zrodlowe\PARAFIA-BROK.-KSIĘGA-OCHRZCZONYCH-1766–1772.pdf
+2 FORM pdf
+2 TITL PARAFIA-BROK.-KSIĘGA-OCHRZCZONYCH-1766–1772.pdf
+1 CHAN
+2 DATE 9 JUN 2024
+3 TIME 21:15:38
+0 @O0093@ OBJE
+1 FILE c:\users\piote\onedrive\dokumenty\drzewa genealogiczne\dokumenty zrodlowe\PARAFIA-BROK.-KSIĘGA-ZAŚLUBIN-1740–1780.pdf
+2 FORM pdf
+2 TITL PARAFIA-BROK.-KSIĘGA-ZAŚLUBIN-1740–1780
+1 CHAN
+2 DATE 9 JUN 2024
+3 TIME 21:39:00
 0 TRLR

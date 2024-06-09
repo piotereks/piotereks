@@ -60,10 +60,11 @@ M_title_0 = [
 "1881 Dzikowski Miko\u0142aj Jaworska Zofia",
 "1887 80 Marianna Dzikowska Wicopolska Brzezi\u0144ska",
 "1892 338 Stanis\u0142awa_Dzikowska_metryka_urodzin.jpg",
-"1894 28 Antoni Zy\u015bk Marcjanna Soko\u0142owska MA",
 "1896 10 Figat Jan \u017bysk Rozalia MA",
 "1897 61 Julianna Dzikowska Zabielska Szemborska ZG",
 "1898 224 Kazimierz Dzikowski ZG",
+"1899 103 Marianna Sakowska ZG wersja 1",
+"1899 103 Marianna Sakowska ZG wersja 2",
 "1899 8 Ignacy Piekarzewski Julianna Zakrzewska",
 "1901 61 Justyna Nosek ZG",
 "1902 255 Stefan Piekarzewski metryka urodzin",
@@ -87,6 +88,8 @@ M_title_0 = [
 "1940 187 Aleksander Zy\u015bk Katarzyna W\u00f3lkiewicz MA",
 "1944 IPN Straty Aleksander Zy\u015bk ZG",
 "1957_Figat Anna AZ",
-"1980_Sakowski Franciszek AZ"
+"1980_Sakowski Franciszek AZ",
+"PARAFIA-BROK.-KSI\u0118GA-OCHRZCZONYCH-1766\u20131772.pdf",
+"PARAFIA-BROK.-KSI\u0118GA-ZA\u015aLUBIN-1740\u20131780"
 ]
 Dwr.ScriptLoaded('dwr_db_M_title_0.js');

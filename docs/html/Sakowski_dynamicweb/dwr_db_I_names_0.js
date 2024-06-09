@@ -1043,24 +1043,6 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
-"full": "[\u017byj\u0105cy] Figat",
-"given": "[\u017byj\u0105cy]",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"Figat"
-],
-"title": "",
-"type": "Nazwisko rodowe"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
 "full": "Aleksander (1szy) Figat",
 "given": "Aleksander (1szy)",
 "nick": "",
@@ -1459,6 +1441,24 @@ I_names_0 = [
 "fam_nick": "",
 "full": "Marianna Figat",
 "given": "Marianna",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"Figat"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Micha\u0142 Figat",
+"given": "Micha\u0142",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -2725,6 +2725,74 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
+"full": "Helena Nasiadczanka/Nasiadczan",
+"given": "Helena",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"Nasiadczanka/Nasiadczan"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+},
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Helena \u017bach",
+"given": "Helena",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
+],
+"title": "",
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "El\u017cbieta Nasiadczyna",
+"given": "El\u017cbieta",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"Nasiadczyna"
+],
+"title": "",
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
+},
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "El\u017cbieta Figat",
+"given": "El\u017cbieta",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"Figat"
+],
+"title": "",
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
 "full": "NN",
 "given": "",
 "nick": "",
@@ -3433,6 +3501,24 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
+"full": "Katarzyna Sakowska",
+"given": "Katarzyna",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"Sakowska"
+],
+"title": "",
+"type": "Nazwisko po ma\u0142\u017ce\u0144stwie"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
 "full": "Marianna Sakowska",
 "given": "Marianna",
 "nick": "",
@@ -3515,6 +3601,24 @@ I_names_0 = [
 ],
 "title": "",
 "type": "Osoba tak\u017ce znana jako"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Filip Sakowski",
+"given": "Filip",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"Sakowski"
+],
+"title": "",
+"type": "Nazwisko rodowe"
 }
 ],
 [
@@ -4483,6 +4587,24 @@ I_names_0 = [
 "cita": [],
 "date": "",
 "fam_nick": "",
+"full": "[\u017byj\u0105cy] Zy\u015bk",
+"given": "[\u017byj\u0105cy]",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"Zy\u015bk"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
 "full": "Aleksander Zy\u015bk",
 "given": "Aleksander",
 "nick": "",
@@ -4537,24 +4659,6 @@ I_names_0 = [
 "fam_nick": "",
 "full": "Anna Zy\u015bk",
 "given": "Anna",
-"nick": "",
-"note": "",
-"suffix": "",
-"surnames": [
-"Zy\u015bk"
-],
-"title": "",
-"type": "Nazwisko rodowe"
-}
-],
-[
-{
-"call": "",
-"cita": [],
-"date": "",
-"fam_nick": "",
-"full": "Antoni Zy\u015bk",
-"given": "Antoni",
 "nick": "",
 "note": "",
 "suffix": "",
@@ -4848,6 +4952,24 @@ I_names_0 = [
 "suffix": "",
 "surnames": [
 "Zy\u015bk"
+],
+"title": "",
+"type": "Nazwisko rodowe"
+}
+],
+[
+{
+"call": "",
+"cita": [],
+"date": "",
+"fam_nick": "",
+"full": "Adam \u017bach",
+"given": "Adam",
+"nick": "",
+"note": "",
+"suffix": "",
+"surnames": [
+"\u017bach"
 ],
 "title": "",
 "type": "Nazwisko rodowe"

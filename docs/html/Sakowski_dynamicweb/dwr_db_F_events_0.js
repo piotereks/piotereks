@@ -4,7 +4,7 @@ F_events_0 = [
 [
 {
 "cita": [
-247
+39
 ],
 "date": "1795-08-11",
 "date_sdn": 2376893,
@@ -13,7 +13,7 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 35,
+"place": 37,
 "text": "",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
@@ -44,7 +44,7 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 61,
+"place": 63,
 "text": "",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
@@ -61,7 +61,7 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 47,
+"place": 49,
 "text": "",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
@@ -101,7 +101,7 @@ F_events_0 = [
 [
 {
 "cita": [
-321
+113
 ],
 "date": "1881-11-21",
 "date_sdn": 2408406,
@@ -118,7 +118,7 @@ F_events_0 = [
 [
 {
 "cita": [
-251
+43
 ],
 "date": "1809-01-22",
 "date_sdn": 2381805,
@@ -127,7 +127,7 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 48,
+"place": 50,
 "text": "",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
@@ -135,7 +135,7 @@ F_events_0 = [
 [
 {
 "cita": [
-246
+38
 ],
 "date": "1779",
 "date_sdn": 2370827,
@@ -154,7 +154,7 @@ F_events_0 = [
 [
 {
 "cita": [
-284
+76
 ],
 "date": "1896-02-03",
 "date_sdn": 2413593,
@@ -189,7 +189,7 @@ F_events_0 = [
 [
 {
 "cita": [
-261
+53
 ],
 "date": "1827-02-04",
 "date_sdn": 2388392,
@@ -198,7 +198,24 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 35,
+"place": 37,
+"text": "",
+"type": "Ma\u0142\u017ce\u0144stwo"
+}
+],
+[
+{
+"cita": [
+115
+],
+"date": "1762-02-14",
+"date_sdn": 2364662,
+"descr": "Nasiadczyna to nazwisko wdowie, wg. PARAFIA-BROK.-KSI\u0118GA-ZA\u015aLUBIN-1740\u20131780.pdf",
+"gid": "1762 akt 11",
+"media": [],
+"part_family": [],
+"part_person": [],
+"place": 41,
 "text": "",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
@@ -208,7 +225,7 @@ F_events_0 = [
 "cita": [],
 "date": "1790",
 "date_sdn": 2374845,
-"descr": "1790 poz 28 (idx)",
+"descr": "b\u0142\u0105d - to by\u0142a Agata \u017bach a nie jak w , 1790 poz 28 (idx) Agata Zadro\u017cna",
 "gid": "E0259",
 "media": [],
 "part_family": [],
@@ -228,7 +245,7 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 33,
+"place": 34,
 "text": "",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
@@ -244,7 +261,7 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 33,
+"place": 34,
 "text": "<div>\n<i class=\"NoteType\">\nNotatka zdarzenia\n</i>\n<div class=\"grampsstylednote\">\n<p>\nhttps://geneteka.genealodzy.pl/index.php?op=gt&amp;lang=pol&amp;bdm=S&amp;w=07mz&amp;rid=S&amp;search_lastname=Jaworski&amp;search_name=Maciej&amp;search_lastname2=&amp;search_name2=apolonia&amp;from_date=&amp;to_date=&amp;rpp1=&amp;ordertable=\n</p>\n</div>\n</div>",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
@@ -267,7 +284,7 @@ F_events_0 = [
 [
 {
 "cita": [
-262
+54
 ],
 "date": "1830-01-04",
 "date_sdn": 2389457,
@@ -284,7 +301,7 @@ F_events_0 = [
 [
 {
 "cita": [
-14
+13
 ],
 "date": "1798",
 "date_sdn": 2377767,
@@ -301,7 +318,7 @@ F_events_0 = [
 [
 {
 "cita": [
-316
+108
 ],
 "date": "1832-11-07",
 "date_sdn": 2390495,
@@ -320,7 +337,7 @@ F_events_0 = [
 [
 {
 "cita": [
-259
+51
 ],
 "date": "1819-11-14",
 "date_sdn": 2385753,
@@ -329,7 +346,7 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 35,
+"place": 37,
 "text": "",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
@@ -343,7 +360,7 @@ F_events_0 = [
 [
 {
 "cita": [
-298
+90
 ],
 "date": "1910-07-04",
 "date_sdn": 2418857,
@@ -352,7 +369,7 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 33,
+"place": 34,
 "text": "",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
@@ -360,7 +377,7 @@ F_events_0 = [
 [
 {
 "cita": [
-286
+78
 ],
 "date": "1899-01-18",
 "date_sdn": 2414673,
@@ -369,7 +386,7 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 37,
+"place": 39,
 "text": "",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
@@ -400,7 +417,7 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 60,
+"place": 62,
 "text": "",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
@@ -415,17 +432,18 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 47,
+"place": 49,
 "text": "",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [],
 [],
+[],
 [
 {
 "cita": [
-296
+88
 ],
 "date": "1952-02-18",
 "date_sdn": 2434061,
@@ -442,7 +460,7 @@ F_events_0 = [
 [
 {
 "cita": [
-290
+82
 ],
 "date": "1902-06-08",
 "date_sdn": 2415909,
@@ -451,7 +469,7 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 56,
+"place": 58,
 "text": "",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
@@ -462,7 +480,7 @@ F_events_0 = [
 [
 {
 "cita": [
-263
+55
 ],
 "date": "1832-06-25",
 "date_sdn": 2390360,
@@ -480,7 +498,7 @@ F_events_0 = [
 [
 {
 "cita": [
-275
+67
 ],
 "date": "1872-04-28",
 "date_sdn": 2404912,
@@ -523,16 +541,17 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 47,
+"place": 49,
 "text": "",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
 ],
 [],
+[],
 [
 {
 "cita": [
-303
+95
 ],
 "date": "1940-05-21",
 "date_sdn": 2429771,
@@ -541,7 +560,7 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 43,
+"place": 45,
 "text": "",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
@@ -549,24 +568,7 @@ F_events_0 = [
 [
 {
 "cita": [
-8
-],
-"date": "1894-05-14",
-"date_sdn": 2412963,
-"descr": "1894 / UMZ-1894 / akt 28",
-"gid": "E0126",
-"media": [],
-"part_family": [],
-"part_person": [],
-"place": -1,
-"text": "",
-"type": "Ma\u0142\u017ce\u0144stwo"
-}
-],
-[
-{
-"cita": [
-267
+59
 ],
 "date": "1842-11-13",
 "date_sdn": 2394153,
@@ -575,7 +577,7 @@ F_events_0 = [
 "media": [],
 "part_family": [],
 "part_person": [],
-"place": 35,
+"place": 37,
 "text": "",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
@@ -584,7 +586,7 @@ F_events_0 = [
 [
 {
 "cita": [
-274
+66
 ],
 "date": "1870-02-27",
 "date_sdn": 2404121,
@@ -594,6 +596,23 @@ F_events_0 = [
 "part_family": [],
 "part_person": [],
 "place": 3,
+"text": "",
+"type": "Ma\u0142\u017ce\u0144stwo"
+}
+],
+[
+{
+"cita": [
+23
+],
+"date": "1976-01-24",
+"date_sdn": 2442802,
+"descr": "wg PARAFIA-BROK.-KSI\u0118GA-ZA\u015aLUBIN-1740\u20131780.pdf",
+"gid": "E0631",
+"media": [],
+"part_family": [],
+"part_person": [],
+"place": 41,
 "text": "",
 "type": "Ma\u0142\u017ce\u0144stwo"
 }
@@ -616,7 +635,7 @@ F_events_0 = [
 [
 {
 "cita": [
-266
+58
 ],
 "date": "1840-02-24",
 "date_sdn": 2393160,
@@ -633,7 +652,7 @@ F_events_0 = [
 [
 {
 "cita": [
-272
+64
 ],
 "date": "1865-02-20",
 "date_sdn": 2402288,

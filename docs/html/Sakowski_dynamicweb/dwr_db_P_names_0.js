@@ -89,6 +89,13 @@ P_names_0 = [
 {
 "date": "",
 "date_sdn": 0,
+"name": "gm. Broch\u00f3w"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
 "name": "gm. Brok"
 }
 ],
@@ -244,6 +251,13 @@ P_names_0 = [
 "date": "",
 "date_sdn": 0,
 "name": "Hamburg"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
+"name": "Jan\u00f3w"
 }
 ],
 [
@@ -516,6 +530,13 @@ P_names_0 = [
 {
 "date": "",
 "date_sdn": 0,
+"name": "pow. sochaczewski"
+}
+],
+[
+{
+"date": "",
+"date_sdn": 0,
 "name": "pow. soko\u0142owski"
 }
 ],
@@ -625,11 +646,6 @@ P_names_0 = [
 }
 ],
 [
-{
-"date": "",
-"date_sdn": 0,
-"name": "Wroc\u0142aw"
-},
 {
 "date": "",
 "date_sdn": 0,

@@ -287,28 +287,28 @@ F_chil_0 = [
 },
 {
 "cita": [],
-"index": 70,
+"index": 69,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 },
 {
 "cita": [],
-"index": 74,
+"index": 73,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 },
 {
 "cita": [],
-"index": 72,
+"index": 71,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 },
 {
 "cita": [],
-"index": 62,
+"index": 61,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -331,14 +331,14 @@ F_chil_0 = [
 [
 {
 "cita": [],
-"index": 58,
+"index": 57,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 },
 {
 "cita": [],
-"index": 63,
+"index": 62,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -352,6 +352,27 @@ F_chil_0 = [
 },
 {
 "cita": [],
+"index": 54,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 70,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 65,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
 "index": 55,
 "note": "",
 "to_father": "Urodziny",
@@ -359,28 +380,7 @@ F_chil_0 = [
 },
 {
 "cita": [],
-"index": 71,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 66,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 56,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 75,
+"index": 74,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -401,7 +401,7 @@ F_chil_0 = [
 },
 {
 "cita": [],
-"index": 59,
+"index": 58,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -410,21 +410,21 @@ F_chil_0 = [
 [
 {
 "cita": [],
-"index": 64,
+"index": 63,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 },
 {
 "cita": [],
-"index": 68,
+"index": 67,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 },
 {
 "cita": [],
-"index": 150,
+"index": 152,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -438,7 +438,7 @@ F_chil_0 = [
 },
 {
 "cita": [],
-"index": 174,
+"index": 176,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -461,37 +461,14 @@ F_chil_0 = [
 },
 {
 "cita": [],
-"index": 76,
+"index": 75,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 },
 {
 "cita": [],
-"index": 69,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 61,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 65,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-}
-],
-[
-{
-"cita": [],
-"index": 73,
+"index": 68,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -505,21 +482,53 @@ F_chil_0 = [
 },
 {
 "cita": [],
-"index": 57,
+"index": 64,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+}
+],
+[
+{
+"cita": [],
+"index": 79,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+}
+],
+[
+{
+"cita": [],
+"index": 72,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 },
 {
 "cita": [],
-"index": 67,
+"index": 59,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 },
 {
 "cita": [],
-"index": 77,
+"index": 56,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 66,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 76,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -851,7 +860,7 @@ F_chil_0 = [
 [
 {
 "cita": [],
-"index": 183,
+"index": 187,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -860,7 +869,7 @@ F_chil_0 = [
 [
 {
 "cita": [],
-"index": 211,
+"index": 215,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -869,14 +878,14 @@ F_chil_0 = [
 [
 {
 "cita": [],
-"index": 146,
+"index": 148,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 },
 {
 "cita": [],
-"index": 145,
+"index": 147,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -892,7 +901,7 @@ F_chil_0 = [
 },
 {
 "cita": [],
-"index": 151,
+"index": 153,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -901,7 +910,21 @@ F_chil_0 = [
 [
 {
 "cita": [],
-"index": 160,
+"index": 162,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 169,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 158,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -915,21 +938,7 @@ F_chil_0 = [
 },
 {
 "cita": [],
-"index": 156,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
 "index": 165,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 163,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -943,21 +952,14 @@ F_chil_0 = [
 },
 {
 "cita": [],
-"index": 154,
+"index": 156,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 },
 {
 "cita": [],
-"index": 153,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 157,
+"index": 155,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -968,35 +970,42 @@ F_chil_0 = [
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
-}
-],
-[
-{
-"cita": [],
-"index": 166,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
 },
-{
-"cita": [],
-"index": 162,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-}
-],
-[
 {
 "cita": [],
 "index": 161,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
+}
+],
+[
+{
+"cita": [],
+"index": 168,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
 },
 {
 "cita": [],
-"index": 158,
+"index": 164,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+}
+],
+[
+{
+"cita": [],
+"index": 163,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 160,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -1008,11 +1017,43 @@ F_chil_0 = [
 [
 {
 "cita": [],
-"index": 179,
+"index": 182,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 },
+{
+"cita": [],
+"index": 183,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+}
+],
+[
+{
+"cita": [],
+"index": 177,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 178,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 181,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+}
+],
+[
 {
 "cita": [],
 "index": 180,
@@ -1024,30 +1065,7 @@ F_chil_0 = [
 [
 {
 "cita": [],
-"index": 175,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 176,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 178,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-}
-],
-[
-{
-"cita": [],
-"index": 181,
+"index": 184,
 "note": "<div>\n<i class=\"NoteType\">\nNotatka o referencji do dziecka\n</i>\n<div class=\"grampsstylednote\">\n<p>\nZe wzgl\u0119du na ograniczenia pluginu do exportu zmieniam status Franciszka Sakowskiego z ojczyma na ojca\n</p>\n</div>\n</div>",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -1056,120 +1074,25 @@ F_chil_0 = [
 [
 {
 "cita": [],
-"index": 182,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-}
-],
-[
-{
-"cita": [],
-"index": 196,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-}
-],
-[
-{
-"cita": [],
-"index": 185,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 195,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 190,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
 "index": 186,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
-},
+}
+],
+[
 {
 "cita": [],
-"index": 184,
+"index": 200,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 }
 ],
 [
-{
-"cita": [],
-"index": 203,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-}
-],
-[
-{
-"cita": [],
-"index": 188,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 192,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
 {
 "cita": [],
 "index": 189,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 193,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 204,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 198,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 197,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 201,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -1183,23 +1106,21 @@ F_chil_0 = [
 },
 {
 "cita": [],
-"index": 191,
+"index": 194,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 },
 {
 "cita": [],
-"index": 200,
+"index": 190,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
-}
-],
-[
+},
 {
 "cita": [],
-"index": 209,
+"index": 188,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -1212,16 +1133,122 @@ F_chil_0 = [
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
+}
+],
+[
+{
+"cita": [],
+"index": 192,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
 },
 {
 "cita": [],
-"index": 206,
+"index": 196,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 193,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 197,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 208,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 202,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 201,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 205,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 203,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 195,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 204,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+}
+],
+[
+{
+"cita": [],
+"index": 213,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+}
+],
+[
+{
+"cita": [],
+"index": 211,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 210,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
 }
 ],
 [],
+[
+{
+"cita": [],
+"index": 225,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+}
+],
 [
 {
 "cita": [],
@@ -1231,10 +1258,11 @@ F_chil_0 = [
 "to_mother": "Urodziny"
 }
 ],
+[],
 [
 {
 "cita": [],
-"index": 217,
+"index": 224,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -1244,300 +1272,16 @@ F_chil_0 = [
 [
 {
 "cita": [],
-"index": 220,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-}
-],
-[],
-[
-{
-"cita": [],
-"index": 227,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-}
-],
-[],
-[
-{
-"cita": [],
-"index": 245,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 247,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 235,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 236,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 249,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [
-295
-],
 "index": 231,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 230,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
 }
 ],
 [
 {
 "cita": [],
-"index": 248,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 241,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 234,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-}
-],
-[
-{
-"cita": [],
-"index": 237,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-}
-],
-[
-{
-"cita": [],
-"index": 233,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 244,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 238,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 246,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 242,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 232,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 243,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 240,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-}
-],
-[
-{
-"cita": [],
-"index": 264,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 265,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 257,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 261,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 266,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 258,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 273,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 271,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 270,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-}
-],
-[
-{
-"cita": [],
-"index": 262,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 268,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 263,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 272,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 255,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-}
-],
-[
-{
-"cita": [],
-"index": 256,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 267,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 253,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 269,
-"note": "",
-"to_father": "Urodziny",
-"to_mother": "Urodziny"
-},
-{
-"cita": [],
-"index": 254,
+"index": 249,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -1551,7 +1295,269 @@ F_chil_0 = [
 },
 {
 "cita": [],
+"index": 239,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 240,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 253,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [
+87
+],
+"index": 236,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 235,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+}
+],
+[],
+[
+{
+"cita": [],
+"index": 252,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 245,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 238,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+}
+],
+[
+{
+"cita": [],
+"index": 241,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+}
+],
+[
+{
+"cita": [],
+"index": 234,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 248,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 242,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 250,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 246,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 237,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 247,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 244,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+}
+],
+[
+{
+"cita": [],
+"index": 255,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+}
+],
+[
+{
+"cita": [],
+"index": 269,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 270,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 262,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 266,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 271,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 263,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 278,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 276,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 275,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+}
+],
+[
+{
+"cita": [],
+"index": 267,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 273,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 268,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 277,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
 "index": 260,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+}
+],
+[
+{
+"cita": [],
+"index": 261,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 272,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 258,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 274,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"
@@ -1559,6 +1565,27 @@ F_chil_0 = [
 {
 "cita": [],
 "index": 259,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 256,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 265,
+"note": "",
+"to_father": "Urodziny",
+"to_mother": "Urodziny"
+},
+{
+"cita": [],
+"index": 264,
 "note": "",
 "to_father": "Urodziny",
 "to_mother": "Urodziny"

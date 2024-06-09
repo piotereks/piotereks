@@ -10,6 +10,7 @@ S_note_0 = [
 "",
 "",
 "",
+"<div>\n<i class=\"NoteType\">\nOg\u00f3lne\n</i>\n<div class=\"grampsstylednote\">\n<p>\nObiekty wskazywane przez t\u0105 notatk\u0119 nie by\u0142y dost\u0119pne w pliku importowanym 08.06.2024 23:15:42.\n</p>\n</div>\n</div>",
 "",
 "",
 "",

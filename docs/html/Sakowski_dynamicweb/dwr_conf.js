@@ -7,14 +7,14 @@ DWR_VERSION_500 = true;
 TITLE = "Drzewo Sakowskich";
 SPLIT = 5000;
 DB_SIZES = {
-    "C": 323,
-    "F": 65,
-    "I": 274,
-    "M": 87,
-    "N": 56,
-    "P": 91,
+    "C": 117,
+    "F": 68,
+    "I": 279,
+    "M": 90,
+    "N": 58,
+    "P": 94,
     "R": 0,
-    "S": 19
+    "S": 20
 };NB_GENERATIONS_MAX = 10;
 PAGES_FILE = ["index.html", "", "tree_svg.html"];
 PAGES_TITLE = ["DynWeb|Home", "Indexes", "Tree"];

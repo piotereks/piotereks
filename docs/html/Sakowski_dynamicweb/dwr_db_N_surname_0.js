@@ -25,6 +25,8 @@ N_surname_0 = [
 "Kucharczyk",
 "Majewski",
 "Miko\u0142ajczyk",
+"Nasiadczanka/Nasiadczan",
+"Nasiadczyna",
 "NN",
 "Nosek",
 "Parys",

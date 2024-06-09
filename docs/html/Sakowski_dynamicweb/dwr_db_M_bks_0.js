@@ -73,7 +73,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 11,
+"bk_idx": 12,
 "cita": [],
 "note": "",
 "rect": [
@@ -87,7 +87,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 11,
+"bk_idx": 12,
 "cita": [],
 "note": "",
 "rect": [
@@ -115,7 +115,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 11,
+"bk_idx": 12,
 "cita": [],
 "note": "",
 "rect": [
@@ -185,7 +185,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 11,
+"bk_idx": 12,
 "cita": [],
 "note": "",
 "rect": [
@@ -311,7 +311,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 11,
+"bk_idx": 12,
 "cita": [],
 "note": "",
 "rect": [
@@ -325,7 +325,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 12,
+"bk_idx": 13,
 "cita": [],
 "note": "",
 "rect": [
@@ -353,7 +353,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 11,
+"bk_idx": 12,
 "cita": [],
 "note": "",
 "rect": [
@@ -409,7 +409,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 11,
+"bk_idx": 12,
 "cita": [],
 "note": "",
 "rect": [
@@ -465,7 +465,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 11,
+"bk_idx": 12,
 "cita": [],
 "note": "",
 "rect": [
@@ -535,7 +535,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 12,
+"bk_idx": 13,
 "cita": [],
 "note": "",
 "rect": [
@@ -577,7 +577,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 13,
+"bk_idx": 14,
 "cita": [],
 "note": "",
 "rect": [
@@ -605,7 +605,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 14,
+"bk_idx": 15,
 "cita": [],
 "note": "",
 "rect": [
@@ -617,7 +617,7 @@ M_bks_0 = [
 "thumb": "thumb/4/e/f98456f79ed69a0611e16b4f8e4-5,4-52,32.png"
 },
 {
-"bk_idx": 14,
+"bk_idx": 15,
 "cita": [],
 "note": "",
 "rect": [
@@ -673,7 +673,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 13,
+"bk_idx": 14,
 "cita": [],
 "note": "",
 "rect": [
@@ -825,7 +825,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 10,
+"bk_idx": 11,
 "cita": [],
 "note": "",
 "rect": [
@@ -843,38 +843,24 @@ M_bks_0 = [
 "cita": [],
 "note": "",
 "rect": [
-50,
-46,
-100,
-100
-],
-"thumb": "thumb/9/1/f8d9b2ae54b5eea18c4d1798519-50,46-100,100.png"
-},
-{
-"bk_idx": 1,
-"cita": [],
-"note": "",
-"rect": [
 0,
 0,
 100,
 100
 ],
 "thumb": "thumb/9/1/f8d9b2ae54b5eea18c4d1798519.png"
-}
-],
-[
+},
 {
-"bk_idx": 0,
+"bk_idx": 1,
 "cita": [],
 "note": "",
 "rect": [
-2,
-3,
 50,
-96
+46,
+100,
+100
 ],
-"thumb": "thumb/1/b/f987988fb8e54637101bd3930b1-2,3-50,96.png"
+"thumb": "thumb/9/1/f8d9b2ae54b5eea18c4d1798519-50,46-100,100.png"
 }
 ],
 [
@@ -921,6 +907,34 @@ M_bks_0 = [
 ],
 [
 {
+"bk_idx": 1,
+"cita": [],
+"note": "",
+"rect": [
+3,
+1,
+53,
+45
+],
+"thumb": "thumb/9/c/f9fecf0de72397c095f3b6dcbc9-3,1-53,45.png"
+}
+],
+[
+{
+"bk_idx": 1,
+"cita": [],
+"note": "",
+"rect": [
+4,
+2,
+53,
+51
+],
+"thumb": "thumb/c/1/f9fecf332981aeeb60f7df99a1c-4,2-53,51.png"
+}
+],
+[
+{
 "bk_idx": 2,
 "cita": [],
 "note": "",
@@ -963,7 +977,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 13,
+"bk_idx": 14,
 "cita": [],
 "note": "",
 "rect": [
@@ -1043,7 +1057,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 13,
+"bk_idx": 14,
 "cita": [],
 "note": "",
 "rect": [
@@ -1115,24 +1129,24 @@ M_bks_0 = [
 "cita": [],
 "note": "",
 "rect": [
-16,
-8,
-91,
-52
-],
-"thumb": "thumb/c/4/f8d9da5d3196b00ecd93a8c8e4c-16,8-91,52.png"
-},
-{
-"bk_idx": 1,
-"cita": [],
-"note": "",
-"rect": [
 11,
 45,
 100,
 100
 ],
 "thumb": "thumb/c/4/f8d9da5d3196b00ecd93a8c8e4c-11,45-100,100.png"
+},
+{
+"bk_idx": 1,
+"cita": [],
+"note": "",
+"rect": [
+16,
+8,
+91,
+52
+],
+"thumb": "thumb/c/4/f8d9da5d3196b00ecd93a8c8e4c-16,8-91,52.png"
 }
 ],
 [
@@ -1277,7 +1291,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 17,
+"bk_idx": 18,
 "cita": [],
 "note": "",
 "rect": [
@@ -1291,7 +1305,7 @@ M_bks_0 = [
 ],
 [
 {
-"bk_idx": 16,
+"bk_idx": 17,
 "cita": [],
 "note": "",
 "rect": [
@@ -1301,6 +1315,46 @@ M_bks_0 = [
 100
 ],
 "thumb": "thumb/9/3/f98064c8297116ee773ded40239.png"
+}
+],
+[
+{
+"bk_idx": 0,
+"cita": [],
+"note": "",
+"rect": [
+0,
+0,
+100,
+100
+],
+"thumb": "thumb/6/6/f9ff046b0542fc14acc3bd09666.png"
+}
+],
+[
+{
+"bk_idx": 0,
+"cita": [],
+"note": "",
+"rect": [
+0,
+0,
+100,
+100
+],
+"thumb": "thumb/a/e/f9ff11cbbff48f1f0bec34ddfea.png"
+},
+{
+"bk_idx": 0,
+"cita": [],
+"note": "",
+"rect": [
+0,
+0,
+100,
+100
+],
+"thumb": "thumb/a/e/f9ff11cbbff48f1f0bec34ddfea.png"
 }
 ]
 ]

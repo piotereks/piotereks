@@ -60,10 +60,11 @@ M_gramps_path_0 = [
 "1881 Dzikowski Miko\u0142aj Jaworska Zofia.jpg",
 "1887 80 Marianna Dzikowska Wicopolska Brzezi\u0144ska.jpg",
 "1892 338 Stanis\u0142awa_Dzikowska_metryka_urodzin.jpg",
-"1894 28 Antoni Zy\u015bk Marcjanna Soko\u0142owska MA.jpg",
 "1896 10 Figat Jan \u017bysk Rozalia MA.jpeg",
 "1897 61 Julianna Dzikowska Zabielska Szemborska ZG.jpg",
 "1898 224 Kazimierz Dzikowski ZG.jpg",
+"c:\\users\\piote\\onedrive\\dokumenty\\drzewa genealogiczne\\dokumenty zrodlowe\\1899 103 Marianna Sakowska ZG wersja 1.jpeg",
+"c:\\users\\piote\\onedrive\\dokumenty\\drzewa genealogiczne\\dokumenty zrodlowe\\1899 103 Marianna Sakowska ZG wersja 2.jpg",
 "1899 8 Ignacy Piekarzewski Julianna Zakrzewska.jpg",
 "1901 61 Justyna Nosek ZG.jpeg",
 "1902 255 Stefan Piekarzewski metryka urodzin.jpg",
@@ -87,6 +88,8 @@ M_gramps_path_0 = [
 "1940 187 Aleksander Zy\u015bk Katarzyna W\u00f3lkiewicz MA.jpeg",
 "1944 IPN Straty Aleksander Zy\u015bk ZG.pdf",
 "1957_Figat Anna AZ.pdf",
-"1980_Sakowski Franciszek AZ.pdf"
+"1980_Sakowski Franciszek AZ.pdf",
+"PARAFIA-BROK.-KSI\u0118GA-OCHRZCZONYCH-1766\u20131772.pdf",
+"PARAFIA-BROK.-KSI\u0118GA-ZA\u015aLUBIN-1740\u20131780.pdf"
 ]
 Dwr.ScriptLoaded('dwr_db_M_gramps_path_0.js');

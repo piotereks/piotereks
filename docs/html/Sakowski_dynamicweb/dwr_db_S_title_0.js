@@ -10,6 +10,7 @@ S_title_0 = [
 "Ksi\u0119gi Metrykalne P\u0142atkownica, gm. Sadowne, pow. w\u0119growski, woj. mazowieckie",
 "ksi\u0119gi metrykalne, par \u015bw. Jakuba, Ochota, Warszawa",
 "ksi\u0119gi Parafii Poryte",
+"Nieznany",
 "Obliczanie dat szacunkowych",
 "Parafia Grudusk ksi\u0119gi metrykalne",
 "parafia Jasienica, pow. ostrowski, woj. mazowieckie",
