@@ -253,20 +253,6 @@ ol li {
                     }
                     return response.text();
                 })
-                .then(data => {
-                     if (useCorsProxy) {
-<!--                        console.log(data);-->
-                        var parser = new DOMParser();
-                        var doc = parser.parseFromString(data, 'text/html');
-                        var content = doc.querySelector("#resultados > article");
-                        console.log('xxx: ' + doc.querySelector("#resultados > article")); // Log the data received from the response
-                    return data; // Return the data for the next `then()` callback
-                    } else
-                    {
-                        return data;
-                    }
-
-                })
                 .then(html => {
 
                     var parser = new DOMParser();
