@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll('pre code').forEach((block) => {
         hljs.highlightBlock(block);
     });
+
 });
 
 // Function to get URL parameter value by name
@@ -13,6 +14,12 @@ function getUrlParameter(name) {
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 }
 
+// Function to update the URL with the search word
+function updateUrlWithWord(word) {
+    var newUrl = `${window.location.pathname}?word=${encodeURIComponent(word)}`;
+    history.replaceState(null, '', newUrl);
+}
+
 // Get the 'word' parameter from the URL, if it exists
 var urlWord = getUrlParameter('word');
 if (urlWord !== '') {
@@ -21,9 +28,11 @@ if (urlWord !== '') {
     searchWord(urlWord);
 }
 
+// Search form submit event
 document.getElementById("searchForm").addEventListener("submit", function (event) {
     event.preventDefault();
     var word = document.getElementById("word").value;
+    updateUrlWithWord(word); // Update the URL with the search word
     searchWord(word);
 });
 
@@ -82,11 +91,11 @@ function fetchAndDisplay(url, targetElementId, querySelectorName, urlSpell, link
             return response.text();
         })
         .then(html => {
-
             var parser = new DOMParser();
             var doc = parser.parseFromString(html, 'text/html');
             var content = doc.querySelector(querySelectorName);
             var currentFileName = window.location.pathname.split('/').pop();
+
             // Remove the specific span element with id "browserInfo"
             if (content) {
                 var browserInfoElement = content.querySelector('#browserInfo');
@@ -136,8 +145,9 @@ function fetchAndDisplay(url, targetElementId, querySelectorName, urlSpell, link
         })
         .catch(error => {
             console.error('Error fetching content:', error);
-            if (targetElementId) {
-                targetElementId.textContent = "Error fetching content.";
+            var targetElement = document.getElementById(targetElementId);
+            if (targetElement) {
+                targetElement.textContent = "Error fetching content.";
             }
 
         });
