@@ -93,6 +93,7 @@
                     var parser = new DOMParser();
                     var doc = parser.parseFromString(html, 'text/html');
                     var content = doc.querySelector(querySelectorName);
+                    var currentFileName = window.location.pathname.split('/').pop();
                     // Remove the specific span element with id "browserInfo"
                     if (content) {
                         // Remove the specific span element with id "browserInfo"
@@ -100,6 +101,19 @@
                         if (browserInfoElement) {
                             browserInfoElement.remove();
                         }
+                        content.querySelectorAll('a').forEach(link => {
+                            var href = link.getAttribute('href');
+                            if (href) {
+                                if (href.includes('conj/esVerbs.aspx?v=')) {
+                                    link.setAttribute('href', `${currentFileName}l?word=${href.split('=')[1]}`);
+                                } else if (href.includes('conj/esverbs.aspx?v=')) {
+                                    link.setAttribute('href', `${currentFileName}?word=${href.split('=')[1]}`);
+                                } else if (href.includes('sinonimos/')) {
+                                    link.setAttribute('href', `${currentFileName}?word=${href.split('/')[2]}`);
+                                }
+                            }
+                
+                        });
                     }
 
 
@@ -116,7 +130,7 @@
                             var table = docSpell.querySelector("table"); // Extract the <table> element
 
                             if (table) {
-                                 var currentFileName = window.location.pathname.split('/').pop();
+
                                 // Find all <a> elements and update their href attributes
                                 var links = table.querySelectorAll("a");
                                 links.forEach(link => {
