@@ -109,6 +109,8 @@ function fetchAndDisplay(url, targetElementId, querySelectorName, urlSpell, link
                             link.setAttribute('href', `${currentFileName}?word=${href.split('=')[1]}`);
                         } else if (href.includes('conj/esverbs.aspx?v=')) {
                             link.setAttribute('href', `${currentFileName}?word=${href.split('=')[1]}`);
+                        } else if (href.includes('?v=')) {
+                            link.setAttribute('href', `${currentFileName}?word=${href.split('=')[1]}`);                            
                         } else if (href.includes('sinonimos/')) {
                             link.setAttribute('href', `${currentFileName}?word=${href.split('/')[2]}`);
                         }
