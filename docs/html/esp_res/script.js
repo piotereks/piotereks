@@ -81,7 +81,6 @@
             const fetchUrl = useCorsProxy
                 ? `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`
                 : url;
-
             fetch(fetchUrl)
                 .then(response => {
                     if (useCorsProxy) {
@@ -94,11 +93,23 @@
                     var parser = new DOMParser();
                     var doc = parser.parseFromString(html, 'text/html');
                     var content = doc.querySelector(querySelectorName);
-                    var targetElement = document.getElementById(targetElementId);
+                    // Remove the specific span element with id "browserInfo"
+                    if (content) {
+                        // Remove the specific span element with id "browserInfo"
+                        var browserInfoElement = content.querySelector('#browserInfo');
+                        if (browserInfoElement) {
+                            browserInfoElement.remove();
+                        }
+                    }
 
+
+                    var targetElement = document.getElementById(targetElementId);
+                    // console.log('url: '+url);
+                    // console.log('!content '+!content);
+                    // console.log(content.innerText);
                     // If content is not found, try fetching from the alternate URL
                     if ((!content || content.innerHTML.trim()==="") && urlSpell!=="" && typeof urlSpell !== "undefined") {
-                    return fetch(urlSpell)
+                         return fetch(urlSpell)
                         .then(response => response.text())
                         .then(htmlSpell => {
                             var docSpell = parser.parseFromString(htmlSpell, 'text/html');
@@ -121,18 +132,7 @@
                         });
 
                     } else {
-                        // Update the target element with content from the primary URL
-                        // if (targetElementId) {
-                        //     if (!content || content.innerHTML.trim()==="")
-                        //     {
-                        //         targetElement.innerHTML = "No content found.";
-                        //     }
-                        //     else
-                        //     {
-                        //         targetElement.innerHTML =content.innerHTML;
-                        //     }
-                            targetElement.innerHTML = content ? content.innerHTML : "No content found.";
-                        // }
+                             targetElement.innerHTML = content && content.innerText && content.innerText.trim() ? content.innerHTML : "No content found.";
                     };
 
                 })
