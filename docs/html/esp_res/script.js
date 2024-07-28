@@ -50,6 +50,24 @@ for (var i = 0; i < collapsibles.length; i++) {
     });
 }
 
+// Function to collapse all collapsible sections
+function collapseAll() {
+    var collapsibles = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < collapsibles.length; i++) {
+        var content = collapsibles[i].nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            collapsibles[i].classList.remove("active");
+        }
+    }
+}
+
+// Add event listener to the "Collapse All" button
+document.getElementById("collapseAllBtn").addEventListener("click", function() {
+    collapseAll();
+});
+
+
 // Manually trigger opening of the first section when the page is loaded
 document.addEventListener('DOMContentLoaded', function () {
     var firstCollapsible = document.getElementById("defFrameBtn");
