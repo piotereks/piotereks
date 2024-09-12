@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 });
 
+window.onpopstate = function(event) {
+    handleUrlWord();
+};
+
+
+
 // Function to get URL parameter value by name
 function getUrlParameter(name) {
     name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
@@ -14,20 +20,27 @@ function getUrlParameter(name) {
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 }
 
+
+
 // Function to update the URL with the search word
 function updateUrlWithWord(word) {
     var newUrl = `${window.location.pathname}?word=${encodeURIComponent(word)}`;
-    history.replaceState(null, '', newUrl);
+    history.pushState(null, '', newUrl);
 }
 
-// Get the 'word' parameter from the URL, if it exists
-var urlWord = getUrlParameter('word');
-if (urlWord !== '') {
-    urlWord = urlWord.trim();
-    document.getElementById('word').value = urlWord;
 
-    // Manually trigger the search when the word parameter is in the URL
-    searchWord(urlWord);
+// Get the 'word' parameter from the URL, if it exists
+handleUrlWord();
+
+function handleUrlWord() {
+    var urlWord = getUrlParameter('word');
+    if (urlWord !== '') {
+        urlWord = urlWord.trim();
+        document.getElementById('word').value = urlWord;
+
+        // Manually trigger the search when the word parameter is in the URL
+        searchWord(urlWord);
+    }
 }
 
 // Search form submit event
