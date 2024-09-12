@@ -23,7 +23,9 @@ function updateUrlWithWord(word) {
 // Get the 'word' parameter from the URL, if it exists
 var urlWord = getUrlParameter('word');
 if (urlWord !== '') {
+    urlWord = urlWord.trim();
     document.getElementById('word').value = urlWord;
+
     // Manually trigger the search when the word parameter is in the URL
     searchWord(urlWord);
 }
@@ -31,7 +33,8 @@ if (urlWord !== '') {
 // Search form submit event
 document.getElementById("searchForm").addEventListener("submit", function (event) {
     event.preventDefault();
-    var word = document.getElementById("word").value;
+    var word = document.getElementById("word").value.trim();
+
     updateUrlWithWord(word); // Update the URL with the search word
     searchWord(word);
 });
@@ -75,6 +78,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function searchWord(word) {
+    // Trim leading and trailing whitespace (standard spaces)
+    word = word.trim();
+
     var defUrl = "https://www.wordreference.com/definicion/" + encodeURIComponent(word);
     var sinUrl = "https://www.wordreference.com/sinonimos/" + encodeURIComponent(word);
     var spenUrl = "https://www.wordreference.com/es/en/translation.asp?spen=" + encodeURIComponent(word);
