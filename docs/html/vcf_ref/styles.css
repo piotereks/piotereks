@@ -1,172 +1,192 @@
-.theme-dark {
-    --bs-body-bg: #212529;
-    --bs-body-color: #f8f9fa;
-    --bs-bg: #212529;
-    --bs-border-color: #343a40;
-    --bs-primary: #0d6efd;
-    --bs-secondary: #6c757d;
-    --bs-success: #198754;
-    --bs-info: #0dcaf0;
-    --bs-warning: #ffc107;
-    --bs-danger: #dc3545;
-    --bs-light: #f8f9fa;
-    --bs-dark: #212529;
-    background: #212529 !important;
-    color: #f8f9fa !important;
-}
+/* Light theme (GitHub Light + Material Light) */
 .theme-light {
-    --bs-body-bg: #fff;
-    --bs-body-color: #212529;
-    --bs-bg: #fff;
-    --bs-border-color: #dee2e6;
-    --bs-primary: #0d6efd;
-    --bs-secondary: #6c757d;
-    --bs-success: #198754;
-    --bs-info: #0dcaf0;
-    --bs-warning: #ffc107;
-    --bs-danger: #dc3545;
-    --bs-light: #f8f9fa;
-    --bs-dark: #212529;
-    background: #fff !important;
-    color: #212529 !important;
+    --surface-primary: #ffffff;
+    --surface-secondary: #f6f8fa;
+    --text-primary: #24292f;
+    --text-secondary: #57606a;
+    --border-color: #d0d7de;
+    --primary-color: #0969da;
+    --primary-hover: #0366d6;
+    --success-color: #2da44e;
+    --success-hover: #238636;
+    --shadow-color: rgba(27, 31, 36, 0.1);
+    --input-bg: #ffffff;
+    --input-border: #d0d7de;
+    --input-focus-border: #0969da;
+    --input-focus-shadow: rgba(9, 105, 218, 0.1);
 }
-    h1 {
-        color: #3f51b5;
-        margin-bottom: 30px;
-        font-size: 2.2em;
-        font-weight: 400;
-        letter-spacing: 0.5px;
-    }
 
-    .input-group {
-        margin-bottom: 25px;
-        text-align: left;
-    }
-.input-group {
-    label {
-        display: block;
-        margin-bottom: 8px;
-        color: #333;
-        font-weight: 500;
-        letter-spacing: 0.2px;
-    }
-    margin-bottom: 25px;
-    .help-text {
-        display: block;
-        margin-top: 5px;
-        color: #757575;
-        font-size: 12px;
-        font-style: italic;
-    }
-    text-align: left;
-    input[type="text"], input[type="tel"] {
-        width: 100%;
-        padding: 15px;
-        border: 1.5px solid #c5cae9;
-        border-radius: 6px;
-        font-size: 16px;
-        background: #fafafa;
-        color: #212121;
-        transition: border-color 0.3s, box-shadow 0.3s;
-        outline: none;
-        box-shadow: 0 1px 2px rgba(60,60,60,0.04);
+/* Dark theme (GitHub Dark + Material Dark) */
+.theme-dark {
+    --surface-primary: #0d1117;
+    --surface-secondary: #161b22;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --border-color: #30363d;
+    --primary-color: #58a6ff;
+    --primary-hover: #79c0ff;
+    --success-color: #3fb950;
+    --success-hover: #56d364;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --input-bg: #0d1117;
+    --input-border: #30363d;
+    --input-focus-border: #58a6ff;
+    --input-focus-shadow: rgba(88, 166, 255, 0.1);
+}
+
+/* Default to light theme */
+:root {
+    --surface-primary: #ffffff;
+    --surface-secondary: #f6f8fa;
+    --text-primary: #24292f;
+    --text-secondary: #57606a;
+    --border-color: #d0d7de;
+    --primary-color: #0969da;
+    --primary-hover: #0366d6;
+    --success-color: #2da44e;
+    --success-hover: #238636;
+    --shadow-color: rgba(27, 31, 36, 0.1);
+    --input-bg: #ffffff;
+    --input-border: #d0d7de;
+    --input-focus-border: #0969da;
+    --input-focus-shadow: rgba(9, 105, 218, 0.1);
+}
+
+/* Auto dark mode unless overridden */
+@media (prefers-color-scheme: dark) {
+    :root:not(.theme-light) {
+        --surface-primary: #0d1117;
+        --surface-secondary: #161b22;
+        --text-primary: #c9d1d9;
+        --text-secondary: #8b949e;
+        --border-color: #30363d;
+        --primary-color: #58a6ff;
+        --primary-hover: #79c0ff;
+        --success-color: #3fb950;
+        --success-hover: #56d364;
+        --shadow-color: rgba(0, 0, 0, 0.3);
+        --input-bg: #0d1117;
+        --input-border: #30363d;
+        --input-focus-border: #58a6ff;
+        --input-focus-shadow: rgba(88, 166, 255, 0.1);
     }
 }
-    input[type="text"]:focus, input[type="tel"]:focus {
-        border-color: #3f51b5;
-        box-shadow: 0 0 0 2px rgba(63,81,181,0.12);
-    }
+    /* Material Design Typography */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--text-primary);
+    background: var(--surface-primary);
+    transition: all 0.2s ease;
+}
 
-    .button-group {
-        display: flex;
-        gap: 15px;
-        margin-top: 30px;
-    }
-label {
-    button {
-        flex: 1;
-        padding: 15px 25px;
-        border: none;
-        border-radius: 6px;
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: background 0.3s, box-shadow 0.3s, color 0.3s, transform 0.2s;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        box-shadow: 0 2px 6px rgba(60,60,60,0.08);
-    }
-    display: block;
-    .btn-generate {
-        background: linear-gradient(90deg, #3f51b5 0%, #2196f3 100%);
-        color: #fff;
-    }
-    .btn-generate:hover {
-        background: linear-gradient(90deg, #3949ab 0%, #1976d2 100%);
-        transform: translateY(-2px) scale(1.03);
-        box-shadow: 0 6px 18px rgba(33,150,243,0.18);
-    }
-    /* Material + GitHub + Bootstrap button styles */
-    .btn-generate {
-        background: linear-gradient(90deg, #3f51b5 0%, #2196f3 100%);
-        color: #fff !important;
-        border: none;
-        box-shadow: 0 2px 8px rgba(33, 150, 243, 0.10);
-        font-weight: 600;
-        letter-spacing: 0.5px;
-        transition: background 0.2s, box-shadow 0.2s, color 0.2s;
-    }
-    .btn-generate:hover, .btn-generate:focus {
-        background: linear-gradient(90deg, #3949ab 0%, #1976d2 100%);
-        color: #fff !important;
-        box-shadow: 0 4px 16px rgba(33, 150, 243, 0.18);
-        outline: none;
-    }
-    .btn-download {
-        background: linear-gradient(90deg, #43a047 0%, #8bc34a 100%);
-        color: #fff !important;
-        border: none;
-        box-shadow: 0 2px 8px rgba(76, 175, 80, 0.10);
-        font-weight: 600;
-        letter-spacing: 0.5px;
-        transition: background 0.2s, box-shadow 0.2s, color 0.2s;
-    }
-    .btn-download:hover, .btn-download:focus {
-        background: linear-gradient(90deg, #388e3c 0%, #689f38 100%);
-        color: #fff !important;
-        box-shadow: 0 4px 16px rgba(76, 175, 80, 0.18);
-        outline: none;
-    }
-    .btn-download:disabled {
-        background: #bdbdbd !important;
-        color: #f5f5f5 !important;
-        cursor: not-allowed;
-        box-shadow: none;
-    }
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
 
-    /* Dark theme overrides for buttons */
-    .theme-dark .btn-generate {
-        background: linear-gradient(90deg, #90caf9 0%, #1976d2 100%);
-        color: #212121 !important;
-        box-shadow: 0 2px 8px rgba(33, 150, 243, 0.18);
-    }
-    .theme-dark .btn-generate:hover, .theme-dark .btn-generate:focus {
-        background: linear-gradient(90deg, #1976d2 0%, #0d47a1 100%);
-        color: #fff !important;
-    }
-    .theme-dark .btn-download {
-        background: linear-gradient(90deg, #a5d6a7 0%, #388e3c 100%);
-        color: #212121 !important;
-        box-shadow: 0 2px 8px rgba(76, 175, 80, 0.18);
-    }
-    .theme-dark .btn-download:hover, .theme-dark .btn-download:focus {
-        background: linear-gradient(90deg, #388e3c 0%, #1b5e20 100%);
-        color: #fff !important;
-    }
-    .theme-dark .btn-download:disabled {
-        background: #444 !important;
-        color: #bdbdbd !important;
-    }
+/* Form styles */
+.form-label {
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+}
+
+.form-control::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.8;
+}
+
+/* Handle all browser-specific placeholder selectors */
+.form-control::-webkit-input-placeholder {
+    color: var(--text-secondary);
+    opacity: 0.8;
+}
+
+.form-control::-moz-placeholder {
+    color: var(--text-secondary);
+    opacity: 0.8;
+}
+
+.form-control:-ms-input-placeholder {
+    color: var(--text-secondary);
+    opacity: 0.8;
+}
+
+.form-control:-moz-placeholder {
+    color: var(--text-secondary);
+    opacity: 0.8;
+}
+
+.form-control:focus {
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 0 3px var(--input-focus-shadow);
+    outline: none;
+}
+
+.help-text {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+/* Button styles */
+.btn {
+    padding: 0.625rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    text-transform: none;
+    white-space: nowrap;
+}
+
+/* Primary button (Generate Preview) */
+.btn-primary.btn-generate {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+    box-shadow: 0 1px 0 var(--shadow-color);
+}
+
+.btn-primary.btn-generate:hover,
+.btn-primary.btn-generate:focus {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    color: #ffffff;
+}
+
+/* Success button (Download) */
+.btn-success.btn-download {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+    color: #ffffff;
+    box-shadow: 0 1px 0 var(--shadow-color);
+}
+
+.btn-success.btn-download:hover,
+.btn-success.btn-download:focus {
+    background-color: var(--success-hover);
+    border-color: var(--success-hover);
+    color: #ffffff;
+}
+
+.btn-success.btn-download:disabled {
+    background-color: var(--surface-secondary);
+    border-color: var(--border-color);
+    color: var(--text-secondary);
+    cursor: not-allowed;
+    box-shadow: none;
+}
         border-left: 4px solid #3f51b5;
         text-align: left;
         display: none;
@@ -331,53 +351,78 @@ button {
     box-shadow: none;
 }
 
+/* Preview section */
 .preview {
-    margin-top: 30px;
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    border-left: 4px solid #667eea;
-    text-align: left;
+    background-color: var(--surface-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
     display: none;
+    margin-top: 1.5rem;
+    box-shadow: 0 1px 0 var(--shadow-color);
 }
 
-.preview h3 {
-    color: #333;
-    margin-bottom: 15px;
-    font-size: 1.2em;
+.preview h3.card-title {
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.preview .vcf-content-title {
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem;
 }
 
 .preview pre {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    font-family: 'Courier New', monospace;
-    font-size: 14px;
-    color: #555;
+    background-color: var(--surface-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+    font-size: 0.875rem;
+    line-height: 1.45;
     overflow-x: auto;
-    border: 1px solid #e1e5e9;
+    padding: 1rem;
+    margin: 0;
 }
 
 .contact-info {
+    background-color: var(--surface-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-primary);
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
-    padding: 10px;
-    background: white;
-    border-radius: 8px;
-    border: 1px solid #e1e5e9;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
 }
 
 .contact-info strong {
-    color: #667eea;
+    color: var(--primary-color);
 }
 
+/* Container and responsive styles */
+.container {
+    max-width: 780px;
+    background-color: var(--surface-primary);
+    border-radius: 6px;
+    box-shadow: 0 1px 3px var(--shadow-color);
+}
+
+/* Media queries */
 @media (max-width: 600px) {
-    .button-group {
-        flex-direction: column;
-    }
-    
     .container {
-        padding: 30px 20px;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .d-flex {
+        flex-direction: column;
     }
 }
