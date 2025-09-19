@@ -4,6 +4,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/piotereks/html/',
   build: {
     outDir: 'dist',
     assetsDir: '',
@@ -11,7 +12,6 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html')
       }
-    },
-    base: './'
+    }
   }
 });
