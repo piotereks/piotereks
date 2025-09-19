@@ -106,28 +106,67 @@ label {
         transform: translateY(-2px) scale(1.03);
         box-shadow: 0 6px 18px rgba(33,150,243,0.18);
     }
+    /* Material + GitHub + Bootstrap button styles */
+    .btn-generate {
+        background: linear-gradient(90deg, #3f51b5 0%, #2196f3 100%);
+        color: #fff !important;
+        border: none;
+        box-shadow: 0 2px 8px rgba(33, 150, 243, 0.10);
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+    }
+    .btn-generate:hover, .btn-generate:focus {
+        background: linear-gradient(90deg, #3949ab 0%, #1976d2 100%);
+        color: #fff !important;
+        box-shadow: 0 4px 16px rgba(33, 150, 243, 0.18);
+        outline: none;
+    }
     .btn-download {
         background: linear-gradient(90deg, #43a047 0%, #8bc34a 100%);
-        color: #fff;
+        color: #fff !important;
+        border: none;
+        box-shadow: 0 2px 8px rgba(76, 175, 80, 0.10);
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        transition: background 0.2s, box-shadow 0.2s, color 0.2s;
     }
-    .btn-download:hover {
+    .btn-download:hover, .btn-download:focus {
         background: linear-gradient(90deg, #388e3c 0%, #689f38 100%);
-        transform: translateY(-2px) scale(1.03);
-        box-shadow: 0 6px 18px rgba(76,175,80,0.18);
+        color: #fff !important;
+        box-shadow: 0 4px 16px rgba(76, 175, 80, 0.18);
+        outline: none;
     }
     .btn-download:disabled {
-        background: #e0e0e0;
-        color: #bdbdbd;
+        background: #bdbdbd !important;
+        color: #f5f5f5 !important;
         cursor: not-allowed;
-        transform: none;
         box-shadow: none;
     }
-    margin-bottom: 8px;
-    .preview {
-        margin-top: 30px;
-        padding: 20px;
-        background: #f1f3f4;
-        border-radius: 8px;
+
+    /* Dark theme overrides for buttons */
+    .theme-dark .btn-generate {
+        background: linear-gradient(90deg, #90caf9 0%, #1976d2 100%);
+        color: #212121 !important;
+        box-shadow: 0 2px 8px rgba(33, 150, 243, 0.18);
+    }
+    .theme-dark .btn-generate:hover, .theme-dark .btn-generate:focus {
+        background: linear-gradient(90deg, #1976d2 0%, #0d47a1 100%);
+        color: #fff !important;
+    }
+    .theme-dark .btn-download {
+        background: linear-gradient(90deg, #a5d6a7 0%, #388e3c 100%);
+        color: #212121 !important;
+        box-shadow: 0 2px 8px rgba(76, 175, 80, 0.18);
+    }
+    .theme-dark .btn-download:hover, .theme-dark .btn-download:focus {
+        background: linear-gradient(90deg, #388e3c 0%, #1b5e20 100%);
+        color: #fff !important;
+    }
+    .theme-dark .btn-download:disabled {
+        background: #444 !important;
+        color: #bdbdbd !important;
+    }
         border-left: 4px solid #3f51b5;
         text-align: left;
         display: none;
