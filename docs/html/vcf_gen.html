@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCF Contact Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vcf_ref/styles.css">
+</head>
+<body>
+    <div class="container py-4 my-5">
+        <h1 class="mb-4">📞 VCF Contact Generator</h1>
+        <form onsubmit="generatePreview(); return false;">
+            <div class="mb-3">
+                <label for="phoneNumber" class="form-label">Phone Number:</label>
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="e.g., +48123456789 or +4912345678. (dot = any digit)" autocomplete="tel">
+                <small class="form-text help-text">
+                    Allowed: <b>+</b>, digits, <b>*</b>, <b>%</b>, <b>.</b>, <b>x</b>, <b>w</b>, <b>p</b>.<br>
+                    Use <b>.</b>, <b>x</b>, <b>*</b>, or <b>%</b> as wildcards (each stands for any digit):<br>
+                    1 wildcard = 10 numbers, 2 wildcards = 100 numbers
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="customFilename" class="form-label">Custom Filename (optional):</label>
+                <input type="text" class="form-control" id="customFilename" placeholder="Leave empty for auto-generated name">
+            </div>
+            <div class="d-flex gap-3 mb-4">
+                <button type="submit" class="btn btn-primary flex-fill btn-generate">Generate Preview</button>
+                <button type="button" class="btn btn-success flex-fill btn-download" id="downloadBtn" onclick="downloadContact()" disabled>Download VCF</button>
+            </div>
+        </form>
+        <div class="preview card p-3" id="preview">
+            <h3 class="card-title">Contact Preview:</h3>
+            <div id="contactInfo"></div>
+            <h4 class="mt-4 mb-2" style="color: #333;">VCF Content:</h4>
+            <pre id="vcfContent"></pre>
+        </div>
+    </div>
+    <script src="vcf_ref/script.js"></script>
+    <script>
+    // Theme override logic
+    (function() {
+        function getThemeParam() {
+            const params = new URLSearchParams(window.location.search);
+            for (const key of params.keys()) {
+                const val = key.toLowerCase();
+                if (val === 'd' || val === 'dark') return 'dark';
+                if (val === 'l' || val === 'light') return 'light';
+            }
+            for (const [key, value] of params.entries()) {
+                const val = value.toLowerCase();
+                if (val === 'd' || val === 'dark') return 'dark';
+                if (val === 'l' || val === 'light') return 'light';
+            }
+            return null;
+        }
+        const theme = getThemeParam();
+        if (theme === 'dark') {
+            document.body.classList.add('theme-dark');
+            document.body.classList.remove('theme-light');
+        } else if (theme === 'light') {
+            document.body.classList.add('theme-light');
+            document.body.classList.remove('theme-dark');
+        }
+    })();
+    </script>
+</body>
+</html>
