@@ -118,12 +118,11 @@ function generatePhoneNumber(pattern, number, wildcardCount) {
     const digits = number.toString().padStart(wildcardCount, '0');
     let result = pattern;
     let digitIndex = 0;
-    // Replace each dot or x (case-insensitive) with corresponding digit
+    // Replace each wildcard character (., x, *, %) with corresponding digit
     for (let i = 0; i < result.length; i++) {
-        if (result[i] === '.' || result[i].toLowerCase() === 'x') {
+        if (result[i] in ['.', 'x', 'X', '*', '%']) {
             result = result.substring(0, i) + digits[digitIndex] + result.substring(i + 1);
             digitIndex++;
-        }
     }
     return result;
 }
