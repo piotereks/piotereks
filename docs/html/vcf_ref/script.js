@@ -1,3 +1,11 @@
+// Returns YYMMDD string for today
+function getDateStr() {
+    const today = new Date();
+    const y = today.getFullYear().toString().slice(-2);
+    const m = (today.getMonth() + 1).toString().padStart(2, '0');
+    const d = today.getDate().toString().padStart(2, '0');
+    return y + m + d;
+}
 // --- UI/DOM logic from vcf_gen.html moved here ---
 document.addEventListener('DOMContentLoaded', function() {
     // Theme override logic
@@ -59,11 +67,7 @@ function createVCF(phoneNumber, customName) {
         if (wildcardCount > 2) {
             throw new Error('This range is too big for practical usage. Maximum 2 wildcards (., x, *, %) allowed.');
         }
-        const today = new Date();
-        const y = today.getFullYear().toString().slice(-2);
-        const m = (today.getMonth() + 1).toString().padStart(2, '0');
-        const d = today.getDate().toString().padStart(2, '0');
-        const dateStr = y + m + d;
+        const dateStr = getDateStr();
         const contactName = customName && customName.length > 0
             ? customName
             : dateStr + '_' + 'spam_' + phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
@@ -119,7 +123,8 @@ function downloadVCF(phoneNumber, filename = null, customName = null) {
         } else if (customName && customName.length > 0) {
             fileName = customName.replace(/\s+/g, '_') + '.vcf';
         } else if (wildcardCount === 0) {
-            const contactName = 'spam_' + phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
+            const dateStr = getDateStr();
+            const contactName = dateStr + '_' + 'spam_' + phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
             fileName = contactName + '.vcf';
         } else {
             const totalNumbers = Math.pow(10, wildcardCount);
@@ -168,9 +173,10 @@ function generatePreview() {
         
         if (wildcardCount === 0) {
             // Single contact preview
+            const dateStr = getDateStr();
             const contactName = customName && customName.length > 0
                 ? customName
-                : 'spam_' + phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
+                : dateStr + '_' + 'spam_' + phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
             contactInfo.innerHTML =
                 '<div class="contact-info">' +
                     '<span><strong>Contact Name:</strong> ' + contactName + '</span>' +
@@ -183,9 +189,10 @@ function generatePreview() {
             const totalNumbers = Math.pow(10, wildcardCount);
             const firstNumber = generatePhoneNumber(phoneNumber, 0, wildcardCount);
             const lastNumber = generatePhoneNumber(phoneNumber, totalNumbers - 1, wildcardCount);
+            const dateStr = getDateStr();
             const contactName = customName && customName.length > 0
                 ? customName
-                : 'spam_' + phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
+                : dateStr + '_' + 'spam_' + phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
 
             // Create pattern with underscored wildcards
             let patternDisplay = '';
