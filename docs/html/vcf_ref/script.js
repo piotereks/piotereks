@@ -56,43 +56,29 @@ document.addEventListener('DOMContentLoaded', function() {
 function createVCF(phoneNumber, customName) {
     // Count wildcards (dots, x, *, %)
     const wildcardCount = (phoneNumber.match(/[.x*%]/gi) || []).length;
+        if (wildcardCount > 2) {
+            throw new Error('This range is too big for practical usage. Maximum 2 wildcards (., x, *, %) allowed.');
+        }
+        const today = new Date();
+        const y = today.getFullYear().toString().slice(-2);
+        const m = (today.getMonth() + 1).toString().padStart(2, '0');
+        const d = today.getDate().toString().padStart(2, '0');
+        const dateStr = y + m + d;
+        const contactName = customName && customName.length > 0
+            ? customName
+            : dateStr + '_' + 'spam_' + phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
+
+    let telFields = [];
     if (wildcardCount === 0) {
-        // Single contact
-        return createSingleVCF(phoneNumber, customName);
-    } else if (wildcardCount > 2) {
-        throw new Error('This range is too big for practical usage. Maximum 2 wildcards (., x, *, %) allowed.');
+        telFields.push('TEL;TYPE=VOICE:' + phoneNumber);
     } else {
         // Multiple numbers in one vCard
-        return createMultiNumberVCF(phoneNumber, wildcardCount, customName);
+        const totalNumbers = Math.pow(10, wildcardCount);
+        for (let i = 0; i < totalNumbers; i++) {
+            const num = generatePhoneNumber(phoneNumber, i, wildcardCount);
+            telFields.push('TEL;TYPE=VOICE:' + num);
+        }
     }
-}
-
-
-function createSingleVCF(phoneNumber, customName) {
-    // Use customName if provided, else auto-generate (replace wildcards with 'x')
-    let contactName = customName && customName.length > 0
-        ? customName
-        : 'spame_' + phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
-    // Create VCF content following vCard 3.0 format
-    var vcfContent = `BEGIN:VCARD\nVERSION:3.0\nFN:${contactName}\nN:${contactName};;;;\nTEL;TYPE=VOICE:${phoneNumber}\nEND:VCARD`;
-    return vcfContent;
-}
-
-
-
-function createMultiNumberVCF(phoneNumberPattern, wildcardCount, customName) {
-    const totalNumbers = Math.pow(10, wildcardCount);
-    let telFields = [];
-    let firstNumber = '';
-    for (let i = 0; i < totalNumbers; i++) {
-        const phoneNumber = generatePhoneNumber(phoneNumberPattern, i, wildcardCount);
-        if (i === 0) firstNumber = phoneNumber;
-        telFields.push('TEL;TYPE=VOICE:' + phoneNumber);
-    }
-    // Use customName if provided, else auto-generate (replace wildcards with 'x')
-    const contactName = customName && customName.length > 0
-        ? customName
-        : 'spam_' + phoneNumberPattern.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
     return [
         'BEGIN:VCARD',
         'VERSION:3.0',
@@ -102,6 +88,7 @@ function createMultiNumberVCF(phoneNumberPattern, wildcardCount, customName) {
         'END:VCARD'
     ].join('\n');
 }
+        
 
 
 function generatePhoneNumber(pattern, number, wildcardCount) {
@@ -266,3 +253,4 @@ document.getElementById('phoneNumber').addEventListener('input', function() {
         document.getElementById('preview').style.display = 'none';
     }
 });
+}
