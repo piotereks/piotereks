@@ -70,9 +70,14 @@ function createVCF(phoneNumber, customName) {
 
 function createSingleVCF(phoneNumber, customName) {
     // Use customName if provided, else auto-generate (replace wildcards with 'x')
+    const today = new Date();
+    const y = today.getFullYear().toString().slice(-2);
+    const m = (today.getMonth() + 1).toString().padStart(2, '0');
+    const d = today.getDate().toString().padStart(2, '0');
+    const dateStr = y + m + d;
     let contactName = customName && customName.length > 0
         ? customName
-        : 'spame_' + phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
+        : dateStr + '_' +'spam_' +  phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
     // Create VCF content following vCard 3.0 format
     var vcfContent = `BEGIN:VCARD\nVERSION:3.0\nFN:${contactName}\nN:${contactName};;;;\nTEL;TYPE=VOICE:${phoneNumber}\nEND:VCARD`;
     return vcfContent;
@@ -90,9 +95,14 @@ function createMultiNumberVCF(phoneNumberPattern, wildcardCount, customName) {
         telFields.push('TEL;TYPE=VOICE:' + phoneNumber);
     }
     // Use customName if provided, else auto-generate (replace wildcards with 'x')
+        const today = new Date();
+    const y = today.getFullYear().toString().slice(-2);
+    const m = (today.getMonth() + 1).toString().padStart(2, '0');
+    const d = today.getDate().toString().padStart(2, '0');
+    const dateStr = y + m + d;
     const contactName = customName && customName.length > 0
         ? customName
-        : 'spam_' + phoneNumberPattern.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
+        : dateStr + '_' +'spam_' + phoneNumberPattern.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
     return [
         'BEGIN:VCARD',
         'VERSION:3.0',
