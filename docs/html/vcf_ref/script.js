@@ -120,7 +120,7 @@ function generatePhoneNumber(pattern, number, wildcardCount) {
     let digitIndex = 0;
     // Replace each wildcard character (., x, *, %) with corresponding digit
     for (let i = 0; i < result.length; i++) {
-        if (result[i] in ['.', 'x', 'X', '*', '%']) {
+        if (['.', 'x', 'X', '*', '%'].includes(result[i])) {
             result = result.substring(0, i) + digits[digitIndex] + result.substring(i + 1);
             digitIndex++;
         }
