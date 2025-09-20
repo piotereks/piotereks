@@ -1,3 +1,32 @@
+// Returns the default contact name for a phone number (with optional customName)
+function getDefaultContactName(phoneNumber, customName) {
+    const dateStr = getDateStr();
+    return customName && customName.length > 0
+        ? customName
+        : dateStr + '_' + 'spam_' + phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
+}
+
+// Returns the default VCF filename for a phone number and customName
+function getDefaultVCFFileName(phoneNumber, customName) {
+    const wildcardCount = (phoneNumber.match(/[.x*%]/gi) || []).length;
+    if (customName && customName.length > 0) {
+        return customName.replace(/\s+/g, '_') + '.vcf';
+    } else if (wildcardCount === 0) {
+        return getDefaultContactName(phoneNumber, customName) + '.vcf';
+    } else {
+        const totalNumbers = Math.pow(10, wildcardCount);
+        const patternName = phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
+        return 'spam_' + patternName + '_' + totalNumbers + 'numbers.vcf';
+    }
+}
+// Returns YYMMDD string for today
+function getDateStr() {
+    const today = new Date();
+    const y = today.getFullYear().toString().slice(-2);
+    const m = (today.getMonth() + 1).toString().padStart(2, '0');
+    const d = today.getDate().toString().padStart(2, '0');
+    return y + m + d;
+}
 // --- UI/DOM logic from vcf_gen.html moved here ---
 document.addEventListener('DOMContentLoaded', function() {
     // Theme override logic
@@ -59,14 +88,7 @@ function createVCF(phoneNumber, customName) {
         if (wildcardCount > 2) {
             throw new Error('This range is too big for practical usage. Maximum 2 wildcards (., x, *, %) allowed.');
         }
-        const today = new Date();
-        const y = today.getFullYear().toString().slice(-2);
-        const m = (today.getMonth() + 1).toString().padStart(2, '0');
-        const d = today.getDate().toString().padStart(2, '0');
-        const dateStr = y + m + d;
-        const contactName = customName && customName.length > 0
-            ? customName
-            : dateStr + '_' + 'spam_' + phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
+        const contactName = getDefaultContactName(phoneNumber, customName);
 
     let telFields = [];
     if (wildcardCount === 0) {
@@ -116,15 +138,8 @@ function downloadVCF(phoneNumber, filename = null, customName = null) {
         let fileName;
         if (filename) {
             fileName = filename.endsWith('.vcf') ? filename : (filename + '.vcf');
-        } else if (customName && customName.length > 0) {
-            fileName = customName.replace(/\s+/g, '_') + '.vcf';
-        } else if (wildcardCount === 0) {
-            const contactName = 'spam_' + phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
-            fileName = contactName + '.vcf';
         } else {
-            const totalNumbers = Math.pow(10, wildcardCount);
-            const patternName = phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
-            fileName = 'spam_' + patternName + '_' + totalNumbers + 'numbers.vcf';
+            fileName = getDefaultVCFFileName(phoneNumber, customName);
         }
         const blob = new Blob([vcfContent], { type: 'text/vcard;charset=utf-8' });
         const link = document.createElement('a');
@@ -166,11 +181,9 @@ function generatePreview() {
         const contactInfo = document.getElementById('contactInfo');
         const vcfContentElement = document.getElementById('vcfContent');
         
+        const contactName = getDefaultContactName(phoneNumber, customName);
         if (wildcardCount === 0) {
             // Single contact preview
-            const contactName = customName && customName.length > 0
-                ? customName
-                : 'spam_' + phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
             contactInfo.innerHTML =
                 '<div class="contact-info">' +
                     '<span><strong>Contact Name:</strong> ' + contactName + '</span>' +
@@ -183,9 +196,6 @@ function generatePreview() {
             const totalNumbers = Math.pow(10, wildcardCount);
             const firstNumber = generatePhoneNumber(phoneNumber, 0, wildcardCount);
             const lastNumber = generatePhoneNumber(phoneNumber, totalNumbers - 1, wildcardCount);
-            const contactName = customName && customName.length > 0
-                ? customName
-                : 'spam_' + phoneNumber.replace(/\+/g, 'pl').replace(/[.x*%]/gi, 'x');
 
             // Create pattern with underscored wildcards
             let patternDisplay = '';
