@@ -253,4 +253,4 @@ document.getElementById('phoneNumber').addEventListener('input', function() {
         document.getElementById('preview').style.display = 'none';
     }
 });
-}
+
