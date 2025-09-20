@@ -123,6 +123,7 @@ function generatePhoneNumber(pattern, number, wildcardCount) {
         if (result[i] in ['.', 'x', 'X', '*', '%']) {
             result = result.substring(0, i) + digits[digitIndex] + result.substring(i + 1);
             digitIndex++;
+        }
     }
     return result;
 }
