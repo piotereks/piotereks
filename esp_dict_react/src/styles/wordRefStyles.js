@@ -7,14 +7,29 @@ export const wordRefStyles = `
     margin-top: 8px;
     margin-bottom: 1px;
   }
+
+  #forceDesktop {
+    font-weight: bold;
+  }
+
+  #conjtable {
+    margin-left: 3em;
+  }
+
+  ol li {
+    margin-top: 1px;
+  }
+
   .aa table.neoConj {
     border-collapse: collapse;
   }
+
   .aa .neoConj td,
   .aa .neoConj th {
     text-align: left;
     padding: 2px;
   }
+
   .LineBreak {
     clear: both;
     margin-top: 1em;
@@ -24,10 +39,12 @@ export const wordRefStyles = `
     height: 1px;
     display: inline-block;
   }
+
   .aa {
     margin-bottom: 1em;
     clear: both;
   }
+
   .infl {
     display: inline-block;
     margin: 6px 0 3px;
@@ -35,8 +52,61 @@ export const wordRefStyles = `
     border: solid #000 1px;
     border-radius: 3px;
   }
+
   .infl b {
     color: #000;
     font-weight: bold;
+  }
+
+  .collapsible {
+    cursor: pointer;
+    user-select: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+  }
+
+  .collapsible:hover {
+    background-color: #e3e3e3;
+  }
+
+  .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .collapsible::after {
+    content: '\\25BC';
+    float: right;
+  }
+
+  .active::after {
+    content: '\\25B2';
+  }
+
+  .title {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
   }
 `;

@@ -4,23 +4,23 @@ import { buildUrl } from '../utils/urlUtils';
 
 export const ExternalLinks = ({ word, onCollapseAll }) => {
   return (
-    <div className="flex justify-center gap-2 mb-6 flex-wrap">
+    <div className="text-center mb-4" id="orgLinks">
       {SECTION_CONFIG.map(({ key, baseUrl, label }) => (
         <a
           key={key}
           href={buildUrl(baseUrl, word)}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gray-500 text-white px-3 py-2 rounded text-sm hover:bg-gray-600 transition"
+          className="btn btn-secondary mr-2"
         >
           {label}
         </a>
       ))}
       <button
         onClick={onCollapseAll}
-        className="bg-blue-400 text-white px-3 py-2 rounded text-sm hover:bg-blue-500 transition"
+        className="btn btn-info mr-2"
       >
-        ▲ All
+        &#9650; All
       </button>
     </div>
   );

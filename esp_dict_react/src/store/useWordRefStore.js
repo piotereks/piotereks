@@ -12,7 +12,7 @@ export const useWordRefStore = create((set, get) => ({
   // State
   word: '',
   sections: {
-    def: { content: '', isOpen: false, loading: false },
+    def: { content: '', isOpen: true, loading: false },
     sin: { content: '', isOpen: false, loading: false },
     spen: { content: '', isOpen: false, loading: false },
     rae: { content: '', isOpen: false, loading: false },

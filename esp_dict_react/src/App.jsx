@@ -24,9 +24,23 @@ export default function WordRefSearch() {
     }
   }, []);
 
+  // Handle browser back/forward navigation
+  useEffect(() => {
+    const handlePopState = () => {
+      const urlWord = getUrlParameter('word');
+      if (urlWord) {
+        setWord(urlWord.trim());
+        handleSearch(urlWord.trim());
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [handleSearch, setWord]);
+
   return (
-    <div className="min-h-screen bg-gray-50 p-4">
-      <h1 className="text-2xl font-bold text-center mb-6">WordRef Search</h1>
+    <div style={{ minHeight: '100vh', padding: '1rem' }}>
+      <h1 className="text-center title">WordRef Search</h1>
       
       <SearchBar word={word} setWord={setWord} onSearch={handleSearch} />
       <ExternalLinks word={word} onCollapseAll={collapseAll} />
