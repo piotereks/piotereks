@@ -7,32 +7,41 @@ const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 export const fetchHtml = async (url, retries = 0) => {
   try {
-	  const useCorsProxy = url.includes('dle.rae.es');
-	  const fetchUrl = useCorsProxy
+    const useCorsProxy = url.includes('dle.rae.es');
+    const fetchUrl = useCorsProxy
 	    ? `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`
-	    : url;
+      : url;
 
     const response = await fetch(fetchUrl);
     
-    if (!response.ok && retries < MAX_RETRIES) {
-      console.warn(`Fetch failed, retrying (${retries + 1}/${MAX_RETRIES}):`, url);
-      await delay(RETRY_DELAY * (retries + 1)); // Exponential backoff
-      return fetchHtml(url, retries + 1);
+    if (!response.ok) {
+      if (retries < MAX_RETRIES) {
+        console.warn(`Fetch failed (${response.status}), retrying (${retries + 1}/${MAX_RETRIES}):`, url);
+        await delay(RETRY_DELAY * (retries + 1));
+        return fetchHtml(url, retries + 1);
+      }
+      console.error(`HTTP ${response.status} after ${MAX_RETRIES} retries:`, url);
+      return null;
     }
     
     if (useCorsProxy) {
       const data = await response.json();
+      if (!data.contents) {
+        console.error('No contents in proxy response:', url);
+        return null;
+      }
       return data.contents;
     }
     
     return response.text();
   } catch (error) {
     if (retries < MAX_RETRIES) {
-      console.warn(`Fetch error, retrying (${retries + 1}/${MAX_RETRIES}):`, url, error);
-      await delay(RETRY_DELAY * (retries + 1)); // Exponential backoff
+      console.warn(`Fetch error, retrying (${retries + 1}/${MAX_RETRIES}):`, url, error.message);
+      await delay(RETRY_DELAY * (retries + 1));
       return fetchHtml(url, retries + 1);
     }
-    throw error;
+    console.error(`Failed after ${MAX_RETRIES} retries:`, url, error);
+    return null;
   }
 };
 
