@@ -53,7 +53,7 @@ export default function WordRefSearch() {
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 py-4">
         <SearchBar word={word} setWord={setWord} onSearch={(searchWord) => handleSearch(searchWord)} />
-        <ExternalLinks word={word} onCollapseAll={collapseAll} />
+        <ExternalLinks word={word} onCollapseAll={collapseAll} onSearch={handleSearch} />
         <SectionsList sections={sections} onToggle={toggleSection} />
       </div>
     </div>
