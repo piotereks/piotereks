@@ -52,12 +52,13 @@ export const useWordRefStore = create((set, get) => ({
     }
   })),
 
-  openFirstSection: () => set((state) => ({
-    sections: {
-      ...state.sections,
-      def: { ...state.sections.def, isOpen: true, loading: true }
+  openAllSections: () => set((state) => {
+    const updated = {};
+    for (const [key, section] of Object.entries(state.sections)) {
+      updated[key] = { ...section, loading: true };
     }
-  })),
+    return { sections: updated };
+  }),
 
   // Complex actions
   fetchContent: async (url, sectionKey, selector, spellUrl) => {
@@ -84,7 +85,7 @@ export const useWordRefStore = create((set, get) => ({
   },
 
   handleSearch: async (searchWord) => {
-    const { isSearching, setIsSearching, openFirstSection, fetchContent } = get();
+    const { isSearching, setIsSearching, openAllSections, fetchContent } = get();
     
     // Prevent multiple simultaneous searches
     if (isSearching) return;
@@ -95,7 +96,7 @@ export const useWordRefStore = create((set, get) => ({
 
     setIsSearching(true);
     updateUrlWithWord(trimmedWord);
-    openFirstSection();
+    openAllSections(); // Start loading all sections in background
 
     const fetchPromises = SECTION_CONFIG.map(section => {
       const url = buildUrl(section.baseUrl, trimmedWord);

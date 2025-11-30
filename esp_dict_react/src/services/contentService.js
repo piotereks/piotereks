@@ -1,3 +1,5 @@
+import { getCachedContent, cacheContent, generateCacheKey } from './cacheService';
+
 export const fetchHtml = async (url) => {
   const useCorsProxy = url.includes('dle.rae.es');
   const fetchUrl = useCorsProxy
@@ -29,7 +31,7 @@ export const parseContent = (html, selector) => {
   return content;
 };
 
-export const setupInternalLinks = (content, onWordClick) => {
+const setupLinksOnContent = (content, onWordClick) => {
   if (!content) return;
   
   content.querySelectorAll('a').forEach(link => {
@@ -38,7 +40,6 @@ export const setupInternalLinks = (content, onWordClick) => {
     
     let wordParam = null;
     
-    // Match patterns from original script.js
     if (href.includes('conj/esVerbs.aspx?v=') || 
         href.includes('conj/esverbs.aspx?v=') || 
         href.includes('?v=')) {
@@ -85,12 +86,34 @@ export const fetchSpellSuggestions = async (spellUrl, onWordClick) => {
 
 export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClick) => {
   try {
+    const cacheKey = generateCacheKey(url, selector);
+    
+    // Check cache first
+    const cachedContent = await getCachedContent(cacheKey);
+    
+    if (cachedContent) {
+      console.log('Using cached content for:', cacheKey);
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(cachedContent, 'text/html');
+      const content = doc.querySelector(selector);
+      
+      if (content) {
+        setupLinksOnContent(content, onWordClick);
+        const hasContent = content.innerText && content.innerText.trim();
+        return {
+          html: content.innerHTML,
+          hasContent: !!hasContent
+        };
+      }
+    }
+    
+    // Fetch from network if not cached
+    console.log('Fetching from network:', url);
     const html = await fetchHtml(url);
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
     let content = doc.querySelector(selector);
     
-    // Remove browserInfo if it exists
     if (content) {
       const browserInfo = content.querySelector('#browserInfo');
       if (browserInfo) {
@@ -98,38 +121,18 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
       }
     }
     
-    // Update internal links hrefs
-    if (content) {
-      content.querySelectorAll('a').forEach(link => {
-        const href = link.getAttribute('href');
-        if (!href) return;
-        
-        let wordParam = null;
-        
-        // Match patterns from original script.js
-        if (href.includes('conj/esVerbs.aspx?v=') || 
-            href.includes('conj/esverbs.aspx?v=') || 
-            href.includes('?v=')) {
-          wordParam = href.split('=')[1];
-        } else if (href.includes('sinonimos/')) {
-          wordParam = href.split('/')[2];
-        }
-        
-        if (wordParam) {
-          link.setAttribute('href', `?word=${wordParam}`);
-          link.onclick = (e) => {
-            e.preventDefault();
-            onWordClick(wordParam);
-          };
-        }
-      });
-    }
+    // Check if we got content
+    const hasContent = content && content.innerText && content.innerText.trim();
     
-    // Check if content is empty and we have a spell URL
-    if ((!content || content.innerHTML.trim() === '') && spellUrl) {
+    if (!hasContent && spellUrl) {
+      console.log('No content found, trying spell suggestions');
       const table = await fetchSpellSuggestions(spellUrl, onWordClick);
       
       if (table) {
+        // Cache the spell suggestions HTML
+        await cacheContent(cacheKey, html);
+        setupLinksOnContent(table, onWordClick);
+        
         return {
           html: table.outerHTML,
           hasContent: true
@@ -142,8 +145,12 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
       };
     }
     
-    // Return content or error message
-    const hasContent = content && content.innerText && content.innerText.trim();
+    if (content) {
+      setupLinksOnContent(content, onWordClick);
+      // Cache the original HTML string, not the parsed content
+      await cacheContent(cacheKey, html);
+    }
+    
     return {
       html: hasContent ? content.innerHTML : 'No content found.',
       hasContent: !!hasContent
