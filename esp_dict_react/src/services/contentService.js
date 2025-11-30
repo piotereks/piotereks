@@ -1,17 +1,51 @@
-export const fetchHtml = async (url) => {
-  const useCorsProxy = url.includes('dle.rae.es');
-  const fetchUrl = useCorsProxy
-    ? `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`
-    : url;
+import { getCachedContent, cacheContent, generateCacheKey } from './cacheService';
 
-  const response = await fetch(fetchUrl);
-  
-  if (useCorsProxy) {
-    const data = await response.json();
-    return data.contents;
+const MAX_RETRIES = 3;
+const RETRY_DELAY = 1000; // 1 second
+
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+export const fetchHtml = async (url, retries = 0) => {
+  try {
+    const useCorsProxy = url.includes('dle.rae.es');
+    const fetchUrl = useCorsProxy
+      ? `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`
+      : url;
+
+    const response = await fetch(fetchUrl);
+    
+    if (!response.ok) {
+      // Only retry on CORS proxy failures
+      if (useCorsProxy && retries < MAX_RETRIES) {
+        console.warn(`CORS proxy failed (${response.status}), retrying (${retries + 1}/${MAX_RETRIES}):`, url);
+        await delay(RETRY_DELAY * (retries + 1));
+        return fetchHtml(url, retries + 1);
+      }
+      console.error(`HTTP ${response.status}:`, url);
+      return null;
+    }
+    
+    if (useCorsProxy) {
+      const data = await response.json();
+      if (!data.contents) {
+        console.error('No contents in proxy response:', url);
+        return null;
+      }
+      return data.contents;
+    }
+    
+    return response.text();
+  } catch (error) {
+    // Only retry on CORS proxy errors
+    const useCorsProxy = url.includes('dle.rae.es');
+    if (useCorsProxy && retries < MAX_RETRIES) {
+      console.warn(`CORS proxy error, retrying (${retries + 1}/${MAX_RETRIES}):`, url, error.message);
+      await delay(RETRY_DELAY * (retries + 1));
+      return fetchHtml(url, retries + 1);
+    }
+    console.error(`Fetch failed:`, url, error.message);
+    return null;
   }
-  
-  return response.text();
 };
 
 export const parseContent = (html, selector) => {
@@ -29,7 +63,7 @@ export const parseContent = (html, selector) => {
   return content;
 };
 
-export const setupInternalLinks = (content, onWordClick) => {
+const setupLinksOnContent = (content, onWordClick) => {
   if (!content) return;
   
   content.querySelectorAll('a').forEach(link => {
@@ -38,7 +72,6 @@ export const setupInternalLinks = (content, onWordClick) => {
     
     let wordParam = null;
     
-    // Match patterns from original script.js
     if (href.includes('conj/esVerbs.aspx?v=') || 
         href.includes('conj/esverbs.aspx?v=') || 
         href.includes('?v=')) {
@@ -85,12 +118,34 @@ export const fetchSpellSuggestions = async (spellUrl, onWordClick) => {
 
 export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClick) => {
   try {
+    const cacheKey = generateCacheKey(url, selector);
+    
+    // Check cache first
+    const cachedContent = await getCachedContent(cacheKey);
+    
+    if (cachedContent) {
+      console.log('Using cached content for:', cacheKey);
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(cachedContent, 'text/html');
+      const content = doc.querySelector(selector);
+      
+      if (content) {
+        setupLinksOnContent(content, onWordClick);
+        const hasContent = content.innerText && content.innerText.trim();
+        return {
+          html: content.innerHTML,
+          hasContent: !!hasContent
+        };
+      }
+    }
+    
+    // Fetch from network if not cached
+    console.log('Fetching from network:', url);
     const html = await fetchHtml(url);
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
     let content = doc.querySelector(selector);
     
-    // Remove browserInfo if it exists
     if (content) {
       const browserInfo = content.querySelector('#browserInfo');
       if (browserInfo) {
@@ -98,38 +153,18 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
       }
     }
     
-    // Update internal links hrefs
-    if (content) {
-      content.querySelectorAll('a').forEach(link => {
-        const href = link.getAttribute('href');
-        if (!href) return;
-        
-        let wordParam = null;
-        
-        // Match patterns from original script.js
-        if (href.includes('conj/esVerbs.aspx?v=') || 
-            href.includes('conj/esverbs.aspx?v=') || 
-            href.includes('?v=')) {
-          wordParam = href.split('=')[1];
-        } else if (href.includes('sinonimos/')) {
-          wordParam = href.split('/')[2];
-        }
-        
-        if (wordParam) {
-          link.setAttribute('href', `?word=${wordParam}`);
-          link.onclick = (e) => {
-            e.preventDefault();
-            onWordClick(wordParam);
-          };
-        }
-      });
-    }
+    // Check if we got content
+    const hasContent = content && content.innerText && content.innerText.trim();
     
-    // Check if content is empty and we have a spell URL
-    if ((!content || content.innerHTML.trim() === '') && spellUrl) {
+    if (!hasContent && spellUrl) {
+      console.log('No content found, trying spell suggestions');
       const table = await fetchSpellSuggestions(spellUrl, onWordClick);
       
       if (table) {
+        // Cache the spell suggestions HTML
+        await cacheContent(cacheKey, html);
+        setupLinksOnContent(table, onWordClick);
+        
         return {
           html: table.outerHTML,
           hasContent: true
@@ -142,8 +177,12 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
       };
     }
     
-    // Return content or error message
-    const hasContent = content && content.innerText && content.innerText.trim();
+    if (content) {
+      setupLinksOnContent(content, onWordClick);
+      // Cache the original HTML string, not the parsed content
+      await cacheContent(cacheKey, html);
+    }
+    
     return {
       html: hasContent ? content.innerHTML : 'No content found.',
       hasContent: !!hasContent
