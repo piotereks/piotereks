@@ -1,16 +1,12 @@
 import { create } from 'zustand';
 import { SECTION_CONFIG } from '../config/sections';
 import { buildUrl, buildSpellUrl, updateUrlWithWord } from '../utils/urlUtils';
-import { 
-  fetchHtml, 
-  parseContent, 
-  setupInternalLinks, 
-  fetchSpellSuggestions 
-} from '../services/contentService';
+import { fetchAndDisplayContent } from '../services/contentService';
 
 export const useWordRefStore = create((set, get) => ({
   // State
   word: '',
+  isSearching: false,
   sections: {
     def: { content: '', isOpen: true, loading: false },
     sin: { content: '', isOpen: false, loading: false },
@@ -21,6 +17,8 @@ export const useWordRefStore = create((set, get) => ({
 
   // Basic actions
   setWord: (word) => set({ word }),
+
+  setIsSearching: (isSearching) => set({ isSearching }),
 
   toggleSection: (sectionKey) => set((state) => ({
     sections: {
@@ -34,9 +32,9 @@ export const useWordRefStore = create((set, get) => ({
 
   collapseAll: () => set((state) => {
     const updated = {};
-    Object.keys(state.sections).forEach(key => {
-      updated[key] = { ...state.sections[key], isOpen: false };
-    });
+    for (const [key, section] of Object.entries(state.sections)) {
+      updated[key] = { ...section, isOpen: false };
+    }
     return { sections: updated };
   }),
 
@@ -68,25 +66,17 @@ export const useWordRefStore = create((set, get) => ({
     setSectionLoading(sectionKey, true);
 
     try {
-      const html = await fetchHtml(url);
-      let content = parseContent(html, selector);
-      
-      setupInternalLinks(content, (newWord) => {
-        setWord(newWord);
-        handleSearch(newWord);
-      });
-
-      if ((!content || content.innerHTML.trim() === '') && spellUrl) {
-        content = await fetchSpellSuggestions(spellUrl, (newWord) => {
+      const result = await fetchAndDisplayContent(
+        url,
+        selector,
+        spellUrl,
+        (newWord) => {
           setWord(newWord);
           handleSearch(newWord);
-        });
-      }
-
-      setSectionContent(
-        sectionKey,
-        content && content.innerHTML.trim() ? content.innerHTML : 'No content found.'
+        }
       );
+
+      setSectionContent(sectionKey, result.html);
     } catch (error) {
       console.error('Error fetching content:', error);
       setSectionContent(sectionKey, 'Error fetching content.');
@@ -94,12 +84,16 @@ export const useWordRefStore = create((set, get) => ({
   },
 
   handleSearch: async (searchWord) => {
-    const { word, openFirstSection, fetchContent } = get();
-    const wordToSearch = searchWord || word;
+    const { isSearching, setIsSearching, openFirstSection, fetchContent } = get();
     
-    if (!wordToSearch.trim()) return;
+    // Prevent multiple simultaneous searches
+    if (isSearching) return;
+    
+    if (!searchWord || !searchWord.trim()) return;
 
-    const trimmedWord = wordToSearch.trim();
+    const trimmedWord = searchWord.trim();
+
+    setIsSearching(true);
     updateUrlWithWord(trimmedWord);
     openFirstSection();
 
@@ -110,5 +104,6 @@ export const useWordRefStore = create((set, get) => ({
     });
 
     await Promise.all(fetchPromises);
+    setIsSearching(false);
   }
 }));

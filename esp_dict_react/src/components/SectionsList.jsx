@@ -8,6 +8,7 @@ export const SectionsList = ({ sections, onToggle }) => {
       {SECTION_CONFIG.map(({ key, title }) => (
         <SectionItem
           key={key}
+          sectionKey={key}
           title={title}
           isOpen={sections[key].isOpen}
           loading={sections[key].loading}

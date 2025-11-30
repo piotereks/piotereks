@@ -8,6 +8,7 @@ export const ExternalLinks = ({ word, onCollapseAll }) => {
       {SECTION_CONFIG.map(({ key, baseUrl, label }) => (
         <a
           key={key}
+          id={`${key}Link`}
           href={buildUrl(baseUrl, word)}
           target="_blank"
           rel="noopener noreferrer"

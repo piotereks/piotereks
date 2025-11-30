@@ -3,7 +3,7 @@ import React from 'react';
 export const SearchBar = ({ word, setWord, onSearch }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSearch();
+    onSearch(word);
   };
 
   return (

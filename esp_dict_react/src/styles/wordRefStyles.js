@@ -82,6 +82,10 @@ export const wordRefStyles = `
     margin-bottom: 10px;
   }
 
+  .content.show {
+    display: block;
+  }
+
   .collapsible:hover {
     background-color: #e3e3e3;
   }

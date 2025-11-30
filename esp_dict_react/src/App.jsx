@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import { useWordRefStore } from './store/useWordRefStore';
 import { getUrlParameter } from './utils/urlUtils';
 import { SearchBar } from './components/SearchBar';
@@ -16,11 +16,14 @@ export default function WordRefSearch() {
     handleSearch 
   } = useWordRefStore();
 
+  // Memoize handleSearch to prevent unnecessary re-renders
+  const memoizedHandleSearch = useCallback(handleSearch, []);
+
   useEffect(() => {
     const urlWord = getUrlParameter('word');
     if (urlWord) {
       setWord(urlWord.trim());
-      handleSearch(urlWord.trim());
+      memoizedHandleSearch(urlWord.trim());
     }
   }, []);
 
@@ -30,19 +33,19 @@ export default function WordRefSearch() {
       const urlWord = getUrlParameter('word');
       if (urlWord) {
         setWord(urlWord.trim());
-        handleSearch(urlWord.trim());
+        memoizedHandleSearch(urlWord.trim());
       }
     };
 
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
-  }, [handleSearch, setWord]);
+  }, [memoizedHandleSearch, setWord]);
 
   return (
     <div style={{ minHeight: '100vh', padding: '1rem' }}>
       <h1 className="text-center title">WordRef Search</h1>
       
-      <SearchBar word={word} setWord={setWord} onSearch={handleSearch} />
+      <SearchBar word={word} setWord={setWord} onSearch={(searchWord) => handleSearch(searchWord)} />
       <ExternalLinks word={word} onCollapseAll={collapseAll} />
       <SectionsList sections={sections} onToggle={toggleSection} />
       
