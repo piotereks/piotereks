@@ -4,7 +4,7 @@ import { SectionItem } from './SectionItem';
 
 export const SectionsList = ({ sections, onToggle }) => {
   return (
-    <div>
+    <div className="space-y-2">
       {SECTION_CONFIG.map(({ key, title }) => (
         <SectionItem
           key={key}

@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* WordReference inspired modern styling */
+body {
+  @apply bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900;
+}
+
+h4 {
+  @apply bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold text-center py-2 mt-4 mb-2 rounded-lg shadow-sm;
+}
+
+#forceDesktop {
+  @apply font-bold text-gray-700;
+}
+
+#conjtable {
+  @apply ml-12;
+}
+
+ol li {
+  @apply mt-2 text-gray-800 leading-relaxed;
+}
+
+.aa table.neoConj {
+  @apply border-collapse w-full;
+}
+
+.aa .neoConj td,
+.aa .neoConj th {
+  @apply text-left p-2 border-b border-gray-200;
+}
+
+.aa .neoConj th {
+  @apply bg-blue-50 font-semibold text-blue-700;
+}
+
+.LineBreak {
+  @apply clear-both my-4 w-full bg-gradient-to-r from-transparent via-gray-300 to-transparent h-px;
+}
+
+.aa {
+  @apply mb-4 clear-both p-3 bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow;
+}
+
+.infl {
+  @apply inline-block my-2 mx-1 px-3 py-1.5 border-2 border-blue-500 rounded-full bg-blue-50 text-blue-700 font-medium text-sm;
+}
+
+.infl b {
+  @apply text-blue-700 font-bold;
+}
+
+.content.show {
+  @apply block;
+}
+
+/* Link styling for dictionary content */
+a {
+  @apply text-blue-600 hover:text-blue-800 hover:underline transition-colors;
+}
+
+a:hover {
+  @apply cursor-pointer;
+}
