@@ -41,7 +41,7 @@ export const SectionItem = ({ title, isOpen, loading, content, onToggle, section
         onClick={onToggle}
         className={`w-full flex items-center justify-between px-4 py-2.5 rounded-lg font-semibold transition-all border-2 shadow-sm hover:shadow-md text-sm md:text-base ${
           isOpen 
-            ? 'bg-blue-500 text-white border-blue-600 shadow-md' 
+            ? 'bg-gray-400 text-white border-gray-500 shadow-md' 
             : 'bg-gray-200 text-gray-700 border-gray-300 hover:border-gray-400 hover:bg-gray-250'
         }`}
       >

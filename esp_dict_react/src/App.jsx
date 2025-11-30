@@ -1,5 +1,4 @@
 import React, { useEffect, useCallback } from 'react';
-import { BookOpen } from 'lucide-react';
 import { useWordRefStore } from './store/useWordRefStore';
 import { getUrlParameter } from './utils/urlUtils';
 import { SearchBar } from './components/SearchBar';
@@ -42,11 +41,11 @@ export default function WordRefSearch() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Header */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-4 shadow-lg">
+      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-2 shadow-lg">
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex items-center justify-center gap-2">
-            <BookOpen className="w-6 h-6" />
-            <h1 className="text-2xl md:text-3xl font-bold">WordRef Search</h1>
+            <img src="icon.svg" alt="WordRef" className="w-5 h-5 md:w-6 md:h-6" />
+            <h1 className="text-lg md:text-xl font-bold bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">WordRef Search</h1>
           </div>
         </div>
       </div>
