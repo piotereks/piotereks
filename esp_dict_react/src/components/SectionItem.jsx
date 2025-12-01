@@ -3,7 +3,7 @@ import { ChevronDown } from 'lucide-react';
 import { useWordRefStore } from '../store/useWordRefStore';
 
 export const SectionItem = ({ title, isOpen, loading, content, onToggle, sectionKey }) => {
-  const { setWord, handleSearch } = useWordRefStore();
+  const { setWord, handleSearch, retrySection } = useWordRefStore();
   const linkHandlersRef = useRef(new Map());
 
   useEffect(() => {
@@ -50,6 +50,8 @@ export const SectionItem = ({ title, isOpen, loading, content, onToggle, section
     };
   }, [isOpen, content, sectionKey, setWord, handleSearch]);
 
+  const isErrorContent = content && content.includes('Error fetching');
+
   return (
     <div className="mb-2">
       <button
@@ -79,6 +81,16 @@ export const SectionItem = ({ title, isOpen, loading, content, onToggle, section
               <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
               <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
             </div>
+          </div>
+        ) : isErrorContent ? (
+          <div className="px-4 py-3 text-red-600 flex items-center justify-between">
+            <span>{content}</span>
+            <button
+              onClick={() => retrySection(sectionKey)}
+              className="ml-4 px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 text-sm whitespace-nowrap"
+            >
+              Retry
+            </button>
           </div>
         ) : (
           <div className="px-4 py-3 text-gray-800 leading-relaxed prose prose-sm max-w-none text-sm md:text-base" dangerouslySetInnerHTML={{ __html: content }} />

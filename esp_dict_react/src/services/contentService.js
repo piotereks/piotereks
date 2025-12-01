@@ -1,9 +1,20 @@
 import { getCachedContent, cacheContent, generateCacheKey } from './cacheService';
 
-const MAX_RETRIES = 3;
+const MAX_RETRIES = 2;
 const RETRY_DELAY = 1000; // 1 second
+const FETCH_TIMEOUT = 15000; // 15 seconds
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+// Wrap fetch with timeout
+const fetchWithTimeout = (url, options = {}, timeoutMs = FETCH_TIMEOUT) => {
+  return Promise.race([
+    fetch(url, options),
+    new Promise((_, reject) =>
+      setTimeout(() => reject(new Error(`Fetch timeout after ${timeoutMs}ms`)), timeoutMs)
+    )
+  ]);
+};
 
 export const fetchHtml = async (url, retries = 0, abortSignal = null) => {
   try {
@@ -12,7 +23,7 @@ export const fetchHtml = async (url, retries = 0, abortSignal = null) => {
       ? `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`
       : url;
 
-    const response = await fetch(fetchUrl, { signal: abortSignal });
+    const response = await fetchWithTimeout(fetchUrl, { signal: abortSignal });
     
     if (!response.ok) {
       // Only retry on CORS proxy failures

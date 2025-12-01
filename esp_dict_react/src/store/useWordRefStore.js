@@ -39,22 +39,29 @@ export const useWordRefStore = create((set, get) => ({
     return { sections: updated };
   }),
 
-  setSectionLoading: (sectionKey, loading) => set((state) => ({
-    sections: {
-      ...state.sections,
-      [sectionKey]: { ...state.sections[sectionKey], loading }
-    }
-  })),
+  setSectionLoading: (sectionKey, loading) => set((state) => {
+    console.log(`[STORE] setSectionLoading: ${sectionKey} = ${loading}`);
+    return {
+      sections: {
+        ...state.sections,
+        [sectionKey]: { ...state.sections[sectionKey], loading }
+      }
+    };
+  }),
 
-  setSectionContent: (sectionKey, content) => set((state) => ({
-    sections: {
-      ...state.sections,
-      [sectionKey]: { ...state.sections[sectionKey], content, loading: false }
-    }
-  })),
+  setSectionContent: (sectionKey, content) => set((state) => {
+    console.log(`[STORE] setSectionContent: ${sectionKey}, content length: ${content ? content.length : 0}, loading: false`);
+    return {
+      sections: {
+        ...state.sections,
+        [sectionKey]: { ...state.sections[sectionKey], content, loading: false }
+      }
+    };
+  }),
 
   // Mark all sections as loading without changing their open/closed state
   markAllSectionsLoading: () => set((state) => {
+    console.log('[STORE] markAllSectionsLoading - setting all sections to loading');
     const updated = {};
     for (const [key, section] of Object.entries(state.sections)) {
       updated[key] = { ...section, loading: true, content: '' };
@@ -62,9 +69,14 @@ export const useWordRefStore = create((set, get) => ({
     return { sections: updated };
   }),
 
+  // Store retry metadata
+  retryMetadata: {},
+
   // Complex actions
   fetchContent: async (url, sectionKey, selector, spellUrl, abortSignal) => {
-    const { setSectionContent, setWord, handleSearch } = get();
+    const { setSectionContent, setSectionLoading, setWord, handleSearch } = get();
+    
+    console.log(`[FETCH] Starting fetch for ${sectionKey}: ${url}`);
     
     try {
       const result = await fetchAndDisplayContent(
@@ -78,15 +90,60 @@ export const useWordRefStore = create((set, get) => ({
         abortSignal
       );
 
+      console.log(`[FETCH] Successful fetch for ${sectionKey}, result length: ${result.html ? result.html.length : 0}`);
       setSectionContent(sectionKey, result.html);
+      // Clear retry metadata on success
+      set((state) => ({
+        retryMetadata: {
+          ...state.retryMetadata,
+          [sectionKey]: null
+        }
+      }));
     } catch (error) {
       if (error.name === 'AbortError') {
-        console.log('Fetch was aborted for:', sectionKey);
+        console.log(`[FETCH] Fetch was aborted for: ${sectionKey}`);
+        // Use setSectionLoading to explicitly stop loading
+        setSectionLoading(sectionKey, false);
         return;
       }
-      console.error('Error fetching content:', error);
+      console.error(`[FETCH] Error fetching content for: ${sectionKey}`, error.message);
+      // Store retry metadata for failed fetch using proper state update
+      set((state) => ({
+        retryMetadata: {
+          ...state.retryMetadata,
+          [sectionKey]: { url, selector, spellUrl }
+        }
+      }));
+      console.log(`[FETCH] Stored retry metadata for ${sectionKey}`);
+      // Set error message AND stop loading
       setSectionContent(sectionKey, 'Error fetching content.');
     }
+  },
+
+  // Retry failed section fetch
+  retrySection: async (sectionKey) => {
+    const { retryMetadata, word, fetchContent } = get();
+    const metadata = retryMetadata[sectionKey];
+    
+    if (!metadata) {
+      console.log(`[RETRY] No retry metadata for ${sectionKey}`);
+      return;
+    }
+    
+    console.log(`[RETRY] Retrying ${sectionKey} with word: ${word}`);
+    const { setSectionLoading } = get();
+    setSectionLoading(sectionKey, true);
+    
+    // Create a fresh AbortController for this retry (don't use the old one)
+    const retryAbortController = new AbortController();
+    
+    await fetchContent(
+      metadata.url,
+      sectionKey,
+      metadata.selector,
+      metadata.spellUrl,
+      retryAbortController.signal
+    );
   },
 
   handleSearch: async (searchWord) => {
@@ -121,6 +178,9 @@ export const useWordRefStore = create((set, get) => ({
     setIsSearching(true);
     updateUrlWithWord(trimmedWord);
     markAllSectionsLoading(); // Mark sections as loading, keep open/closed state
+    
+    // Clear previous retry metadata for this search
+    set({ retryMetadata: {} });
 
     try {
       const fetchPromises = SECTION_CONFIG.map(section => {
@@ -129,7 +189,8 @@ export const useWordRefStore = create((set, get) => ({
         return fetchContent(url, section.key, section.selector, spellUrl, newAbortController.signal);
       });
 
-      await Promise.all(fetchPromises);
+      // Use allSettled to handle individual fetch failures gracefully
+      const results = await Promise.allSettled(fetchPromises);
       console.log('Search complete for:', trimmedWord);
     } catch (error) {
       if (error.name === 'AbortError') {
@@ -139,6 +200,18 @@ export const useWordRefStore = create((set, get) => ({
       }
     } finally {
       setIsSearching(false);
+      
+      // After search completes, check if RAE failed and auto-retry
+      setTimeout(() => {
+        const currentState = get();
+        const raeFailed = currentState.retryMetadata['rae'];
+        console.log('[CHECK-RETRY] RAE retry metadata:', raeFailed);
+        if (raeFailed) {
+          console.log('[AUTO-RETRY] RAE fetch failed, triggering retry');
+          const { retrySection } = get();
+          retrySection('rae');
+        }
+      }, 500);
     }
   }
 }));

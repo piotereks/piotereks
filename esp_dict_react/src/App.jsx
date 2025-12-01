@@ -12,7 +12,8 @@ export default function WordRefSearch() {
     setWord, 
     toggleSection, 
     collapseAll, 
-    handleSearch 
+    handleSearch, 
+    retrySection 
   } = useWordRefStore();
 
   // Load initial word from URL on mount only
@@ -24,6 +25,18 @@ export default function WordRefSearch() {
       handleSearch(trimmed);
     }
   }, []);
+
+  // After initial search, if RAE is empty and not loading, auto-retry
+  useEffect(() => {
+    if (
+      sections.rae &&
+      !sections.rae.loading &&
+      (!sections.rae.content || sections.rae.content === '')
+    ) {
+      console.log('[AUTO-RETRY] RAE is empty after reload, triggering retry');
+      retrySection('rae');
+    }
+  }, [sections.rae?.content, sections.rae?.loading, retrySection]);
 
   useEffect(() => {
     const handlePopState = () => {
