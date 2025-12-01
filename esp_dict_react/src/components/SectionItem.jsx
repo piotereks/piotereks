@@ -52,6 +52,11 @@ export const SectionItem = ({ title, isOpen, loading, content, onToggle, section
 
   const isErrorContent = content && content.includes('Error fetching');
 
+  // Remove initial <br> or <br/> from content
+  const cleanedContent = typeof content === 'string'
+    ? content.replace(/^\s*<br\s*\/?>/i, '')
+    : content;
+
   return (
     <div className="mb-2">
       <button
@@ -93,7 +98,14 @@ export const SectionItem = ({ title, isOpen, loading, content, onToggle, section
             </button>
           </div>
         ) : (
-          <div className="px-4 py-3 text-gray-800 leading-relaxed prose prose-sm max-w-none text-sm md:text-base" dangerouslySetInnerHTML={{ __html: content }} />
+          <div
+            className={
+              sectionKey === 'rae'
+                ? 'rae-content px-4 py-3 text-gray-800 leading-relaxed prose prose-sm max-w-none text-sm md:text-base'
+                : 'px-4 py-3 text-gray-800 leading-relaxed prose prose-sm max-w-none text-sm md:text-base'
+            }
+            dangerouslySetInnerHTML={{ __html: cleanedContent }}
+          />
         )}
       </div>
     </div>
