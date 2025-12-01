@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback } from 'react';
+import React, { useEffect } from 'react';
 import { useWordRefStore } from './store/useWordRefStore';
 import { getUrlParameter } from './utils/urlUtils';
 import { SearchBar } from './components/SearchBar';
@@ -15,13 +15,13 @@ export default function WordRefSearch() {
     handleSearch 
   } = useWordRefStore();
 
-  const memoizedHandleSearch = useCallback(handleSearch, []);
-
+  // Load initial word from URL on mount only
   useEffect(() => {
     const urlWord = getUrlParameter('word');
     if (urlWord) {
-      setWord(urlWord.trim());
-      memoizedHandleSearch(urlWord.trim());
+      const trimmed = urlWord.trim();
+      setWord(trimmed);
+      handleSearch(trimmed);
     }
   }, []);
 
@@ -30,13 +30,13 @@ export default function WordRefSearch() {
       const urlWord = getUrlParameter('word');
       if (urlWord) {
         setWord(urlWord.trim());
-        memoizedHandleSearch(urlWord.trim());
+        handleSearch(urlWord.trim());
       }
     };
 
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
-  }, [memoizedHandleSearch, setWord]);
+  }, [handleSearch, setWord]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">

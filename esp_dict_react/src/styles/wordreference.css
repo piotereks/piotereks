@@ -1,0 +1,166 @@
+/* Styles for WordReference and RAE scraped content */
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+}
+
+h4 {
+    background-color: #e0e0e8;
+    font-weight: bold;
+    text-align: center;
+    padding: 1px;
+    margin-top: 8px;
+    margin-bottom: 1px;
+}
+
+#forceDesktop {
+    font-weight: bold;
+}
+
+#conjtable {
+    margin-left: 3em;
+}
+
+ol li {
+    margin-top: 1px;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.aa table.neoConj {
+    border-collapse: collapse;
+}
+
+.aa .neoConj td,
+.aa .neoConj th {
+    text-align: left;
+    padding: 2px;
+}
+
+.LineBreak {
+    clear: both;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    background-color: #d1d1d1;
+    height: 1px;
+    display: inline-block;
+}
+
+.aa {
+    margin-bottom: 1em;
+    clear: both;
+}
+
+.infl {
+    display: inline-block;
+    margin: 6px 0 3px;
+    padding: 5px 8px;
+    border: solid #000 1px;
+    border-radius: 3px;
+}
+
+.infl b {
+    color: #000;
+    font-weight: bold;
+}
+
+.collapsible {
+    cursor: pointer;
+    user-select: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+.collapsible:hover {
+    background-color: #e3e3e3;
+}
+
+.collapsible::after {
+    content: '\25BC'; /* Down arrow */
+    float: right;
+}
+
+.active::after {
+    content: '\25B2'; /* Up arrow */
+}
+
+/* RAE Dictionary additional styles */
+.small1 {
+    font-size: small;
+}
+
+.trans {
+    margin-bottom: 1em;
+    padding: 8px;
+    background-color: #fff;
+    /* border: 1px solid #ccc; */
+}
+
+.esp {
+    color: #333;
+}
+
+/* .clickable {
+    cursor: pointer;
+    user-select: none;
+} */
+
+.clickTranslate {
+    padding: 4px 8px;
+}
+
+.clickTranslate:hover {
+    background-color: #f5f5f5;
+}
+
+.noTapHighlight {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.noTapHighlight:focus {
+    outline: none !important;
+}
+
+.entry {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.entry li {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.ac {
+    font-variant: small-caps;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.i {
+    font-style: italic;
+    color: #666;
+}
+
+.b {
+    font-weight: bold;
+}

@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { useWordRefStore } from '../store/useWordRefStore';
 
 export const SectionItem = ({ title, isOpen, loading, content, onToggle, sectionKey }) => {
   const { setWord, handleSearch } = useWordRefStore();
+  const linkHandlersRef = useRef(new Map());
 
   useEffect(() => {
     if (!isOpen) return;
@@ -12,24 +13,39 @@ export const SectionItem = ({ title, isOpen, loading, content, onToggle, section
     if (!contentDiv) return;
 
     const links = contentDiv.querySelectorAll('a');
+    
+    // Clear old handlers for this section
+    if (linkHandlersRef.current.has(sectionKey)) {
+      const oldHandlers = linkHandlersRef.current.get(sectionKey);
+      oldHandlers.forEach(({ link, handler }) => {
+        link.removeEventListener('click', handler);
+      });
+    }
+
+    const handlers = [];
     links.forEach(link => {
       const href = link.getAttribute('href');
       if (href && href.includes('?word=')) {
         const wordParam = new URL(`http://localhost${href}`).searchParams.get('word');
         
-        link.addEventListener('click', (e) => {
+        const handler = (e) => {
           e.preventDefault();
           if (wordParam) {
             setWord(wordParam);
             handleSearch(wordParam);
           }
-        });
+        };
+
+        link.addEventListener('click', handler);
+        handlers.push({ link, handler });
       }
     });
 
+    linkHandlersRef.current.set(sectionKey, handlers);
+
     return () => {
-      links.forEach(link => {
-        link.removeEventListener('click', null);
+      handlers.forEach(({ link, handler }) => {
+        link.removeEventListener('click', handler);
       });
     };
   }, [isOpen, content, sectionKey, setWord, handleSearch]);

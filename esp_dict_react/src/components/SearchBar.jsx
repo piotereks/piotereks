@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Search } from 'lucide-react';
 
 export const SearchBar = ({ word, setWord, onSearch }) => {
+  const [input, setInput] = useState(word || '');
+
+  // Update local input state when word prop changes
+  useEffect(() => {
+    setInput(word || '');
+  }, [word]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSearch(word);
+    if (input.trim()) {
+      console.log('SearchBar: Searching for:', input.trim());
+      onSearch(input.trim());
+    }
+  };
+
+  const handleInputChange = (e) => {
+    setInput(e.target.value);
+    setWord(e.target.value);
   };
 
   return (
@@ -17,9 +32,8 @@ export const SearchBar = ({ word, setWord, onSearch }) => {
         <input
           type="text"
           id="word"
-          value={word}
-          onChange={(e) => setWord(e.target.value)}
-          onKeyDown={(e) => e.key === 'Enter' && handleSubmit(e)}
+          value={input}
+          onChange={handleInputChange}
           placeholder="Enter word..."
           className="px-3 py-2 pl-9 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all w-48 md:w-64 text-sm"
         />

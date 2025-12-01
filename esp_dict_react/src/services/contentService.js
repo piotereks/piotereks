@@ -5,21 +5,21 @@ const RETRY_DELAY = 1000; // 1 second
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-export const fetchHtml = async (url, retries = 0) => {
+export const fetchHtml = async (url, retries = 0, abortSignal = null) => {
   try {
     const useCorsProxy = url.includes('dle.rae.es');
     const fetchUrl = useCorsProxy
       ? `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`
       : url;
 
-    const response = await fetch(fetchUrl);
+    const response = await fetch(fetchUrl, { signal: abortSignal });
     
     if (!response.ok) {
       // Only retry on CORS proxy failures
       if (useCorsProxy && retries < MAX_RETRIES) {
         console.warn(`CORS proxy failed (${response.status}), retrying (${retries + 1}/${MAX_RETRIES}):`, url);
         await delay(RETRY_DELAY * (retries + 1));
-        return fetchHtml(url, retries + 1);
+        return fetchHtml(url, retries + 1, abortSignal);
       }
       console.error(`HTTP ${response.status}:`, url);
       return null;
@@ -36,12 +36,16 @@ export const fetchHtml = async (url, retries = 0) => {
     
     return response.text();
   } catch (error) {
+    if (error.name === 'AbortError') {
+      console.log('Fetch aborted:', url);
+      throw error;
+    }
     // Only retry on CORS proxy errors
     const useCorsProxy = url.includes('dle.rae.es');
     if (useCorsProxy && retries < MAX_RETRIES) {
       console.warn(`CORS proxy error, retrying (${retries + 1}/${MAX_RETRIES}):`, url, error.message);
       await delay(RETRY_DELAY * (retries + 1));
-      return fetchHtml(url, retries + 1);
+      return fetchHtml(url, retries + 1, abortSignal);
     }
     console.error(`Fetch failed:`, url, error.message);
     return null;
@@ -72,16 +76,28 @@ const setupLinksOnContent = (content, onWordClick) => {
     
     let wordParam = null;
     
+    // Check for different link patterns
     if (href.includes('conj/esVerbs.aspx?v=') || 
         href.includes('conj/esverbs.aspx?v=') || 
         href.includes('?v=')) {
+      // Conjugation links
       wordParam = href.split('=')[1];
     } else if (href.includes('sinonimos/')) {
-      wordParam = href.split('/')[2];
+      // Synonym links
+      wordParam = href.split('/').pop();
+    } else if (href.includes('/definicion/')) {
+      // Definition links
+      wordParam = href.split('/').pop();
+    } else if (href.startsWith('/')) {
+      // Any internal WordReference link - try to extract word from path
+      const parts = href.split('/').filter(p => p);
+      if (parts.length > 0) {
+        wordParam = parts[parts.length - 1];
+      }
     }
     
     if (wordParam) {
-      link.setAttribute('href', `?word=${wordParam}`);
+      link.setAttribute('href', `?word=${encodeURIComponent(wordParam)}`);
       link.onclick = (e) => {
         e.preventDefault();
         onWordClick(wordParam);
@@ -116,7 +132,7 @@ export const fetchSpellSuggestions = async (spellUrl, onWordClick) => {
   }
 };
 
-export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClick) => {
+export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClick, abortSignal = null) => {
   try {
     const cacheKey = generateCacheKey(url, selector);
     
@@ -141,7 +157,17 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
     
     // Fetch from network if not cached
     console.log('Fetching from network:', url);
-    const html = await fetchHtml(url);
+    const html = await fetchHtml(url, 0, abortSignal);
+    
+    // If fetch failed, return error without caching
+    if (!html) {
+      console.error('Fetch returned null, not caching');
+      return {
+        html: 'Error fetching content.',
+        hasContent: false
+      };
+    }
+
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
     let content = doc.querySelector(selector);
@@ -161,7 +187,7 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
       const table = await fetchSpellSuggestions(spellUrl, onWordClick);
       
       if (table) {
-        // Cache the spell suggestions HTML
+        // Only cache successful spell suggestions
         await cacheContent(cacheKey, html);
         setupLinksOnContent(table, onWordClick);
         
@@ -171,6 +197,7 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
         };
       }
       
+      // No spell suggestions found - don't cache
       return {
         html: 'No content found.',
         hasContent: false
@@ -179,8 +206,10 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
     
     if (content) {
       setupLinksOnContent(content, onWordClick);
-      // Cache the original HTML string, not the parsed content
-      await cacheContent(cacheKey, html);
+      // Only cache if we have actual content - don't cache empty results
+      if (hasContent) {
+        await cacheContent(cacheKey, html);
+      }
     }
     
     return {
@@ -188,6 +217,10 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
       hasContent: !!hasContent
     };
   } catch (error) {
+    if (error.name === 'AbortError') {
+      console.log('Fetch was aborted');
+      throw error;
+    }
     console.error('Error fetching content:', error);
     return {
       html: 'Error fetching content.',
