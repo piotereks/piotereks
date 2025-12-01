@@ -13,7 +13,8 @@ export default function WordRefSearch() {
     toggleSection, 
     collapseAll, 
     handleSearch, 
-    retrySection 
+    retrySection,
+    openFirstIfAllCollapsed
   } = useWordRefStore();
 
   // Load initial word from URL on mount only
@@ -37,6 +38,14 @@ export default function WordRefSearch() {
       retrySection('rae');
     }
   }, [sections.rae?.content, sections.rae?.loading, retrySection]);
+
+  // When word changes and search completes, open first section if all collapsed
+  useEffect(() => {
+    if (word && !Object.values(sections).some(section => section.loading)) {
+      // Search is complete, open first section if all are collapsed
+      openFirstIfAllCollapsed();
+    }
+  }, [word, sections, openFirstIfAllCollapsed]);
 
   useEffect(() => {
     const handlePopState = () => {

@@ -10,7 +10,7 @@ export const useWordRefStore = create((set, get) => ({
   isSearching: false,
   abortController: null, // Track current fetch requests
   sections: {
-    def: { content: '', isOpen: true, loading: false },
+    def: { content: '', isOpen: false, loading: false },
     sin: { content: '', isOpen: false, loading: false },
     spen: { content: '', isOpen: false, loading: false },
     rae: { content: '', isOpen: false, loading: false },
@@ -38,6 +38,21 @@ export const useWordRefStore = create((set, get) => ({
       updated[key] = { ...section, isOpen: false };
     }
     return { sections: updated };
+  }),
+
+  // Open first section if all are collapsed
+  openFirstIfAllCollapsed: () => set((state) => {
+    const allCollapsed = Object.values(state.sections).every(section => !section.isOpen);
+    if (allCollapsed) {
+      console.log('[STORE] All sections collapsed, opening first section (def)');
+      return {
+        sections: {
+          ...state.sections,
+          def: { ...state.sections.def, isOpen: true }
+        }
+      };
+    }
+    return state;
   }),
 
   setSectionLoading: (sectionKey, loading) => set((state) => {
