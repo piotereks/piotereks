@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback } from 'react';
+import React, { useEffect } from 'react';
 import { useWordRefStore } from './store/useWordRefStore';
 import { getUrlParameter } from './utils/urlUtils';
 import { SearchBar } from './components/SearchBar';
@@ -12,31 +12,44 @@ export default function WordRefSearch() {
     setWord, 
     toggleSection, 
     collapseAll, 
-    handleSearch 
+    handleSearch, 
+    retrySection 
   } = useWordRefStore();
 
-  const memoizedHandleSearch = useCallback(handleSearch, []);
-
+  // Load initial word from URL on mount only
   useEffect(() => {
     const urlWord = getUrlParameter('word');
     if (urlWord) {
-      setWord(urlWord.trim());
-      memoizedHandleSearch(urlWord.trim());
+      const trimmed = urlWord.trim();
+      setWord(trimmed);
+      handleSearch(trimmed);
     }
   }, []);
+
+  // After initial search, if RAE is empty and not loading, auto-retry
+  useEffect(() => {
+    if (
+      sections.rae &&
+      !sections.rae.loading &&
+      (!sections.rae.content || sections.rae.content === '')
+    ) {
+      console.log('[AUTO-RETRY] RAE is empty after reload, triggering retry');
+      retrySection('rae');
+    }
+  }, [sections.rae?.content, sections.rae?.loading, retrySection]);
 
   useEffect(() => {
     const handlePopState = () => {
       const urlWord = getUrlParameter('word');
       if (urlWord) {
         setWord(urlWord.trim());
-        memoizedHandleSearch(urlWord.trim());
+        handleSearch(urlWord.trim());
       }
     };
 
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
-  }, [memoizedHandleSearch, setWord]);
+  }, [handleSearch, setWord]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">

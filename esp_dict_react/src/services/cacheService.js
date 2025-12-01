@@ -3,16 +3,32 @@ const STORE_NAME = 'content';
 const DB_VERSION = 1;
 const CACHE_DURATION = 365 * 24 * 60 * 60 * 1000; // 1 year in ms
 
+let dbInstance = null;
+
 // Initialize database
 const initDB = () => {
   return new Promise((resolve, reject) => {
+    if (dbInstance) {
+      resolve(dbInstance);
+      return;
+    }
+
     const request = indexedDB.open(DB_NAME, DB_VERSION);
     
-    request.onerror = () => reject(request.error);
-    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => {
+      console.error('IndexedDB open error:', request.error);
+      reject(request.error);
+    };
+    
+    request.onsuccess = () => {
+      dbInstance = request.result;
+      console.log('IndexedDB opened successfully, stores:', Array.from(dbInstance.objectStoreNames));
+      resolve(dbInstance);
+    };
     
     request.onupgradeneeded = (e) => {
       const db = e.target.result;
+      console.log('IndexedDB upgrading, creating object store:', STORE_NAME);
       if (!db.objectStoreNames.contains(STORE_NAME)) {
         db.createObjectStore(STORE_NAME, { keyPath: 'key' });
       }
@@ -32,13 +48,17 @@ export const getCachedContent = async (key) => {
       request.onsuccess = () => {
         const result = request.result;
         if (result && Date.now() - result.timestamp < CACHE_DURATION) {
+          console.log('Cache hit:', key);
           resolve(result.value);
         } else {
           resolve(null);
         }
       };
       
-      request.onerror = () => resolve(null);
+      request.onerror = () => {
+        console.error('Cache get error:', request.error);
+        resolve(null);
+      };
     });
   } catch (error) {
     console.error('Cache get error:', error);
@@ -59,8 +79,15 @@ export const cacheContent = async (key, value) => {
         timestamp: Date.now()
       });
       
-      request.onsuccess = () => resolve(true);
-      request.onerror = () => resolve(false);
+      request.onsuccess = () => {
+        console.log('Content cached:', key);
+        resolve(true);
+      };
+      
+      request.onerror = () => {
+        console.error('Cache put error:', request.error);
+        resolve(false);
+      };
     });
   } catch (error) {
     console.error('Cache put error:', error);
@@ -77,8 +104,15 @@ export const clearCache = async () => {
       const store = tx.objectStore(STORE_NAME);
       const request = store.clear();
       
-      request.onsuccess = () => resolve(true);
-      request.onerror = () => resolve(false);
+      request.onsuccess = () => {
+        console.log('Cache cleared');
+        resolve(true);
+      };
+      
+      request.onerror = () => {
+        console.error('Cache clear error:', request.error);
+        resolve(false);
+      };
     });
   } catch (error) {
     console.error('Cache clear error:', error);
