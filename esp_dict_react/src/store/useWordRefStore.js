@@ -6,6 +6,7 @@ import { fetchAndDisplayContent } from '../services/contentService';
 export const useWordRefStore = create((set, get) => ({
   // State
   word: '',
+  previousWord: '', // Track last searched word to avoid unnecessary reloads
   isSearching: false,
   abortController: null, // Track current fetch requests
   sections: {
@@ -74,10 +75,14 @@ export const useWordRefStore = create((set, get) => ({
 
   // Complex actions
   fetchContent: async (url, sectionKey, selector, spellUrl, abortSignal) => {
-    const { setSectionContent, setSectionLoading, setWord, handleSearch } = get();
-    
+    const { setSectionContent, setSectionLoading, setWord, handleSearch, word: currentWord } = get();
+
     console.log(`[FETCH] Starting fetch for ${sectionKey}: ${url}`);
-    
+
+    // Extract the word being fetched from the URL
+    const urlWordMatch = url.match(/[?&]w=([^&]+)/) || url.match(/[?&]word=([^&]+)/);
+    const urlWord = urlWordMatch ? decodeURIComponent(urlWordMatch[1]) : null;
+
     try {
       const result = await fetchAndDisplayContent(
         url,
@@ -90,15 +95,20 @@ export const useWordRefStore = create((set, get) => ({
         abortSignal
       );
 
-      console.log(`[FETCH] Successful fetch for ${sectionKey}, result length: ${result.html ? result.html.length : 0}`);
-      setSectionContent(sectionKey, result.html);
-      // Clear retry metadata on success
-      set((state) => ({
-        retryMetadata: {
-          ...state.retryMetadata,
-          [sectionKey]: null
-        }
-      }));
+      // Only update section if word matches current store word
+      if (!urlWord || urlWord === currentWord) {
+        console.log(`[FETCH] Successful fetch for ${sectionKey}, result length: ${result.html ? result.html.length : 0}`);
+        setSectionContent(sectionKey, result.html);
+        // Clear retry metadata on success
+        set((state) => ({
+          retryMetadata: {
+            ...state.retryMetadata,
+            [sectionKey]: null
+          }
+        }));
+      } else {
+        console.log(`[FETCH] Ignored fetch for ${sectionKey} (word mismatch: ${urlWord} !== ${currentWord})`);
+      }
     } catch (error) {
       if (error.name === 'AbortError') {
         console.log(`[FETCH] Fetch was aborted for: ${sectionKey}`);
@@ -115,8 +125,12 @@ export const useWordRefStore = create((set, get) => ({
         }
       }));
       console.log(`[FETCH] Stored retry metadata for ${sectionKey}`);
-      // Set error message AND stop loading
-      setSectionContent(sectionKey, 'Error fetching content.');
+      // Only set error if word matches current
+      if (!urlWord || urlWord === currentWord) {
+        setSectionContent(sectionKey, 'Error fetching content.');
+      } else {
+        console.log(`[FETCH] Ignored error for ${sectionKey} (word mismatch: ${urlWord} !== ${currentWord})`);
+      }
     }
   },
 
@@ -147,9 +161,9 @@ export const useWordRefStore = create((set, get) => ({
   },
 
   handleSearch: async (searchWord) => {
-    const { isSearching, setIsSearching, markAllSectionsLoading, fetchContent, abortController } = get();
+    const { isSearching, setIsSearching, markAllSectionsLoading, fetchContent, abortController, previousWord, sections } = get();
     
-    console.log('handleSearch called with:', searchWord, 'isSearching:', isSearching);
+    console.log('handleSearch called with:', searchWord, 'previousWord:', previousWord);
     
     // Abort previous fetch requests
     if (abortController) {
@@ -161,22 +175,36 @@ export const useWordRefStore = create((set, get) => ({
     const newAbortController = new AbortController();
     set({ abortController: newAbortController });
     
-    // Prevent multiple simultaneous searches
-    if (isSearching) {
-      console.log('Search already in progress, returning');
-      return;
-    }
-    
     if (!searchWord || !searchWord.trim()) {
       console.log('Empty search word, returning');
       return;
     }
 
     const trimmedWord = searchWord.trim();
+    
+    // Check if word has changed
+    if (trimmedWord === previousWord) {
+      console.log(`[SKIP] Word unchanged (${trimmedWord}), only retrying RAE if needed`);
+      
+      // Only retry RAE if it's empty or failed
+      if (!sections.rae.content || sections.rae.content.includes('Error')) {
+        console.log('[RETRY] RAE is empty/failed, retrying');
+        setIsSearching(true);
+        const raeUrl = buildUrl(SECTION_CONFIG.find(s => s.key === 'rae').baseUrl, trimmedWord);
+        const raeSelector = SECTION_CONFIG.find(s => s.key === 'rae').selector;
+        await fetchContent(raeUrl, 'rae', raeSelector, undefined, newAbortController.signal);
+        setIsSearching(false);
+      }
+      return;
+    }
+
     console.log('Starting search for:', trimmedWord);
 
     setIsSearching(true);
     updateUrlWithWord(trimmedWord);
+    
+    // Store current word as previous before starting new search
+    set({ previousWord: trimmedWord });
     markAllSectionsLoading(); // Mark sections as loading, keep open/closed state
     
     // Clear previous retry metadata for this search

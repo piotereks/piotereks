@@ -170,9 +170,20 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
     console.log('Fetching from network:', url);
     const html = await fetchHtml(url, 0, abortSignal);
     
-    // If fetch failed, return error without caching
+    // If fetch failed, try spell check if available
     if (!html) {
-      console.error('Fetch returned null, not caching');
+      console.error('Fetch returned null, trying spell suggestions');
+      if (spellUrl) {
+        const table = await fetchSpellSuggestions(spellUrl, onWordClick);
+        if (table) {
+          setupLinksOnContent(table, onWordClick);
+          return {
+            html: table.outerHTML,
+            hasContent: true
+          };
+        }
+      }
+      // No spell check or spell check failed
       return {
         html: 'Error fetching content.',
         hasContent: false
