@@ -7,7 +7,9 @@ export const useWordRefStore = create((set, get) => ({
   // State
   word: '',
   previousWord: '', // Track last searched word to avoid unnecessary reloads
+  previousWord: '', // Track last searched word to avoid unnecessary reloads
   isSearching: false,
+  abortController: null, // Track current fetch requests
   abortController: null, // Track current fetch requests
   sections: {
     def: { content: '', isOpen: false, loading: false },

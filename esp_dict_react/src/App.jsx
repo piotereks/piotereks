@@ -18,9 +18,13 @@ export default function WordRefSearch() {
   } = useWordRefStore();
 
   // Load initial word from URL on mount only
+  // Load initial word from URL on mount only
   useEffect(() => {
     const urlWord = getUrlParameter('word');
     if (urlWord) {
+      const trimmed = urlWord.trim();
+      setWord(trimmed);
+      handleSearch(trimmed);
       const trimmed = urlWord.trim();
       setWord(trimmed);
       handleSearch(trimmed);
@@ -53,11 +57,13 @@ export default function WordRefSearch() {
       if (urlWord) {
         setWord(urlWord.trim());
         handleSearch(urlWord.trim());
+        handleSearch(urlWord.trim());
       }
     };
 
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
+  }, [handleSearch, setWord]);
   }, [handleSearch, setWord]);
 
   return (
