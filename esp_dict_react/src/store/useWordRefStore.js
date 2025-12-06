@@ -243,15 +243,18 @@ export const useWordRefStore = create((set, get) => ({
         return fetchContent(url, section.key, section.selector, spellUrl, newAbortController.signal);
       });
 
-      // Use allSettled to handle individual fetch failures gracefully
+      // Get the definition fetch promise (first section)
+      const defFetchPromise = fetchPromises[0];
+      
+      // Wait for definition to complete, then open first section
+      defFetchPromise.then(() => {
+        console.log('[SEARCH] Definition fetch complete, opening first section');
+        get().openFirstSection();
+      });
+
+      // Continue with all fetches in parallel
       await Promise.allSettled(fetchPromises);
       console.log('Search complete for:', trimmedWord);
-      
-      // Force open first section after search completes and content is set
-      setTimeout(() => {
-        console.log('[SEARCH] Forcing first section open after content load');
-        get().openFirstSection();
-      }, 100);
     } catch (error) {
       if (error.name === 'AbortError') {
         console.log('Search was cancelled');

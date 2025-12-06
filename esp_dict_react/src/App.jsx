@@ -21,9 +21,10 @@ export default function WordRefSearch() {
     if (urlWord) {
       const trimmed = urlWord.trim();
       handleSearch(trimmed);
+      openFirstIfAllCollapsed();
     } else {
       // If no URL parameter on initial load, open first section if all collapsed
-      openFirstIfAllCollapsed();
+
     }
   }, []); // Run only once on mount
 
