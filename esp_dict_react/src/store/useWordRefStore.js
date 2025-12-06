@@ -90,7 +90,7 @@ export const useWordRefStore = create((set, get) => ({
 
   // Complex actions
   fetchContent: async (url, sectionKey, selector, spellUrl, abortSignal) => {
-    const { setSectionContent, setSectionLoading, setWord, handleSearch, word: currentWord } = get();
+    const { setSectionContent, setSectionLoading, word: currentWord } = get();
 
     console.log(`[FETCH] Starting fetch for ${sectionKey}: ${url}`);
 
@@ -104,8 +104,8 @@ export const useWordRefStore = create((set, get) => ({
         selector,
         spellUrl,
         (newWord) => {
-          setWord(newWord);
-          handleSearch(newWord);
+          get().setWord(newWord);
+          get().handleSearch(newWord);
         },
         abortSignal
       );
@@ -176,7 +176,7 @@ export const useWordRefStore = create((set, get) => ({
   },
 
   handleSearch: async (searchWord) => {
-    const { isSearching, setIsSearching, markAllSectionsLoading, fetchContent, abortController, previousWord, sections } = get();
+    const { isSearching, setIsSearching, markAllSectionsLoading, fetchContent, abortController, previousWord, sections, openFirstIfAllCollapsed } = get();
     
     console.log('handleSearch called with:', searchWord, 'previousWord:', previousWord);
     
@@ -235,6 +235,9 @@ export const useWordRefStore = create((set, get) => ({
       // Use allSettled to handle individual fetch failures gracefully
       const results = await Promise.allSettled(fetchPromises);
       console.log('Search complete for:', trimmedWord);
+      
+      // Open first section if all collapsed AFTER search completes
+      openFirstIfAllCollapsed();
     } catch (error) {
       if (error.name === 'AbortError') {
         console.log('Search was cancelled');

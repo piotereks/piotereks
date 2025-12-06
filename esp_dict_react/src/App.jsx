@@ -7,9 +7,7 @@ import { SectionsList } from './components/SectionsList';
 
 export default function WordRefSearch() {
   const { 
-    word, 
     sections, 
-    setWord, 
     toggleSection, 
     collapseAll, 
     handleSearch, 
@@ -17,17 +15,14 @@ export default function WordRefSearch() {
     openFirstIfAllCollapsed
   } = useWordRefStore();
 
-  // Load initial word from URL on mount only
   useEffect(() => {
     const urlWord = getUrlParameter('word');
     if (urlWord) {
       const trimmed = urlWord.trim();
-      setWord(trimmed);
       handleSearch(trimmed);
     }
   }, []);
 
-  // After initial search, if RAE is empty and not loading, auto-retry
   useEffect(() => {
     if (
       sections.rae &&
@@ -39,30 +34,26 @@ export default function WordRefSearch() {
     }
   }, [sections.rae?.content, sections.rae?.loading, retrySection]);
 
-  // When word changes and search completes, open first section if all collapsed
   useEffect(() => {
-    if (word && !Object.values(sections).some(section => section.loading)) {
-      // Search is complete, open first section if all are collapsed
+    if (!Object.values(sections).some(section => section.loading)) {
       openFirstIfAllCollapsed();
     }
-  }, [word, sections, openFirstIfAllCollapsed]);
+  }, [sections, openFirstIfAllCollapsed]);
 
   useEffect(() => {
     const handlePopState = () => {
       const urlWord = getUrlParameter('word');
       if (urlWord) {
-        setWord(urlWord.trim());
         handleSearch(urlWord.trim());
       }
     };
 
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
-  }, [handleSearch, setWord]);
+  }, [handleSearch]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
-      {/* Header */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-2 shadow-lg">
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex items-center justify-center gap-2">
@@ -72,10 +63,9 @@ export default function WordRefSearch() {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 py-4">
-        <SearchBar word={word} setWord={setWord} onSearch={(searchWord) => handleSearch(searchWord)} />
-        <ExternalLinks word={word} onCollapseAll={collapseAll} onSearch={handleSearch} />
+        <SearchBar onSearch={handleSearch} />
+        <ExternalLinks onCollapseAll={collapseAll} onSearch={handleSearch} />
         <SectionsList sections={sections} onToggle={toggleSection} />
       </div>
     </div>
