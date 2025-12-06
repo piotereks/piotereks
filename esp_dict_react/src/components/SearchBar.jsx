@@ -1,8 +1,31 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Search } from 'lucide-react';
+import { getUrlParameter } from '../utils/urlUtils';
 
 export const SearchBar = ({ onSearch }) => {
   const inputRef = useRef(null);
+  const buttonRef = useRef(null);
+
+  // Sync search field with URL parameter on mount and when URL changes
+  useEffect(() => {
+    const urlWord = getUrlParameter('word');
+    if (urlWord && inputRef.current) {
+      inputRef.current.value = urlWord;
+    }
+  }, []);
+
+  // Also listen for popstate events (browser back/forward)
+  useEffect(() => {
+    const handlePopState = () => {
+      const urlWord = getUrlParameter('word');
+      if (urlWord && inputRef.current) {
+        inputRef.current.value = urlWord;
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   const performSearch = () => {
     const value = inputRef.current.value.trim();
@@ -14,7 +37,8 @@ export const SearchBar = ({ onSearch }) => {
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
       e.preventDefault();
-      performSearch();
+      // Trigger search button click to ensure all button handlers fire
+      buttonRef.current?.click();
     }
   };
 
@@ -33,6 +57,7 @@ export const SearchBar = ({ onSearch }) => {
         <Search className="absolute left-3 top-2.5 text-gray-400 w-4 h-4" />
       </div>
       <button 
+        ref={buttonRef}
         onClick={performSearch}
         className="px-5 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 active:scale-95 transition-all shadow-md hover:shadow-lg text-sm md:text-base"
       >

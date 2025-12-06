@@ -40,7 +40,7 @@ export const useWordRefStore = create((set, get) => ({
     return { sections: updated };
   }),
 
-  // Open first section if all are collapsed
+  // Open first section if all are collapsed (only on initial load or after search)
   openFirstIfAllCollapsed: () => set((state) => {
     const allCollapsed = Object.values(state.sections).every(section => !section.isOpen);
     if (allCollapsed) {
@@ -53,6 +53,17 @@ export const useWordRefStore = create((set, get) => ({
       };
     }
     return state;
+  }),
+
+  // Force open first section (used after search)
+  openFirstSection: () => set((state) => {
+    console.log('[STORE] Force opening first section (def)');
+    return {
+      sections: {
+        ...state.sections,
+        def: { ...state.sections.def, isOpen: true }
+      }
+    };
   }),
 
   setSectionLoading: (sectionKey, loading) => set((state) => {
@@ -233,11 +244,14 @@ export const useWordRefStore = create((set, get) => ({
       });
 
       // Use allSettled to handle individual fetch failures gracefully
-      const results = await Promise.allSettled(fetchPromises);
+      await Promise.allSettled(fetchPromises);
       console.log('Search complete for:', trimmedWord);
       
-      // Open first section if all collapsed AFTER search completes
-      openFirstIfAllCollapsed();
+      // Force open first section after search completes and content is set
+      setTimeout(() => {
+        console.log('[SEARCH] Forcing first section open after content load');
+        get().openFirstSection();
+      }, 100);
     } catch (error) {
       if (error.name === 'AbortError') {
         console.log('Search was cancelled');

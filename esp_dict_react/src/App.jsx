@@ -15,14 +15,19 @@ export default function WordRefSearch() {
     openFirstIfAllCollapsed
   } = useWordRefStore();
 
+  // On initial load, check URL for word parameter
   useEffect(() => {
     const urlWord = getUrlParameter('word');
     if (urlWord) {
       const trimmed = urlWord.trim();
       handleSearch(trimmed);
+    } else {
+      // If no URL parameter on initial load, open first section if all collapsed
+      openFirstIfAllCollapsed();
     }
-  }, []);
+  }, []); // Run only once on mount
 
+  // Auto-retry RAE if it's empty after initial load
   useEffect(() => {
     if (
       sections.rae &&
@@ -34,12 +39,7 @@ export default function WordRefSearch() {
     }
   }, [sections.rae?.content, sections.rae?.loading, retrySection]);
 
-  useEffect(() => {
-    if (!Object.values(sections).some(section => section.loading)) {
-      openFirstIfAllCollapsed();
-    }
-  }, [sections, openFirstIfAllCollapsed]);
-
+  // Handle browser back/forward navigation
   useEffect(() => {
     const handlePopState = () => {
       const urlWord = getUrlParameter('word');
