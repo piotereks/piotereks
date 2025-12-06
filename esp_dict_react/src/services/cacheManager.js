@@ -1,7 +1,7 @@
 const DB_NAME = 'wordref_cache';
 const STORE_NAME = 'content';
 const DB_VERSION = 1;
-const ONE_DAY_MS = 24 * 60 * 60 * 1000;
+export const ONE_DAY_MS = 24 * 60 * 60 * 1000;
 
 const initDB = () => {
   return new Promise((resolve, reject) => {

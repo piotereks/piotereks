@@ -5,8 +5,16 @@ const CACHE_DURATION = 365 * 24 * 60 * 60 * 1000; // 1 year in ms
 
 let dbInstance = null;
 
+export function __setDbInstanceForTest(instance) {
+  dbInstance = instance;
+}
+export function __resetDbInstanceForTest() {
+  dbInstance = null;
+}
+
 // Initialize database
-const initDB = () => {
+export async function initDB() {
+  if (dbInstance) return dbInstance;
   return new Promise((resolve, reject) => {
     if (dbInstance) {
       resolve(dbInstance);

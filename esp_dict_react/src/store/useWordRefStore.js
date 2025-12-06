@@ -3,7 +3,8 @@ import { SECTION_CONFIG } from '../config/sections';
 import { buildUrl, buildSpellUrl, updateUrlWithWord } from '../utils/urlUtils';
 import { fetchAndDisplayContent } from '../services/contentService';
 
-export const useWordRefStore = create((set, get) => ({
+// Factory function to create a fresh store instance
+export const createWordRefStore = () => create((set, get) => ({
   // State
   word: '',
   previousWord: '', // Track last searched word to avoid unnecessary reloads
@@ -164,19 +165,19 @@ export const useWordRefStore = create((set, get) => ({
   retrySection: async (sectionKey) => {
     const { retryMetadata, word, fetchContent } = get();
     const metadata = retryMetadata[sectionKey];
-    
+
     if (!metadata) {
       console.log(`[RETRY] No retry metadata for ${sectionKey}`);
       return;
     }
-    
+
     console.log(`[RETRY] Retrying ${sectionKey} with word: ${word}`);
     const { setSectionLoading } = get();
     setSectionLoading(sectionKey, true);
-    
+
     // Create a fresh AbortController for this retry (don't use the old one)
     const retryAbortController = new AbortController();
-    
+
     await fetchContent(
       metadata.url,
       sectionKey,
@@ -188,9 +189,9 @@ export const useWordRefStore = create((set, get) => ({
 
   handleSearch: async (searchWord) => {
     const { isSearching, setIsSearching, markAllSectionsLoading, fetchContent, abortController, previousWord, sections, openFirstIfAllCollapsed } = get();
-    
+
     console.log('handleSearch called with:', searchWord, 'previousWord:', previousWord);
-    
+
     // Abort previous fetch requests
     if (abortController) {
       console.log('Aborting previous search');
@@ -200,14 +201,14 @@ export const useWordRefStore = create((set, get) => ({
     // Create new AbortController for this search
     const newAbortController = new AbortController();
     set({ abortController: newAbortController });
-    
+
     if (!searchWord || !searchWord.trim()) {
       console.log('Empty search word, returning');
       return;
     }
 
     const trimmedWord = searchWord.trim();
-    
+
     // Check if word has changed
     if (trimmedWord === previousWord) {
       console.log(`[SKIP] Word unchanged (${trimmedWord}), only retrying RAE if needed`);
@@ -229,11 +230,11 @@ export const useWordRefStore = create((set, get) => ({
 
     setIsSearching(true);
     updateUrlWithWord(trimmedWord);
-    
+
     // Store current word as previous before starting new search
     set({ previousWord: trimmedWord });
     markAllSectionsLoading(); // Mark sections as loading, keep open/closed state
-    
+
     // Clear previous retry metadata for this search
     set({ retryMetadata: {} });
 
@@ -246,7 +247,7 @@ export const useWordRefStore = create((set, get) => ({
 
       // Get the definition fetch promise (first section)
       const defFetchPromise = fetchPromises[0];
-      
+
       // Wait for definition to complete, then open first section ONLY if all are currently closed
       defFetchPromise.then(() => {
         console.log('[SEARCH] Definition fetch complete, checking if should open first section');
@@ -271,7 +272,7 @@ export const useWordRefStore = create((set, get) => ({
       }
     } finally {
       setIsSearching(false);
-      
+
       // After search completes, check if RAE failed and auto-retry
       setTimeout(() => {
         const currentState = get();
@@ -286,3 +287,6 @@ export const useWordRefStore = create((set, get) => ({
     }
   }
 }));
+
+// Default singleton store for app usage
+export const useWordRefStore = createWordRefStore();
