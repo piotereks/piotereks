@@ -211,7 +211,7 @@ export const useWordRefStore = create((set, get) => ({
     // Check if word has changed
     if (trimmedWord === previousWord) {
       console.log(`[SKIP] Word unchanged (${trimmedWord}), only retrying RAE if needed`);
-      
+      openFirstIfAllCollapsed();      
       // Only retry RAE if it's empty or failed
       if (!sections.rae.content || sections.rae.content.includes('Error')) {
         console.log('[RETRY] RAE is empty/failed, retrying');
@@ -220,6 +220,7 @@ export const useWordRefStore = create((set, get) => ({
         const raeSelector = SECTION_CONFIG.find(s => s.key === 'rae').selector;
         await fetchContent(raeUrl, 'rae', raeSelector, undefined, newAbortController.signal);
         setIsSearching(false);
+
       }
       return;
     }
@@ -246,10 +247,17 @@ export const useWordRefStore = create((set, get) => ({
       // Get the definition fetch promise (first section)
       const defFetchPromise = fetchPromises[0];
       
-      // Wait for definition to complete, then open first section
+      // Wait for definition to complete, then open first section ONLY if all are currently closed
       defFetchPromise.then(() => {
-        console.log('[SEARCH] Definition fetch complete, opening first section');
+        console.log('[SEARCH] Definition fetch complete, checking if should open first section');
+        const currentState = get();
+        const allClosed = Object.values(currentState.sections).every(section => !section.isOpen);
+        if (allClosed) {
+          console.log('[SEARCH] All sections closed, opening first section');
         get().openFirstSection();
+        } else {
+          console.log('[SEARCH] Some sections already open, not forcing first section open');
+        }
       });
 
       // Continue with all fetches in parallel
