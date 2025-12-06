@@ -10,7 +10,7 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
+            "name": "esp/react chrome",
             "url": "http://localhost:5173",
             "webRoot": "${workspaceFolder}/esp_dict_react/src"
         }

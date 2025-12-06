@@ -40,7 +40,7 @@ export const useWordRefStore = create((set, get) => ({
     return { sections: updated };
   }),
 
-  // Open first section if all are collapsed
+  // Open first section if all are collapsed (only on initial load or after search)
   openFirstIfAllCollapsed: () => set((state) => {
     const allCollapsed = Object.values(state.sections).every(section => !section.isOpen);
     if (allCollapsed) {
@@ -53,6 +53,17 @@ export const useWordRefStore = create((set, get) => ({
       };
     }
     return state;
+  }),
+
+  // Force open first section (used after search)
+  openFirstSection: () => set((state) => {
+    console.log('[STORE] Force opening first section (def)');
+    return {
+      sections: {
+        ...state.sections,
+        def: { ...state.sections.def, isOpen: true }
+      }
+    };
   }),
 
   setSectionLoading: (sectionKey, loading) => set((state) => {
@@ -90,7 +101,7 @@ export const useWordRefStore = create((set, get) => ({
 
   // Complex actions
   fetchContent: async (url, sectionKey, selector, spellUrl, abortSignal) => {
-    const { setSectionContent, setSectionLoading, setWord, handleSearch, word: currentWord } = get();
+    const { setSectionContent, setSectionLoading, word: currentWord } = get();
 
     console.log(`[FETCH] Starting fetch for ${sectionKey}: ${url}`);
 
@@ -104,8 +115,8 @@ export const useWordRefStore = create((set, get) => ({
         selector,
         spellUrl,
         (newWord) => {
-          setWord(newWord);
-          handleSearch(newWord);
+          get().setWord(newWord);
+          get().handleSearch(newWord);
         },
         abortSignal
       );
@@ -176,7 +187,7 @@ export const useWordRefStore = create((set, get) => ({
   },
 
   handleSearch: async (searchWord) => {
-    const { isSearching, setIsSearching, markAllSectionsLoading, fetchContent, abortController, previousWord, sections } = get();
+    const { isSearching, setIsSearching, markAllSectionsLoading, fetchContent, abortController, previousWord, sections, openFirstIfAllCollapsed } = get();
     
     console.log('handleSearch called with:', searchWord, 'previousWord:', previousWord);
     
@@ -200,7 +211,7 @@ export const useWordRefStore = create((set, get) => ({
     // Check if word has changed
     if (trimmedWord === previousWord) {
       console.log(`[SKIP] Word unchanged (${trimmedWord}), only retrying RAE if needed`);
-      
+      openFirstIfAllCollapsed();      
       // Only retry RAE if it's empty or failed
       if (!sections.rae.content || sections.rae.content.includes('Error')) {
         console.log('[RETRY] RAE is empty/failed, retrying');
@@ -209,6 +220,7 @@ export const useWordRefStore = create((set, get) => ({
         const raeSelector = SECTION_CONFIG.find(s => s.key === 'rae').selector;
         await fetchContent(raeUrl, 'rae', raeSelector, undefined, newAbortController.signal);
         setIsSearching(false);
+
       }
       return;
     }
@@ -232,8 +244,24 @@ export const useWordRefStore = create((set, get) => ({
         return fetchContent(url, section.key, section.selector, spellUrl, newAbortController.signal);
       });
 
-      // Use allSettled to handle individual fetch failures gracefully
-      const results = await Promise.allSettled(fetchPromises);
+      // Get the definition fetch promise (first section)
+      const defFetchPromise = fetchPromises[0];
+      
+      // Wait for definition to complete, then open first section ONLY if all are currently closed
+      defFetchPromise.then(() => {
+        console.log('[SEARCH] Definition fetch complete, checking if should open first section');
+        const currentState = get();
+        const allClosed = Object.values(currentState.sections).every(section => !section.isOpen);
+        if (allClosed) {
+          console.log('[SEARCH] All sections closed, opening first section');
+        get().openFirstSection();
+        } else {
+          console.log('[SEARCH] Some sections already open, not forcing first section open');
+        }
+      });
+
+      // Continue with all fetches in parallel
+      await Promise.allSettled(fetchPromises);
       console.log('Search complete for:', trimmedWord);
     } catch (error) {
       if (error.name === 'AbortError') {

@@ -219,7 +219,8 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
         };
       }
       
-      // No spell suggestions found - don't cache
+      // No spell suggestions found - don't cache empty result
+      console.log('No content and no spell suggestions - not caching');
       return {
         html: 'No content found.',
         hasContent: false
@@ -228,9 +229,12 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
     
     if (content) {
       setupLinksOnContent(content, onWordClick);
-      // Only cache if we have actual content - don't cache empty results
+      // ONLY cache if we have actual content - don't cache empty results
       if (hasContent) {
+        console.log('Content found and caching for:', cacheKey);
         await cacheContent(cacheKey, html);
+      } else {
+        console.log('No actual content - NOT caching for:', cacheKey);
       }
     }
     
