@@ -1,24 +1,30 @@
 // Tests for SearchBar.jsx
 
+import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { SearchBar } from '../../src/components/SearchBar';
+
+// ---------------------------
+//  APPLY MOCKS (must be before import)
+// ---------------------------
 
 // Mock lucide-react
 jest.mock('lucide-react', () => ({
-  Search: (props) => <svg data-testid="search-icon" {...props} />
+  Search: (props) => <svg data-testid="search-icon" {...props} />,
 }));
 
 // Mock getUrlParameter
-let getUrlParameterMock = jest.fn();
-jest.mock('../utils/urlUtils', () => ({
-  getUrlParameter: (...args) => getUrlParameterMock(...args)
+jest.mock('../../src/utils/urlUtils', () => ({
+  getUrlParameter: jest.fn(),
 }));
+
+// Import after mocks
+import { SearchBar } from '../../src/components/SearchBar';
+import * as urlUtils from '../../src/utils/urlUtils';
 
 describe('SearchBar', () => {
   beforeEach(() => {
     jest.clearAllMocks();
-    getUrlParameterMock = jest.fn();
   });
 
   it('renders input, label, button, and icon', () => {
@@ -39,7 +45,7 @@ describe('SearchBar', () => {
   it('sets input value from URL parameter on mount', () => {
 
     // Arrange
-    getUrlParameterMock.mockReturnValue('foo');
+    urlUtils.getUrlParameter.mockReturnValue('foo');
     const onSearch = jest.fn();
 
     // Act
@@ -53,7 +59,7 @@ describe('SearchBar', () => {
   it('does not set input value if URL parameter is empty', () => {
 
     // Arrange
-    getUrlParameterMock.mockReturnValue('');
+    urlUtils.getUrlParameter.mockReturnValue('');
     const onSearch = jest.fn();
 
     // Act
@@ -67,7 +73,7 @@ describe('SearchBar', () => {
   it('updates input value on popstate event', () => {
 
     // Arrange
-    getUrlParameterMock.mockReturnValueOnce('').mockReturnValueOnce('bar');
+    urlUtils.getUrlParameter.mockReturnValueOnce('').mockReturnValueOnce('bar');
     const onSearch = jest.fn();
     render(<SearchBar onSearch={onSearch} />);
     const input = screen.getByPlaceholderText('Enter word...');
@@ -82,7 +88,7 @@ describe('SearchBar', () => {
   it('removes popstate event listener on unmount', () => {
 
     // Arrange
-    getUrlParameterMock.mockReturnValue('');
+    urlUtils.getUrlParameter.mockReturnValue('');
     const addSpy = jest.spyOn(window, 'addEventListener');
     const removeSpy = jest.spyOn(window, 'removeEventListener');
     const onSearch = jest.fn();
@@ -101,7 +107,7 @@ describe('SearchBar', () => {
   it('calls onSearch with trimmed value when button is clicked', () => {
 
     // Arrange
-    getUrlParameterMock.mockReturnValue('');
+    urlUtils.getUrlParameter.mockReturnValue('');
     const onSearch = jest.fn();
     render(<SearchBar onSearch={onSearch} />);
     const input = screen.getByPlaceholderText('Enter word...');
@@ -118,7 +124,7 @@ describe('SearchBar', () => {
   it('does not call onSearch if input is empty or whitespace', () => {
 
     // Arrange
-    getUrlParameterMock.mockReturnValue('');
+    urlUtils.getUrlParameter.mockReturnValue('');
     const onSearch = jest.fn();
     render(<SearchBar onSearch={onSearch} />);
     const input = screen.getByPlaceholderText('Enter word...');
@@ -135,7 +141,7 @@ describe('SearchBar', () => {
   it('handles Enter keydown and triggers button click', () => {
 
     // Arrange
-    getUrlParameterMock.mockReturnValue('');
+    urlUtils.getUrlParameter.mockReturnValue('');
     const onSearch = jest.fn();
     render(<SearchBar onSearch={onSearch} />);
     const input = screen.getByPlaceholderText('Enter word...');
@@ -156,7 +162,7 @@ describe('SearchBar', () => {
   it('does not trigger button click on non-Enter keydown', () => {
 
     // Arrange
-    getUrlParameterMock.mockReturnValue('');
+    urlUtils.getUrlParameter.mockReturnValue('');
     const onSearch = jest.fn();
     render(<SearchBar onSearch={onSearch} />);
     const input = screen.getByPlaceholderText('Enter word...');
@@ -176,11 +182,14 @@ describe('SearchBar', () => {
   it('handles missing buttonRef gracefully on Enter', () => {
 
     // Arrange
-    getUrlParameterMock.mockReturnValue('');
+    urlUtils.getUrlParameter.mockReturnValue('');
     const onSearch = jest.fn();
+
     // Patch React.useRef to simulate missing buttonRef.current
     const realUseRef = React.useRef;
-    let inputRefObj, buttonRefObj;
+    let inputRefObj;
+    let buttonRefObj;
+
     jest.spyOn(React, 'useRef').mockImplementation((init) => {
       if (init === null && !inputRefObj) {
         inputRefObj = { current: null };

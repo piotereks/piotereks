@@ -1,5 +1,6 @@
 import { getCachedContent, cacheContent, generateCacheKey } from './cacheService';
 
+
 const MAX_RETRIES = 2;
 const RETRY_DELAY = 1000; // 1 second
 const FETCH_TIMEOUT = 15000; // 15 seconds
@@ -149,23 +150,26 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
     
     // Check cache first
     const cachedContent = await getCachedContent(cacheKey);
-    
+
     if (cachedContent) {
       console.log('Using cached content for:', cacheKey);
       const parser = new DOMParser();
       const doc = parser.parseFromString(cachedContent, 'text/html');
       const content = doc.querySelector(selector);
-      
-      if (content) {
-        setupLinksOnContent(content, onWordClick);
-        const hasContent = content.innerText && content.innerText.trim();
-        return {
-          html: content.innerHTML,
-          hasContent: !!hasContent
-        };
-      }
+
+        if (content) {
+            setupLinksOnContent(content, onWordClick);
+
+            const text = content.textContent;
+            const hasContent = text && text.trim().length > 0;
+
+            return {
+                html: content.innerHTML,
+                hasContent: !!hasContent
+            };
+        }
     }
-    
+
     // Fetch from network if not cached
     console.log('Fetching from network:', url);
     const html = await fetchHtml(url, 0, abortSignal);
@@ -202,7 +206,8 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
     }
     
     // Check if we got content
-    const hasContent = content && content.innerText && content.innerText.trim();
+    const text = content.textContent;
+    const hasContent = text && text.trim().length > 0;
     
     if (!hasContent && spellUrl) {
       console.log('No content found, trying spell suggestions');
