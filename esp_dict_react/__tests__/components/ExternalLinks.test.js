@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { render, screen, fireEvent, act } from '@testing-library/react';
-import { ExternalLinks } from './components/ExternalLinks';
+import { ExternalLinks } from '../../src/../src/components/ExternalLinks';
 
 // Mock lucide-react icons
 jest.mock('lucide-react', () => ({
@@ -12,7 +12,7 @@ jest.mock('lucide-react', () => ({
 }));
 
 // Mock SECTION_CONFIG
-jest.mock('../config/sections', () => ({
+jest.mock('../../src/config/sections', () => ({
   SECTION_CONFIG: [
     { key: 'rae', baseUrl: 'https://rae.es/', label: 'RAE' },
     { key: 'wr', baseUrl: 'https://wordreference.com/', label: 'WR' }
@@ -21,27 +21,36 @@ jest.mock('../config/sections', () => ({
 
 // Mock buildUrl
 let mockBuildUrl;
-jest.mock('../utils/urlUtils', () => {
+jest.mock('../../src/utils/urlUtils', () => {
   return {
     buildUrl: (...args) => mockBuildUrl(...args)
   };
 });
 
 // Mock cacheManager
-const clearCacheOlderThanDay = jest.fn().mockResolvedValue();
-const clearAllCache = jest.fn().mockResolvedValue();
-let shouldShowCacheClearButtons = jest.fn();
-let showOnlyClearAll = jest.fn();
-let showClearDayButton = jest.fn();
-let showClearAllButton = jest.fn();
-jest.mock('../services/cacheManager', () => ({
-  clearCacheOlderThanDay: (...args) => clearCacheOlderThanDay(...args),
-  clearAllCache: (...args) => clearAllCache(...args),
-  shouldShowCacheClearButtons: (...args) => shouldShowCacheClearButtons(...args),
-  showOnlyClearAll: (...args) => showOnlyClearAll(...args),
-  showClearDayButton: (...args) => showClearDayButton(...args),
-  showClearAllButton: (...args) => showClearAllButton(...args)
-}));
+let mockClearCacheOlderThanDay;
+let mockClearAllCache;
+let mockShouldShowCacheClearButtons;
+let mockShowOnlyClearAll;
+let mockShowClearDayButton;
+let mockShowClearAllButton;
+
+jest.mock('../../src/services/cacheManager', () => {
+  mockClearCacheOlderThanDay = jest.fn().mockResolvedValue();
+  mockClearAllCache = jest.fn().mockResolvedValue();
+  mockShouldShowCacheClearButtons = jest.fn();
+  mockShowOnlyClearAll = jest.fn();
+  mockShowClearDayButton = jest.fn();
+  mockShowClearAllButton = jest.fn();
+  return {
+    clearCacheOlderThanDay: (...args) => mockClearCacheOlderThanDay(...args),
+    clearAllCache: (...args) => mockClearAllCache(...args),
+    shouldShowCacheClearButtons: (...args) => mockShouldShowCacheClearButtons(...args),
+    showOnlyClearAll: (...args) => mockShowOnlyClearAll(...args),
+    showClearDayButton: (...args) => mockShowClearDayButton(...args),
+    showClearAllButton: (...args) => mockShowClearAllButton(...args)
+  };
+});
 
 beforeEach(() => {
   jest.clearAllMocks();

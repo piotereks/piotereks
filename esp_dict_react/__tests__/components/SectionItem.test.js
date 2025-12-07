@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { SectionItem } from '../../components/SectionItem';
+import { SectionItem } from '../../src/components/SectionItem';
 
 // Mock lucide-react
 jest.mock('lucide-react', () => ({

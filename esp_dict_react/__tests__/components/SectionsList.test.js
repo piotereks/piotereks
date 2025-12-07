@@ -7,7 +7,7 @@ import {
   fetchAndDisplayContent
 } from './contentService';
 
-import * as cacheService from '../../components/cacheService';
+import * as cacheService from '../../src/components/cacheService';
 
 // Mock global fetch and DOMParser
 global.fetch = jest.fn();
