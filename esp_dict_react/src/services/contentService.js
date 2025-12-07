@@ -160,8 +160,8 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
         if (content) {
             setupLinksOnContent(content, onWordClick);
 
-            const text = content.textContent;
-            const hasContent = text && text.trim().length > 0;
+            const hasContent = content?.textContent?.trim().length > 0;
+            const text = content?.textContent || '';
 
             return {
                 html: content.innerHTML,
@@ -206,8 +206,8 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
     }
     
     // Check if we got content
-    const text = content.textContent;
-    const hasContent = text && text.trim().length > 0;
+  const hasContent = content?.textContent?.trim().length > 0;
+  const text = content?.textContent || '';
     
     if (!hasContent && spellUrl) {
       console.log('No content found, trying spell suggestions');
