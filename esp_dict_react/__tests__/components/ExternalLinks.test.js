@@ -51,7 +51,7 @@ jest.mock('../../src/services/cacheManager', () => {
     showClearAllButton: (...args) => mockShowClearAllButton(...args)
   };
 });
-
+ 
 beforeEach(() => {
   jest.clearAllMocks();
   shouldShowCacheClearButtons = jest.fn();
