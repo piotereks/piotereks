@@ -120,7 +120,8 @@ export const createWordRefStore = () => create((set, get) => ({
           get().handleSearch(newWord);
         },
         sectionKey,
-        abortSignal
+        abortSignal,
+        currentWord
       );
 
       // Only update section if word matches current store word
