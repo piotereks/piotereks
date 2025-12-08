@@ -121,7 +121,7 @@ export const createWordRefStore = () => create((set, get) => ({
         },
         sectionKey,
         abortSignal,
-        currentWord
+        currentWord || urlWord || ''
       );
 
       // Only update section if word matches current store word

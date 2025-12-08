@@ -146,9 +146,17 @@ export const fetchSpellSuggestions = async (spellUrl, onWordClick) => {
 export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClick, sectionKey, abortSignal = null, word = '') => {
     try {
         // Extract word from URL if not provided
-        if (!word) {
-            const wordMatch = url.match(/[?&](?:w|word|v|spen)=([^&]+)/) || url.match(/sinonimos\/([^/]+)/) || url.match(/definicion\/([^/]+)/);
-            if (wordMatch) {
+        if (!word || word.trim() === '') {
+            // Try different URL patterns
+            let wordMatch = url.match(/[?&]w=([^&]+)/); // def with w=
+            if (!wordMatch) wordMatch = url.match(/[?&]word=([^&]+)/); // generic word=
+            if (!wordMatch) wordMatch = url.match(/[?&]v=([^&]+)/); // con with v=
+            if (!wordMatch) wordMatch = url.match(/[?&]spen=([^&]+)/); // spen with spen=
+            if (!wordMatch) wordMatch = url.match(/\/sinonimos\/([^/?]+)/); // sin with /sinonimos/word
+            if (!wordMatch) wordMatch = url.match(/\/definicion\/([^/?]+)/); // def with /definicion/word
+            if (!wordMatch) wordMatch = url.match(/\/conj\/esverbs\.aspx\?v=([^&]+)/); // con conjugation
+
+            if (wordMatch && wordMatch[1]) {
                 word = decodeURIComponent(wordMatch[1]);
             }
         }
@@ -184,23 +192,23 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
         // If fetch failed, try spell check if available
         if (!html) {
             console.error('Fetch returned null for section:', sectionKey);
-            if (spellUrl) {
-                try {
-                    const table = await fetchSpellSuggestions(spellUrl, onWordClick);
-                    if (table) {
-                        setupLinksOnContent(table, onWordClick);
-                        return {
-                            html: table.outerHTML,
-                            hasContent: true
-                        };
-                    }
-                } catch (spellError) {
-                    console.error('Spell suggestions also failed:', spellError);
-                }
-            }
 
             // If def section has no content and spell suggestions failed, abort RAE
             if (sectionKey === 'def') {
+                if (spellUrl) {
+                    try {
+                        const table = await fetchSpellSuggestions(spellUrl, onWordClick);
+                        if (table) {
+                            setupLinksOnContent(table, onWordClick);
+                            return {
+                                html: table.outerHTML,
+                                hasContent: true
+                            };
+                        }
+                    } catch (spellError) {
+                        console.error('Spell suggestions also failed:', spellError);
+                    }
+                }
                 console.log('[404-DEF] Definition returned 404 and spell suggestions failed, aborting RAE fetch');
                 if (abortSignal) {
                     abortSignal.abort();
@@ -210,7 +218,7 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
                 throw error;
             }
 
-            // For sin, con, spen - use "No content found" on 404
+            // For sin, con, spen - use "No content found for {word}" on 404
             if (['sin', 'con', 'spen'].includes(sectionKey)) {
                 return {
                     html: `No content found for "${word}"`,
@@ -271,7 +279,7 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
             // Default message
             console.log('No content and no spell suggestions - not caching');
             return {
-                html: 'No content found.',
+                html: `No content found for "${word}"`,
                 hasContent: false
             };
         }
@@ -288,7 +296,7 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
         }
 
         return {
-            html: hasContent ? content.innerHTML : 'No content found.',
+            html: hasContent ? content.innerHTML : `No content found for "${word}"`,
             hasContent: !!hasContent
         };
     } catch (error) {

@@ -533,3 +533,416 @@ it('fetches from network and caches if content found', async () => {
         expect(result).toEqual({ html: 'Error fetching content.', hasContent: false });
     });
 });
+
+// Updated __tests__/services/contentService.test.js - Add these new tests
+
+describe('fetchAndDisplayContent - 404 handling and "No content found" messages', () => {
+    let parserMock, docMock, contentMock, onWordClick;
+
+    beforeEach(() => {
+        jest.clearAllMocks();
+        onWordClick = jest.fn();
+        contentMock = {
+            querySelector: jest.fn().mockReturnValue(null),
+            innerText: '',
+            innerHTML: ''
+        };
+        docMock = {
+            querySelector: jest.fn().mockReturnValue(contentMock)
+        };
+        parserMock = {
+            parseFromString: jest.fn().mockReturnValue(docMock)
+        };
+        global.DOMParser.mockImplementation(() => parserMock);
+        jest.spyOn(cacheService, 'generateCacheKey').mockImplementation((url, sel) => `key:${url}:${sel}`);
+        jest.spyOn(cacheService, 'getCachedContent').mockResolvedValue(null);
+        jest.spyOn(cacheService, 'cacheContent').mockResolvedValue();
+        jest.spyOn(console, 'log').mockImplementation(() => {});
+        jest.spyOn(console, 'error').mockImplementation(() => {});
+    });
+
+    it('returns "No content found for \\"word\\"" for sin section on 404', async () => {
+        // Arrange
+        cacheService.getCachedContent.mockResolvedValueOnce(null);
+        jest.spyOn(global, 'fetch').mockResolvedValueOnce({
+            ok: false,
+            status: 404
+        });
+
+        // Act
+        const result = await fetchAndDisplayContent(
+            'https://example.com/sinonimos/gato',
+            '#main',
+            null,
+            onWordClick,
+            'sin',
+            null,
+            'gato'
+        );
+
+        // Assert
+        expect(result).toEqual({
+            html: 'No content found for "gato"',
+            hasContent: false
+        });
+    });
+
+    it('returns "No content found for \\"word\\"" for con section on 404', async () => {
+        // Arrange
+        cacheService.getCachedContent.mockResolvedValueOnce(null);
+        jest.spyOn(global, 'fetch').mockResolvedValueOnce({
+            ok: false,
+            status: 404
+        });
+
+        // Act
+        const result = await fetchAndDisplayContent(
+            'https://example.com/conj/esverbs.aspx?v=perro',
+            '#main',
+            null,
+            onWordClick,
+            'con',
+            null,
+            'perro'
+        );
+
+        // Assert
+        expect(result).toEqual({
+            html: 'No content found for "perro"',
+            hasContent: false
+        });
+    });
+
+    it('returns "No content found for \\"word\\"" for spen section on 404', async () => {
+        // Arrange
+        cacheService.getCachedContent.mockResolvedValueOnce(null);
+        jest.spyOn(global, 'fetch').mockResolvedValueOnce({
+            ok: false,
+            status: 404
+        });
+
+        // Act
+        const result = await fetchAndDisplayContent(
+            'https://example.com/es/en/translation.asp?spen=casa',
+            '#main',
+            null,
+            onWordClick,
+            'spen',
+            null,
+            'casa'
+        );
+
+        // Assert
+        expect(result).toEqual({
+            html: 'No content found for "casa"',
+            hasContent: false
+        });
+    });
+
+    it('extracts word from URL if not provided for sin', async () => {
+        // Arrange
+        cacheService.getCachedContent.mockResolvedValueOnce(null);
+        jest.spyOn(global, 'fetch').mockResolvedValueOnce({
+            ok: false,
+            status: 404
+        });
+
+        // Act
+        const result = await fetchAndDisplayContent(
+            'https://example.com/sinonimos/libro',
+            '#main',
+            null,
+            onWordClick,
+            'sin',
+            null
+            // word not provided - should be extracted from URL
+        );
+
+        // Assert
+        expect(result).toEqual({
+            html: 'No content found for "libro"',
+            hasContent: false
+        });
+    });
+
+    it('extracts word from URL with ?v= parameter', async () => {
+        // Arrange
+        cacheService.getCachedContent.mockResolvedValueOnce(null);
+        jest.spyOn(global, 'fetch').mockResolvedValueOnce({
+            ok: false,
+            status: 404
+        });
+
+        // Act
+        const result = await fetchAndDisplayContent(
+            'https://example.com/conj/esverbs.aspx?v=hablar',
+            '#main',
+            null,
+            onWordClick,
+            'con',
+            null
+            // word not provided
+        );
+
+        // Assert
+        expect(result).toEqual({
+            html: 'No content found for "hablar"',
+            hasContent: false
+        });
+    });
+
+    it('throws error with isDefinitionNotFound flag when def 404 and spell suggestions fail', async () => {
+        // Arrange
+        cacheService.getCachedContent.mockResolvedValueOnce(null);
+        jest.spyOn(global, 'fetch').mockResolvedValueOnce({
+            ok: false,
+            status: 404
+        });
+        const spellUrl = 'spell/url';
+        global.fetch.mockResolvedValueOnce({
+            text: jest.fn().mockResolvedValue('<div>no table</div>')
+        });
+        parserMock.parseFromString.mockReturnValueOnce({ querySelector: jest.fn().mockReturnValue(null) });
+
+        // Act & Assert
+        await expect(
+            fetchAndDisplayContent(
+                'https://example.com/definicion/inexistente',
+                '#main',
+                spellUrl,
+                onWordClick,
+                'def',
+                null,
+                'inexistente'
+            )
+        ).rejects.toThrow();
+    });
+
+    it('returns spell suggestions when def 404 but spell suggestions succeed', async () => {
+        // Arrange
+        cacheService.getCachedContent.mockResolvedValueOnce(null);
+        jest.spyOn(global, 'fetch').mockResolvedValueOnce({
+            ok: false,
+            status: 404
+        });
+
+        const spellTable = document.createElement('table');
+        spellTable.innerHTML = '<tr><td><a href="correcto">correcto</a></td></tr>';
+
+        global.fetch.mockResolvedValueOnce({
+            text: jest.fn().mockResolvedValue('<table><tr><td><a href="correcto">correcto</a></td></tr></table>')
+        });
+        parserMock.parseFromString.mockReturnValueOnce({
+            querySelector: jest.fn().mockReturnValue(spellTable)
+        });
+
+        // Act
+        const result = await fetchAndDisplayContent(
+            'https://example.com/definicion/incorrecta',
+            '#main',
+            'spell/url',
+            onWordClick,
+            'def',
+            null,
+            'incorrecta'
+        );
+
+        // Assert
+        expect(result.hasContent).toBe(true);
+        expect(result.html).toContain('correcto');
+    });
+
+    it('returns "No content found for \\"word\\"" for sin section when no spell suggestions', async () => {
+        // Arrange
+        const emptyContent = document.createElement('div');
+        emptyContent.id = 'main';
+        emptyContent.innerHTML = '';
+
+        cacheService.getCachedContent.mockResolvedValueOnce(null);
+        jest.spyOn(global, 'fetch').mockResolvedValueOnce({
+            ok: true,
+            text: jest.fn().mockResolvedValue('<div id="main"></div>')
+        });
+
+        docMock.querySelector.mockReturnValueOnce(emptyContent);
+        parserMock.parseFromString.mockReturnValueOnce(docMock);
+
+        // Act
+        const result = await fetchAndDisplayContent(
+            'https://example.com/sinonimos/xyz',
+            '#main',
+            null,
+            onWordClick,
+            'sin',
+            null,
+            'xyz'
+        );
+
+        // Assert
+        expect(result).toEqual({
+            html: 'No content found for "xyz"',
+            hasContent: false
+        });
+    });
+});
+
+// Updated __tests__/store/useWordRefStore.test.js - Add these new tests
+
+describe('handleSearch - RAE abort on def 404', () => {
+    beforeEach(() => {
+        jest.clearAllMocks();
+        jest.spyOn(console, 'error').mockImplementation(() => {});
+        act(() => {
+            useWordRefStore.setState(useWordRefStore.getInitialState(), true);
+        });
+    });
+
+    it('aborts RAE fetch when def returns 404 and spell fails', async () => {
+        // Arrange
+        const abortSpy = jest.fn();
+        const defError = new Error('Definition not found and spell suggestions failed - aborting RAE');
+        defError.isDefinitionNotFound = true;
+
+        urlUtils.buildUrl.mockImplementation((baseUrl, word) => `${baseUrl}?w=${word}`);
+        urlUtils.buildSpellUrl.mockImplementation((word) => `spell/${word}`);
+
+        contentService.fetchAndDisplayContent
+            .mockRejectedValueOnce(defError) // def fails
+            .mockResolvedValueOnce({ html: 'rae content' }); // rae would resolve but gets aborted
+
+        // Mock AbortController
+        const originalAbortController = global.AbortController;
+        global.AbortController = jest.fn(() => ({
+            abort: abortSpy,
+            signal: {}
+        }));
+
+        // Act
+        await act(async () => {
+            await useWordRefStore.getState().handleSearch('nonexistent');
+        });
+
+        // Assert
+        expect(abortSpy).toHaveBeenCalled();
+
+        global.AbortController = originalAbortController;
+    });
+
+    it('does not abort RAE when def 404 but spell suggestions work', async () => {
+        // Arrange
+        const abortSpy = jest.fn();
+
+        urlUtils.buildUrl.mockImplementation((baseUrl, word) => `${baseUrl}?w=${word}`);
+        urlUtils.buildSpellUrl.mockImplementation((word) => `spell/${word}`);
+
+        contentService.fetchAndDisplayContent
+            .mockResolvedValueOnce({ html: '<table>spell</table>', hasContent: true }) // def with spell
+            .mockResolvedValueOnce({ html: 'rae content' }) // rae completes normally
+            .mockResolvedValueOnce({ html: 'other' })
+            .mockResolvedValueOnce({ html: 'other' })
+            .mockResolvedValueOnce({ html: 'other' });
+
+        // Mock AbortController
+        const originalAbortController = global.AbortController;
+        global.AbortController = jest.fn(() => ({
+            abort: abortSpy,
+            signal: {}
+        }));
+
+        // Act
+        await act(async () => {
+            await useWordRefStore.getState().handleSearch('palabra');
+        });
+
+        // Assert
+        expect(abortSpy).not.toHaveBeenCalled();
+
+        global.AbortController = originalAbortController;
+    });
+});
+
+describe('fetchContent - Definition not found handling', () => {
+    beforeEach(() => {
+        jest.clearAllMocks();
+        jest.spyOn(console, 'error').mockImplementation(() => {});
+        act(() => {
+            useWordRefStore.setState(useWordRefStore.getInitialState(), true);
+        });
+    });
+
+    it('sets "No content found" when def error is caught', async () => {
+        // Arrange
+        const defError = new Error('Definition not found');
+        defError.isDefinitionNotFound = true;
+
+        contentService.fetchAndDisplayContent.mockRejectedValueOnce(defError);
+        useWordRefStore.setState({ word: 'test' });
+
+        // Act
+        await act(async () => {
+            await useWordRefStore.getState().fetchContent(
+                'https://example.com/definicion/test',
+                'def',
+                '.selector',
+                undefined,
+                null
+            );
+        });
+
+        // Assert
+        expect(useWordRefStore.getState().sections.def.content).toBe('No content found.');
+    });
+
+    it('sets "No content found for \\"word\\"" for sin/con/spen sections on error', async () => {
+        // Arrange
+        contentService.fetchAndDisplayContent.mockResolvedValueOnce({
+            html: 'No content found for "prueba"',
+            hasContent: false
+        });
+        useWordRefStore.setState({ word: 'prueba' });
+
+        // Act
+        await act(async () => {
+            await useWordRefStore.getState().fetchContent(
+                'https://example.com/sinonimos/prueba',
+                'sin',
+                '.selector',
+                undefined,
+                null
+            );
+        });
+
+        // Assert
+        expect(useWordRefStore.getState().sections.sin.content).toBe('No content found for "prueba"');
+    });
+});
+
+describe('handleSearch - abortSignal only for RAE', () => {
+    beforeEach(() => {
+        jest.clearAllMocks();
+        urlUtils.buildUrl.mockImplementation((baseUrl, word) => `${baseUrl}?w=${word}`);
+        urlUtils.buildSpellUrl.mockImplementation((word) => `spell/${word}`);
+        contentService.fetchAndDisplayContent.mockResolvedValue({ html: 'content' });
+    });
+
+    it('passes abortSignal only to RAE section, null to others', async () => {
+        // Act
+        await act(async () => {
+            await useWordRefStore.getState().handleSearch('word');
+        });
+
+        // Assert
+        const calls = contentService.fetchAndDisplayContent.mock.calls;
+
+        // def should have null signal
+        expect(calls[0][5]).toBeNull(); // abortSignal for def
+
+        // rae should have AbortSignal
+        expect(calls[3][5]).toEqual(expect.any(AbortSignal)); // abortSignal for rae
+
+        // others should have null
+        expect(calls[1][5]).toBeNull(); // sin
+        expect(calls[2][5]).toBeNull(); // spen
+        expect(calls[4][5]).toBeNull(); // con
+    });
+});
