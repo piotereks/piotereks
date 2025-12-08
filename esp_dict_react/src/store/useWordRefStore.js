@@ -192,13 +192,13 @@ export const createWordRefStore = () => create((set, get) => ({
 
     console.log('handleSearch called with:', searchWord, 'previousWord:', previousWord);
 
-    // Abort previous fetch requests
+    // Abort previous RAE fetch request only
     if (abortController) {
-      console.log('Aborting previous search');
+      console.log('Aborting previous RAE search');
       abortController.abort();
     }
 
-    // Create new AbortController for this search
+    // Create new AbortController for RAE fetch only
     const newAbortController = new AbortController();
     set({ abortController: newAbortController });
 
@@ -242,7 +242,11 @@ export const createWordRefStore = () => create((set, get) => ({
       const fetchPromises = SECTION_CONFIG.map(section => {
         const url = buildUrl(section.baseUrl, trimmedWord);
         const spellUrl = section.hasSpellCheck ? buildSpellUrl(trimmedWord) : undefined;
-        return fetchContent(url, section.key, section.selector, spellUrl, newAbortController.signal);
+
+        // Only pass abortSignal for RAE section
+        const signal = section.key === 'rae' ? newAbortController.signal : null;
+
+        return fetchContent(url, section.key, section.selector, spellUrl, signal);
       });
 
       // Get the definition fetch promise (first section)

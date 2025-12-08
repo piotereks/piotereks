@@ -144,7 +144,7 @@ export const fetchSpellSuggestions = async (spellUrl, onWordClick) => {
   }
 };
 
-export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClick, abortSignal = null) => {
+export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClick, sectionKey, abortSignal = null) => {
   try {
     const cacheKey = generateCacheKey(url, selector);
     
@@ -172,7 +172,7 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
 
     // Fetch from network if not cached
     console.log('Fetching from network:', url);
-    const html = await fetchHtml(url, 0, abortSignal);
+    const html = await fetchHtml(url, 0, sectionKey === 'rae' ? abortSignal : null);
     
     // If fetch failed, try spell check if available
     if (!html) {
@@ -206,8 +206,8 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
     }
     
     // Check if we got content
-  const hasContent = content?.textContent?.trim().length > 0;
-  const text = content?.textContent || '';
+    const hasContent = content?.textContent?.trim().length > 0;
+    const text = content?.textContent || '';
     
     if (!hasContent && spellUrl) {
       console.log('No content found, trying spell suggestions');
