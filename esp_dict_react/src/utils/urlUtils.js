@@ -9,6 +9,8 @@ export const buildSpellUrl = (word) => {
 export const updateUrlWithWord = (word) => {
   const newUrl = `${window.location.pathname}?word=${encodeURIComponent(word)}`;
   window.history.pushState(null, '', newUrl);
+  // Dispatch custom event to notify SearchBar of URL change
+  window.dispatchEvent(new CustomEvent('url-changed', { detail: { word } }));
 };
 
 export const getUrlParameter = (name) => {

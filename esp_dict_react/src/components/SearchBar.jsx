@@ -6,7 +6,7 @@ export const SearchBar = ({ onSearch }) => {
   const inputRef = useRef(null);
   const buttonRef = useRef(null);
 
-  // Sync search field with URL parameter on mount and when URL changes
+  // Sync search field with URL parameter on mount
   useEffect(() => {
     const urlWord = getUrlParameter('word');
     if (urlWord && inputRef.current) {
@@ -14,17 +14,30 @@ export const SearchBar = ({ onSearch }) => {
     }
   }, []);
 
-  // Also listen for popstate events (browser back/forward)
+  // Listen for URL changes (from link clicks or history changes)
   useEffect(() => {
-    const handlePopState = () => {
+    const handleUrlChange = () => {
       const urlWord = getUrlParameter('word');
       if (urlWord && inputRef.current) {
         inputRef.current.value = urlWord;
       }
     };
 
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
+    // Listen for popstate events (browser back/forward)
+    window.addEventListener('popstate', handleUrlChange);
+
+    // Create a custom event listener for URL changes from link clicks
+    const handleStorageChange = (e) => {
+      handleUrlChange();
+    };
+
+    // Listen for custom url-changed event
+    window.addEventListener('url-changed', handleUrlChange);
+
+    return () => {
+      window.removeEventListener('popstate', handleUrlChange);
+      window.removeEventListener('url-changed', handleUrlChange);
+    };
   }, []);
 
   const performSearch = () => {
