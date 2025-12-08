@@ -7,7 +7,8 @@ import { SectionsList } from './components/SectionsList';
 
 export default function WordRefSearch() {
   const { 
-    sections, 
+    word,
+    sections,
     toggleSection, 
     collapseAll, 
     handleSearch, 
@@ -66,7 +67,7 @@ export default function WordRefSearch() {
 
       <div className="max-w-4xl mx-auto px-4 py-4">
         <SearchBar onSearch={handleSearch} />
-        <ExternalLinks onCollapseAll={collapseAll} onSearch={handleSearch} />
+        <ExternalLinks word={word} onCollapseAll={collapseAll} onSearch={handleSearch} />
         <SectionsList sections={sections} onToggle={toggleSection} />
       </div>
     </div>

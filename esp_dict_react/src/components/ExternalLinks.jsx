@@ -47,7 +47,7 @@ export const ExternalLinks = ({ word, onCollapseAll, onSearch }) => {
         <a
           key={key}
           id={`${key}Link`}
-          href={buildUrl(baseUrl, word)}
+          href={word ? buildUrl(baseUrl, word) : baseUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-100 text-gray-700 text-xs md:text-sm font-medium rounded hover:bg-gray-200 transition-all border border-gray-300 hover:shadow-sm"

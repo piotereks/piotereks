@@ -1,8 +1,10 @@
 export const buildUrl = (baseUrl, word) => {
+  if (!word) return baseUrl;
   return `${baseUrl}${encodeURIComponent(word)}`;
 };
 
 export const buildSpellUrl = (word) => {
+  if (!word) return '';
   return `https://spell.wordreference.com/spell/spelljs.php?dict=eses&w=${encodeURIComponent(word)}`;
 };
 
