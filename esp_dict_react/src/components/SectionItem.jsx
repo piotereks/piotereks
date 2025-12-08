@@ -50,9 +50,9 @@ export const SectionItem = ({ title, isOpen, loading, content, onToggle, section
     };
   }, [isOpen, content, sectionKey, setWord, handleSearch]);
 
-  const isErrorContent = content && content.includes('Error fetching');
+    const isErrorContent = typeof content === 'string' && content.includes('Error fetching');
 
-  // Remove initial <br> or <br/> from content
+    // Remove initial <br> or <br/> from content
   const cleanedContent = typeof content === 'string'
     ? content.replace(/^\s*<br\s*\/?>/i, '')
     : content;

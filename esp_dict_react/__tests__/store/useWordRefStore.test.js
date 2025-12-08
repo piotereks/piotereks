@@ -579,3 +579,166 @@ describe('useWordRefStore', () => {
     });
   });
 });
+
+
+// Updated __tests__/store/useWordRefStore.test.js - Add these new tests
+
+describe('handleSearch - RAE abort on def 404', () => {
+    beforeEach(() => {
+        jest.clearAllMocks();
+        jest.spyOn(console, 'error').mockImplementation(() => {});
+        act(() => {
+            useWordRefStore.setState(useWordRefStore.getInitialState(), true);
+        });
+    });
+
+    it('aborts RAE fetch when def returns 404 and spell fails', async () => {
+        // Arrange
+        const abortSpy = jest.fn();
+        const defError = new Error('Definition not found and spell suggestions failed - aborting RAE');
+        defError.isDefinitionNotFound = true;
+
+        urlUtils.buildUrl.mockImplementation((baseUrl, word) => `${baseUrl}?w=${word}`);
+        urlUtils.buildSpellUrl.mockImplementation((word) => `spell/${word}`);
+
+        contentService.fetchAndDisplayContent
+            .mockRejectedValueOnce(defError) // def fails
+            .mockResolvedValueOnce({ html: 'rae content' }); // rae would resolve but gets aborted
+
+        // Mock AbortController
+        const originalAbortController = global.AbortController;
+        global.AbortController = jest.fn(() => ({
+            abort: abortSpy,
+            signal: {}
+        }));
+
+        // Act
+        await act(async () => {
+            await useWordRefStore.getState().handleSearch('nonexistent');
+        });
+
+        // Assert
+        expect(abortSpy).toHaveBeenCalled();
+
+        global.AbortController = originalAbortController;
+    });
+
+    it('does not abort RAE when def 404 but spell suggestions work', async () => {
+        // Arrange
+        const abortSpy = jest.fn();
+
+        urlUtils.buildUrl.mockImplementation((baseUrl, word) => `${baseUrl}?w=${word}`);
+        urlUtils.buildSpellUrl.mockImplementation((word) => `spell/${word}`);
+
+        contentService.fetchAndDisplayContent
+            .mockResolvedValueOnce({ html: '<table>spell</table>', hasContent: true }) // def with spell
+            .mockResolvedValueOnce({ html: 'rae content' }) // rae completes normally
+            .mockResolvedValueOnce({ html: 'other' })
+            .mockResolvedValueOnce({ html: 'other' })
+            .mockResolvedValueOnce({ html: 'other' });
+
+        // Mock AbortController
+        const originalAbortController = global.AbortController;
+        global.AbortController = jest.fn(() => ({
+            abort: abortSpy,
+            signal: {}
+        }));
+
+        // Act
+        await act(async () => {
+            await useWordRefStore.getState().handleSearch('palabra');
+        });
+
+        // Assert
+        expect(abortSpy).not.toHaveBeenCalled();
+
+        global.AbortController = originalAbortController;
+    });
+});
+
+describe('fetchContent - Definition not found handling', () => {
+    beforeEach(() => {
+        jest.clearAllMocks();
+        jest.spyOn(console, 'error').mockImplementation(() => {});
+        act(() => {
+            useWordRefStore.setState(useWordRefStore.getInitialState(), true);
+        });
+    });
+
+    it('sets "No content found" when def error is caught', async () => {
+        // Arrange
+        const defError = new Error('Definition not found');
+        defError.isDefinitionNotFound = true;
+
+        contentService.fetchAndDisplayContent.mockRejectedValueOnce(defError);
+        useWordRefStore.setState({ word: 'test' });
+
+        // Act
+        await act(async () => {
+            await useWordRefStore.getState().fetchContent(
+                'https://example.com/definicion/test',
+                'def',
+                '.selector',
+                undefined,
+                null
+            );
+        });
+
+        // Assert
+        expect(useWordRefStore.getState().sections.def.content).toBe('No content found.');
+    });
+
+    it('sets "No content found for \\"word\\"" for sin/con/spen sections on error', async () => {
+        // Arrange
+        contentService.fetchAndDisplayContent.mockResolvedValueOnce({
+            html: 'No content found for "prueba"',
+            hasContent: false
+        });
+        useWordRefStore.setState({ word: 'prueba' });
+
+        // Act
+        await act(async () => {
+            await useWordRefStore.getState().fetchContent(
+                'https://example.com/sinonimos/prueba',
+                'sin',
+                '.selector',
+                undefined,
+                null
+            );
+        });
+
+        // Assert
+        expect(useWordRefStore.getState().sections.sin.content).toBe('No content found for "prueba"');
+    });
+});
+
+describe('handleSearch - abortSignal only for RAE', () => {
+    beforeEach(() => {
+        jest.clearAllMocks();
+        urlUtils.buildUrl.mockImplementation((baseUrl, word) => `${baseUrl}?w=${word}`);
+        urlUtils.buildSpellUrl.mockImplementation((word) => `spell/${word}`);
+        contentService.fetchAndDisplayContent.mockResolvedValue({ html: 'content' });
+    });
+
+    it('passes abortSignal only to RAE section, null to others', async () => {
+        // Act
+        await act(async () => {
+            await useWordRefStore.getState().handleSearch('word');
+        });
+
+        // Assert
+        const calls = contentService.fetchAndDisplayContent.mock.calls;
+
+        // def should have null signal
+        expect(calls[0][5]).toBeNull(); // abortSignal for def
+
+        // rae should have AbortSignal
+        expect(calls[3][5]).toEqual(expect.any(AbortSignal)); // abortSignal for rae
+
+        // others should have null
+        expect(calls[1][5]).toBeNull(); // sin
+        expect(calls[2][5]).toBeNull(); // spen
+        expect(calls[4][5]).toBeNull(); // con
+    });
+});
+

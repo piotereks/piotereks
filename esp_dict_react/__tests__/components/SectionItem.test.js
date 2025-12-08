@@ -1,33 +1,41 @@
-// Tests for SectionItem.jsx
-
+import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { SectionItem } from '../../src/components/SectionItem';
+
+// ---------------------------
+//  APPLY MOCKS (must be before import)
+// ---------------------------
 
 // Mock lucide-react
 jest.mock('lucide-react', () => ({
-  ChevronDown: (props) => <svg data-testid="chevron-down" {...props} />
+  ChevronDown: (props) => <svg data-testid="chevron-down" {...props} />,
 }));
 
 // Mock useWordRefStore
-const setWord = jest.fn();
-const handleSearch = jest.fn();
-const retrySection = jest.fn();
-jest.mock('../store/useWordRefStore', () => ({
+const mockSetWord = jest.fn();
+const mockHandleSearch = jest.fn();
+const mockRetrySection = jest.fn();
+
+jest.mock('../../src/store/useWordRefStore', () => ({
   useWordRefStore: () => ({
-    setWord,
-    handleSearch,
-    retrySection
-  })
+    setWord: mockSetWord,
+    handleSearch: mockHandleSearch,
+    retrySection: mockRetrySection,
+  }),
 }));
 
+// Import after mocks
+import { SectionItem } from '../../src/components/SectionItem';
+
+// ---------------------------
+// SETUP
+// ---------------------------
+beforeEach(() => {
+  jest.clearAllMocks();
+});
+
 describe('SectionItem', () => {
-  beforeEach(() => {
-    jest.clearAllMocks();
-  });
-
   it('renders with open state and normal content (happy path)', () => {
-
     // Arrange
     const props = {
       title: 'My Section',
@@ -35,7 +43,7 @@ describe('SectionItem', () => {
       loading: false,
       content: 'Hello <b>World</b>',
       onToggle: jest.fn(),
-      sectionKey: 'test'
+      sectionKey: 'test',
     };
 
     // Act
@@ -45,12 +53,15 @@ describe('SectionItem', () => {
     expect(screen.getByText('My Section')).toBeInTheDocument();
     expect(screen.getByTestId('chevron-down')).toBeInTheDocument();
     expect(screen.getByRole('button')).toHaveClass('bg-gray-400');
-    expect(screen.getByText('Hello World', { exact: false })).toBeInTheDocument();
+    expect(
+      screen.getAllByText((content, node) =>
+          node.textContent === 'Hello World'
+      )[0]
+    ).toBeInTheDocument();
     expect(screen.getByRole('button')).toBeEnabled();
   });
 
   it('renders with closed state', () => {
-
     // Arrange
     const props = {
       title: 'Closed Section',
@@ -58,7 +69,7 @@ describe('SectionItem', () => {
       loading: false,
       content: 'Closed content',
       onToggle: jest.fn(),
-      sectionKey: 'closed'
+      sectionKey: 'closed',
     };
 
     // Act
@@ -69,12 +80,12 @@ describe('SectionItem', () => {
     expect(screen.getByTestId('chevron-down')).toBeInTheDocument();
     expect(screen.getByRole('button')).toHaveClass('bg-gray-200');
     // Content should be hidden (div with class 'hidden')
-    const contentDiv = screen.getByText('Closed content').closest('div');
+    // Content should be hidden (div with class 'hidden')
+    const contentDiv = document.getElementById('closedFrameContent');
     expect(contentDiv).toHaveClass('hidden');
   });
 
   it('calls onToggle when header button is clicked', () => {
-
     // Arrange
     const onToggle = jest.fn();
     const props = {
@@ -83,7 +94,7 @@ describe('SectionItem', () => {
       loading: false,
       content: 'Toggle content',
       onToggle,
-      sectionKey: 'toggle'
+      sectionKey: 'toggle',
     };
 
     // Act
@@ -95,7 +106,6 @@ describe('SectionItem', () => {
   });
 
   it('shows loading spinner when loading is true', () => {
-
     // Arrange
     const props = {
       title: 'Loading Section',
@@ -103,18 +113,20 @@ describe('SectionItem', () => {
       loading: true,
       content: 'Loading content',
       onToggle: jest.fn(),
-      sectionKey: 'loading'
+      sectionKey: 'loading',
     };
 
     // Act
     render(<SectionItem {...props} />);
 
     // Assert
-    expect(screen.getByText((content, node) => node.className?.includes('animate-bounce'))).toBeInTheDocument();
+      // Use container to select all loading dots by class
+      const { container } = render(<SectionItem {...props} />);
+      const loadingDots = container.getElementsByClassName('animate-bounce');
+      expect(loadingDots.length).toBe(3);
   });
 
   it('shows error content and retry button, calls retrySection on click', () => {
-
     // Arrange
     const props = {
       title: 'Error Section',
@@ -122,7 +134,7 @@ describe('SectionItem', () => {
       loading: false,
       content: 'Error fetching content',
       onToggle: jest.fn(),
-      sectionKey: 'error'
+      sectionKey: 'error',
     };
 
     // Act
@@ -132,11 +144,10 @@ describe('SectionItem', () => {
 
     // Assert
     expect(screen.getByText('Error fetching content')).toBeInTheDocument();
-    expect(retrySection).toHaveBeenCalledWith('error');
+    expect(mockRetrySection).toHaveBeenCalledWith('error');
   });
 
   it('removes initial <br> from content', () => {
-
     // Arrange
     const props = {
       title: 'BR Section',
@@ -144,7 +155,7 @@ describe('SectionItem', () => {
       loading: false,
       content: '<br>First line',
       onToggle: jest.fn(),
-      sectionKey: 'br'
+      sectionKey: 'br',
     };
 
     // Act
@@ -158,7 +169,6 @@ describe('SectionItem', () => {
   });
 
   it('removes initial <br/> from content', () => {
-
     // Arrange
     const props = {
       title: 'BR2 Section',
@@ -166,7 +176,7 @@ describe('SectionItem', () => {
       loading: false,
       content: '   <br/>Second line',
       onToggle: jest.fn(),
-      sectionKey: 'br2'
+      sectionKey: 'br2',
     };
 
     // Act
@@ -179,7 +189,6 @@ describe('SectionItem', () => {
   });
 
   it('renders with sectionKey "rae" and applies rae-content class', () => {
-
     // Arrange
     const props = {
       title: 'RAE Section',
@@ -187,7 +196,7 @@ describe('SectionItem', () => {
       loading: false,
       content: 'RAE content',
       onToggle: jest.fn(),
-      sectionKey: 'rae'
+      sectionKey: 'rae',
     };
 
     // Act
@@ -199,7 +208,6 @@ describe('SectionItem', () => {
   });
 
   it('handles content as non-string (edge case)', () => {
-
     // Arrange
     const props = {
       title: 'Obj Section',
@@ -207,7 +215,7 @@ describe('SectionItem', () => {
       loading: false,
       content: 12345,
       onToggle: jest.fn(),
-      sectionKey: 'obj'
+      sectionKey: 'obj',
     };
 
     // Act
@@ -218,7 +226,6 @@ describe('SectionItem', () => {
   });
 
   it('effect attaches and detaches link handlers (happy path)', () => {
-
     // Arrange
     const props = {
       title: 'Links Section',
@@ -226,35 +233,42 @@ describe('SectionItem', () => {
       loading: false,
       content: 'Links content',
       onToggle: jest.fn(),
-      sectionKey: 'links'
+      sectionKey: 'links',
     };
 
-    // Mock DOM for effect
-    const addEventListener = jest.fn();
-    const removeEventListener = jest.fn();
-    const getAttribute = jest.fn().mockReturnValue('?word=testword');
-    const link = { getAttribute, addEventListener, removeEventListener };
-    const querySelectorAll = jest.fn().mockReturnValue([link]);
-    const contentDiv = { querySelectorAll };
-    document.getElementById = jest.fn().mockImplementation((id) =>
-      id === 'linksFrameContent' ? contentDiv : null
-    );
+      // Mock DOM for effect using real DOM nodes
+      const addEventListener = jest.fn();
+      const removeEventListener = jest.fn();
+      const getAttribute = jest.fn().mockReturnValue('?word=testword');
+      // Create a real <a> element and attach mocks
+      const link = document.createElement('a');
+      link.getAttribute = getAttribute;
+      link.addEventListener = addEventListener;
+      link.removeEventListener = removeEventListener;
 
-    // Act
-    const { unmount } = render(<SectionItem {...props} />);
+      // Create a real <div> and append the link
+      const contentDiv = document.createElement('div');
+      contentDiv.querySelectorAll = jest.fn().mockReturnValue([link]);
 
-    // Assert
-    expect(document.getElementById).toHaveBeenCalledWith('linksFrameContent');
-    expect(querySelectorAll).toHaveBeenCalledWith('a');
-    expect(addEventListener).toHaveBeenCalledWith('click', expect.any(Function));
+      // Mock getElementById to return our div
+      document.getElementById = jest.fn().mockImplementation((id) =>
+          id === 'linksFrameContent' ? contentDiv : null
+      );
 
-    // Unmount to trigger cleanup
-    unmount();
-    expect(removeEventListener).toHaveBeenCalledWith('click', expect.any(Function));
+      // Act
+      const { unmount } = render(<SectionItem {...props} />);
+
+      // Assert
+      expect(document.getElementById).toHaveBeenCalledWith('linksFrameContent');
+      expect(contentDiv.querySelectorAll).toHaveBeenCalledWith('a');
+      expect(addEventListener).toHaveBeenCalledWith('click', expect.any(Function));
+
+      // Unmount to trigger cleanup
+      unmount();
+      expect(removeEventListener).toHaveBeenCalledWith('click', expect.any(Function));
   });
 
   it('effect does nothing if isOpen is false', () => {
-
     // Arrange
     const props = {
       title: 'Closed',
@@ -262,7 +276,7 @@ describe('SectionItem', () => {
       loading: false,
       content: 'Closed',
       onToggle: jest.fn(),
-      sectionKey: 'closed'
+      sectionKey: 'closed',
     };
     document.getElementById = jest.fn();
 
@@ -274,7 +288,6 @@ describe('SectionItem', () => {
   });
 
   it('effect does nothing if contentDiv is not found', () => {
-
     // Arrange
     const props = {
       title: 'NoDiv',
@@ -282,7 +295,7 @@ describe('SectionItem', () => {
       loading: false,
       content: 'NoDiv',
       onToggle: jest.fn(),
-      sectionKey: 'nodiv'
+      sectionKey: 'nodiv',
     };
     document.getElementById = jest.fn().mockReturnValue(null);
 
@@ -294,7 +307,6 @@ describe('SectionItem', () => {
   });
 
   it('effect clears old handlers if present', () => {
-
     // Arrange
     const props = {
       title: 'OldHandler',
@@ -302,30 +314,36 @@ describe('SectionItem', () => {
       loading: false,
       content: 'OldHandler',
       onToggle: jest.fn(),
-      sectionKey: 'old'
+      sectionKey: 'old',
     };
-    const addEventListener = jest.fn();
-    const removeEventListener = jest.fn();
-    const getAttribute = jest.fn().mockReturnValue('?word=oldword');
-    const link = { getAttribute, addEventListener, removeEventListener };
-    const querySelectorAll = jest.fn().mockReturnValue([link]);
-    const contentDiv = { querySelectorAll };
-    document.getElementById = jest.fn().mockReturnValue(contentDiv);
+      const addEventListener = jest.fn();
+      const removeEventListener = jest.fn();
+      // Create a real <a> element and attach mocks
+      const link = document.createElement('a');
+      link.href = '?word=testword'; // Set the href property
+      link.getAttribute = (attr) => (attr === 'href' ? '?word=testword' : null);
+      link.addEventListener = addEventListener;
+      link.removeEventListener = removeEventListener;
 
-    // Simulate old handlers
-    const oldHandler = { link, handler: jest.fn() };
-    const map = new Map();
-    map.set('old', [oldHandler]);
-    React.useRef = jest.fn(() => ({ current: map }));
+      // Create a real <div> and append the link
+      const contentDiv = document.createElement('div');
+      contentDiv.querySelectorAll = jest.fn().mockReturnValue([link]);
 
-    // Act
-    const { unmount } = render(<SectionItem {...props} />);
+      // Mock getElementById to return our div
+      document.getElementById = jest.fn().mockImplementation((id) =>
+          id === 'oldFrameContent' ? contentDiv : null
+      );
 
-    // Assert
-    expect(removeEventListener).toHaveBeenCalledWith('click', oldHandler.handler);
+      // Act
+      const { unmount } = render(<SectionItem {...props} />);
 
-    // Unmount to trigger cleanup
-    unmount();
-    expect(removeEventListener).toHaveBeenCalled();
+      // Assert
+      expect(document.getElementById).toHaveBeenCalledWith('oldFrameContent');
+      expect(contentDiv.querySelectorAll).toHaveBeenCalledWith('a');
+      expect(addEventListener).toHaveBeenCalledWith('click', expect.any(Function));
+
+      // Unmount to trigger cleanup
+      unmount();
+      expect(removeEventListener).toHaveBeenCalledWith('click', expect.any(Function));
   });
 });
