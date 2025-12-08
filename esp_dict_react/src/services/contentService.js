@@ -173,21 +173,45 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
     // Fetch from network if not cached
     console.log('Fetching from network:', url);
     const html = await fetchHtml(url, 0, sectionKey === 'rae' ? abortSignal : null);
-    
+
     // If fetch failed, try spell check if available
     if (!html) {
-      console.error('Fetch returned null, trying spell suggestions');
+      console.error('Fetch returned null for section:', sectionKey);
       if (spellUrl) {
-        const table = await fetchSpellSuggestions(spellUrl, onWordClick);
-        if (table) {
-          setupLinksOnContent(table, onWordClick);
-          return {
-            html: table.outerHTML,
-            hasContent: true
-          };
+        try {
+          const table = await fetchSpellSuggestions(spellUrl, onWordClick);
+          if (table) {
+            setupLinksOnContent(table, onWordClick);
+            return {
+              html: table.outerHTML,
+              hasContent: true
+            };
+          }
+        } catch (spellError) {
+          console.error('Spell suggestions also failed:', spellError);
         }
       }
-      // No spell check or spell check failed
+
+      // If def section has no content and spell suggestions failed, abort RAE
+      if (sectionKey === 'def') {
+        console.log('[404-DEF] Definition returned 404 and spell suggestions failed, aborting RAE fetch');
+        if (abortSignal) {
+          abortSignal.abort();
+        }
+        const error = new Error('Definition not found and spell suggestions failed - aborting RAE');
+        error.isDefinitionNotFound = true;
+        throw error;
+      }
+
+      // For sin, con, spen - use "No content found" on 404
+      if (['sin', 'con', 'spen'].includes(sectionKey)) {
+        return {
+          html: 'No content found.',
+          hasContent: false
+        };
+      }
+
+      // Default error message
       return {
         html: 'Error fetching content.',
         hasContent: false
@@ -211,20 +235,33 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
     
     if (!hasContent && spellUrl) {
       console.log('No content found, trying spell suggestions');
-      const table = await fetchSpellSuggestions(spellUrl, onWordClick);
-      
-      if (table) {
-        // Only cache successful spell suggestions
-        await cacheContent(cacheKey, html);
-        setupLinksOnContent(table, onWordClick);
-        
-        return {
-          html: table.outerHTML,
-          hasContent: true
-        };
+      try {
+        const table = await fetchSpellSuggestions(spellUrl, onWordClick);
+
+        if (table) {
+          // Only cache successful spell suggestions
+          await cacheContent(cacheKey, html);
+          setupLinksOnContent(table, onWordClick);
+
+          return {
+            html: table.outerHTML,
+            hasContent: true
+          };
+        }
+      } catch (spellError) {
+        console.error('Spell suggestions failed:', spellError);
       }
       
-      // No spell suggestions found - don't cache empty result
+      // No spell suggestions found - use "No content found" for these sections
+      if (['sin', 'con', 'spen'].includes(sectionKey)) {
+        console.log('No content and no spell suggestions - showing "No content found" for:', sectionKey);
+        return {
+          html: 'No content found.',
+          hasContent: false
+        };
+      }
+
+      // Default message
       console.log('No content and no spell suggestions - not caching');
       return {
         html: 'No content found.',
@@ -252,7 +289,20 @@ export const fetchAndDisplayContent = async (url, selector, spellUrl, onWordClic
       console.log('Fetch was aborted');
       throw error;
     }
+    if (error.isDefinitionNotFound) {
+      console.log('Definition not found, propagating to abort RAE');
+      throw error;
+    }
     console.error('Error fetching content:', error);
+
+    // For sin, con, spen - use "No content found" on error
+    if (['sin', 'con', 'spen'].includes(sectionKey)) {
+      return {
+        html: 'No content found.',
+        hasContent: false
+      };
+    }
+
     return {
       html: 'Error fetching content.',
       hasContent: false

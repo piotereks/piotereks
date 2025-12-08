@@ -9,7 +9,7 @@ export const createWordRefStore = () => create((set, get) => ({
   word: '',
   previousWord: '', // Track last searched word to avoid unnecessary reloads
   isSearching: false,
-  abortController: null, // Track current fetch requests
+  abortController: null, // Track RAE fetch requests only
   sections: {
     def: { content: '', isOpen: false, loading: false },
     sin: { content: '', isOpen: false, loading: false },
@@ -102,7 +102,7 @@ export const createWordRefStore = () => create((set, get) => ({
 
   // Complex actions
   fetchContent: async (url, sectionKey, selector, spellUrl, abortSignal) => {
-    const { setSectionContent, setSectionLoading, word: currentWord } = get();
+    const { setSectionContent, setSectionLoading, word: currentWord, abortController } = get();
 
     console.log(`[FETCH] Starting fetch for ${sectionKey}: ${url}`);
 
@@ -119,6 +119,7 @@ export const createWordRefStore = () => create((set, get) => ({
           get().setWord(newWord);
           get().handleSearch(newWord);
         },
+        sectionKey,
         abortSignal
       );
 
@@ -141,6 +142,14 @@ export const createWordRefStore = () => create((set, get) => ({
         console.log(`[FETCH] Fetch was aborted for: ${sectionKey}`);
         // Use setSectionLoading to explicitly stop loading
         setSectionLoading(sectionKey, false);
+        return;
+      }
+      if (error.isDefinitionNotFound) {
+        console.log(`[FETCH] Definition not found for: ${sectionKey}, aborting RAE`);
+        if (abortController) {
+          abortController.abort();
+        }
+        setSectionContent(sectionKey, 'No content found.');
         return;
       }
       console.error(`[FETCH] Error fetching content for: ${sectionKey}`, error.message);
