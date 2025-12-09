@@ -40,7 +40,6 @@ jobs:
         run: find ../docs/html -type f
       - uses: actions/deploy-pages@v4
         with:
-
           timeout: 600000
           error_count: 10
           reporting_interval: 5000
