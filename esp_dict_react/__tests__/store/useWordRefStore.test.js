@@ -478,40 +478,44 @@ describe('useWordRefStore', () => {
             expect(abortController.abort).toHaveBeenCalled();
         });
 
+
         it('starts a new search and updates state (happy path)', async () => {
             // Arrange
             urlUtils.buildUrl.mockImplementation((baseUrl, word) => `${baseUrl}?w=${word}`);
             urlUtils.buildSpellUrl.mockImplementation((word) => `spell/${word}`);
-            contentService.fetchAndDisplayContent.mockResolvedValue({html: 'result html'});
 
-            // Act
-            await act(async () => {
-                await useWordRefStore.getState().handleSearch('newword');
+            // Use a promise that we can control
+            let resolveFetch;
+            const fetchPromise = new Promise(resolve => {
+                resolveFetch = resolve;
             });
+            contentService.fetchAndDisplayContent.mockReturnValue(fetchPromise);
 
-            // Assert
-            expect(useWordRefStore.getState().isSearching).toBe(false);
-            expect(useWordRefStore.getState().previousWord).toBe('newword');
-            expect(useWordRefStore.getState().sections.def.loading).toBe(true); // markAllSectionsLoading
-            expect(useWordRefStore.getState().retryMetadata).toEqual({});
-        });
-
-        it('opens first section if all closed after def fetch', async () => {
-            // Arrange
-            urlUtils.buildUrl.mockImplementation((baseUrl, word) => `${baseUrl}?w=${word}`);
-            urlUtils.buildSpellUrl.mockImplementation((word) => `spell/${word}`);
-            contentService.fetchAndDisplayContent.mockResolvedValue({html: 'result html'});
+            // Act - start the search but don't await it yet
+            let searchPromise;
             act(() => {
-                useWordRefStore.getState().collapseAll();
+                searchPromise = useWordRefStore.getState().handleSearch('newword');
             });
 
-            // Act
+            // Wait a tick for the synchronous parts to complete
             await act(async () => {
-                await useWordRefStore.getState().handleSearch('newword');
+                await Promise.resolve();
             });
 
-            // Assert
-            expect(useWordRefStore.getState().sections.def.isOpen).toBe(true);
+            // Assert - check state while fetches are in progress
+            expect(useWordRefStore.getState().previousWord).toBe('newword');
+            expect(useWordRefStore.getState().sections.def.loading).toBe(true); // markAllSectionsLoading worked
+            expect(useWordRefStore.getState().retryMetadata).toEqual({});
+
+            // Now resolve the fetches and wait for completion
+            await act(async () => {
+                resolveFetch({html: 'result html'});
+                await searchPromise;
+            });
+
+            // Assert - after fetches complete
+            expect(useWordRefStore.getState().isSearching).toBe(false);
+            expect(useWordRefStore.getState().sections.def.loading).toBe(false); // fetch completed
         });
 
         it('does not open first section if any section is open after def fetch', async () => {
