@@ -35,14 +35,11 @@ jobs:
       - run: npm run build
       - name: Prepare deployment directory
         run: |
-          date >../docs/html/esp_res/date.txt
+          date >../docs/html/esp_react/date.txt
       - name: List files
         run: find ../docs/html -type f
-      - uses: actions/deploy-pages@v4
+      - uses: actions/upload-artifact@v4
         with:
-          timeout: 600000
-          error_count: 10
-          reporting_interval: 5000
-          artifact_name: github-pages
-          preview: false
+          name: build
+          path: docs/html
 
