@@ -253,8 +253,8 @@ export const createWordRefStore = () => create((set, get) => ({
         // Store current word as previous before starting new search
         set({word: trimmedWord, previousWord: trimmedWord});
         markAllSectionsLoading(); // Mark sections as loading, keep open/closed state
-
-        // Clear previous retry metadata for this search
+        //
+        // // Clear previous retry metadata for this search
         set({retryMetadata: {}});
 
         try {
