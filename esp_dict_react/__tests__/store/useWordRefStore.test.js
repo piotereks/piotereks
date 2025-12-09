@@ -348,6 +348,29 @@ describe('useWordRefStore', () => {
         });
     });
 
+    describe('markAllSectionsLoading', () => {
+        it('sets all sections loading=true and content=""', () => {
+            const useWordRefStore = createWordRefStore();
+
+            // Set some initial content and loading state
+            useWordRefStore.setState(state => ({
+                sections: {
+                    ...state.sections,
+                    def: { ...state.sections.def, content: 'abc', loading: false },
+                    sin: { ...state.sections.sin, content: 'xyz', loading: false },
+                }
+            }));
+
+            // Act
+            useWordRefStore.getState().markAllSectionsLoading();
+
+            // Assert
+            Object.values(useWordRefStore.getState().sections).forEach(section => {
+                expect(section.loading).toBe(true);
+                expect(section.content).toBe('');
+            });
+        });
+    });
     describe('handleSearch', () => {
         beforeEach(() => {
             // Arrange
