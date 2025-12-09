@@ -1,0 +1,115 @@
+name: Build and Deploy React App
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'esp_dict_react/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'esp_dict_react/**'
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: esp_dict_react
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: esp_dict_react/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test -- --coverage --watchAll=false
+
+      - name: Upload coverage reports
+        uses: codecov/codecov-action@v4
+        if: always()
+        with:
+          files: ./esp_dict_react/coverage/coverage-final.json
+          flags: unittests
+          name: codecov-umbrella
+          fail_ci_if_error: false
+
+  build-and-deploy:
+    name: Build and Deploy
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    defaults:
+      run:
+        working-directory: esp_dict_react
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: esp_dict_react/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build application
+        run: npm run build
+
+      - name: Prepare deployment directory
+        run: |
+          mkdir -p ../docs/html/esp_res
+          rm -rf ../docs/html/esp_res/*
+
+      - name: Copy build files to deployment directory
+        run: |
+          cp -r dist/* ../docs/html/esp_res/
+
+      - name: Commit and push to repository
+        run: |
+          cd ..
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add docs/html/esp_res
+          git diff --staged --quiet || git commit -m "Deploy React app to docs/html/esp_res [skip ci]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy-status:
+    name: Deployment Status
+    needs: build-and-deploy
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Check deployment status
+        run: |
+          if [ "${{ needs.build-and-deploy.result }}" == "success" ]; then
+            echo "✅ Deployment successful!"
+            echo "App deployed to docs/html/esp_res"
+          elif [ "${{ needs.build-and-deploy.result }}" == "skipped" ]; then
+            echo "⏭️ Deployment skipped (not on main branch or PR)"
+          else
+            echo "❌ Deployment failed!"
+            exit 1
+          fi
