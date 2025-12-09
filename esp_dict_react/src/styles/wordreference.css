@@ -29,6 +29,7 @@ table {
     border-spacing: 2px;
     border-color: gray;
 }
+
 #forceDesktop {
     font-weight: bold;
 }
@@ -92,7 +93,7 @@ ol li {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .content {
@@ -101,7 +102,7 @@ ol li {
     overflow: hidden;
     background-color: #f9f9f9;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
 }
 

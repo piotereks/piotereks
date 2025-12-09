@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import React from 'react';
-import { render, screen, fireEvent, act } from '@testing-library/react';
+import {render, screen, fireEvent, act} from '@testing-library/react';
 
 // ---------------------------
 //  APPLY MOCKS (must be before import)
@@ -9,16 +9,16 @@ import { render, screen, fireEvent, act } from '@testing-library/react';
 // Mock SECTION_CONFIG
 jest.mock('../../src/config/sections', () => ({
     SECTION_CONFIG: [
-        { key: 'rae', baseUrl: 'https://rae.es/', label: 'RAE' },
-        { key: 'wr', baseUrl: 'https://wordreference.com/', label: 'WR' },
+        {key: 'rae', baseUrl: 'https://rae.es/', label: 'RAE'},
+        {key: 'wr', baseUrl: 'https://wordreference.com/', label: 'WR'},
     ],
 }));
 
 // Mock lucide-react icons
 jest.mock('lucide-react', () => ({
-    ExternalLink: ({ ...props }) => <svg data-testid="external-link-icon" {...props} />,
-    ChevronUp: ({ ...props }) => <svg data-testid="chevron-up-icon" {...props} />,
-    Trash2: ({ ...props }) => <svg data-testid="trash2-icon" {...props} />,
+    ExternalLink: ({...props}) => <svg data-testid="external-link-icon" {...props} />,
+    ChevronUp: ({...props}) => <svg data-testid="chevron-up-icon" {...props} />,
+    Trash2: ({...props}) => <svg data-testid="trash2-icon" {...props} />,
 }));
 
 // Mock buildUrl - use factory function
@@ -37,7 +37,7 @@ jest.mock('../../src/services/cacheManager', () => ({
 }));
 
 // Import after all mocks
-import { ExternalLinks } from '../../src/components/ExternalLinks';
+import {ExternalLinks} from '../../src/components/ExternalLinks';
 import * as urlUtils from '../../src/utils/urlUtils';
 import * as cacheManager from '../../src/services/cacheManager';
 
@@ -65,7 +65,7 @@ describe('ExternalLinks', () => {
         const onSearch = jest.fn();
 
         // Act
-        render(<ExternalLinks word="casa" onCollapseAll={onCollapseAll} onSearch={onSearch} />);
+        render(<ExternalLinks word="casa" onCollapseAll={onCollapseAll} onSearch={onSearch}/>);
 
         // Assert
         expect(screen.getByText('RAE')).toBeInTheDocument();
@@ -83,7 +83,7 @@ describe('ExternalLinks', () => {
         const onSearch = jest.fn();
 
         // Act
-        render(<ExternalLinks word="casa" onCollapseAll={onCollapseAll} onSearch={onSearch} />);
+        render(<ExternalLinks word="casa" onCollapseAll={onCollapseAll} onSearch={onSearch}/>);
         fireEvent.click(screen.getByText('Collapse'));
 
         // Assert
@@ -100,7 +100,7 @@ describe('ExternalLinks', () => {
         const onSearch = jest.fn();
 
         // Act
-        render(<ExternalLinks word={undefined} onCollapseAll={onCollapseAll} onSearch={onSearch} />);
+        render(<ExternalLinks word={undefined} onCollapseAll={onCollapseAll} onSearch={onSearch}/>);
         const clearDayBtn = screen.getByText('Clear 1d');
         expect(clearDayBtn).toBeInTheDocument();
 
@@ -123,7 +123,7 @@ describe('ExternalLinks', () => {
         const onSearch = jest.fn();
 
         // Act
-        render(<ExternalLinks word="perro" onCollapseAll={onCollapseAll} onSearch={onSearch} />);
+        render(<ExternalLinks word="perro" onCollapseAll={onCollapseAll} onSearch={onSearch}/>);
         const clearDayBtn = screen.getByText('Clear 1d');
         expect(clearDayBtn).toBeInTheDocument();
 
@@ -146,7 +146,7 @@ describe('ExternalLinks', () => {
         const onSearch = jest.fn();
 
         // Act
-        render(<ExternalLinks word={undefined} onCollapseAll={onCollapseAll} onSearch={onSearch} />);
+        render(<ExternalLinks word={undefined} onCollapseAll={onCollapseAll} onSearch={onSearch}/>);
         const clearAllBtn = screen.getByText('Clear All');
         expect(clearAllBtn).toBeInTheDocument();
 
@@ -169,7 +169,7 @@ describe('ExternalLinks', () => {
         const onSearch = jest.fn();
 
         // Act
-        render(<ExternalLinks word="gato" onCollapseAll={onCollapseAll} onSearch={onSearch} />);
+        render(<ExternalLinks word="gato" onCollapseAll={onCollapseAll} onSearch={onSearch}/>);
         const clearAllBtn = screen.getByText('Clear All');
         expect(clearAllBtn).toBeInTheDocument();
 
@@ -192,7 +192,7 @@ describe('ExternalLinks', () => {
         const onSearch = jest.fn();
 
         // Act
-        render(<ExternalLinks word="zorro" onCollapseAll={onCollapseAll} onSearch={onSearch} />);
+        render(<ExternalLinks word="zorro" onCollapseAll={onCollapseAll} onSearch={onSearch}/>);
 
         // Assert
         expect(screen.getByText('Clear All')).toBeInTheDocument();
@@ -206,7 +206,7 @@ describe('ExternalLinks', () => {
         const onSearch = jest.fn();
 
         // Act
-        render(<ExternalLinks word="lobo" onCollapseAll={onCollapseAll} onSearch={onSearch} />);
+        render(<ExternalLinks word="lobo" onCollapseAll={onCollapseAll} onSearch={onSearch}/>);
 
         // Assert
         expect(mockBuildUrl).toHaveBeenCalledWith('https://rae.es/', 'lobo');
@@ -220,7 +220,7 @@ describe('ExternalLinks', () => {
         const onSearch = jest.fn();
 
         // Act
-        render(<ExternalLinks word={undefined} onCollapseAll={onCollapseAll} onSearch={onSearch} />);
+        render(<ExternalLinks word={undefined} onCollapseAll={onCollapseAll} onSearch={onSearch}/>);
 
         // Assert
         expect(mockBuildUrl).toHaveBeenCalledWith('https://rae.es/', undefined);

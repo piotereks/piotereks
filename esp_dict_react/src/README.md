@@ -71,22 +71,28 @@ npm run build
 ## Module Descriptions
 
 ### Config
+
 - **sections.js** - Configuration for all dictionary sections (URLs, selectors, labels)
 
 ### Utils
+
 - **urlUtils.js** - URL building, parameter extraction, and history management
 
 ### Services
+
 - **contentService.js** - Fetches HTML, parses content, sets up internal links, handles spell suggestions
 
 ### Store
+
 - **useWordRefStore.js** - Zustand store with all state and actions (search, toggle sections, fetch content)
 
 ### Components
+
 - **SearchBar.jsx** - Search input with Enter key support
 - **ExternalLinks.jsx** - Buttons to open external dictionary pages
 - **SectionItem.jsx** - Collapsible section with loading state
 - **SectionsList.jsx** - Renders all dictionary sections
 
 ### Styles
+
 - **wordRefStyles.js** - CSS for dictionary content styling

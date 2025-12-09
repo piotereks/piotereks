@@ -4,14 +4,14 @@
 
 /* React component styling only */
 .content.show {
-  @apply block;
+    @apply block;
 }
 
 /* Link styling for dictionary content */
 a {
-  @apply text-blue-600 hover:text-blue-800 hover:underline transition-colors;
+    @apply text-blue-600 hover:text-blue-800 hover:underline transition-colors;
 }
 
 a:hover {
-  @apply cursor-pointer;
+    @apply cursor-pointer;
 }

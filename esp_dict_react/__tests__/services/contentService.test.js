@@ -1,4 +1,4 @@
-import { act } from 'react';
+import {act} from 'react';
 // Tests for contentService.js
 
 import {
@@ -37,34 +37,35 @@ describe('fetchHtml', () => {
     it('fetches HTML successfully (no CORS proxy)', async () => {
         const url = 'https://example.com/page';
         const text = jest.fn().mockResolvedValue('<html>ok</html>');
-        global.fetch.mockResolvedValue({ ok: true, text });
+        global.fetch.mockResolvedValue({ok: true, text});
 
         const result = await fetchHtml(url);
 
-        expect(global.fetch).toHaveBeenCalledWith(url, { signal: null });
+        expect(global.fetch).toHaveBeenCalledWith(url, {signal: null});
         expect(result).toBe('<html>ok</html>');
     });
 
     it('fetches HTML successfully (with CORS proxy)', async () => {
         const url = 'https://dle.rae.es/word';
-        const json = jest.fn().mockResolvedValue({ contents: '<html>proxied</html>' });
-        global.fetch.mockResolvedValue({ ok: true, json });
+        const json = jest.fn().mockResolvedValue({contents: '<html>proxied</html>'});
+        global.fetch.mockResolvedValue({ok: true, json});
 
         const result = await fetchHtml(url);
 
         expect(global.fetch).toHaveBeenCalledWith(
             'https://api.allorigins.win/get?url=https%3A%2F%2Fdle.rae.es%2Fword',
-            { signal: null }
+            {signal: null}
         );
         expect(result).toBe('<html>proxied</html>');
     });
 
     it('retries on CORS proxy HTTP error and succeeds', async () => {
         const url = 'https://dle.rae.es/word';
-        const warnSpy = jest.spyOn(console, 'warn').mockImplementation(() => {});
+        const warnSpy = jest.spyOn(console, 'warn').mockImplementation(() => {
+        });
         global.fetch
-            .mockResolvedValueOnce({ ok: false, status: 502 })
-            .mockResolvedValueOnce({ ok: true, json: jest.fn().mockResolvedValue({ contents: 'abc' }) });
+            .mockResolvedValueOnce({ok: false, status: 502})
+            .mockResolvedValueOnce({ok: true, json: jest.fn().mockResolvedValue({contents: 'abc'})});
 
         const result = await fetchHtml(url);
 
@@ -76,9 +77,11 @@ describe('fetchHtml', () => {
 
     it('returns null after max retries on CORS proxy HTTP error', async () => {
         const url = 'https://dle.rae.es/word';
-        const warnSpy = jest.spyOn(console, 'warn').mockImplementation(() => {});
-        const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
-        global.fetch.mockResolvedValue({ ok: false, status: 502 });
+        const warnSpy = jest.spyOn(console, 'warn').mockImplementation(() => {
+        });
+        const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {
+        });
+        global.fetch.mockResolvedValue({ok: false, status: 502});
 
         const result = await fetchHtml(url);
 
@@ -92,8 +95,9 @@ describe('fetchHtml', () => {
 
     it('returns null on non-proxy HTTP error', async () => {
         const url = 'https://example.com/page';
-        const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
-        global.fetch.mockResolvedValue({ ok: false, status: 404 });
+        const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {
+        });
+        global.fetch.mockResolvedValue({ok: false, status: 404});
 
         const result = await fetchHtml(url);
 
@@ -104,10 +108,11 @@ describe('fetchHtml', () => {
 
     it('retries on CORS proxy network error and succeeds', async () => {
         const url = 'https://dle.rae.es/word';
-        const warnSpy = jest.spyOn(console, 'warn').mockImplementation(() => {});
+        const warnSpy = jest.spyOn(console, 'warn').mockImplementation(() => {
+        });
         global.fetch
             .mockRejectedValueOnce(new Error('Network error'))
-            .mockResolvedValueOnce({ ok: true, json: jest.fn().mockResolvedValue({ contents: 'abc' }) });
+            .mockResolvedValueOnce({ok: true, json: jest.fn().mockResolvedValue({contents: 'abc'})});
 
         const result = await fetchHtml(url);
 
@@ -119,8 +124,10 @@ describe('fetchHtml', () => {
 
     it('returns null after max retries on CORS proxy network error', async () => {
         const url = 'https://dle.rae.es/word';
-        const warnSpy = jest.spyOn(console, 'warn').mockImplementation(() => {});
-        const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+        const warnSpy = jest.spyOn(console, 'warn').mockImplementation(() => {
+        });
+        const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {
+        });
         global.fetch.mockRejectedValue(new Error('Network error'));
 
         const result = await fetchHtml(url);
@@ -144,7 +151,8 @@ describe('fetchHtml', () => {
 
     it('returns null on non-proxy network error', async () => {
         const url = 'https://example.com/page';
-        const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+        const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {
+        });
         global.fetch.mockRejectedValue(new Error('Network error'));
 
         const result = await fetchHtml(url);
@@ -156,8 +164,9 @@ describe('fetchHtml', () => {
 
     it('returns null if CORS proxy response has no contents', async () => {
         const url = 'https://dle.rae.es/word';
-        const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
-        global.fetch.mockResolvedValue({ ok: true, json: jest.fn().mockResolvedValue({}) });
+        const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {
+        });
+        global.fetch.mockResolvedValue({ok: true, json: jest.fn().mockResolvedValue({})});
 
         const result = await fetchHtml(url);
 
@@ -171,7 +180,7 @@ describe('parseContent', () => {
     let mockDoc, mockContent, mockBrowserInfo;
 
     beforeEach(() => {
-        mockBrowserInfo = { remove: jest.fn() };
+        mockBrowserInfo = {remove: jest.fn()};
         mockContent = {
             querySelector: jest.fn().mockReturnValue(null),
             innerHTML: '<div>content</div>'
@@ -232,7 +241,7 @@ describe('fetchSpellSuggestions', () => {
         const doc = {
             querySelector: jest.fn().mockReturnValue(table)
         };
-        global.fetch.mockResolvedValue({ text: jest.fn().mockResolvedValue(html) });
+        global.fetch.mockResolvedValue({text: jest.fn().mockResolvedValue(html)});
         global.DOMParser.mockImplementation(() => ({
             parseFromString: jest.fn().mockReturnValue(doc)
         }));
@@ -251,7 +260,7 @@ describe('fetchSpellSuggestions', () => {
         const doc = {
             querySelector: jest.fn().mockReturnValue(null)
         };
-        global.fetch.mockResolvedValue({ text: jest.fn().mockResolvedValue(html) });
+        global.fetch.mockResolvedValue({text: jest.fn().mockResolvedValue(html)});
         global.DOMParser.mockImplementation(() => ({
             parseFromString: jest.fn().mockReturnValue(doc)
         }));
@@ -262,7 +271,8 @@ describe('fetchSpellSuggestions', () => {
     });
 
     it('returns null and logs error on fetch error', async () => {
-        const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+        const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {
+        });
         global.fetch.mockRejectedValue(new Error('fail'));
 
         const result = await fetchSpellSuggestions('spellurl', jest.fn());
@@ -279,7 +289,7 @@ describe('fetchAndDisplayContent', () => {
     beforeEach(() => {
         jest.clearAllMocks();
         onWordClick = jest.fn();
-        browserInfoMock = { remove: jest.fn() };
+        browserInfoMock = {remove: jest.fn()};
         contentMock = {
             querySelector: jest.fn().mockReturnValue(null),
             innerText: 'Some content',
@@ -295,11 +305,14 @@ describe('fetchAndDisplayContent', () => {
         jest.spyOn(cacheService, 'generateCacheKey').mockImplementation((url, sel) => `key:${url}:${sel}`);
         jest.spyOn(cacheService, 'getCachedContent').mockResolvedValue(null);
         jest.spyOn(cacheService, 'cacheContent').mockResolvedValue();
-        jest.spyOn(console, 'log').mockImplementation(() => {});
-        jest.spyOn(console, 'error').mockImplementation(() => {});
+        jest.spyOn(console, 'log').mockImplementation(() => {
+        });
+        jest.spyOn(console, 'error').mockImplementation(() => {
+        });
         // Spy on setupLinksOnContent if it's exported, otherwise it will just do nothing
         try {
-            jest.spyOn(require('../../src/services/contentService'), 'setupLinksOnContent').mockImplementation(() => {});
+            jest.spyOn(require('../../src/services/contentService'), 'setupLinksOnContent').mockImplementation(() => {
+            });
         } catch (e) {
             // setupLinksOnContent might not be exported, that's okay
         }
@@ -335,46 +348,46 @@ describe('fetchAndDisplayContent', () => {
         expect(cacheService.getCachedContent).toHaveBeenCalledWith('key:url:#main');
     });
 
-it('fetches from network and caches if content found', async () => {
-  // No cached content
-  cacheService.getCachedContent.mockResolvedValueOnce(null);
+    it('fetches from network and caches if content found', async () => {
+        // No cached content
+        cacheService.getCachedContent.mockResolvedValueOnce(null);
 
-  // Mock fetch to return HTML
-  jest.spyOn(global, 'fetch').mockResolvedValueOnce({
-    ok: true,
-    text: jest.fn().mockResolvedValue('<div id="main">Network</div>')
-  });
+        // Mock fetch to return HTML
+        jest.spyOn(global, 'fetch').mockResolvedValueOnce({
+            ok: true,
+            text: jest.fn().mockResolvedValue('<div id="main">Network</div>')
+        });
 
-  // Create the actual DOM element as returned by parser
-  const mockNetworkContent = document.createElement('div');
-  mockNetworkContent.id = 'main';
-  mockNetworkContent.innerHTML = 'Network';
+        // Create the actual DOM element as returned by parser
+        const mockNetworkContent = document.createElement('div');
+        mockNetworkContent.id = 'main';
+        mockNetworkContent.innerHTML = 'Network';
 
-  // Optional outer wrapper (like cached test)
-  const outerDiv = document.createElement('div');
-  outerDiv.appendChild(mockNetworkContent);
+        // Optional outer wrapper (like cached test)
+        const outerDiv = document.createElement('div');
+        outerDiv.appendChild(mockNetworkContent);
 
-  // Mock the parser to return a document-like object
-  parserMock.parseFromString.mockReturnValueOnce({
-    querySelector: jest.fn().mockImplementation((selector) => {
-      if (selector === '#main') return outerDiv;
-      return null;
-    })
-  });
+        // Mock the parser to return a document-like object
+        parserMock.parseFromString.mockReturnValueOnce({
+            querySelector: jest.fn().mockImplementation((selector) => {
+                if (selector === '#main') return outerDiv;
+                return null;
+            })
+        });
 
-  const result = await fetchAndDisplayContent('url', '#main', null, onWordClick);
+        const result = await fetchAndDisplayContent('url', '#main', null, onWordClick);
 
-  expect(result).toEqual({
-    html: '<div id="main">Network</div>',
-    hasContent: true
-  });
+        expect(result).toEqual({
+            html: '<div id="main">Network</div>',
+            hasContent: true
+        });
 
-  // Ensure the result was cached
-  expect(cacheService.cacheContent).toHaveBeenCalledWith(
-    'key:url:#main',
-    expect.any(String) // the HTML string that was fetched
-  );
-});
+        // Ensure the result was cached
+        expect(cacheService.cacheContent).toHaveBeenCalledWith(
+            'key:url:#main',
+            expect.any(String) // the HTML string that was fetched
+        );
+    });
 
 
     it('does not cache if no content found and no spellUrl', async () => {
@@ -463,11 +476,11 @@ it('fetches from network and caches if content found', async () => {
             ok: false,
             status: 404
         });
-        parserMock.parseFromString.mockReturnValueOnce({ querySelector: jest.fn().mockReturnValue(null) });
+        parserMock.parseFromString.mockReturnValueOnce({querySelector: jest.fn().mockReturnValue(null)});
 
         const result = await fetchAndDisplayContent('url', '#main', 'spellurl', onWordClick);
 
-        expect(result).toEqual({ html: 'Error fetching content.', hasContent: false });
+        expect(result).toEqual({html: 'Error fetching content.', hasContent: false});
     });
 
     it('tries spell suggestions if no content found after fetch', async () => {
@@ -485,13 +498,13 @@ it('fetches from network and caches if content found', async () => {
             if (selector === '#main') return emptyContent;
             return null;
         });
-        const table = { outerHTML: '<table>spell</table>', querySelectorAll: jest.fn().mockReturnValue([]) };
+        const table = {outerHTML: '<table>spell</table>', querySelectorAll: jest.fn().mockReturnValue([])};
         parserMock.parseFromString.mockReturnValueOnce(docMock);
-        parserMock.parseFromString.mockReturnValueOnce({ querySelector: jest.fn().mockReturnValue(table) });
+        parserMock.parseFromString.mockReturnValueOnce({querySelector: jest.fn().mockReturnValue(table)});
 
         const result = await fetchAndDisplayContent('url', '#main', 'spellurl', onWordClick);
 
-        expect(result).toEqual({ html: '<table>spell</table>', hasContent: true });
+        expect(result).toEqual({html: '<table>spell</table>', hasContent: true});
         expect(cacheService.cacheContent).toHaveBeenCalled();
     });
 
@@ -508,11 +521,11 @@ it('fetches from network and caches if content found', async () => {
         };
         docMock.querySelector.mockReturnValueOnce(emptyContent);
         parserMock.parseFromString.mockReturnValueOnce(docMock);
-        parserMock.parseFromString.mockReturnValueOnce({ querySelector: jest.fn().mockReturnValue(null) });
+        parserMock.parseFromString.mockReturnValueOnce({querySelector: jest.fn().mockReturnValue(null)});
 
         const result = await fetchAndDisplayContent('url', '#main', 'spellurl', onWordClick);
 
-        expect(result).toEqual({ html: 'No content found.', hasContent: false });
+        expect(result).toEqual({html: 'No content found.', hasContent: false});
         expect(cacheService.cacheContent).not.toHaveBeenCalled();
     });
 
@@ -531,7 +544,7 @@ it('fetches from network and caches if content found', async () => {
 
         const result = await fetchAndDisplayContent('url', '#main', null, onWordClick);
 
-        expect(result).toEqual({ html: 'Error fetching content.', hasContent: false });
+        expect(result).toEqual({html: 'Error fetching content.', hasContent: false});
     });
 });
 
@@ -559,8 +572,10 @@ describe('fetchAndDisplayContent - 404 handling and "No content found" messages'
         jest.spyOn(cacheService, 'generateCacheKey').mockImplementation((url, sel) => `key:${url}:${sel}`);
         jest.spyOn(cacheService, 'getCachedContent').mockResolvedValue(null);
         jest.spyOn(cacheService, 'cacheContent').mockResolvedValue();
-        jest.spyOn(console, 'log').mockImplementation(() => {});
-        jest.spyOn(console, 'error').mockImplementation(() => {});
+        jest.spyOn(console, 'log').mockImplementation(() => {
+        });
+        jest.spyOn(console, 'error').mockImplementation(() => {
+        });
     });
 
     it('returns "No content found for \\"word\\"" for sin section on 404', async () => {
@@ -704,7 +719,7 @@ describe('fetchAndDisplayContent - 404 handling and "No content found" messages'
         global.fetch.mockResolvedValueOnce({
             text: jest.fn().mockResolvedValue('<div>no table</div>')
         });
-        parserMock.parseFromString.mockReturnValueOnce({ querySelector: jest.fn().mockReturnValue(null) });
+        parserMock.parseFromString.mockReturnValueOnce({querySelector: jest.fn().mockReturnValue(null)});
 
         // Act & Assert
         await expect(

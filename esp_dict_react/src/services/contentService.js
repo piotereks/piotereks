@@ -1,4 +1,4 @@
-import { getCachedContent, cacheContent, generateCacheKey } from './cacheService';
+import {getCachedContent, cacheContent, generateCacheKey} from './cacheService';
 
 const MAX_RETRIES = 2;
 const RETRY_DELAY = 1000; // 1 second
@@ -23,7 +23,7 @@ export const fetchHtml = async (url, retries = 0, abortSignal = null) => {
             ? `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`
             : url;
 
-        const response = await fetchWithTimeout(fetchUrl, { signal: abortSignal });
+        const response = await fetchWithTimeout(fetchUrl, {signal: abortSignal});
 
         if (!response.ok) {
             // Only retry on CORS proxy failures

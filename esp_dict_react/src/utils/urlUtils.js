@@ -1,19 +1,19 @@
 export const buildUrl = (baseUrl, word) => {
-  return `${baseUrl}${encodeURIComponent(word)}`;
+    return `${baseUrl}${encodeURIComponent(word)}`;
 };
 
 export const buildSpellUrl = (word) => {
-  return `https://spell.wordreference.com/spell/spelljs.php?dict=eses&w=${encodeURIComponent(word)}`;
+    return `https://spell.wordreference.com/spell/spelljs.php?dict=eses&w=${encodeURIComponent(word)}`;
 };
 
 export const updateUrlWithWord = (word) => {
-  const newUrl = `${window.location.pathname}?word=${encodeURIComponent(word)}`;
-  window.history.pushState(null, '', newUrl);
-  // Dispatch custom event to notify SearchBar of URL change
-  window.dispatchEvent(new CustomEvent('url-changed', { detail: { word } }));
+    const newUrl = `${window.location.pathname}?word=${encodeURIComponent(word)}`;
+    window.history.pushState(null, '', newUrl);
+    // Dispatch custom event to notify SearchBar of URL change
+    window.dispatchEvent(new CustomEvent('url-changed', {detail: {word}}));
 };
 
 export const getUrlParameter = (name) => {
-  const params = new URLSearchParams(window.location.search);
-  return params.get(name);
+    const params = new URLSearchParams(window.location.search);
+    return params.get(name);
 };
