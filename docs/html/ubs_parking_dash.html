@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#0a0e27">
     <title>Parking Status Monitor</title>
     <style>
         * {
@@ -12,17 +13,17 @@
         }
 
         :root {
-            --bg-primary: #0f172a;
-            --bg-secondary: #1e293b;
-            --bg-card: #334155;
-            --text-primary: #f1f5f9;
-            --text-secondary: #94a3b8;
-            --accent: #06b6d4;
-            --accent-light: #22d3ee;
-            --warning: #ef4444;
-            --success: #10b981;
-            --border: #475569;
-            --shadow: rgba(0, 0, 0, 0.3);
+            --bg-primary: #0a0e27;
+            --bg-secondary: #141937;
+            --bg-card: #1e2749;
+            --text-primary: #e0e6ff;
+            --text-secondary: #8b95c9;
+            --accent: #00d9ff;
+            --accent-light: #00fff7;
+            --warning: #ff3366;
+            --success: #00ff88;
+            --border: #2d3b6b;
+            --shadow: rgba(0, 0, 0, 0.4);
         }
 
         [data-theme="light"] {
@@ -83,6 +84,9 @@
             justify-content: center;
             width: 44px;
             height: 44px;
+            min-width: 44px;
+            min-height: 44px;
+            -webkit-tap-highlight-color: transparent;
         }
 
         .theme-toggle:hover {
@@ -124,6 +128,12 @@
             transform: translateY(-2px);
         }
 
+        @media (hover: none) {
+            .status-item:hover {
+                transform: none;
+            }
+        }
+
         .status-label {
             color: var(--text-secondary);
             font-size: 0.875rem;
@@ -139,6 +149,13 @@
             color: var(--success);
         }
 
+        .status-current {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+
         .table-wrapper {
             background: var(--bg-secondary);
             border: 1px solid var(--border);
@@ -146,6 +163,8 @@
             overflow: hidden;
             box-shadow: 0 4px 6px -1px var(--shadow), 0 2px 4px -1px var(--shadow);
             margin-bottom: 2rem;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
         }
 
         table {
@@ -260,25 +279,109 @@
             border-radius: 9999px;
             margin-right: 0.5rem;
             background: var(--success);
-            box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
         }
 
         .age-indicator.old {
             background: var(--warning);
-            box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
         }
 
         @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
             h1 {
-                font-size: 1.8rem;
+                font-size: 1.75rem;
+            }
+
+            .header-row {
+                margin-bottom: 0.75rem;
+            }
+
+            .subtitle {
+                font-size: 0.875rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .status-bar {
+                gap: 0.75rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .status-item {
+                padding: 1rem;
+                min-width: 100%;
+            }
+
+            .status-label {
+                font-size: 0.75rem;
+            }
+
+            .status-value {
+                font-size: 1.5rem;
+            }
+
+            .table-wrapper {
+                margin-bottom: 1.5rem;
+                border-radius: 0.5rem;
+                overflow-x: auto;
             }
 
             table {
-                font-size: 0.85rem;
+                font-size: 0.875rem;
+                min-width: 600px;
+            }
+
+            th {
+                padding: 0.75rem 0.5rem;
+                font-size: 0.75rem;
+            }
+
+            td {
+                padding: 0.75rem 0.5rem;
+                font-size: 0.875rem;
+            }
+
+            td:nth-child(2) {
+                font-size: 1.5rem;
+            }
+
+            .timestamp-cell {
+                font-size: 0.75rem;
+            }
+
+            .refresh-btn {
+                width: 100%;
+                padding: 1rem;
+                font-size: 0.875rem;
+            }
+
+            .theme-toggle {
+                width: 40px;
+                height: 40px;
+                font-size: 1.25rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .subtitle {
+                font-size: 0.8rem;
+            }
+
+            table {
+                min-width: 550px;
             }
 
             th, td {
-                padding: 0.75rem 0.5rem;
+                padding: 0.5rem 0.25rem;
+            }
+
+            td:nth-child(2) {
+                font-size: 1.25rem;
             }
         }
     </style>
@@ -302,13 +405,12 @@
                         <th>Parking Name</th>
                         <th>Free Spaces</th>
                         <th>Data Timestamp</th>
-                        <th>Current Time</th>
                         <th>Age (mins)</th>
                     </tr>
                 </thead>
                 <tbody id="parkingTableBody">
                     <tr>
-                        <td colspan="5" class="loading">Loading parking data...</td>
+                        <td colspan="4" class="loading">Loading parking data...</td>
                     </tr>
                 </tbody>
             </table>
@@ -316,8 +418,9 @@
 
         <div class="status-bar">
             <div class="status-item">
-                <div class="status-label">Last Update</div>
+                <div class="status-label">Last Update / Current Time</div>
                 <div class="status-value" id="lastUpdate">--:--:--</div>
+                <div class="status-current" id="currentTime">--:--:--</div>
             </div>
             <div class="status-item">
                 <div class="status-label">Total Spaces</div>
@@ -349,7 +452,7 @@
             const dataStatus = document.getElementById('dataStatus');
             
             errorContainer.innerHTML = '';
-            tbody.innerHTML = '<tr><td colspan="5" class="loading">Loading parking data...</td></tr>';
+            tbody.innerHTML = '<tr><td colspan="4" class="loading">Loading parking data...</td></tr>';
             dataStatus.textContent = 'LOADING';
             dataStatus.style.color = 'var(--text-secondary)';
 
@@ -390,7 +493,7 @@
 
             } catch (error) {
                 console.error('Error fetching parking data:', error);
-                tbody.innerHTML = '<tr><td colspan="5" class="loading" style="color: var(--warning);">Failed to load data. Check console for details.</td></tr>';
+                tbody.innerHTML = '<tr><td colspan="4" class="loading" style="color: var(--warning);">Failed to load data. Check console for details.</td></tr>';
                 
                 errorContainer.innerHTML = `
                     <div class="error">
@@ -409,12 +512,13 @@
             
             // Parse timestamp
             const dataTimestamp = parseTimestamp(data.Timestamp);
-            const ageMinutes = Math.floor((currentTime - dataTimestamp) / 1000 / 60);
-            const isOld = ageMinutes >= 15;
+            const ageMinutes = Math.max(
+                                        0,
+                                        Math.floor((currentTime - dataTimestamp) / 1000 / 60)
+                                        );            const isOld = ageMinutes >= 15;
 
             // Format times
             const dataTimeStr = formatTime(dataTimestamp);
-            const currentTimeStr = formatTime(currentTime);
 
             // Replace Bank_1 with Uni Wroc
             let parkingName = data.ParkingGroupName || 'Unknown';
@@ -427,7 +531,6 @@
                 <td>${parkingName}</td>
                 <td ${isOld ? 'class="value-red"' : ''}>${data.CurrentFreeGroupCounterValue || 0}</td>
                 <td class="timestamp-cell">${dataTimeStr}</td>
-                <td class="timestamp-cell">${currentTimeStr}</td>
                 <td>
                     <span class="age-indicator ${isOld ? 'old' : ''}"></span>
                     ${ageMinutes} ${isOld ? '<span class="value-red">(old)</span>' : ''}
@@ -498,8 +601,19 @@
             }
         }
 
+        // Update current time display
+        function updateCurrentTime() {
+            const currentTimeElement = document.getElementById('currentTime');
+            const now = new Date();
+            currentTimeElement.textContent = formatTime(now);
+        }
+
+        // Update current time every second
+        setInterval(updateCurrentTime, 1000);
+
         // Initialize
         loadTheme();
+        updateCurrentTime();
         fetchParkingData();
     </script>
 </body>
