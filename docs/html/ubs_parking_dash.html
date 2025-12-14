@@ -12,25 +12,41 @@
         }
 
         :root {
-            --bg-primary: #0a0e27;
-            --bg-secondary: #141937;
-            --text-primary: #e0e6ff;
-            --text-secondary: #8b95c9;
-            --accent: #00d9ff;
-            --warning: #ff3366;
-            --border: #1e2749;
-            --success: #00ff88;
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-card: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent: #06b6d4;
+            --accent-light: #22d3ee;
+            --warning: #ef4444;
+            --success: #10b981;
+            --border: #475569;
+            --shadow: rgba(0, 0, 0, 0.3);
+        }
+
+        [data-theme="light"] {
+            --bg-primary: #f1f5f9;
+            --bg-secondary: #ffffff;
+            --bg-card: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #64748b;
+            --accent: #0891b2;
+            --accent-light: #06b6d4;
+            --warning: #dc2626;
+            --success: #059669;
+            --border: #e2e8f0;
+            --shadow: rgba(0, 0, 0, 0.1);
         }
 
         body {
-            font-family: 'Courier New', monospace;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
             min-height: 100vh;
             padding: 2rem;
-            background-image: 
-                radial-gradient(circle at 20% 50%, rgba(0, 217, 255, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(255, 51, 102, 0.05) 0%, transparent 50%);
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         .container {
@@ -38,21 +54,51 @@
             margin: 0 auto;
         }
 
-        h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
+        .header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 0.5rem;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin: 0;
+            color: var(--text-primary);
+            letter-spacing: -0.025em;
+        }
+
+        .theme-toggle {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: all 0.2s;
+            box-shadow: 0 1px 3px var(--shadow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 6px var(--shadow);
+        }
+
+        .theme-toggle:active {
+            transform: scale(0.95);
         }
 
         .subtitle {
             color: var(--text-secondary);
             margin-bottom: 2rem;
-            font-size: 0.9rem;
-            letter-spacing: 0.05em;
+            font-size: 1rem;
+            font-weight: 400;
         }
 
         .status-bar {
@@ -65,32 +111,41 @@
         .status-item {
             background: var(--bg-secondary);
             border: 1px solid var(--border);
-            padding: 1rem 1.5rem;
-            border-radius: 4px;
+            padding: 1.25rem 1.5rem;
+            border-radius: 0.75rem;
             flex: 1;
             min-width: 200px;
+            box-shadow: 0 1px 3px var(--shadow);
+            transition: all 0.2s;
+        }
+
+        .status-item:hover {
+            box-shadow: 0 4px 6px var(--shadow);
+            transform: translateY(-2px);
         }
 
         .status-label {
             color: var(--text-secondary);
-            font-size: 0.8rem;
+            font-size: 0.875rem;
+            font-weight: 500;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.05em;
             margin-bottom: 0.5rem;
         }
 
         .status-value {
-            font-size: 1.5rem;
-            font-weight: bold;
+            font-size: 1.875rem;
+            font-weight: 700;
             color: var(--success);
         }
 
         .table-wrapper {
             background: var(--bg-secondary);
             border: 1px solid var(--border);
-            border-radius: 4px;
+            border-radius: 0.75rem;
             overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 6px -1px var(--shadow), 0 2px 4px -1px var(--shadow);
+            margin-bottom: 2rem;
         }
 
         table {
@@ -99,24 +154,29 @@
         }
 
         thead {
-            background: rgba(0, 217, 255, 0.1);
-            border-bottom: 2px solid var(--accent);
+            background: var(--bg-card);
         }
 
         th {
-            padding: 1rem;
+            padding: 1rem 1.5rem;
             text-align: left;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 0.1em;
-            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.875rem;
+            letter-spacing: 0.025em;
+            color: var(--accent-light);
+            border-bottom: 1px solid var(--border);
         }
 
         td {
-            padding: 1rem;
+            padding: 1rem 1.5rem;
             border-bottom: 1px solid var(--border);
             font-size: 1rem;
+        }
+
+        td:nth-child(2) {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--success);
         }
 
         tr:last-child td {
@@ -124,82 +184,88 @@
         }
 
         tbody tr {
-            transition: background-color 0.2s;
+            transition: background-color 0.15s;
         }
 
         tbody tr:hover {
-            background: rgba(0, 217, 255, 0.05);
+            background: var(--bg-card);
         }
 
         .value-red {
-            color: var(--warning);
-            font-weight: bold;
+            color: var(--warning) !important;
+            font-weight: 700;
             animation: pulse 2s infinite;
         }
 
         @keyframes pulse {
             0%, 100% { opacity: 1; }
-            50% { opacity: 0.6; }
+            50% { opacity: 0.7; }
         }
 
         .loading {
             text-align: center;
             padding: 3rem;
             color: var(--text-secondary);
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         .error {
-            background: rgba(255, 51, 102, 0.1);
+            background: rgba(239, 68, 68, 0.1);
             border: 1px solid var(--warning);
-            padding: 1rem;
-            border-radius: 4px;
+            padding: 1rem 1.25rem;
+            border-radius: 0.5rem;
             color: var(--warning);
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .refresh-btn {
             background: var(--accent);
-            color: var(--bg-primary);
+            color: white;
             border: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 4px;
-            font-family: 'Courier New', monospace;
-            font-weight: bold;
-            font-size: 0.9rem;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-family: inherit;
+            font-weight: 600;
+            font-size: 0.875rem;
             cursor: pointer;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            transition: all 0.3s;
-            margin-bottom: 2rem;
+            letter-spacing: 0.05em;
+            transition: all 0.2s;
+            margin-top: 0;
+            margin-bottom: 0;
+            box-shadow: 0 1px 3px var(--shadow);
         }
 
         .refresh-btn:hover {
-            background: var(--success);
-            box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
-            transform: translateY(-2px);
+            background: var(--accent-light);
+            box-shadow: 0 4px 6px var(--shadow);
+            transform: translateY(-1px);
         }
 
         .refresh-btn:active {
             transform: translateY(0);
+            box-shadow: 0 1px 2px var(--shadow);
         }
 
         .timestamp-cell {
-            font-size: 0.9rem;
+            font-size: 0.875rem;
             color: var(--text-secondary);
+            font-weight: 400;
         }
 
         .age-indicator {
             display: inline-block;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            border-radius: 9999px;
             margin-right: 0.5rem;
             background: var(--success);
+            box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
         }
 
         .age-indicator.old {
             background: var(--warning);
+            box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
         }
 
         @media (max-width: 768px) {
@@ -219,25 +285,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>🅿️ Parking Monitor</h1>
-        <div class="subtitle">Real-time parking availability • Wrocław</div>
-
-        <button class="refresh-btn" onclick="fetchParkingData()">⟳ Refresh Data</button>
-
-        <div class="status-bar">
-            <div class="status-item">
-                <div class="status-label">Last Update</div>
-                <div class="status-value" id="lastUpdate">--:--:--</div>
-            </div>
-            <div class="status-item">
-                <div class="status-label">Total Spaces</div>
-                <div class="status-value" id="totalSpaces">---</div>
-            </div>
-            <div class="status-item">
-                <div class="status-label">Data Status</div>
-                <div class="status-value" id="dataStatus">LOADING</div>
-            </div>
+        <div class="header-row">
+            <h1>🅿️ Parking Monitor</h1>
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                <span id="themeIcon">🌙</span>
+            </button>
         </div>
+        <div class="subtitle">Real-time parking availability • UBS Wrocław</div>
 
         <div id="errorContainer"></div>
 
@@ -259,6 +313,23 @@
                 </tbody>
             </table>
         </div>
+
+        <div class="status-bar">
+            <div class="status-item">
+                <div class="status-label">Last Update</div>
+                <div class="status-value" id="lastUpdate">--:--:--</div>
+            </div>
+            <div class="status-item">
+                <div class="status-label">Total Spaces</div>
+                <div class="status-value" id="totalSpaces">---</div>
+            </div>
+            <div class="status-item">
+                <div class="status-label">Data Status</div>
+                <div class="status-value" id="dataStatus">LOADING</div>
+            </div>
+        </div>
+
+        <button class="refresh-btn" onclick="fetchParkingData()">⟳ Refresh Data</button>
     </div>
 
     <script>
@@ -345,9 +416,15 @@
             const dataTimeStr = formatTime(dataTimestamp);
             const currentTimeStr = formatTime(currentTime);
 
+            // Replace Bank_1 with Uni Wroc
+            let parkingName = data.ParkingGroupName || 'Unknown';
+            if (parkingName === 'Bank_1') {
+                parkingName = 'Uni Wroc';
+            }
+
             // Create cells
             row.innerHTML = `
-                <td>${data.ParkingGroupName || 'Unknown'}</td>
+                <td>${parkingName}</td>
                 <td ${isOld ? 'class="value-red"' : ''}>${data.CurrentFreeGroupCounterValue || 0}</td>
                 <td class="timestamp-cell">${dataTimeStr}</td>
                 <td class="timestamp-cell">${currentTimeStr}</td>
@@ -393,7 +470,36 @@
         // Auto-refresh every 5 minutes
         setInterval(fetchParkingData, 5 * 60 * 1000);
 
-        // Initial load
+        // Theme toggle functionality
+        function toggleTheme() {
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('themeIcon');
+            const currentTheme = html.getAttribute('data-theme');
+            
+            if (currentTheme === 'light') {
+                html.removeAttribute('data-theme');
+                themeIcon.textContent = '🌙';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '☀️';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Load saved theme on page load
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const themeIcon = document.getElementById('themeIcon');
+            
+            if (savedTheme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '☀️';
+            }
+        }
+
+        // Initialize
+        loadTheme();
         fetchParkingData();
     </script>
 </body>
