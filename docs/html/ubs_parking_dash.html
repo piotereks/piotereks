@@ -262,6 +262,9 @@
     </div>
 
     <script>
+        // CORS Proxy Configuration
+        const CORS_PROXY = 'https://corsproxy.io/?';
+        
         // API Configuration
         const API_URLS = [
             'https://gd.zaparkuj.pl/api/freegroupcountervalue.json',
@@ -280,10 +283,10 @@
             dataStatus.style.color = 'var(--text-secondary)';
 
             try {
-                // Fetch both APIs in parallel with cache-busting
+                // Fetch both APIs in parallel with cache-busting and CORS proxy
                 const timestamp = Date.now();
                 const promises = API_URLS.map(url => 
-                    fetch(`${url}?time=${timestamp}`, {
+                    fetch(`${CORS_PROXY}${encodeURIComponent(url + '?time=' + timestamp)}`, {
                         headers: {
                             'Cache-Control': 'no-cache, no-store, must-revalidate',
                             'Pragma': 'no-cache',
