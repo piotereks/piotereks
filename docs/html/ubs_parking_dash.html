@@ -121,6 +121,17 @@
             justify-content: space-between;
         }
 
+        .table-wrapper {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: 0 1px 3px var(--shadow);
+            margin-bottom: 2rem;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
         .status-label {
             color: var(--text-secondary);
             font-size: 0.875rem;
@@ -135,6 +146,7 @@
             font-weight: 700;
             color: var(--success);
         }
+
 
 
         .panel-section {
@@ -202,16 +214,17 @@
         }
 
         thead {
-            background: var(--bg-card);
+            background: transparent;
         }
 
         th {
             padding: 1rem 1.5rem;
             text-align: left;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 0.875rem;
-            letter-spacing: 0.025em;
-            color: var(--accent-light);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
             border-bottom: 1px solid var(--border);
         }
 
@@ -423,6 +436,7 @@
             .status-value {
                 font-size: 1.5rem;
             }
+
 
             .table-wrapper {
                 margin-bottom: 1.5rem;
