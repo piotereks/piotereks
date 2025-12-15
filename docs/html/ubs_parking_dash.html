@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
@@ -22,6 +23,7 @@
             --accent-light: #00fff7;
             --warning: #ff3366;
             --success: #00ff88;
+            --warning-medium: #ffaa00;
             --border: #2d3b6b;
             --shadow: rgba(0, 0, 0, 0.4);
         }
@@ -36,6 +38,7 @@
             --accent-light: #06b6d4;
             --warning: #dc2626;
             --success: #059669;
+            --warning-medium: #d97706;
             --border: #e2e8f0;
             --shadow: rgba(0, 0, 0, 0.1);
         }
@@ -216,9 +219,21 @@
             animation: pulse 2s infinite;
         }
 
+        .value-orange {
+            color: var(--warning-medium) !important;
+            font-weight: 700;
+        }
+
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
         }
 
         .loading {
@@ -283,6 +298,10 @@
 
         .age-indicator.old {
             background: var(--warning);
+        }
+
+        .age-indicator.medium {
+            background: var(--warning-medium);
         }
 
         @media (max-width: 768px) {
@@ -376,7 +395,8 @@
                 min-width: 550px;
             }
 
-            th, td {
+            th,
+            td {
                 padding: 0.5rem 0.25rem;
             }
 
@@ -386,213 +406,228 @@
         }
     </style>
 </head>
+
 <body>
-<div class="container">
-    <div class="header-row">
-        <h1>🅿️ Parking Monitor</h1>
-        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-            <span id="themeIcon">🌙</span>
-        </button>
-    </div>
-    <div class="subtitle">Real-time parking availability • UBS Wrocław</div>
-
-    <div id="errorContainer"></div>
-
-    <div class="table-wrapper">
-        <table>
-            <thead>
-            <tr>
-                <th>Parking Name</th>
-                <th>Free Spaces</th>
-                <th>Data Timestamp</th>
-                <th>Age (mins)</th>
-            </tr>
-            </thead>
-            <tbody id="parkingTableBody">
-            <tr>
-                <td colspan="4" class="loading">Loading parking data...</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="status-bar">
-        <div class="status-item">
-            <div class="status-label">Last Update / Current Time</div>
-            <div class="status-value" id="lastUpdate">--:--:--</div>
-            <div class="status-current" id="currentTime">--:--:--</div>
+    <div class="container">
+        <div class="header-row">
+            <h1>🅿️ Parking Monitor</h1>
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                <span id="themeIcon">🌙</span>
+            </button>
         </div>
-        <div class="status-item">
-            <div class="status-label">Total Spaces</div>
-            <div class="status-value" id="totalSpaces">---</div>
+        <div class="subtitle">Real-time parking availability • UBS Wrocław</div>
+
+        <div id="errorContainer"></div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parking Name</th>
+                        <th>Free Spaces</th>
+                        <th>Age (mins)</th>
+                        <th>Data Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody id="parkingTableBody">
+                    <tr>
+                        <td colspan="4" class="loading">Loading parking data...</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="status-item">
-            <div class="status-label">Data Status</div>
-            <div class="status-value" id="dataStatus">LOADING</div>
+
+        <div class="status-bar">
+            <div class="status-item">
+                <div class="status-label">Last Update / Current Time</div>
+                <div class="status-value" id="lastUpdate">--:--:--</div>
+                <div class="status-current" id="currentTime">--:--:--</div>
+            </div>
+            <div class="status-item">
+                <div class="status-label">Total Spaces</div>
+                <div class="status-value" id="totalSpaces">---</div>
+            </div>
+            <div class="status-item">
+                <div class="status-label">Data Status</div>
+                <div class="status-value" id="dataStatus">LOADING</div>
+            </div>
         </div>
+
+        <button class="refresh-btn" onclick="fetchParkingData()">⟳ Refresh Data</button>
     </div>
 
-    <button class="refresh-btn" onclick="fetchParkingData()">⟳ Refresh Data</button>
-</div>
+    <script>
+        const CORS_PROXY = 'https://corsproxy.io/?';
+        const API_URLS = [
+            'https://gd.zaparkuj.pl/api/freegroupcountervalue.json',
+            'https://gd.zaparkuj.pl/api/freegroupcountervalue-green.json'
+        ];
 
-<script>
-    const CORS_PROXY = 'https://corsproxy.io/?';
-    const API_URLS = [
-        'https://gd.zaparkuj.pl/api/freegroupcountervalue.json',
-        'https://gd.zaparkuj.pl/api/freegroupcountervalue-green.json'
-    ];
+        let parkingDataCache = []; // store latest fetched data
 
-    let parkingDataCache = []; // store latest fetched data
+        async function fetchParkingData() {
+            const tbody = document.getElementById('parkingTableBody');
+            const errorContainer = document.getElementById('errorContainer');
+            const dataStatus = document.getElementById('dataStatus');
 
-    async function fetchParkingData() {
-        const tbody = document.getElementById('parkingTableBody');
-        const errorContainer = document.getElementById('errorContainer');
-        const dataStatus = document.getElementById('dataStatus');
+            errorContainer.innerHTML = '';
+            tbody.innerHTML = '<tr><td colspan="4" class="loading">Loading parking data...</td></tr>';
+            dataStatus.textContent = 'LOADING';
+            dataStatus.style.color = 'var(--text-secondary)';
 
-        errorContainer.innerHTML = '';
-        tbody.innerHTML = '<tr><td colspan="4" class="loading">Loading parking data...</td></tr>';
-        dataStatus.textContent = 'LOADING';
-        dataStatus.style.color = 'var(--text-secondary)';
+            try {
+                const timestamp = Date.now();
+                const promises = API_URLS.map(url =>
+                    fetch(`${CORS_PROXY}${encodeURIComponent(url + '?time=' + timestamp)}`, {
+                        headers: {
+                            'Cache-Control': 'no-cache, no-store, must-revalidate',
+                            'Pragma': 'no-cache',
+                            'Expires': '0'
+                        }
+                    }).then(response => {
+                        if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                        return response.json();
+                    })
+                );
 
-        try {
-            const timestamp = Date.now();
-            const promises = API_URLS.map(url =>
-                fetch(`${CORS_PROXY}${encodeURIComponent(url + '?time=' + timestamp)}`, {
-                    headers: {
-                        'Cache-Control': 'no-cache, no-store, must-revalidate',
-                        'Pragma': 'no-cache',
-                        'Expires': '0'
-                    }
-                }).then(response => {
-                    if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                    return response.json();
-                })
-            );
+                const results = await Promise.all(promises);
+                parkingDataCache = results; // update cache
+                updateStatusBar(results);
 
-            const results = await Promise.all(promises);
-            parkingDataCache = results; // update cache
-            updateStatusBar(results);
+                tbody.innerHTML = '';
+                const currentTime = new Date();
+                results.forEach(data => {
+                    const row = createTableRow(data, currentTime);
+                    tbody.appendChild(row);
+                });
 
+                dataStatus.textContent = 'ONLINE';
+                dataStatus.style.color = 'var(--success)';
+            } catch (error) {
+                console.error('Error fetching parking data:', error);
+                tbody.innerHTML = '<tr><td colspan="4" class="loading" style="color: var(--warning);">Failed to load data. Check console for details.</td></tr>';
+
+                errorContainer.innerHTML = `<div class="error"><strong>ERROR:</strong> ${error.message}</div>`;
+                dataStatus.textContent = 'OFFLINE';
+                dataStatus.style.color = 'var(--warning)';
+            }
+        }
+
+        function createTableRow(data, currentTime) {
+            const row = document.createElement('tr');
+            const dataTimestamp = parseTimestamp(data.Timestamp);
+            const ageMinutes = Math.max(0, Math.floor((currentTime - dataTimestamp) / 1000 / 60));
+            const isOld = ageMinutes >= 15;
+            const isMedium = ageMinutes > 5 && ageMinutes < 15;
+
+            const dataTimeStr = formatTime(dataTimestamp);
+
+            let parkingName = data.ParkingGroupName || 'Unknown';
+            if (parkingName === 'Bank_1') parkingName = 'Uni Wroc';
+
+            let valueClass = '';
+            if (isOld) valueClass = 'class="value-red"';
+            else if (isMedium) valueClass = 'class="value-orange"';
+
+            let ageClass = '';
+            if (isOld) ageClass = 'old';
+            else if (isMedium) ageClass = 'medium';
+
+            let ageTextSuffix = '';
+            if (isOld) ageTextSuffix = '<span class="value-red">(old)</span>';
+            else if (isMedium) ageTextSuffix = '<span class="value-orange">(>5m)</span>';
+
+            row.innerHTML = `
+            <td>${parkingName}</td>
+            <td ${valueClass}>${data.CurrentFreeGroupCounterValue || 0}</td>
+            <td>
+                <span class="age-indicator ${ageClass}"></span>
+                ${ageMinutes} ${ageTextSuffix}
+            </td>
+            <td class="timestamp-cell">${dataTimeStr}</td>
+        `;
+            return row;
+        }
+
+        function parseTimestamp(timestampStr) {
+            return new Date(timestampStr.replace(' ', 'T'));
+        }
+
+        function formatTime(date) {
+            return date.toLocaleTimeString('pl-PL', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        }
+
+        function updateStatusBar(results) {
+            document.getElementById('lastUpdate').textContent = formatTime(new Date());
+            const total = results.reduce((sum, data) => sum + (data.CurrentFreeGroupCounterValue || 0), 0);
+            document.getElementById('totalSpaces').textContent = total;
+        }
+
+        function toggleTheme() {
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('themeIcon');
+            const currentTheme = html.getAttribute('data-theme');
+            if (currentTheme === 'light') {
+                html.removeAttribute('data-theme');
+                themeIcon.textContent = '🌙';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '☀️';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const themeIcon = document.getElementById('themeIcon');
+            if (savedTheme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '☀️';
+            }
+        }
+
+        function updateCurrentTime() {
+            document.getElementById('currentTime').textContent = formatTime(new Date());
+        }
+
+
+        function recalcAges() {
+            if (parkingDataCache.length === 0) return;
+            const tbody = document.getElementById('parkingTableBody');
             tbody.innerHTML = '';
-            const currentTime = new Date();
-            results.forEach(data => {
-                const row = createTableRow(data, currentTime);
+            const now = new Date();
+            parkingDataCache.forEach(data => {
+                const row = createTableRow(data, now);
                 tbody.appendChild(row);
             });
-
-            dataStatus.textContent = 'ONLINE';
-            dataStatus.style.color = 'var(--success)';
-        } catch (error) {
-            console.error('Error fetching parking data:', error);
-            tbody.innerHTML = '<tr><td colspan="4" class="loading" style="color: var(--warning);">Failed to load data. Check console for details.</td></tr>';
-
-            errorContainer.innerHTML = `<div class="error"><strong>ERROR:</strong> ${error.message}</div>`;
-            dataStatus.textContent = 'OFFLINE';
-            dataStatus.style.color = 'var(--warning)';
         }
-    }
 
-    function createTableRow(data, currentTime) {
-        const row = document.createElement('tr');
-        const dataTimestamp = parseTimestamp(data.Timestamp);
-        const ageMinutes = Math.max(0, Math.floor((currentTime - dataTimestamp) / 1000 / 60));
-        const isOld = ageMinutes >= 15;
+        function scheduleRandomFetch(fetchFunction, minMinutes, maxMinutes) {
+            const minMs = minMinutes * 60 * 1000;
+            const maxMs = maxMinutes * 60 * 1000;
 
-        const dataTimeStr = formatTime(dataTimestamp);
+            const interval = Math.floor(Math.random() * (maxMs - minMs + 1) + minMs);
 
-        let parkingName = data.ParkingGroupName || 'Unknown';
-        if (parkingName === 'Bank_1') parkingName = 'Uni Wroc';
-
-        row.innerHTML = `
-            <td>${parkingName}</td>
-            <td ${isOld ? 'class="value-red"' : ''}>${data.CurrentFreeGroupCounterValue || 0}</td>
-            <td class="timestamp-cell">${dataTimeStr}</td>
-            <td>
-                <span class="age-indicator ${isOld ? 'old' : ''}"></span>
-                ${ageMinutes} ${isOld ? '<span class="value-red">(old)</span>' : ''}
-            </td>
-        `;
-        return row;
-    }
-
-    function parseTimestamp(timestampStr) {
-        return new Date(timestampStr.replace(' ', 'T'));
-    }
-
-    function formatTime(date) {
-        return date.toLocaleTimeString('pl-PL', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-    }
-
-    function updateStatusBar(results) {
-        document.getElementById('lastUpdate').textContent = formatTime(new Date());
-        const total = results.reduce((sum, data) => sum + (data.CurrentFreeGroupCounterValue || 0), 0);
-        document.getElementById('totalSpaces').textContent = total;
-    }
-
-    function toggleTheme() {
-        const html = document.documentElement;
-        const themeIcon = document.getElementById('themeIcon');
-        const currentTheme = html.getAttribute('data-theme');
-        if (currentTheme === 'light') {
-            html.removeAttribute('data-theme');
-            themeIcon.textContent = '🌙';
-            localStorage.setItem('theme', 'dark');
-        } else {
-            html.setAttribute('data-theme', 'light');
-            themeIcon.textContent = '☀️';
-            localStorage.setItem('theme', 'light');
+            setTimeout(async () => {
+                await fetchFunction();
+                scheduleRandomFetch(fetchFunction, minMinutes, maxMinutes); // schedule next fetch
+            }, interval);
         }
-    }
-
-    function loadTheme() {
-        const savedTheme = localStorage.getItem('theme');
-        const themeIcon = document.getElementById('themeIcon');
-        if (savedTheme === 'light') {
-            document.documentElement.setAttribute('data-theme', 'light');
-            themeIcon.textContent = '☀️';
-        }
-    }
-
-    function updateCurrentTime() {
-        document.getElementById('currentTime').textContent = formatTime(new Date());
-    }
-    
-
-    function recalcAges() {
-        if (parkingDataCache.length === 0) return;
-        const tbody = document.getElementById('parkingTableBody');
-        tbody.innerHTML = '';
-        const now = new Date();
-        parkingDataCache.forEach(data => {
-            const row = createTableRow(data, now);
-            tbody.appendChild(row);
-        });
-    }
-
-    function scheduleRandomFetch(fetchFunction, minMinutes, maxMinutes) {
-        const minMs = minMinutes * 60 * 1000;
-        const maxMs = maxMinutes * 60 * 1000;
-        
-        const interval = Math.floor(Math.random() * (maxMs - minMs + 1) + minMs);
-
-        setTimeout(async () => {
-            await fetchFunction();
-            scheduleRandomFetch(fetchFunction, minMinutes, maxMinutes); // schedule next fetch
-        }, interval);
-    }
 
 
-    // Auto-refresh and age recalculation
-    scheduleRandomFetch();
-    // setInterval(fetchParkingData, 5 * 60 * 1000);
-    scheduleRandomFetch(fetchParkingData, 4, 7); // random refresh between 4 and 7 minutes
-    setInterval(updateCurrentTime, 1000);
-    setInterval(recalcAges, 60 * 1000);
+        // Auto-refresh and age recalculation
+        scheduleRandomFetch();
+        // setInterval(fetchParkingData, 5 * 60 * 1000);
+        scheduleRandomFetch(fetchParkingData, 4, 7); // random refresh between 4 and 7 minutes
+        setInterval(updateCurrentTime, 1000);
+        setInterval(recalcAges, 60 * 1000);
 
-    // Initialize
-    loadTheme();
-    updateCurrentTime();
-    fetchParkingData();
-</script>
+        // Initialize
+        loadTheme();
+        updateCurrentTime();
+        fetchParkingData();
+    </script>
 </body>
+
 </html>
