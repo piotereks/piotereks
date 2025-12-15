@@ -423,10 +423,10 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Parking Name</th>
-                        <th>Free Spaces</th>
+                        <th>Parking</th>
+                        <th>Free Spots</th>
                         <th>Age (mins)</th>
-                        <th>Data Timestamp</th>
+                        <th>Timestamp</th>
                     </tr>
                 </thead>
                 <tbody id="parkingTableBody">
@@ -617,7 +617,7 @@
 
 
         // Auto-refresh and age recalculation
-        scheduleRandomFetch();
+
         // setInterval(fetchParkingData, 5 * 60 * 1000);
         scheduleRandomFetch(fetchParkingData, 4, 7); // random refresh between 4 and 7 minutes
         setInterval(updateCurrentTime, 1000);
