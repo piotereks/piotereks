@@ -549,6 +549,35 @@
         ];
 
         let parkingDataCache = []; // store latest fetched data
+        // ---------------- Google Form Submission ----------------
+        const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdziOlXj2jflrwvES0NIVmnFtH8UNeNiSYbFHvkf-RNxmb6xQ/formResponse";
+        const ENTRY_TIMESTAMP = "entry.343781201"; // your timestamp field
+        // If you have other fields, add them here:
+        // const ENTRY_GREEN = "entry.XXXXXXXX";
+        // const ENTRY_UNI = "entry.YYYYYYYY";
+
+        async function submitToGoogleForm(timestamp, totalSpaces) {
+            const formData = new URLSearchParams();
+            formData.append(ENTRY_TIMESTAMP, timestamp);
+            // formData.append(ENTRY_GREEN, countGreenDay);
+            // formData.append(ENTRY_UNI, countUniversity);
+
+            try {
+                await fetch(GOOGLE_FORM_URL, {
+                    method: "POST",
+                    body: formData,
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    mode: "no-cors" // Required for Google Forms
+                });
+                console.log("Google Form submitted:", timestamp, "Total spaces:", totalSpaces);
+            } catch (err) {
+                console.error("Error submitting Google Form:", err);
+            }
+        }
+
+        // ---------------- Parking Data Functions ----------------
 
         async function fetchParkingData() {
             const tbody = document.getElementById('parkingTableBody');
@@ -588,6 +617,11 @@
 
                 dataStatus.textContent = 'ONLINE';
                 dataStatus.style.color = 'var(--success)';
+
+                // -------- Submit to Google Form here --------
+                const totalSpaces = results.reduce((sum, data) => sum + (data.CurrentFreeGroupCounterValue || 0), 0);
+                submitToGoogleForm(new Date().toISOString(), totalSpaces);
+
             } catch (error) {
                 console.error('Error fetching parking data:', error);
                 tbody.innerHTML = '<tr><td colspan="4" class="loading" style="color: var(--warning);">Failed to load data. Check console for details.</td></tr>';
