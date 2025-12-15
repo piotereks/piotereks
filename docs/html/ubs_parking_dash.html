@@ -108,33 +108,17 @@
             font-weight: 400;
         }
 
-        .status-bar {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .status-item {
+        /* Unified Status Panel Styles */
+        .status-panel {
             background: var(--bg-secondary);
             border: 1px solid var(--border);
-            padding: 1.25rem 1.5rem;
             border-radius: 0.75rem;
-            flex: 1;
-            min-width: 200px;
             box-shadow: 0 1px 3px var(--shadow);
-            transition: all 0.2s;
-        }
-
-        .status-item:hover {
-            box-shadow: 0 4px 6px var(--shadow);
-            transform: translateY(-2px);
-        }
-
-        @media (hover: none) {
-            .status-item:hover {
-                transform: none;
-            }
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
         }
 
         .status-label {
@@ -152,23 +136,65 @@
             color: var(--success);
         }
 
-        .status-current {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: var(--text-secondary);
-            margin-top: 0.5rem;
+
+        .panel-section {
+            padding: 1.5rem;
+            flex: 1;
+            min-width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
-        .table-wrapper {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 0.75rem;
-            overflow: hidden;
-            box-shadow: 0 4px 6px -1px var(--shadow), 0 2px 4px -1px var(--shadow);
-            margin-bottom: 2rem;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
+        /* Large value for Total Spaces */
+        .big-value {
+            font-size: 2.5rem;
+            line-height: 1;
+            margin-top: 0.25rem;
         }
+
+        .time-group {
+            display: flex;
+            align-items: baseline;
+            gap: 0.75rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .status-current-inline {
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .status-panel {
+                /* Keep horizontal, but allow wrapping if absolutely necessary, though user asked for "same rows" */
+                flex-wrap: wrap;
+                gap: 0;
+            }
+
+            .panel-section {
+                padding: 1rem;
+                /* Allow items to be smaller to fit side-by-side */
+                min-width: 120px;
+                flex: 1 1 auto;
+                border-right: 1px solid var(--border);
+                border-bottom: none;
+            }
+
+            .panel-section:last-child {
+                border-right: none;
+            }
+
+            .big-value {
+                font-size: 2rem;
+            }
+        }
+
+
 
         table {
             width: 100%;
@@ -304,6 +330,60 @@
             background: var(--warning-medium);
         }
 
+        @media (max-width: 600px) {
+
+            /* Hide Timestamp column (4th column) on narrow screens */
+            th:nth-child(4),
+            td:nth-child(4) {
+                display: none;
+            }
+
+            /* Reduce padding for better fit */
+            th,
+            td {
+                padding: 0.75rem 0.5rem;
+            }
+        }
+
+        /* New styles for merged status cards */
+        .time-group {
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+        }
+
+        .split-item {
+            display: flex;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .split-col {
+            flex: 1;
+            padding: 1.25rem 1.5rem;
+        }
+
+        .status-border-left {
+            border-left: 1px solid var(--border);
+        }
+
+        /* Adjustments for mobile status bar */
+        @media (max-width: 480px) {
+            .time-group {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .split-item {
+                flex-direction: row;
+                /* Keep side-by-side on mobile if it fits, or column if not? User asked for 2 columns */
+            }
+
+            .split-col {
+                padding: 1rem;
+            }
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 1rem;
@@ -328,8 +408,12 @@
             }
 
             .status-item {
-                padding: 1rem;
                 min-width: 100%;
+            }
+
+            /* Adjust padding in split item for tablet/mobile */
+            .status-item.split-item {
+                padding: 0;
             }
 
             .status-label {
@@ -348,19 +432,20 @@
 
             table {
                 font-size: 0.875rem;
-                min-width: 600px;
+                min-width: unset;
+                /* Remove min-width to allow shrinking */
+                width: 100%;
             }
 
             th {
-                padding: 0.75rem 0.5rem;
                 font-size: 0.75rem;
             }
 
             td {
-                padding: 0.75rem 0.5rem;
                 font-size: 0.875rem;
             }
 
+            /* Specific fix for the 2nd column font size */
             td:nth-child(2) {
                 font-size: 1.5rem;
             }
@@ -378,29 +463,6 @@
             .theme-toggle {
                 width: 40px;
                 height: 40px;
-                font-size: 1.25rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.5rem;
-            }
-
-            .subtitle {
-                font-size: 0.8rem;
-            }
-
-            table {
-                min-width: 550px;
-            }
-
-            th,
-            td {
-                padding: 0.5rem 0.25rem;
-            }
-
-            td:nth-child(2) {
                 font-size: 1.25rem;
             }
         }
@@ -437,19 +499,28 @@
             </table>
         </div>
 
-        <div class="status-bar">
-            <div class="status-item">
-                <div class="status-label">Last Update / Current Time</div>
-                <div class="status-value" id="lastUpdate">--:--:--</div>
-                <div class="status-current" id="currentTime">--:--:--</div>
-            </div>
-            <div class="status-item">
+        <!-- Unified Status Panel -->
+        <div class="status-panel">
+            <!-- 1. Total Spaces -->
+            <div class="panel-section">
                 <div class="status-label">Total Spaces</div>
-                <div class="status-value" id="totalSpaces">---</div>
+                <div class="status-value big-value" id="totalSpaces">---</div>
             </div>
-            <div class="status-item">
+
+            <!-- 2. Data Status -->
+            <div class="panel-section">
                 <div class="status-label">Data Status</div>
                 <div class="status-value" id="dataStatus">LOADING</div>
+            </div>
+
+            <!-- 3. Time Info -->
+            <div class="panel-section">
+                <div class="status-label">Last Update / Current Time</div>
+                <div class="time-group">
+                    <span id="lastUpdate">--:--:--</span>
+                    <span class="time-divider"></span>
+                    <span id="currentTime" class="status-current-inline">--:--:--</span>
+                </div>
             </div>
         </div>
 
@@ -561,6 +632,16 @@
             document.getElementById('lastUpdate').textContent = formatTime(new Date());
             const total = results.reduce((sum, data) => sum + (data.CurrentFreeGroupCounterValue || 0), 0);
             document.getElementById('totalSpaces').textContent = total;
+
+            // Initial color calculation
+            const now = new Date();
+            let maxAgeMinutes = 0;
+            results.forEach(data => {
+                const dataTimestamp = parseTimestamp(data.Timestamp);
+                const ageMinutes = Math.max(0, Math.floor((now - dataTimestamp) / 1000 / 60));
+                if (ageMinutes > maxAgeMinutes) maxAgeMinutes = ageMinutes;
+            });
+            updateTotalSpacesColor(maxAgeMinutes);
         }
 
         function toggleTheme() {
@@ -597,10 +678,30 @@
             const tbody = document.getElementById('parkingTableBody');
             tbody.innerHTML = '';
             const now = new Date();
+            let maxAgeMinutes = 0;
+
             parkingDataCache.forEach(data => {
                 const row = createTableRow(data, now);
                 tbody.appendChild(row);
+
+                // Calculate age for maxAge logic
+                const dataTimestamp = parseTimestamp(data.Timestamp);
+                const ageMinutes = Math.max(0, Math.floor((now - dataTimestamp) / 1000 / 60));
+                if (ageMinutes > maxAgeMinutes) maxAgeMinutes = ageMinutes;
             });
+
+            updateTotalSpacesColor(maxAgeMinutes);
+        }
+
+        function updateTotalSpacesColor(maxAgeMinutes) {
+            const totalSpacesEl = document.getElementById('totalSpaces');
+            totalSpacesEl.classList.remove('value-red', 'value-orange');
+
+            if (maxAgeMinutes >= 15) {
+                totalSpacesEl.classList.add('value-red');
+            } else if (maxAgeMinutes > 5) {
+                totalSpacesEl.classList.add('value-orange');
+            }
         }
 
         function scheduleRandomFetch(fetchFunction, minMinutes, maxMinutes) {
