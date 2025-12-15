@@ -1,174 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-<meta name="theme-color" content="#0a0e27">
-<title>Parking Status Monitor</title>
-<style>
-:root {
-    --bg-primary: #0a0e27; --bg-secondary: #141937; --bg-card: #1e2749;
-    --text-primary: #e0e6ff; --text-secondary: #8b95c9;
-    --accent: #00d9ff; --accent-light: #00fff7;
-    --warning: #ff3366; --success: #00ff88; --warning-medium: #ffaa00;
-    --border: #2d3b6b; --shadow: rgba(0,0,0,0.4);
-}
-[data-theme="light"] {
-    --bg-primary: #f1f5f9; --bg-secondary: #ffffff; --bg-card: #f8fafc;
-    --text-primary: #0f172a; --text-secondary: #64748b;
-    --accent: #0891b2; --accent-light: #06b6d4;
-    --warning: #dc2626; --success: #059669; --warning-medium: #d97706;
-    --border: #e2e8f0; --shadow: rgba(0,0,0,0.1);
-}
-body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell',sans-serif;
-       background:var(--bg-primary); color:var(--text-primary); min-height:100vh; padding:1rem; transition:0.3s;}
-.container {max-width:1200px; margin:0 auto;}
-.header-row {display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;}
-h1 {font-size:2rem; font-weight:700; margin:0; color:var(--text-primary);}
-.theme-toggle {background:var(--bg-secondary); border:1px solid var(--border); padding:0.5rem; border-radius:0.5rem;
-               cursor:pointer; font-size:1.5rem; display:flex; align-items:center; justify-content:center;
-               width:44px; height:44px; box-shadow:0 1px 3px var(--shadow);}
-.theme-toggle:hover {transform:scale(1.1); box-shadow:0 4px 6px var(--shadow);}
-.theme-toggle:active {transform:scale(0.95);}
-.subtitle {color:var(--text-secondary); font-size:1rem; margin-bottom:1rem;}
-.error {background: rgba(239,68,68,0.1); border:1px solid var(--warning); padding:1rem; border-radius:0.5rem; color:var(--warning); margin-bottom:1rem;}
-.refresh-btn {background:var(--accent); color:white; border:none; padding:0.75rem 2rem; border-radius:0.5rem;
-             font-family:inherit; font-weight:600; font-size:0.875rem; cursor:pointer; text-transform:uppercase;
-             letter-spacing:0.05em; transition:all 0.2s; margin-top:1rem; box-shadow:0 1px 3px var(--shadow);}
-.refresh-btn:hover {background:var(--accent-light); transform:translateY(-1px); box-shadow:0 4px 6px var(--shadow);}
-.refresh-btn:active {transform:translateY(0); box-shadow:0 1px 2px var(--shadow);}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#0a0e27">
+    <title>Parking Status Monitor</title>
+    <style>
+        /* ------------------------------------------
+           Reset & Root Variables
+        ------------------------------------------ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* Grid layout */
-.grid-container {display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:1rem; margin-top:1rem;}
-.parking-card {background:var(--bg-secondary); border:1px solid var(--border); border-radius:0.75rem;
-               padding:1rem; display:flex; flex-direction:column; align-items:center; justify-content:center;
-               box-shadow:0 1px 4px var(--shadow); transition:transform 0.2s;}
-.parking-card:hover {transform:scale(1.05);}
-.parking-name {font-size:1rem; font-weight:600; color:var(--text-secondary); margin-bottom:0.25rem; text-align:center;}
-.free-spots {font-size:3rem; font-weight:700; color:var(--success);}
-.age-indicator-small {font-size:0.75rem; margin-top:0.25rem; color:var(--text-secondary);}
-@media(max-width:480px){.free-spots{font-size:2.5rem;}.parking-name{font-size:0.9rem;}}
+        :root {
+            --bg-primary: #0a0e27;
+            --bg-secondary: #141937;
+            --bg-card: #1e2749;
+            --text-primary: #e0e6ff;
+            --text-secondary: #8b95c9;
+            --accent: #00d9ff;
+            --accent-light: #00fff7;
+            --warning: #ff3366;
+            --success: #00ff88;
+            --warning-medium: #ffaa00;
+            --border: #2d3b6b;
+            --shadow: rgba(0, 0, 0, 0.4);
+        }
 
-/* Bottom Status Panel */
-.status-panel {background:var(--bg-secondary); border:1px solid var(--border); border-radius:0.75rem;
-               box-shadow:0 1px 3px var(--shadow); margin-top:2rem; display:flex; flex-wrap:wrap; justify-content:space-between;}
-.panel-section {padding:1.5rem; flex:1; min-width:180px; display:flex; flex-direction:column; justify-content:center;}
-.status-label {color:var(--text-secondary); font-size:0.875rem; font-weight:500; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.5rem;}
-.status-value {font-size:1.875rem; font-weight:700; color:var(--success);}
-.big-value {font-size:2.5rem; line-height:1; margin-top:0.25rem;}
-.time-group {display:flex; align-items:baseline; gap:0.75rem; font-size:1.25rem; font-weight:700; color:var(--text-primary);}
-.status-current-inline {color:var(--text-secondary); font-weight:600; font-size:1rem;}
-</style>
+        [data-theme="light"] {
+            --bg-primary: #f1f5f9;
+            --bg-secondary: #ffffff;
+            --bg-card: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #64748b;
+            --accent: #0891b2;
+            --accent-light: #06b6d4;
+            --warning: #dc2626;
+            --success: #059669;
+            --warning-medium: #d97706;
+            --border: #e2e8f0;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 2rem;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* ------------------------------------------
+           Header
+        ------------------------------------------ */
+        .header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            color: var(--text-primary);
+        }
+
+        .theme-toggle {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 1.5rem;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 1px 3px var(--shadow);
+            transition: all 0.2s;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 6px var(--shadow);
+        }
+
+        .theme-toggle:active {
+            transform: scale(0.95);
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        /* ------------------------------------------
+           Parking Grid (Tiles)
+        ------------------------------------------ */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .parking-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 1px 4px var(--shadow);
+            transition: transform 0.2s;
+        }
+
+        .parking-card:hover {
+            transform: scale(1.05);
+        }
+
+        .parking-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 0.25rem;
+            text-align: center;
+        }
+
+        .free-spots {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--success);
+        }
+
+        .age-indicator-small {
+            font-size: 0.75rem;
+            margin-top: 0.25rem;
+            color: var(--text-secondary);
+        }
+
+        .timestamp-small {
+            font-size: 0.75rem;
+            margin-top: 0.25rem;
+            color: var(--text-secondary);
+        }
+
+        /* Colors based on age */
+        .age-old {
+            color: var(--warning);
+        }
+
+        .age-medium {
+            color: var(--warning-medium);
+        }
+
+        /* ------------------------------------------
+           Status Panel
+        ------------------------------------------ */
+        .status-panel {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            box-shadow: 0 1px 3px var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .panel-section {
+            flex: 1;
+            min-width: 200px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .status-label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .status-value {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: var(--success);
+        }
+
+        .big-value {
+            font-size: 2.5rem;
+        }
+
+        .time-group {
+            display: flex;
+            align-items: baseline;
+            gap: 0.75rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .status-current-inline {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        /* ------------------------------------------
+           Buttons & Errors
+        ------------------------------------------ */
+        .refresh-btn {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 1px 3px var(--shadow);
+            transition: all 0.2s;
+        }
+
+        .refresh-btn:hover {
+            background: var(--accent-light);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 6px var(--shadow);
+        }
+
+        .refresh-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 1px 2px var(--shadow);
+        }
+
+        .error {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid var(--warning);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            color: var(--warning);
+        }
+
+        /* ------------------------------------------
+           Responsive
+        ------------------------------------------ */
+        @media(max-width:480px) {
+            .free-spots {
+                font-size: 2.5rem;
+            }
+
+            .parking-name {
+                font-size: 0.9rem;
+            }
+
+            .status-panel {
+                flex-direction: column;
+            }
+
+            .panel-section {
+                padding: 1rem;
+                min-width: auto;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<div class="container">
-    <div class="header-row">
-        <h1>🅿️ Parking Monitor</h1>
-        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-            <span id="themeIcon">🌙</span>
-        </button>
-    </div>
-    <div class="subtitle">Real-time parking availability • UBS Wrocław</div>
-    <div id="errorContainer"></div>
-
-    <!-- Parking Grid -->
-    <div id="parkingGrid" class="grid-container"></div>
-
-    <!-- Status Panel -->
-    <div class="status-panel">
-        <div class="panel-section">
-            <div class="status-label">Total Spaces</div>
-            <div class="status-value big-value" id="totalSpaces">---</div>
+    <div class="container">
+        <div class="header-row">
+            <h1>🅿️ Parking Monitor</h1>
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                <span id="themeIcon">🌙</span>
+            </button>
         </div>
-        <div class="panel-section">
-            <div class="status-label">Data Status</div>
-            <div class="status-value" id="dataStatus">LOADING</div>
+        <div class="subtitle">Real-time parking availability • UBS Wrocław</div>
+
+        <div id="errorContainer"></div>
+
+        <!-- Parking Grid -->
+        <div id="parkingGrid" class="grid-container">
+            <div class="loading">Loading parking data...</div>
         </div>
-        <div class="panel-section">
-            <div class="status-label">Last Update / Current Time</div>
-            <div class="time-group">
-                <span id="lastUpdate">--:--:--</span>
-                <span class="time-divider"></span>
-                <span id="currentTime" class="status-current-inline">--:--:--</span>
+
+        <!-- Status Panel -->
+        <div class="status-panel">
+            <div class="panel-section">
+                <div class="status-label">Total Spaces</div>
+                <div class="status-value big-value" id="totalSpaces">---</div>
+            </div>
+            <div class="panel-section">
+                <div class="status-label">Data Status</div>
+                <div class="status-value" id="dataStatus">LOADING</div>
+            </div>
+            <div class="panel-section">
+                <div class="status-label">Last Update / Current Time</div>
+                <div class="time-group">
+                    <span id="lastUpdate">--:--:--</span>
+                    <span class="time-divider"></span>
+                    <span id="currentTime" class="status-current-inline">--:--:--</span>
+                </div>
             </div>
         </div>
+
+        <button class="refresh-btn" onclick="fetchParkingData()">⟳ Refresh Data</button>
     </div>
 
-    <button class="refresh-btn" onclick="fetchParkingData()">⟳ Refresh Data</button>
-</div>
+    <script>
+        // ---------------- Constants ----------------
+        const CORS_PROXY = 'https://corsproxy.io/?';
+        const API_URLS = [
+            'https://gd.zaparkuj.pl/api/freegroupcountervalue.json',
+            'https://gd.zaparkuj.pl/api/freegroupcountervalue-green.json'
+        ];
 
-<script>
-const CORS_PROXY='https://corsproxy.io/?';
-const API_URLS=['https://gd.zaparkuj.pl/api/freegroupcountervalue.json','https://gd.zaparkuj.pl/api/freegroupcountervalue-green.json'];
-let parkingDataCache=[];
+        let parkingDataCache = [];
 
-// Google Form
-const GOOGLE_FORM_URL="https://docs.google.com/forms/d/e/1FAIpQLSdziOlXj2jflrwvES0NIVmnFtH8UNeNiSYbFHvkf-RNxmb6xQ/formResponse";
-const ENTRY_TIMESTAMP="entry.343781201";
-async function submitToGoogleForm(timestamp,totalSpaces){
-    const formData=new URLSearchParams();
-    formData.append(ENTRY_TIMESTAMP,timestamp);
-    try{await fetch(GOOGLE_FORM_URL,{method:"POST",body:formData,headers:{"Content-Type":"application/x-www-form-urlencoded"},mode:"no-cors"});}
-    catch(err){console.error("Error submitting Google Form:",err);}
-}
+        // ---------------- Google Form Submission ----------------
+        const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdziOlXj2jflrwvES0NIVmnFtH8UNeNiSYbFHvkf-RNxmb6xQ/formResponse";
+        const ENTRY_TIMESTAMP = "entry.343781201";
 
-// Parking grid
-async function fetchParkingData(){
-    const grid=document.getElementById('parkingGrid');
-    const errorContainer=document.getElementById('errorContainer');
-    const totalSpacesEl=document.getElementById('totalSpaces');
-    const dataStatusEl=document.getElementById('dataStatus');
-    errorContainer.innerHTML=''; grid.innerHTML='<div class="loading">Loading parking data...</div>';
-    dataStatusEl.textContent='LOADING'; dataStatusEl.style.color='var(--text-secondary)';
+        async function submitToGoogleForm(timestamp, totalSpaces) {
+            const formData = new URLSearchParams();
+            formData.append(ENTRY_TIMESTAMP, timestamp);
 
-    try{
-        const timestamp=Date.now();
-        const results=await Promise.all(API_URLS.map(url=>fetch(`${CORS_PROXY}${encodeURIComponent(url+'?time='+timestamp)}`,{headers:{'Cache-Control':'no-cache, no-store, must-revalidate','Pragma':'no-cache','Expires':'0'}}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}: ${r.statusText}`); return r.json();})));
-        parkingDataCache=results;
-        updateStatusPanel(results);
-        grid.innerHTML='';
-        const now=new Date();
-        results.forEach(data=>grid.appendChild(createParkingCard(data,now)));
-        dataStatusEl.textContent='ONLINE'; dataStatusEl.style.color='var(--success)';
-        const total=results.reduce((s,d)=>(s+(d.CurrentFreeGroupCounterValue||0)),0);
-        submitToGoogleForm(new Date().toISOString(),total);
-    }catch(error){
-        console.error(error);
-        grid.innerHTML='<div class="loading" style="color:var(--warning)">Failed to load data</div>';
-        errorContainer.innerHTML=`<div class="error"><strong>ERROR:</strong> ${error.message}</div>`;
-        dataStatusEl.textContent='OFFLINE'; dataStatusEl.style.color='var(--warning)';
-    }
-}
+            try {
+                await fetch(GOOGLE_FORM_URL, {
+                    method: "POST",
+                    body: formData,
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    mode: "no-cors"
+                });
+            } catch (err) { console.error("Google Form error:", err); }
+        }
 
-function createParkingCard(data,currentTime){
-    const card=document.createElement('div'); card.className='parking-card';
-    const dataTimestamp=parseTimestamp(data.Timestamp);
-    const ageMinutes=Math.max(0,Math.floor((currentTime-dataTimestamp)/1000/60));
-    let valueColor='--success'; if(ageMinutes>=15)valueColor='--warning'; else if(ageMinutes>5)valueColor='--warning-medium';
-    const name=(data.ParkingGroupName==='Bank_1')?'Uni Wroc':data.ParkingGroupName;
-    card.innerHTML=`<div class="parking-name">${name}</div>
-    <div class="free-spots" style="color: var(${valueColor})">${data.CurrentFreeGroupCounterValue||0}</div>
-    <div class="age-indicator-small">${ageMinutes} min ago</div>`;
-    return card;
-}
+        // ---------------- Helpers ----------------
+        function parseTimestamp(ts) { return new Date(ts.replace(' ', 'T')); }
+        function formatTime(date) { return date.toLocaleTimeString('pl-PL', { hour: '2-digit', minute: '2-digit', second: '2-digit' }); }
 
-function parseTimestamp(ts){return new Date(ts.replace(' ','T'));}
-function formatTime(date){return date.toLocaleTimeString('pl-PL',{hour:'2-digit',minute:'2-digit',second:'2-digit'});}
-function toggleTheme(){const html=document.documentElement; const icon=document.getElementById('themeIcon'); if(html.getAttribute('data-theme')==='light'){html.removeAttribute('data-theme'); icon.textContent='🌙'; localStorage.setItem('theme','dark');}else{html.setAttribute('data-theme','light'); icon.textContent='☀️'; localStorage.setItem('theme','light');}}
-function loadTheme(){const saved=localStorage.getItem('theme'); const icon=document.getElementById('themeIcon'); if(saved==='light'){document.documentElement.setAttribute('data-theme','light'); icon.textContent='☀️';}}
-function updateCurrentTime(){document.getElementById('currentTime').textContent=formatTime(new Date());}
-function updateStatusPanel(results){
-    document.getElementById('lastUpdate').textContent=formatTime(new Date());
-    const total=results.reduce((s,d)=>(s+(d.CurrentFreeGroupCounterValue||0)),0);
-    const totalEl=document.getElementById('totalSpaces'); totalEl.textContent=total;
-    const now=new Date(); let maxAge=0; results.forEach(d=>{const age=Math.max(0,Math.floor((now-parseTimestamp(d.Timestamp))/1000/60)); if(age>maxAge) maxAge=age;});
-    updateTotalSpacesColor(maxAge);
-}
-function updateTotalSpacesColor(maxAge){const el=document.getElementById('totalSpaces'); el.classList.remove('value-red','value-orange'); if(maxAge>=15) el.classList.add('value-red'); else if(maxAge>5) el.classList.add('value-orange');}
-function recalcAges(){if(parkingDataCache.length===0) return; const now=new Date(); const grid=document.getElementById('parkingGrid'); grid.innerHTML=''; let maxAge=0; parkingDataCache.forEach(d=>{grid.appendChild(createParkingCard(d,now)); const age=Math.max(0,Math.floor((now-parseTimestamp(d.Timestamp))/1000/60)); if(age>maxAge) maxAge=age;}); updateTotalSpacesColor(maxAge);}
-function scheduleRandomFetch(fn,min,max){const interval=Math.floor(Math.random()*(max-min+1)+min)*60*1000; setTimeout(async()=>{await fn(); scheduleRandomFetch(fn,min,max);},interval);}
+        function toggleTheme() {
+            const html = document.documentElement;
+            const icon = document.getElementById('themeIcon');
+            if (html.getAttribute('data-theme') === 'light') {
+                html.removeAttribute('data-theme');
+                icon.textContent = '🌙';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                icon.textContent = '☀️';
+                localStorage.setItem('theme', 'light');
+            }
+        }
 
-loadTheme(); updateCurrentTime(); fetchParkingData(); scheduleRandomFetch(fetchParkingData,4,7); setInterval(updateCurrentTime,1000); setInterval(recalcAges,60000);
-</script>
+        function loadTheme() {
+            const saved = localStorage.getItem('theme');
+            const icon = document.getElementById('themeIcon');
+            if (saved === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                icon.textContent = '☀️';
+            }
+        }
+
+        // ---------------- Parking Tiles ----------------
+        function createParkingCard(data, now) {
+            const card = document.createElement('div');
+            card.className = 'parking-card';
+
+            const ts = parseTimestamp(data.Timestamp);
+            const age = Math.max(0, Math.floor((now - ts) / 1000 / 60));
+
+            let ageClass = '';
+            if (age >= 15) ageClass = 'age-old';
+            else if (age > 5) ageClass = 'age-medium';
+
+            let name = data.ParkingGroupName;
+            if (name === 'Bank_1') name = 'Uni Wroc';
+
+            card.innerHTML = `
+                <div class="parking-name">${name}</div>
+                <div class="free-spots ${ageClass}">${data.CurrentFreeGroupCounterValue || 0}</div>
+                <div class="age-indicator-small">${age} min ago</div>
+                <div class="timestamp-small">@${formatTime(ts)}</div>
+            `;
+            return card;
+        }
+
+        async function fetchParkingData() {
+            const grid = document.getElementById('parkingGrid');
+            const errorContainer = document.getElementById('errorContainer');
+            const dataStatusEl = document.getElementById('dataStatus');
+
+            grid.innerHTML = '<div class="loading">Loading parking data...</div>';
+            errorContainer.innerHTML = '';
+            dataStatusEl.textContent = 'LOADING';
+            dataStatusEl.style.color = 'var(--text-secondary)';
+
+            try {
+                const now = new Date();
+                const results = await Promise.all(API_URLS.map(url =>
+                    fetch(`${CORS_PROXY}${encodeURIComponent(url + '?time=' + Date.now())}`, { headers: { 'Cache-Control': 'no-cache' } })
+                        .then(r => r.ok ? r.json() : Promise.reject(`HTTP ${r.status}`))
+                ));
+
+                parkingDataCache = results;
+
+                // Update tiles
+                grid.innerHTML = '';
+                results.forEach(d => grid.appendChild(createParkingCard(d, now)));
+
+                // Update status panel
+                document.getElementById('lastUpdate').textContent = formatTime(now);
+                const total = results.reduce((sum, d) => sum + (d.CurrentFreeGroupCounterValue || 0), 0);
+                const totalEl = document.getElementById('totalSpaces');
+                totalEl.textContent = total;
+                dataStatusEl.textContent = 'ONLINE';
+                dataStatusEl.style.color = 'var(--success)';
+
+                // Submit to Google Form
+                submitToGoogleForm(now.toISOString(), total);
+
+            } catch (err) {
+                console.error(err);
+                grid.innerHTML = '<div class="loading" style="color: var(--warning)">Failed to load data</div>';
+                errorContainer.innerHTML = `<div class="error"><strong>ERROR:</strong> ${err}</div>`;
+                dataStatusEl.textContent = 'OFFLINE';
+                dataStatusEl.style.color = 'var(--warning)';
+            }
+        }
+
+        function updateCurrentTime() {
+            document.getElementById('currentTime').textContent = formatTime(new Date());
+        }
+
+        function recalcAges() {
+            if (!parkingDataCache.length) return;
+            const grid = document.getElementById('parkingGrid');
+            grid.innerHTML = '';
+            const now = new Date();
+            let maxAge = 0;
+            parkingDataCache.forEach(d => {
+                grid.appendChild(createParkingCard(d, now));
+                const age = Math.max(0, Math.floor((now - parseTimestamp(d.Timestamp)) / 1000 / 60));
+                if (age > maxAge) maxAge = age;
+            });
+        }
+
+        function scheduleRandomFetch(fn, minMins, maxMins) {
+            const ms = (Math.random() * (maxMins - minMins) + minMins) * 60 * 1000;
+            setTimeout(async () => { await fn(); scheduleRandomFetch(fn, minMins, maxMins); }, ms);
+        }
+
+        // ---------------- Init ----------------
+        loadTheme();
+        updateCurrentTime();
+        fetchParkingData();
+        scheduleRandomFetch(fetchParkingData, 4, 7);
+        setInterval(updateCurrentTime, 1000);
+        setInterval(recalcAges, 60 * 1000);
+    </script>
 </body>
+
 </html>
