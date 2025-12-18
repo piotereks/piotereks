@@ -1,3 +1,202 @@
-<iframe width="600" height="371" seamless frameborder="0" scrolling="no"
-    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTwLNDbg8KjlVHsZWj9JUnO_OBIyZaRgZ4gZ8_Gbyly2J3f6rlCW6lDHAihwbuLhxWbBkNMI1wdWRAq/pubchart?oid=1121290818&amp;format=interactive">
-</iframe>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Statistics History</title>
+    <!-- Use ECharts for attractive, interactive charts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <!-- Use PapaParse for reliable CSV parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <style>
+        :root {
+            --bg-primary: #0a0e27;
+            --bg-secondary: #141937;
+            --text-primary: #e0e6ff;
+            --accent-green: #00ff88;
+            --accent-blue: #00d9ff;
+            --border: #2d3b6b;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            overflow: hidden;
+        }
+
+        #chart-container {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.2rem;
+            color: var(--accent-blue);
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader" class="loader">Loading history data...</div>
+    <div id="chart-container"></div>
+
+    <script>
+        const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTwLNDbg8KjlVHsZWj9JUnO_OBIyZaRgZ4gZ8_Gbyly2J3f6rlCW6lDHAihwbuLhxWbBkNMI1wdWRAq/pub?gid=411529798&single=true&output=csv';
+
+        // Initialize ECharts with a dark theme style
+        const chart = echarts.init(document.getElementById('chart-container'), null, {
+            renderer: 'canvas',
+            useDirtyRect: false
+        });
+
+        async function init() {
+            try {
+                const response = await fetch(CSV_URL);
+                const csvText = await response.text();
+
+                Papa.parse(csvText, {
+                    header: true,
+                    skipEmptyLines: true,
+                    complete: function (results) {
+                        renderChart(results.data);
+                        document.getElementById('loader').style.display = 'none';
+                    },
+                    error: function (err) {
+                        console.error('CSV Parse Error:', err);
+                        document.getElementById('loader').innerText = 'Error loading data';
+                    }
+                });
+            } catch (error) {
+                console.error('Fetch Error:', error);
+                document.getElementById('loader').innerText = 'Failed to fetch data';
+            }
+        }
+
+        function renderChart(data) {
+            // Data columns:
+            // B: GreenDay Free (header: "GreenDay Free")
+            // D: Time axis (header: "GD_Time")
+            // E: Uni Free (header: "Uni Free")
+
+            // Clean and parse data
+            const timeData = [];
+            const greenDayData = [];
+            const uniFreeData = [];
+
+            data.forEach(row => {
+                if (row['GD_Time'] && row['GreenDay Free'] && row['Uni Free']) {
+                    timeData.push(row['GD_Time']);
+                    greenDayData.push(parseFloat(row['GreenDay Free']));
+                    uniFreeData.push(parseFloat(row['Uni Free']));
+                }
+            });
+
+            const option = {
+                backgroundColor: 'transparent',
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(20, 25, 55, 0.9)',
+                    borderColor: '#2d3b6b',
+                    textStyle: { color: '#e0e6ff' },
+                    axisPointer: { type: 'cross', label: { backgroundColor: '#141937' } }
+                },
+                legend: {
+                    data: ['GreenDay', 'Uni Wroc'],
+                    textStyle: { color: '#8b95c9' },
+                    top: '5%'
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '10%',
+                    top: '15%',
+                    containLabel: true
+                },
+                toolbox: {
+                    feature: {
+                        dataZoom: { yAxisIndex: 'none' },
+                        restore: {},
+                        saveAsImage: {}
+                    },
+                    iconStyle: { borderColor: '#8b95c9' },
+                    right: '5%'
+                },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: timeData,
+                    axisLine: { lineStyle: { color: '#2d3b6b' } },
+                    axisLabel: {
+                        color: '#8b95c9',
+                        formatter: function (value) {
+                            // Trim date part if it's too long, showing only time might be cleaner
+                            return value.split(' ')[1] || value;
+                        }
+                    }
+                },
+                yAxis: {
+                    type: 'value',
+                    splitLine: { lineStyle: { color: 'rgba(45, 59, 107, 0.3)' } },
+                    axisLine: { show: false },
+                    axisLabel: { color: '#8b95c9' }
+                },
+                dataZoom: [
+                    { type: 'inside', start: 80, end: 100 },
+                    { type: 'slider', start: 80, end: 100, textStyle: { color: '#8b95c9' } }
+                ],
+                series: [
+                    {
+                        name: 'GreenDay',
+                        type: 'line',
+                        smooth: false,
+                        showSymbol: false,
+                        lineStyle: { width: 3, color: '#00ff88' },
+                        areaStyle: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                { offset: 0, color: 'rgba(0, 255, 136, 0.3)' },
+                                { offset: 1, color: 'rgba(0, 255, 136, 0)' }
+                            ])
+                        },
+                        data: greenDayData
+                    },
+                    {
+                        name: 'Uni Wroc',
+                        type: 'line',
+                        smooth: false,
+                        showSymbol: false,
+                        lineStyle: { width: 3, color: '#00d9ff' },
+                        areaStyle: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                { offset: 0, color: 'rgba(0, 217, 255, 0.3)' },
+                                { offset: 1, color: 'rgba(0, 217, 255, 0)' }
+                            ])
+                        },
+                        data: uniFreeData
+                    }
+                ]
+            };
+
+            chart.setOption(option);
+        }
+
+        // Handle window resize
+        window.addEventListener('resize', () => chart.resize());
+
+        // Start initialization
+        init();
+    </script>
+</body>
+
+</html>
