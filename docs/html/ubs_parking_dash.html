@@ -48,43 +48,116 @@
         }
 
         body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
-            min-height: 100vh;
-            padding: 2rem;
-            line-height: 1.6;
             transition: background-color 0.3s, color 0.3s;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 2rem 2rem 2rem;
+            margin-top: 60px;
+            /* Match Stats chart offset */
         }
 
         /* ------------------------------------------
-           Header
+           Header (Standardized)
         ------------------------------------------ */
-        .header-row {
+        .header-controls {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 0.5rem;
+            padding: 0 1.5rem;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
         }
 
+
         h1 {
-            font-size: 2.25rem;
+            font-size: 1.25rem;
             font-weight: 700;
-            letter-spacing: -0.025em;
+            letter-spacing: -0.01em;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .header-title-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .status-info {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 2px;
+            font-weight: 400;
+            padding-left: 1.8rem;
+            /* Match .title-icon width */
+        }
+
+        .title-icon {
+            display: inline-block;
+            width: 1.8rem;
+            text-align: center;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .nav-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Center content for symmetry */
+            padding: 0.5rem 1rem;
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
             color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            font-family: inherit;
+            /* Force font inheritance */
+            line-height: 1;
+            /* Normalize line height */
+            transition: all 0.2s;
+            box-shadow: 0 1px 3px var(--shadow);
+            height: 44px;
+            /* Explicit height for alignment */
+            width: 140px;
+            /* Fixed width for guaranteed symmetry */
+            cursor: pointer;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-1px);
+            background: var(--bg-card);
+            box-shadow: 0 4px 6px var(--shadow);
         }
 
         .theme-toggle {
-            background: var(--bg-secondary);
+            background: var(--bg-primary);
             border: 1px solid var(--border);
             border-radius: 0.5rem;
             cursor: pointer;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             width: 44px;
             height: 44px;
             display: flex;
@@ -92,15 +165,12 @@
             justify-content: center;
             box-shadow: 0 1px 3px var(--shadow);
             transition: all 0.2s;
+            color: var(--text-primary);
         }
 
         .theme-toggle:hover {
             transform: scale(1.1);
-            box-shadow: 0 4px 6px var(--shadow);
-        }
-
-        .theme-toggle:active {
-            transform: scale(0.95);
+            background: var(--bg-card);
         }
 
         .subtitle {
@@ -263,13 +333,41 @@
         /* ------------------------------------------
            Responsive
         ------------------------------------------ */
-        @media(max-width:480px) {
-            .free-spots {
-                font-size: 2.5rem;
+        @media (max-width: 600px) {
+            body {
+                padding-top: 65px;
+                padding-left: 1rem;
+                padding-right: 1rem;
             }
 
-            .parking-name {
-                font-size: 0.9rem;
+            h1 {
+                font-size: 1rem;
+            }
+
+            .header-controls {
+                height: 54px;
+                padding: 0 0.75rem;
+            }
+
+            .nav-btn {
+                padding: 0 0.6rem;
+                font-size: 0.75rem;
+                height: 38px;
+                width: 100px;
+            }
+
+            .theme-toggle {
+                width: 38px;
+                height: 38px;
+                font-size: 1.1rem;
+            }
+
+            .header-actions {
+                gap: 0.4rem;
+            }
+
+            .status-info {
+                font-size: 0.65rem;
             }
 
             .status-panel {
@@ -277,21 +375,44 @@
             }
 
             .panel-section {
-                padding: 1rem;
+                padding: 0.75rem;
                 min-width: auto;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .panel-section:last-child {
+                border-bottom: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .free-spots {
+                font-size: 2.5rem;
+            }
+
+            .parking-name {
+                font-size: 0.9rem;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header-row">
-            <h1>🅿️ Parking Monitor</h1>
+    <header class="header-controls">
+        <div class="header-title-group">
+            <h1><span class="title-icon">🅿️</span> Parking Monitor</h1>
+            <div id="headerUpdateStatus" class="status-info">Loading...</div>
+        </div>
+        <div class="header-actions">
+            <button class="nav-btn" onclick="fetchParkingData()">⟳ Refresh</button>
+            <a href="ubs_parking_stats.html" class="nav-btn">📊 Statistics</a>
             <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-                <span id="themeIcon">🌙</span>
+                <span id="themeIcon">☀️</span>
             </button>
         </div>
+    </header>
+
+    <div class="container">
         <div class="subtitle">Real-time parking availability • UBS Wrocław</div>
 
         <div id="errorContainer"></div>
@@ -321,7 +442,6 @@
             </div>
         </div>
 
-        <button class="refresh-btn" onclick="fetchParkingData()">⟳ Refresh Data</button>
     </div>
 
     <script>
@@ -361,11 +481,11 @@
             const icon = document.getElementById('themeIcon');
             if (html.getAttribute('data-theme') === 'light') {
                 html.removeAttribute('data-theme');
-                icon.textContent = '🌙';
+                icon.textContent = '☀️';
                 localStorage.setItem('theme', 'dark');
             } else {
                 html.setAttribute('data-theme', 'light');
-                icon.textContent = '☀️';
+                icon.textContent = '🌙';
                 localStorage.setItem('theme', 'light');
             }
         }
@@ -375,7 +495,7 @@
             const icon = document.getElementById('themeIcon');
             if (saved === 'light') {
                 document.documentElement.setAttribute('data-theme', 'light');
-                icon.textContent = '☀️';
+                icon.textContent = '🌙';
             }
         }
 
@@ -427,7 +547,10 @@
                 results.forEach(d => grid.appendChild(createParkingCard(d, now)));
 
                 // Update status panel
-                document.getElementById('lastUpdate').textContent = formatTime(now);
+                const timeStr = formatTime(now);
+                document.getElementById('lastUpdate').textContent = timeStr;
+                document.getElementById('headerUpdateStatus').textContent = `Last update: ${timeStr}`;
+
                 const total = results.reduce((sum, d) => sum + (d.CurrentFreeGroupCounterValue || 0), 0);
                 const totalEl = document.getElementById('totalSpaces');
                 totalEl.textContent = total;
@@ -438,7 +561,7 @@
                 submitToGoogleForm(now.toISOString(), total);
 
             } catch (err) {
-                console.error(err);
+                console.error('Fetch error:', err);
                 grid.innerHTML = '<div class="loading" style="color: var(--warning)">Failed to load data</div>';
                 errorContainer.innerHTML = `<div class="error"><strong>ERROR:</strong> ${err}</div>`;
                 dataStatusEl.textContent = 'OFFLINE';
