@@ -335,31 +335,35 @@
         ------------------------------------------ */
         @media (max-width: 600px) {
             body {
-                padding-top: 65px;
+                padding-top: 54px;
                 padding-left: 1rem;
                 padding-right: 1rem;
             }
 
             h1 {
-                font-size: 1rem;
+                font-size: 0.95rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 140px;
             }
 
             .header-controls {
                 height: 54px;
-                padding: 0 0.75rem;
+                padding: 0 0.5rem;
             }
 
             .nav-btn {
-                padding: 0 0.6rem;
-                font-size: 0.75rem;
-                height: 38px;
-                width: 100px;
+                padding: 0 0.3rem;
+                font-size: 0.7rem;
+                height: 36px;
+                width: 75px;
             }
 
             .theme-toggle {
-                width: 38px;
-                height: 38px;
-                font-size: 1.1rem;
+                width: 36px;
+                height: 36px;
+                font-size: 1rem;
             }
 
             .header-actions {
@@ -368,6 +372,7 @@
 
             .status-info {
                 font-size: 0.65rem;
+                padding-left: 1.8rem;
             }
 
             .status-panel {

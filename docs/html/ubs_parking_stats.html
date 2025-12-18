@@ -229,39 +229,64 @@
         /* Responsive Adjustments */
         @media (max-width: 600px) {
             h1 {
-                font-size: 1rem;
+                font-size: 0.95rem;
+                /* Slightly smaller for single line */
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 140px;
+                /* Force single line */
             }
 
             .header-controls {
                 height: 54px;
-                padding: 0 0.75rem;
+                padding: 0 0.5rem;
+            }
+
+            .header-actions {
+                gap: 0.4rem;
             }
 
             .status-info {
                 font-size: 0.65rem;
+                padding-left: 1.8rem;
             }
 
             .nav-btn {
-                padding: 0 0.6rem;
-                font-size: 0.75rem;
-                height: 38px;
-                width: 100px;
+                padding: 0 0.3rem;
+                font-size: 0.7rem;
+                height: 36px;
+                width: 75px;
+                /* Narrower for mobile */
             }
 
             .theme-toggle {
-                width: 38px;
-                height: 38px;
-                font-size: 1.1rem;
+                width: 36px;
+                height: 36px;
+                font-size: 1rem;
             }
 
             .palette-group {
+                display: flex;
+                /* Restore on mobile */
+                gap: 0.3rem;
+                margin-right: 0.2rem;
+                padding-right: 0.4rem;
+            }
+
+            .palette-label {
                 display: none;
-                /* Hide on very small screens to save space */
+                /* Hide label to save space */
+            }
+
+            .palette-btn {
+                width: 16px;
+                height: 16px;
             }
 
             #chart-container {
-                height: calc(100vh - 50px);
-                margin-top: 50px;
+                height: calc(100vh - 54px);
+                margin-top: 54px;
             }
 
             .palette-toggle-btn {
@@ -535,8 +560,8 @@
                 grid: {
                     left: isMobile ? 10 : 20,
                     right: isMobile ? 10 : 20,
-                    bottom: isMobile ? 60 : 50,
-                    top: isMobile ? 30 : 40,
+                    bottom: isMobile ? 100 : 50, /* Increased bottom for mobile dataZoom */
+                    top: isMobile ? 35 : 40,
                     containLabel: true
                 },
                 toolbox: {
