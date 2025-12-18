@@ -265,15 +265,11 @@
                 const response = await fetch(`${CSV_URL}&time=${Date.now()}`);
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 const csvText = await response.text();
-                console.log('CSV fetched, length:', csvText.length);
 
                 Papa.parse(csvText, {
                     header: true,
                     skipEmptyLines: true,
                     complete: function (results) {
-                        console.log('Parsed rows:', results.data.length);
-                        console.log('First row sample:', results.data[0]);
-
                         lastCSVData = results.data;
                         const now = new Date().toLocaleTimeString('pl-PL');
 
@@ -314,8 +310,9 @@
         function renderChart(data) {
             if (!data || data.length === 0) return;
 
+            const html = document.documentElement;
             // Get current theme colors from computed styles for adaptive chart
-            const style = getComputedStyle(document.documentElement);
+            const style = getComputedStyle(html);
             const textColor = style.getPropertyValue('--text-primary').trim();
             const textSecondary = style.getPropertyValue('--text-secondary').trim();
             const borderColor = style.getPropertyValue('--border').trim();
@@ -326,17 +323,21 @@
             const uniFreeMap = new Map();
 
             data.forEach(row => {
-                // GreenDay series
-                if (row['GD_Time'] && row['GreenDay Free']) {
-                    const ts = row['GD_Time'].trim();
-                    const val = parseFloat(row['GreenDay Free']);
+                // Find keys (case-insensitive and trimmed)
+                const gdTimeKey = Object.keys(row).find(k => k.trim().toLowerCase() === 'gd_time');
+                const gdFreeKey = Object.keys(row).find(k => k.trim().toLowerCase() === 'greenday free');
+                const uniTimeKey = Object.keys(row).find(k => k.trim().toLowerCase() === 'uni_time');
+                const uniFreeKey = Object.keys(row).find(k => k.trim().toLowerCase() === 'uni free');
+
+                if (gdTimeKey && gdFreeKey && row[gdTimeKey] && row[gdFreeKey]) {
+                    const ts = row[gdTimeKey].trim();
+                    const val = parseFloat(row[gdFreeKey]);
                     if (!isNaN(val)) greenDayMap.set(ts, val);
                 }
 
-                // Uni series
-                if (row['Uni_Time'] && row['Uni Free']) {
-                    const ts = row['Uni_Time'].trim();
-                    const val = parseFloat(row['Uni Free']);
+                if (uniTimeKey && uniFreeKey && row[uniTimeKey] && row[uniFreeKey]) {
+                    const ts = row[uniTimeKey].trim();
+                    const val = parseFloat(row[uniFreeKey]);
                     if (!isNaN(val)) uniFreeMap.set(ts, val);
                 }
             });
