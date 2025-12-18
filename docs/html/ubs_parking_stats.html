@@ -371,18 +371,23 @@
                         type: 'line',
                         smooth: false,
                         showSymbol: false,
-                        lineStyle: { width: 3, color: '#00ff88' },
+                        lineStyle: {
+                            width: 3,
+                            color: '#05ffa1',
+                            shadowBlur: isMobile ? 0 : (html.getAttribute('data-theme') === 'light' ? 2 : 10),
+                            shadowColor: '#05ffa1'
+                        },
                         areaStyle: {
                             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                                { offset: 0, color: 'rgba(0, 255, 136, 0.3)' },
-                                { offset: 1, color: 'rgba(0, 255, 136, 0)' }
+                                { offset: 0, color: 'rgba(5, 255, 161, 0.2)' },
+                                { offset: 1, color: 'rgba(5, 255, 161, 0)' }
                             ])
                         },
                         data: gd.solid,
                         markLine: {
                             symbol: 'none',
                             data: [
-                                { yAxis: 190, name: 'GD MAX', lineStyle: { color: '#00ff88', type: 'dotted', width: 2 }, label: { position: 'end', formatter: 'GD MAX (190)', color: textSecondary } }
+                                { yAxis: 190, name: 'GD MAX', lineStyle: { color: '#05ffa1', type: 'dotted', width: 2, opacity: 0.5 }, label: { position: 'end', formatter: 'MAX {c}', color: textSecondary, fontSize: isMobile ? 9 : 11 } }
                             ]
                         }
                     },
@@ -391,7 +396,7 @@
                         type: 'line',
                         smooth: false,
                         showSymbol: false,
-                        lineStyle: { width: 2, color: '#00ff88', type: 'dashed', opacity: 0.6 },
+                        lineStyle: { width: 2, color: '#05ffa1', type: 'dashed', opacity: 0.4 },
                         data: gd.gaps,
                         tooltip: { show: false }
                     },
@@ -400,18 +405,23 @@
                         type: 'line',
                         smooth: false,
                         showSymbol: false,
-                        lineStyle: { width: 3, color: '#00d9ff' },
+                        lineStyle: {
+                            width: 3,
+                            color: '#01beff',
+                            shadowBlur: isMobile ? 0 : (html.getAttribute('data-theme') === 'light' ? 2 : 10),
+                            shadowColor: '#01beff'
+                        },
                         areaStyle: {
                             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                                { offset: 0, color: 'rgba(0, 217, 255, 0.3)' },
-                                { offset: 1, color: 'rgba(0, 217, 255, 0)' }
+                                { offset: 0, color: 'rgba(1, 190, 255, 0.2)' },
+                                { offset: 1, color: 'rgba(1, 190, 255, 0)' }
                             ])
                         },
                         data: uni.solid,
                         markLine: {
                             symbol: 'none',
                             data: [
-                                { yAxis: 41, name: 'UNI MAX', lineStyle: { color: '#00d9ff', type: 'dotted', width: 2 }, label: { position: 'end', formatter: 'UNI MAX (41)', color: textSecondary } }
+                                { yAxis: 41, name: 'UNI MAX', lineStyle: { color: '#01beff', type: 'dotted', width: 2, opacity: 0.5 }, label: { position: 'end', formatter: 'MAX {c}', color: textSecondary, fontSize: isMobile ? 9 : 11 } }
                             ]
                         }
                     },
@@ -420,7 +430,7 @@
                         type: 'line',
                         smooth: false,
                         showSymbol: false,
-                        lineStyle: { width: 2, color: '#00d9ff', type: 'dashed', opacity: 0.6 },
+                        lineStyle: { width: 2, color: '#01beff', type: 'dashed', opacity: 0.4 },
                         data: uni.gaps,
                         tooltip: { show: false }
                     }
