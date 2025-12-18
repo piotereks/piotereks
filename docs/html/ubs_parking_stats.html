@@ -96,8 +96,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            /* Center content for symmetry */
-            padding: 0.5rem 1rem;
+            padding: 0 1rem;
             background: var(--bg-primary);
             border: 1px solid var(--border);
             border-radius: 0.5rem;
@@ -105,11 +104,15 @@
             text-decoration: none;
             font-size: 0.9rem;
             font-weight: 600;
+            font-family: inherit;
+            /* Force font inheritance */
+            line-height: 1;
+            /* Normalize line height */
             transition: all 0.2s;
             box-shadow: 0 1px 3px var(--shadow);
             height: 44px;
-            min-width: 125px;
-            /* Ensure uniform size */
+            width: 140px;
+            /* Fixed width for guaranteed symmetry */
             cursor: pointer;
         }
 
@@ -230,9 +233,10 @@
             }
 
             .nav-btn {
-                padding: 0.35rem 0.6rem;
+                padding: 0 0.6rem;
                 font-size: 0.75rem;
                 height: 38px;
+                width: 100px;
             }
 
             .theme-toggle {
