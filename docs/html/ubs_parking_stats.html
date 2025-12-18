@@ -145,6 +145,41 @@
             flex-direction: column;
         }
 
+        .palette-group {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin-right: 0.5rem;
+            padding-right: 0.75rem;
+            border-right: 1px solid var(--border);
+        }
+
+        .palette-btn {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .palette-btn:hover {
+            transform: scale(1.2);
+        }
+
+        .palette-btn.active {
+            border-color: var(--text-primary);
+            box-shadow: 0 0 5px var(--accent);
+        }
+
+        .palette-label {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            margin-right: 0.2rem;
+            font-weight: 600;
+        }
+
         /* Responsive Adjustments */
         @media (max-width: 600px) {
             .header-controls {
@@ -171,6 +206,11 @@
                 font-size: 1rem;
             }
 
+            .palette-group {
+                display: none;
+                /* Hide on very small screens to save space */
+            }
+
             #chart-container {
                 height: calc(100vh - 50px);
                 margin-top: 50px;
@@ -190,6 +230,19 @@
             <div id="lastUpdated" class="status-info">Loading...</div>
         </div>
         <div class="header-actions">
+            <div class="palette-group">
+                <span class="palette-label">Palette:</span>
+                <div class="palette-btn active" style="background: linear-gradient(135deg, #05ffa1 50%, #01beff 50%);"
+                    onclick="setPalette('neon')" title="Neon"></div>
+                <div class="palette-btn" style="background: linear-gradient(135deg, #3b82f6 50%, #f59e0b 50%);"
+                    onclick="setPalette('classic')" title="Classic"></div>
+                <div class="palette-btn" style="background: linear-gradient(135deg, #00d9ff 50%, #ff00cc 50%);"
+                    onclick="setPalette('cyberpunk')" title="Cyberpunk"></div>
+                <div class="palette-btn" style="background: linear-gradient(135deg, #10b981 50%, #6366f1 50%);"
+                    onclick="setPalette('modern')" title="Modern"></div>
+                <button class="nav-btn" onclick="toggleSymbols()"
+                    style="padding: 0.2rem 0.5rem; font-size: 0.7rem; margin-left: 0.3rem;">Dots: Off</button>
+            </div>
             <button class="nav-btn" onclick="fetchHistoryData()" style="cursor: pointer;">⟳ Refresh</button>
             <a href="ubs_parking_dash.html" class="nav-btn">🏠 Dashboard</a>
             <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
@@ -203,8 +256,37 @@
     <script>
         const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTwLNDbg8KjlVHsZWj9JUnO_OBIyZaRgZ4gZ8_Gbyly2J3f6rlCW6lDHAihwbuLhxWbBkNMI1wdWRAq/pub?gid=411529798&single=true&output=csv';
 
+        const PALETTES = {
+            neon: { gd: '#05ffa1', uni: '#01beff' },
+            classic: { gd: '#3b82f6', uni: '#f59e0b' },
+            cyberpunk: { gd: '#00d9ff', uni: '#ff00cc' },
+            modern: { gd: '#10b981', uni: '#6366f1' }
+        };
+
         let chart;
         let lastCSVData;
+        let currentPaletteName = localStorage.getItem('parking_palette') || 'neon';
+        let showSymbols = localStorage.getItem('parking_symbols') === 'true';
+
+        function setPalette(name) {
+            currentPaletteName = name;
+            localStorage.setItem('parking_palette', name);
+
+            // Update UI
+            document.querySelectorAll('.palette-btn').forEach(btn => btn.classList.remove('active'));
+            const activeBtn = document.querySelector(`.palette-btn[onclick*="'${name}'"]`);
+            if (activeBtn) activeBtn.classList.add('active');
+
+            if (chart && lastCSVData) renderChart(lastCSVData);
+        }
+
+        function toggleSymbols() {
+            showSymbols = !showSymbols;
+            localStorage.setItem('parking_symbols', showSymbols);
+            const btn = document.querySelector('button[onclick="toggleSymbols()"]');
+            btn.textContent = `Dots: ${showSymbols ? 'On' : 'Off'}`;
+            if (chart && lastCSVData) renderChart(lastCSVData);
+        }
 
         function toggleTheme() {
             const html = document.documentElement;
@@ -232,6 +314,16 @@
 
         async function init() {
             loadTheme();
+
+            // Sync Palette UI
+            document.querySelectorAll('.palette-btn').forEach(btn => btn.classList.remove('active'));
+            const activeBtn = document.querySelector(`.palette-btn[onclick*="'${currentPaletteName}'"]`);
+            if (activeBtn) activeBtn.classList.add('active');
+
+            // Sync Symbols UI
+            const symbolBtn = document.querySelector('button[onclick="toggleSymbols()"]');
+            if (symbolBtn) symbolBtn.textContent = `Dots: ${showSymbols ? 'On' : 'Off'}`;
+
             initChart();
 
             // Try loading cached data first for immediate display
@@ -374,6 +466,7 @@
             const uni = processSeriesData(uniFreeMap);
 
             const isMobile = window.innerWidth < 600;
+            const currentColors = PALETTES[currentPaletteName] || PALETTES.neon;
 
             const option = {
                 backgroundColor: 'transparent',
@@ -439,24 +532,26 @@
                         name: 'GreenDay',
                         type: 'line',
                         smooth: false,
-                        showSymbol: false,
+                        showSymbol: showSymbols,
+                        symbolSize: 6,
                         lineStyle: {
                             width: 3,
-                            color: '#05ffa1',
+                            color: currentColors.gd,
                             shadowBlur: isMobile ? 0 : (html.getAttribute('data-theme') === 'light' ? 2 : 10),
-                            shadowColor: '#05ffa1'
+                            shadowColor: currentColors.gd
                         },
+                        itemStyle: { color: currentColors.gd },
                         areaStyle: {
                             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                                { offset: 0, color: 'rgba(5, 255, 161, 0.2)' },
-                                { offset: 1, color: 'rgba(5, 255, 161, 0)' }
+                                { offset: 0, color: `${currentColors.gd}33` }, // Use hex with opacity
+                                { offset: 1, color: `${currentColors.gd}00` }
                             ])
                         },
                         data: gd.solid,
                         markLine: {
                             symbol: 'none',
                             data: [
-                                { yAxis: 190, name: 'GD MAX', lineStyle: { color: '#05ffa1', type: 'dotted', width: 2, opacity: 0.5 }, label: { position: 'end', formatter: 'MAX {c}', color: textSecondary, fontSize: isMobile ? 9 : 11 } }
+                                { yAxis: 190, name: 'GD MAX', lineStyle: { color: currentColors.gd, type: 'dotted', width: 2, opacity: 0.5 }, label: { position: 'end', formatter: 'MAX {c}', color: textSecondary, fontSize: isMobile ? 9 : 11 } }
                             ]
                         }
                     },
@@ -465,7 +560,7 @@
                         type: 'line',
                         smooth: false,
                         showSymbol: false,
-                        lineStyle: { width: 2, color: '#05ffa1', type: 'dashed', opacity: 0.4 },
+                        lineStyle: { width: 2, color: currentColors.gd, type: 'dashed', opacity: 0.4 },
                         data: gd.gaps,
                         tooltip: { show: false }
                     },
@@ -473,24 +568,26 @@
                         name: 'Uni Wroc',
                         type: 'line',
                         smooth: false,
-                        showSymbol: false,
+                        showSymbol: showSymbols,
+                        symbolSize: 6,
                         lineStyle: {
                             width: 3,
-                            color: '#01beff',
+                            color: currentColors.uni,
                             shadowBlur: isMobile ? 0 : (html.getAttribute('data-theme') === 'light' ? 2 : 10),
-                            shadowColor: '#01beff'
+                            shadowColor: currentColors.uni
                         },
+                        itemStyle: { color: currentColors.uni },
                         areaStyle: {
                             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                                { offset: 0, color: 'rgba(1, 190, 255, 0.2)' },
-                                { offset: 1, color: 'rgba(1, 190, 255, 0)' }
+                                { offset: 0, color: `${currentColors.uni}33` },
+                                { offset: 1, color: `${currentColors.uni}00` }
                             ])
                         },
                         data: uni.solid,
                         markLine: {
                             symbol: 'none',
                             data: [
-                                { yAxis: 41, name: 'UNI MAX', lineStyle: { color: '#01beff', type: 'dotted', width: 2, opacity: 0.5 }, label: { position: 'end', formatter: 'MAX {c}', color: textSecondary, fontSize: isMobile ? 9 : 11 } }
+                                { yAxis: 41, name: 'UNI MAX', lineStyle: { color: currentColors.uni, type: 'dotted', width: 2, opacity: 0.5 }, label: { position: 'end', formatter: 'MAX {c}', color: textSecondary, fontSize: isMobile ? 9 : 11 } }
                             ]
                         }
                     },
@@ -499,7 +596,7 @@
                         type: 'line',
                         smooth: false,
                         showSymbol: false,
-                        lineStyle: { width: 2, color: '#01beff', type: 'dashed', opacity: 0.4 },
+                        lineStyle: { width: 2, color: currentColors.uni, type: 'dashed', opacity: 0.4 },
                         data: uni.gaps,
                         tooltip: { show: false }
                     }
