@@ -10,6 +10,12 @@
     <!-- Use PapaParse for reliable CSV parsing -->
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         :root {
             --bg-primary: #0a0e27;
             --bg-secondary: #141937;
@@ -46,7 +52,7 @@
             height: 100%;
             background-color: var(--bg-primary);
             color: var(--text-primary);
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
             overflow: hidden;
             transition: background-color 0.3s, color 0.3s;
         }
@@ -72,9 +78,12 @@
             z-index: 100;
         }
 
-        .title {
+        h1 {
+            font-size: 1.25rem;
             font-weight: 700;
-            font-size: 1.1rem;
+            letter-spacing: -0.01em;
+            margin: 0;
+            line-height: 1.2;
         }
 
         .header-actions {
@@ -86,6 +95,8 @@
         .nav-btn {
             display: flex;
             align-items: center;
+            justify-content: center;
+            /* Center content for symmetry */
             padding: 0.5rem 1rem;
             background: var(--bg-primary);
             border: 1px solid var(--border);
@@ -96,11 +107,16 @@
             font-weight: 600;
             transition: all 0.2s;
             box-shadow: 0 1px 3px var(--shadow);
+            height: 44px;
+            min-width: 125px;
+            /* Ensure uniform size */
+            cursor: pointer;
         }
 
         .nav-btn:hover {
             transform: translateY(-1px);
             background: var(--bg-card);
+            box-shadow: 0 4px 6px var(--shadow);
         }
 
         .theme-toggle {
@@ -108,9 +124,9 @@
             border: 1px solid var(--border);
             border-radius: 0.5rem;
             cursor: pointer;
-            font-size: 1.2rem;
-            width: 40px;
-            height: 40px;
+            font-size: 1.25rem;
+            width: 44px;
+            height: 44px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -121,6 +137,7 @@
 
         .theme-toggle:hover {
             transform: scale(1.1);
+            background: var(--bg-card);
         }
 
         .loader {
@@ -180,15 +197,32 @@
             font-weight: 600;
         }
 
+        .palette-toggle-btn {
+            padding: 0.2rem 0.5rem;
+            font-size: 0.7rem;
+            margin-left: 0.3rem;
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 0.4rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .palette-toggle-btn:hover {
+            background: var(--bg-card);
+            color: var(--text-primary);
+        }
+
         /* Responsive Adjustments */
         @media (max-width: 600px) {
-            .header-controls {
-                height: 50px;
-                padding: 0 0.75rem;
+            h1 {
+                font-size: 1rem;
             }
 
-            .title {
-                font-size: 0.9rem;
+            .header-controls {
+                height: 54px;
+                padding: 0 0.75rem;
             }
 
             .status-info {
@@ -198,12 +232,13 @@
             .nav-btn {
                 padding: 0.35rem 0.6rem;
                 font-size: 0.75rem;
+                height: 38px;
             }
 
             .theme-toggle {
-                width: 34px;
-                height: 34px;
-                font-size: 1rem;
+                width: 38px;
+                height: 38px;
+                font-size: 1.1rem;
             }
 
             .palette-group {
@@ -216,17 +251,17 @@
                 margin-top: 50px;
             }
 
-            .header-actions {
-                gap: 0.4rem;
+            .palette-toggle-btn {
+                display: none;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="header-controls">
+    <header class="header-controls">
         <div class="header-title-group">
-            <div class="title">📈 Parking History</div>
+            <h1>📈 Parking History</h1>
             <div id="lastUpdated" class="status-info">Loading...</div>
         </div>
         <div class="header-actions">
@@ -240,16 +275,15 @@
                     onclick="setPalette('cyberpunk')" title="Cyberpunk"></div>
                 <div class="palette-btn" style="background: linear-gradient(135deg, #10b981 50%, #6366f1 50%);"
                     onclick="setPalette('modern')" title="Modern"></div>
-                <button class="nav-btn" onclick="toggleSymbols()"
-                    style="padding: 0.2rem 0.5rem; font-size: 0.7rem; margin-left: 0.3rem;">Dots: Off</button>
+                <button class="palette-toggle-btn" onclick="toggleSymbols()">Dots: Off</button>
             </div>
-            <button class="nav-btn" onclick="fetchHistoryData()" style="cursor: pointer;">⟳ Refresh</button>
+            <button class="nav-btn" onclick="fetchHistoryData()">⟳ Refresh</button>
             <a href="ubs_parking_dash.html" class="nav-btn">🏠 Dashboard</a>
             <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
                 <span id="themeIcon">☀️</span>
             </button>
         </div>
-    </div>
+    </header>
     <div id="loader" class="loader">Loading history data...</div>
     <div id="chart-container"></div>
 
@@ -293,11 +327,11 @@
             const icon = document.getElementById('themeIcon');
             if (html.getAttribute('data-theme') === 'light') {
                 html.removeAttribute('data-theme');
-                icon.textContent = '☀️';
+                icon.textContent = '☀️'; // Target is Light mode
                 localStorage.setItem('theme', 'dark');
             } else {
                 html.setAttribute('data-theme', 'light');
-                icon.textContent = '🌙';
+                icon.textContent = '🌙'; // Target is Dark mode
                 localStorage.setItem('theme', 'light');
             }
             if (chart && lastCSVData) renderChart(lastCSVData);
@@ -308,7 +342,9 @@
             const icon = document.getElementById('themeIcon');
             if (saved === 'light') {
                 document.documentElement.setAttribute('data-theme', 'light');
-                icon.textContent = '🌙';
+                icon.textContent = '🌙'; // Target is Dark
+            } else {
+                icon.textContent = '☀️'; // Target is Light
             }
         }
 

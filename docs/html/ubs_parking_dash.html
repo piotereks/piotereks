@@ -52,7 +52,8 @@
             background: var(--bg-primary);
             color: var(--text-primary);
             min-height: 100vh;
-            padding: 2rem;
+            padding: 75px 2rem 2rem 2rem;
+            /* Account for fixed header */
             line-height: 1.6;
             transition: background-color 0.3s, color 0.3s;
         }
@@ -63,44 +64,43 @@
         }
 
         /* ------------------------------------------
-           Header
+           Header (Standardized)
         ------------------------------------------ */
-        .header-row {
+        .header-controls {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 0.5rem;
+            padding: 0 1.5rem;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
-            font-size: 2.25rem;
+            font-size: 1.25rem;
             font-weight: 700;
-            letter-spacing: -0.025em;
+            letter-spacing: -0.01em;
             color: var(--text-primary);
+            margin: 0;
+            line-height: 1.2;
         }
 
-        .theme-toggle {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 0.5rem;
-            cursor: pointer;
-            font-size: 1.5rem;
-            width: 44px;
-            height: 44px;
+        .header-title-group {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 1px 3px var(--shadow);
-            transition: all 0.2s;
+            flex-direction: column;
         }
 
-        .theme-toggle:hover {
-            transform: scale(1.1);
-            box-shadow: 0 4px 6px var(--shadow);
-        }
-
-        .theme-toggle:active {
-            transform: scale(0.95);
+        .status-info {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 2px;
+            font-weight: 400;
         }
 
         .header-actions {
@@ -112,8 +112,10 @@
         .nav-btn {
             display: flex;
             align-items: center;
+            justify-content: center;
+            /* Center content for symmetry */
             padding: 0.5rem 1rem;
-            background: var(--bg-secondary);
+            background: var(--bg-primary);
             border: 1px solid var(--border);
             border-radius: 0.5rem;
             color: var(--text-primary);
@@ -122,12 +124,38 @@
             font-weight: 600;
             transition: all 0.2s;
             box-shadow: 0 1px 3px var(--shadow);
+            height: 44px;
+            /* Explicit height for alignment */
+            min-width: 125px;
+            /* Ensure uniform size */
+            cursor: pointer;
         }
 
         .nav-btn:hover {
+            transform: translateY(-1px);
             background: var(--bg-card);
-            transform: translateY(-2px);
             box-shadow: 0 4px 6px var(--shadow);
+        }
+
+        .theme-toggle {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 1.25rem;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 1px 3px var(--shadow);
+            transition: all 0.2s;
+            color: var(--text-primary);
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+            background: var(--bg-card);
         }
 
         .subtitle {
@@ -291,28 +319,40 @@
            Responsive
         ------------------------------------------ */
         @media (max-width: 600px) {
-            h1 {
-                font-size: 1.5rem;
+            body {
+                padding-top: 65px;
+                padding-left: 1rem;
+                padding-right: 1rem;
             }
 
-            .header-row {
-                margin-bottom: 0.25rem;
+            h1 {
+                font-size: 1rem;
+            }
+
+            .header-controls {
+                height: 54px;
+                padding: 0 0.75rem;
             }
 
             .nav-btn {
                 padding: 0.35rem 0.6rem;
                 font-size: 0.75rem;
+                height: 38px;
+                min-width: 90px;
             }
 
             .theme-toggle {
-                width: 36px;
-                height: 36px;
+                width: 38px;
+                height: 38px;
                 font-size: 1.1rem;
             }
 
-            .subtitle {
-                font-size: 0.85rem;
-                margin-bottom: 1rem;
+            .header-actions {
+                gap: 0.4rem;
+            }
+
+            .status-info {
+                font-size: 0.65rem;
             }
 
             .status-panel {
@@ -344,199 +384,207 @@
 
 <body>
     <div class="container">
-        <div class="header-row">
-            <h1>🅿️ Parking Monitor</h1>
+        <header class="header-controls">
+            <div class="header-title-group">
+                <h1>🅿️ Parking Monitor</h1>
+                <div id="headerUpdateStatus" class="status-info">Loading...</div>
+            </div>
             <div class="header-actions">
-                <a href="ubs_parking_stats.html" class="nav-btn">Stats 📈</a>
+                <button class="nav-btn" onclick="fetchParkingData()">⟳ Refresh</button>
+                <a href="ubs_parking_stats.html" class="nav-btn">📊 Statistics</a>
                 <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
                     <span id="themeIcon">☀️</span>
                 </button>
             </div>
-        </div>
-        <div class="subtitle">Real-time parking availability • UBS Wrocław</div>
+        </header>
 
-        <div id="errorContainer"></div>
+        <div class="container">
+            <div class="subtitle">Real-time parking availability • UBS Wrocław</div>
 
-        <!-- Parking Grid -->
-        <div id="parkingGrid" class="grid-container">
-            <div class="loading">Loading parking data...</div>
-        </div>
+            <div id="errorContainer"></div>
 
-        <!-- Status Panel -->
-        <div class="status-panel">
-            <div class="panel-section">
-                <div class="status-label">Total Spaces</div>
-                <div class="status-value big-value" id="totalSpaces">---</div>
+            <!-- Parking Grid -->
+            <div id="parkingGrid" class="grid-container">
+                <div class="loading">Loading parking data...</div>
             </div>
-            <div class="panel-section">
-                <div class="status-label">Data Status</div>
-                <div class="status-value" id="dataStatus">LOADING</div>
-            </div>
-            <div class="panel-section">
-                <div class="status-label">Last Update / Current Time</div>
-                <div class="time-group">
-                    <span id="lastUpdate">--:--:--</span>
-                    <span class="time-divider"></span>
-                    <span id="currentTime" class="status-current-inline">--:--:--</span>
+
+            <!-- Status Panel -->
+            <div class="status-panel">
+                <div class="panel-section">
+                    <div class="status-label">Total Spaces</div>
+                    <div class="status-value big-value" id="totalSpaces">---</div>
+                </div>
+                <div class="panel-section">
+                    <div class="status-label">Data Status</div>
+                    <div class="status-value" id="dataStatus">LOADING</div>
+                </div>
+                <div class="panel-section">
+                    <div class="status-label">Last Update / Current Time</div>
+                    <div class="time-group">
+                        <span id="lastUpdate">--:--:--</span>
+                        <span class="time-divider"></span>
+                        <span id="currentTime" class="status-current-inline">--:--:--</span>
+                    </div>
                 </div>
             </div>
+
         </div>
 
-        <button class="refresh-btn" onclick="fetchParkingData()">⟳ Refresh Data</button>
-    </div>
+        <script>
+            // ---------------- Constants ----------------
+            const CORS_PROXY = 'https://corsproxy.io/?';
+            const API_URLS = [
+                'https://gd.zaparkuj.pl/api/freegroupcountervalue.json',
+                'https://gd.zaparkuj.pl/api/freegroupcountervalue-green.json'
+            ];
 
-    <script>
-        // ---------------- Constants ----------------
-        const CORS_PROXY = 'https://corsproxy.io/?';
-        const API_URLS = [
-            'https://gd.zaparkuj.pl/api/freegroupcountervalue.json',
-            'https://gd.zaparkuj.pl/api/freegroupcountervalue-green.json'
-        ];
+            let parkingDataCache = [];
 
-        let parkingDataCache = [];
+            // ---------------- Google Form Submission ----------------
+            const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdziOlXj2jflrwvES0NIVmnFtH8UNeNiSYbFHvkf-RNxmb6xQ/formResponse";
+            const ENTRY_TIMESTAMP = "entry.343781201";
 
-        // ---------------- Google Form Submission ----------------
-        const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdziOlXj2jflrwvES0NIVmnFtH8UNeNiSYbFHvkf-RNxmb6xQ/formResponse";
-        const ENTRY_TIMESTAMP = "entry.343781201";
+            async function submitToGoogleForm(timestamp, totalSpaces) {
+                const formData = new URLSearchParams();
+                formData.append(ENTRY_TIMESTAMP, timestamp);
 
-        async function submitToGoogleForm(timestamp, totalSpaces) {
-            const formData = new URLSearchParams();
-            formData.append(ENTRY_TIMESTAMP, timestamp);
-
-            try {
-                await fetch(GOOGLE_FORM_URL, {
-                    method: "POST",
-                    body: formData,
-                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    mode: "no-cors"
-                });
-            } catch (err) { console.error("Google Form error:", err); }
-        }
-
-        // ---------------- Helpers ----------------
-        function parseTimestamp(ts) { return new Date(ts.replace(' ', 'T')); }
-        function formatTime(date) { return date.toLocaleTimeString('pl-PL', { hour: '2-digit', minute: '2-digit', second: '2-digit' }); }
-
-        function toggleTheme() {
-            const html = document.documentElement;
-            const icon = document.getElementById('themeIcon');
-            if (html.getAttribute('data-theme') === 'light') {
-                html.removeAttribute('data-theme');
-                icon.textContent = '☀️';
-                localStorage.setItem('theme', 'dark');
-            } else {
-                html.setAttribute('data-theme', 'light');
-                icon.textContent = '🌙';
-                localStorage.setItem('theme', 'light');
+                try {
+                    await fetch(GOOGLE_FORM_URL, {
+                        method: "POST",
+                        body: formData,
+                        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                        mode: "no-cors"
+                    });
+                } catch (err) { console.error("Google Form error:", err); }
             }
-        }
 
-        function loadTheme() {
-            const saved = localStorage.getItem('theme');
-            const icon = document.getElementById('themeIcon');
-            if (saved === 'light') {
-                document.documentElement.setAttribute('data-theme', 'light');
-                icon.textContent = '🌙';
+            // ---------------- Helpers ----------------
+            function parseTimestamp(ts) { return new Date(ts.replace(' ', 'T')); }
+            function formatTime(date) { return date.toLocaleTimeString('pl-PL', { hour: '2-digit', minute: '2-digit', second: '2-digit' }); }
+
+            function toggleTheme() {
+                const html = document.documentElement;
+                const icon = document.getElementById('themeIcon');
+                if (html.getAttribute('data-theme') === 'light') {
+                    html.removeAttribute('data-theme');
+                    icon.textContent = '☀️';
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    html.setAttribute('data-theme', 'light');
+                    icon.textContent = '🌙';
+                    localStorage.setItem('theme', 'light');
+                }
             }
-        }
 
-        // ---------------- Parking Tiles ----------------
-        function createParkingCard(data, now) {
-            const card = document.createElement('div');
-            card.className = 'parking-card';
+            function loadTheme() {
+                const saved = localStorage.getItem('theme');
+                const icon = document.getElementById('themeIcon');
+                if (saved === 'light') {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    icon.textContent = '🌙';
+                }
+            }
 
-            const ts = parseTimestamp(data.Timestamp);
-            const age = Math.max(0, Math.floor((now - ts) / 1000 / 60));
+            // ---------------- Parking Tiles ----------------
+            function createParkingCard(data, now) {
+                const card = document.createElement('div');
+                card.className = 'parking-card';
 
-            let ageClass = '';
-            if (age >= 15) ageClass = 'age-old';
-            else if (age > 5) ageClass = 'age-medium';
+                const ts = parseTimestamp(data.Timestamp);
+                const age = Math.max(0, Math.floor((now - ts) / 1000 / 60));
 
-            let name = data.ParkingGroupName;
-            if (name === 'Bank_1') name = 'Uni Wroc';
+                let ageClass = '';
+                if (age >= 15) ageClass = 'age-old';
+                else if (age > 5) ageClass = 'age-medium';
 
-            card.innerHTML = `
+                let name = data.ParkingGroupName;
+                if (name === 'Bank_1') name = 'Uni Wroc';
+
+                card.innerHTML = `
                 <div class="parking-name">${name}</div>
                 <div class="free-spots ${ageClass}">${data.CurrentFreeGroupCounterValue || 0}</div>
                 <div class="age-indicator-small">${age} min ago</div>
                 <div class="timestamp-small">@${formatTime(ts)}</div>
             `;
-            return card;
-        }
-
-        async function fetchParkingData() {
-            const grid = document.getElementById('parkingGrid');
-            const errorContainer = document.getElementById('errorContainer');
-            const dataStatusEl = document.getElementById('dataStatus');
-
-            grid.innerHTML = '<div class="loading">Loading parking data...</div>';
-            errorContainer.innerHTML = '';
-            dataStatusEl.textContent = 'LOADING';
-            dataStatusEl.style.color = 'var(--text-secondary)';
-
-            try {
-                const now = new Date();
-                const results = await Promise.all(API_URLS.map(url =>
-                    fetch(`${CORS_PROXY}${encodeURIComponent(url + '?time=' + Date.now())}`, { headers: { 'Cache-Control': 'no-cache' } })
-                        .then(r => r.ok ? r.json() : Promise.reject(`HTTP ${r.status}`))
-                ));
-
-                parkingDataCache = results;
-
-                // Update tiles
-                grid.innerHTML = '';
-                results.forEach(d => grid.appendChild(createParkingCard(d, now)));
-
-                // Update status panel
-                document.getElementById('lastUpdate').textContent = formatTime(now);
-                const total = results.reduce((sum, d) => sum + (d.CurrentFreeGroupCounterValue || 0), 0);
-                const totalEl = document.getElementById('totalSpaces');
-                totalEl.textContent = total;
-                dataStatusEl.textContent = 'ONLINE';
-                dataStatusEl.style.color = 'var(--success)';
-
-                // Submit to Google Form
-                submitToGoogleForm(now.toISOString(), total);
-
-            } catch (err) {
-                console.error(err);
-                grid.innerHTML = '<div class="loading" style="color: var(--warning)">Failed to load data</div>';
-                errorContainer.innerHTML = `<div class="error"><strong>ERROR:</strong> ${err}</div>`;
-                dataStatusEl.textContent = 'OFFLINE';
-                dataStatusEl.style.color = 'var(--warning)';
+                return card;
             }
-        }
 
-        function updateCurrentTime() {
-            document.getElementById('currentTime').textContent = formatTime(new Date());
-        }
+            async function fetchParkingData() {
+                const grid = document.getElementById('parkingGrid');
+                const errorContainer = document.getElementById('errorContainer');
+                const dataStatusEl = document.getElementById('dataStatus');
 
-        function recalcAges() {
-            if (!parkingDataCache.length) return;
-            const grid = document.getElementById('parkingGrid');
-            grid.innerHTML = '';
-            const now = new Date();
-            let maxAge = 0;
-            parkingDataCache.forEach(d => {
-                grid.appendChild(createParkingCard(d, now));
-                const age = Math.max(0, Math.floor((now - parseTimestamp(d.Timestamp)) / 1000 / 60));
-                if (age > maxAge) maxAge = age;
-            });
-        }
+                grid.innerHTML = '<div class="loading">Loading parking data...</div>';
+                errorContainer.innerHTML = '';
+                dataStatusEl.textContent = 'LOADING';
+                dataStatusEl.style.color = 'var(--text-secondary)';
 
-        function scheduleRandomFetch(fn, minMins, maxMins) {
-            const ms = (Math.random() * (maxMins - minMins) + minMins) * 60 * 1000;
-            setTimeout(async () => { await fn(); scheduleRandomFetch(fn, minMins, maxMins); }, ms);
-        }
+                try {
+                    const now = new Date();
+                    const results = await Promise.all(API_URLS.map(url =>
+                        fetch(`${CORS_PROXY}${encodeURIComponent(url + '?time=' + Date.now())}`, { headers: { 'Cache-Control': 'no-cache' } })
+                            .then(r => r.ok ? r.json() : Promise.reject(`HTTP ${r.status}`))
+                    ));
 
-        // ---------------- Init ----------------
-        loadTheme();
-        updateCurrentTime();
-        fetchParkingData();
-        scheduleRandomFetch(fetchParkingData, 4, 7);
-        setInterval(updateCurrentTime, 1000);
-        setInterval(recalcAges, 60 * 1000);
-    </script>
+                    parkingDataCache = results;
+
+                    // Update tiles
+                    grid.innerHTML = '';
+                    results.forEach(d => grid.appendChild(createParkingCard(d, now)));
+
+                    // Update status panel
+                    const timeStr = formatTime(now);
+                    document.getElementById('lastUpdate').textContent = timeStr;
+                    document.getElementById('headerUpdateStatus').textContent = `Last update: ${timeStr}`;
+
+                    const total = results.reduce((sum, d) => sum + (d.CurrentFreeGroupCounterValue || 0), 0);
+                    const totalEl = document.getElementById('totalSpaces');
+                    totalEl.textContent = total;
+                    dataStatusEl.textContent = 'ONLINE';
+                    dataStatusEl.style.color = 'var(--success)';
+
+                    // Submit to Google Form
+                    submitToGoogleForm(now.toISOString(), total);
+
+                } catch (err) {
+                    console.error('Fetch error:', err);
+                    grid.innerHTML = '<div class="loading" style="color: var(--warning)">Failed to load data</div>';
+                    errorContainer.innerHTML = `<div class="error"><strong>ERROR:</strong> ${err}</div>`;
+                    dataStatusEl.textContent = 'OFFLINE';
+                    dataStatusEl.style.color = 'var(--warning)';
+                }
+            }
+
+            function updateCurrentTime() {
+                document.getElementById('currentTime').textContent = formatTime(new Date());
+            }
+
+            function recalcAges() {
+                if (!parkingDataCache.length) return;
+                const grid = document.getElementById('parkingGrid');
+                grid.innerHTML = '';
+                const now = new Date();
+                let maxAge = 0;
+                parkingDataCache.forEach(d => {
+                    grid.appendChild(createParkingCard(d, now));
+                    const age = Math.max(0, Math.floor((now - parseTimestamp(d.Timestamp)) / 1000 / 60));
+                    if (age > maxAge) maxAge = age;
+                });
+            }
+
+            function scheduleRandomFetch(fn, minMins, maxMins) {
+                const ms = (Math.random() * (maxMins - minMins) + minMins) * 60 * 1000;
+                setTimeout(async () => { await fn(); scheduleRandomFetch(fn, minMins, maxMins); }, ms);
+            }
+
+            // ---------------- Init ----------------
+            loadTheme();
+            updateCurrentTime();
+            fetchParkingData();
+            scheduleRandomFetch(fetchParkingData, 4, 7);
+            setInterval(updateCurrentTime, 1000);
+            setInterval(recalcAges, 60 * 1000);
+        </script>
 </body>
 
 </html>
