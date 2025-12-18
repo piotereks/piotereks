@@ -13,10 +13,29 @@
         :root {
             --bg-primary: #0a0e27;
             --bg-secondary: #141937;
+            --bg-card: #1e2749;
             --text-primary: #e0e6ff;
-            --accent-green: #00ff88;
-            --accent-blue: #00d9ff;
+            --text-secondary: #8b95c9;
+            --accent: #00d9ff;
+            --accent-light: #00fff7;
+            --warning: #ff3366;
+            --success: #00ff88;
             --border: #2d3b6b;
+            --shadow: rgba(0, 0, 0, 0.4);
+        }
+
+        [data-theme="light"] {
+            --bg-primary: #f1f5f9;
+            --bg-secondary: #ffffff;
+            --bg-card: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #64748b;
+            --accent: #0891b2;
+            --accent-light: #06b6d4;
+            --warning: #dc2626;
+            --success: #059669;
+            --border: #e2e8f0;
+            --shadow: rgba(0, 0, 0, 0.1);
         }
 
         body,
@@ -29,11 +48,53 @@
             color: var(--text-primary);
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             overflow: hidden;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         #chart-container {
             width: 100%;
-            height: 100vh;
+            height: calc(100vh - 60px);
+            margin-top: 60px;
+        }
+
+        .header-controls {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1.5rem;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .theme-toggle {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 1px 3px var(--shadow);
+            transition: all 0.2s;
+            color: var(--text-primary);
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
         }
 
         .loader {
@@ -42,26 +103,55 @@
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 1.2rem;
-            color: var(--accent-blue);
+            color: var(--accent);
             z-index: 10;
         }
     </style>
 </head>
 
 <body>
+    <div class="header-controls">
+        <div class="title">📈 Parking History</div>
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+            <span id="themeIcon">☀️</span>
+        </button>
+    </div>
     <div id="loader" class="loader">Loading history data...</div>
     <div id="chart-container"></div>
 
     <script>
         const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTwLNDbg8KjlVHsZWj9JUnO_OBIyZaRgZ4gZ8_Gbyly2J3f6rlCW6lDHAihwbuLhxWbBkNMI1wdWRAq/pub?gid=411529798&single=true&output=csv';
 
-        // Initialize ECharts with a dark theme style
-        const chart = echarts.init(document.getElementById('chart-container'), null, {
-            renderer: 'canvas',
-            useDirtyRect: false
-        });
+        let chart;
+        let lastCSVData;
+
+        function toggleTheme() {
+            const html = document.documentElement;
+            const icon = document.getElementById('themeIcon');
+            if (html.getAttribute('data-theme') === 'light') {
+                html.removeAttribute('data-theme');
+                icon.textContent = '☀️';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                icon.textContent = '🌙';
+                localStorage.setItem('theme', 'light');
+            }
+            if (chart && lastCSVData) renderChart(lastCSVData);
+        }
+
+        function loadTheme() {
+            const saved = localStorage.getItem('theme');
+            const icon = document.getElementById('themeIcon');
+            if (saved === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                icon.textContent = '🌙';
+            }
+        }
 
         async function init() {
+            loadTheme();
+            initChart();
             try {
                 const response = await fetch(CSV_URL);
                 const csvText = await response.text();
@@ -70,7 +160,8 @@
                     header: true,
                     skipEmptyLines: true,
                     complete: function (results) {
-                        renderChart(results.data);
+                        lastCSVData = results.data;
+                        renderChart(lastCSVData);
                         document.getElementById('loader').style.display = 'none';
                     },
                     error: function (err) {
@@ -84,12 +175,22 @@
             }
         }
 
+        // Initialize ECharts
+        function initChart() {
+            if (chart) chart.dispose();
+            chart = echarts.init(document.getElementById('chart-container'), null, {
+                renderer: 'canvas',
+                useDirtyRect: false
+            });
+        }
+
         function renderChart(data) {
-            // Data columns:
-            // B: GreenDay Free (header: "GreenDay Free")
-            // D: GD Time (header: "GD_Time")
-            // E: Uni Free (header: "Uni Free")
-            // G: Uni Time (header: "Uni_Time")
+            // Get current theme colors from computed styles for adaptive chart
+            const style = getComputedStyle(document.documentElement);
+            const textColor = style.getPropertyValue('--text-primary').trim();
+            const textSecondary = style.getPropertyValue('--text-secondary').trim();
+            const borderColor = style.getPropertyValue('--border').trim();
+            const bgSecondary = style.getPropertyValue('--bg-secondary').trim();
 
             // Deduplication and extraction using Maps
             const greenDayMap = new Map();
@@ -111,26 +212,49 @@
                 }
             });
 
-            // Convert Maps back to sorted arrays of [time, value]
-            const formatData = (map) => Array.from(map.entries())
-                .map(([time, val]) => [time, val])
-                .sort((a, b) => new Date(a[0].replace(/(\d{2})\/(\d{2})\/(\d{4})/, '$2/$1/$3')) - new Date(b[0].replace(/(\d{2})\/(\d{2})\/(\d{4})/, '$2/$1/$3')));
+            // Helper to process a series into solid and gap segments
+            const processSeriesData = (map) => {
+                const raw = Array.from(map.entries())
+                    .map(([time, val]) => ({ t: new Date(time), v: val, raw: time }))
+                    .sort((a, b) => a.t - b.t);
 
-            const greenDayData = formatData(greenDayMap);
-            const uniFreeData = formatData(uniFreeMap);
+                const solid = [];
+                const gaps = [];
+                const GAP_LIMIT = 40 * 60 * 1000; // 40 minutes in ms
+
+                for (let i = 0; i < raw.length; i++) {
+                    solid.push([raw[i].raw, raw[i].v]);
+
+                    if (i < raw.length - 1) {
+                        const diff = raw[i + 1].t - raw[i].t;
+                        if (diff > GAP_LIMIT) {
+                            // End solid line here
+                            solid.push([raw[i + 1].raw, null]); // Breaking line
+                            // Add connection to gap series
+                            gaps.push([raw[i].raw, raw[i].v]);
+                            gaps.push([raw[i + 1].raw, raw[i + 1].v]);
+                            gaps.push([raw[i + 1].raw, null]); // Break gap line
+                        }
+                    }
+                }
+                return { solid, gaps };
+            };
+
+            const gd = processSeriesData(greenDayMap);
+            const uni = processSeriesData(uniFreeMap);
 
             const option = {
                 backgroundColor: 'transparent',
                 tooltip: {
                     trigger: 'axis',
-                    backgroundColor: 'rgba(20, 25, 55, 0.9)',
-                    borderColor: '#2d3b6b',
-                    textStyle: { color: '#e0e6ff' },
-                    axisPointer: { type: 'cross', label: { backgroundColor: '#141937' } }
+                    backgroundColor: bgSecondary,
+                    borderColor: borderColor,
+                    textStyle: { color: textColor },
+                    axisPointer: { type: 'cross', label: { backgroundColor: bgSecondary } }
                 },
                 legend: {
                     data: ['GreenDay', 'Uni Wroc'],
-                    textStyle: { color: '#8b95c9' },
+                    textStyle: { color: textSecondary },
                     top: '5%'
                 },
                 grid: {
@@ -146,14 +270,14 @@
                         restore: {},
                         saveAsImage: {}
                     },
-                    iconStyle: { borderColor: '#8b95c9' },
+                    iconStyle: { borderColor: textSecondary },
                     right: '5%'
                 },
                 xAxis: {
                     type: 'time',
-                    axisLine: { lineStyle: { color: '#2d3b6b' } },
+                    axisLine: { lineStyle: { color: borderColor } },
                     axisLabel: {
-                        color: '#8b95c9',
+                        color: textSecondary,
                         formatter: {
                             year: '{yyyy}',
                             month: '{MMM}',
@@ -167,13 +291,13 @@
                 },
                 yAxis: {
                     type: 'value',
-                    splitLine: { lineStyle: { color: 'rgba(45, 59, 107, 0.3)' } },
+                    splitLine: { lineStyle: { color: borderColor, opacity: 0.3 } },
                     axisLine: { show: false },
-                    axisLabel: { color: '#8b95c9' }
+                    axisLabel: { color: textSecondary }
                 },
                 dataZoom: [
                     { type: 'inside', start: 80, end: 100 },
-                    { type: 'slider', start: 80, end: 100, textStyle: { color: '#8b95c9' } }
+                    { type: 'slider', start: 80, end: 100, textStyle: { color: textSecondary } }
                 ],
                 series: [
                     {
@@ -188,7 +312,22 @@
                                 { offset: 1, color: 'rgba(0, 255, 136, 0)' }
                             ])
                         },
-                        data: greenDayData
+                        data: gd.solid,
+                        markLine: {
+                            symbol: 'none',
+                            data: [
+                                { yAxis: 190, name: 'GD MAX', lineStyle: { color: '#00ff88', type: 'dotted', width: 2 }, label: { position: 'end', formatter: 'GD MAX (190)', color: textSecondary } }
+                            ]
+                        }
+                    },
+                    {
+                        name: 'GreenDay',
+                        type: 'line',
+                        smooth: false,
+                        showSymbol: false,
+                        lineStyle: { width: 2, color: '#00ff88', type: 'dashed', opacity: 0.6 },
+                        data: gd.gaps,
+                        tooltip: { show: false }
                     },
                     {
                         name: 'Uni Wroc',
@@ -202,7 +341,22 @@
                                 { offset: 1, color: 'rgba(0, 217, 255, 0)' }
                             ])
                         },
-                        data: uniFreeData
+                        data: uni.solid,
+                        markLine: {
+                            symbol: 'none',
+                            data: [
+                                { yAxis: 41, name: 'UNI MAX', lineStyle: { color: '#00d9ff', type: 'dotted', width: 2 }, label: { position: 'end', formatter: 'UNI MAX (41)', color: textSecondary } }
+                            ]
+                        }
+                    },
+                    {
+                        name: 'Uni Wroc',
+                        type: 'line',
+                        smooth: false,
+                        showSymbol: false,
+                        lineStyle: { width: 2, color: '#00d9ff', type: 'dashed', opacity: 0.6 },
+                        data: uni.gaps,
+                        tooltip: { show: false }
                     }
                 ]
             };
@@ -210,8 +364,7 @@
             chart.setOption(option);
         }
 
-        // Handle window resize
-        window.addEventListener('resize', () => chart.resize());
+        window.addEventListener('resize', () => chart && chart.resize());
 
         // Start initialization
         init();

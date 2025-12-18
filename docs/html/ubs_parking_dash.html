@@ -289,7 +289,7 @@
         <div class="header-row">
             <h1>🅿️ Parking Monitor</h1>
             <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-                <span id="themeIcon">🌙</span>
+                <span id="themeIcon">☀️</span>
             </button>
         </div>
         <div class="subtitle">Real-time parking availability • UBS Wrocław</div>
@@ -361,11 +361,11 @@
             const icon = document.getElementById('themeIcon');
             if (html.getAttribute('data-theme') === 'light') {
                 html.removeAttribute('data-theme');
-                icon.textContent = '🌙';
+                icon.textContent = '☀️';
                 localStorage.setItem('theme', 'dark');
             } else {
                 html.setAttribute('data-theme', 'light');
-                icon.textContent = '☀️';
+                icon.textContent = '🌙';
                 localStorage.setItem('theme', 'light');
             }
         }
@@ -375,7 +375,7 @@
             const icon = document.getElementById('themeIcon');
             if (saved === 'light') {
                 document.documentElement.setAttribute('data-theme', 'light');
-                icon.textContent = '☀️';
+                icon.textContent = '🌙';
             }
         }
 
