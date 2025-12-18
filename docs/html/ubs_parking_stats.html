@@ -133,6 +133,18 @@
             z-index: 10;
         }
 
+        .status-info {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 2px;
+            font-weight: 400;
+        }
+
+        .header-title-group {
+            display: flex;
+            flex-direction: column;
+        }
+
         /* Responsive Adjustments */
         @media (max-width: 600px) {
             .header-controls {
@@ -142,6 +154,10 @@
 
             .title {
                 font-size: 0.9rem;
+            }
+
+            .status-info {
+                font-size: 0.65rem;
             }
 
             .nav-btn {
@@ -169,8 +185,12 @@
 
 <body>
     <div class="header-controls">
-        <div class="title">📈 Parking History</div>
+        <div class="header-title-group">
+            <div class="title">📈 Parking History</div>
+            <div id="lastUpdated" class="status-info">Loading...</div>
+        </div>
         <div class="header-actions">
+            <button class="nav-btn" onclick="fetchHistoryData()" style="cursor: pointer;">⟳ Refresh</button>
             <a href="ubs_parking_dash.html" class="nav-btn">🏠 Dashboard</a>
             <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
                 <span id="themeIcon">☀️</span>
@@ -213,26 +233,72 @@
         async function init() {
             loadTheme();
             initChart();
+
+            // Try loading cached data first for immediate display
+            const cachedData = localStorage.getItem('parking_history_cache');
+            const cachedTime = localStorage.getItem('parking_history_time');
+
+            if (cachedData) {
+                try {
+                    const parsed = JSON.parse(cachedData);
+                    if (parsed && parsed.length > 0) {
+                        lastCSVData = parsed;
+                        renderChart(lastCSVData);
+                        document.getElementById('lastUpdated').textContent = `Cached: ${cachedTime}`;
+                        document.getElementById('loader').style.display = 'none';
+                    }
+                } catch (e) { console.error('Cache load error:', e); }
+            }
+
+            // Fetch fresh data
+            await fetchHistoryData();
+        }
+
+        async function fetchHistoryData() {
+            const statusEl = document.getElementById('lastUpdated');
+            const refreshBtn = document.querySelector('.header-actions .nav-btn');
+
+            statusEl.textContent = 'Updating...';
+            if (refreshBtn) refreshBtn.style.opacity = '0.5';
+
             try {
-                const response = await fetch(CSV_URL);
+                const response = await fetch(`${CSV_URL}&time=${Date.now()}`);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 const csvText = await response.text();
+                console.log('CSV fetched, length:', csvText.length);
 
                 Papa.parse(csvText, {
                     header: true,
                     skipEmptyLines: true,
                     complete: function (results) {
+                        console.log('Parsed rows:', results.data.length);
+                        console.log('First row sample:', results.data[0]);
+
                         lastCSVData = results.data;
+                        const now = new Date().toLocaleTimeString('pl-PL');
+
+                        // Persist to localStorage
+                        localStorage.setItem('parking_history_cache', JSON.stringify(lastCSVData));
+                        localStorage.setItem('parking_history_time', now);
+
                         renderChart(lastCSVData);
+                        statusEl.textContent = `Last update: ${now}`;
                         document.getElementById('loader').style.display = 'none';
+                        if (refreshBtn) refreshBtn.style.opacity = '1';
                     },
                     error: function (err) {
                         console.error('CSV Parse Error:', err);
-                        document.getElementById('loader').innerText = 'Error loading data';
+                        const hasCache = lastCSVData && lastCSVData.length > 0;
+                        statusEl.textContent = hasCache ? 'Parse error - using cache' : 'Update failed and no cached data';
+                        if (refreshBtn) refreshBtn.style.opacity = '1';
                     }
                 });
             } catch (error) {
                 console.error('Fetch Error:', error);
-                document.getElementById('loader').innerText = 'Failed to fetch data';
+                const hasCache = lastCSVData && lastCSVData.length > 0;
+                statusEl.textContent = hasCache ? 'Update failed - using cache' : 'Update failed and no cached data';
+                if (refreshBtn) refreshBtn.style.opacity = '1';
+                document.getElementById('loader').style.display = 'none';
             }
         }
 
@@ -246,6 +312,8 @@
         }
 
         function renderChart(data) {
+            if (!data || data.length === 0) return;
+
             // Get current theme colors from computed styles for adaptive chart
             const style = getComputedStyle(document.documentElement);
             const textColor = style.getPropertyValue('--text-primary').trim();
