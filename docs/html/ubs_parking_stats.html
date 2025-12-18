@@ -87,21 +87,37 @@
         function renderChart(data) {
             // Data columns:
             // B: GreenDay Free (header: "GreenDay Free")
-            // D: Time axis (header: "GD_Time")
+            // D: GD Time (header: "GD_Time")
             // E: Uni Free (header: "Uni Free")
+            // G: Uni Time (header: "Uni_Time")
 
-            // Clean and parse data
-            const timeData = [];
-            const greenDayData = [];
-            const uniFreeData = [];
+            // Deduplication and extraction using Maps
+            const greenDayMap = new Map();
+            const uniFreeMap = new Map();
 
             data.forEach(row => {
-                if (row['GD_Time'] && row['GreenDay Free'] && row['Uni Free']) {
-                    timeData.push(row['GD_Time']);
-                    greenDayData.push(parseFloat(row['GreenDay Free']));
-                    uniFreeData.push(parseFloat(row['Uni Free']));
+                // GreenDay series
+                if (row['GD_Time'] && row['GreenDay Free']) {
+                    const ts = row['GD_Time'].trim();
+                    const val = parseFloat(row['GreenDay Free']);
+                    if (!isNaN(val)) greenDayMap.set(ts, val);
+                }
+
+                // Uni series
+                if (row['Uni_Time'] && row['Uni Free']) {
+                    const ts = row['Uni_Time'].trim();
+                    const val = parseFloat(row['Uni Free']);
+                    if (!isNaN(val)) uniFreeMap.set(ts, val);
                 }
             });
+
+            // Convert Maps back to sorted arrays of [time, value]
+            const formatData = (map) => Array.from(map.entries())
+                .map(([time, val]) => [time, val])
+                .sort((a, b) => new Date(a[0].replace(/(\d{2})\/(\d{2})\/(\d{4})/, '$2/$1/$3')) - new Date(b[0].replace(/(\d{2})\/(\d{2})\/(\d{4})/, '$2/$1/$3')));
+
+            const greenDayData = formatData(greenDayMap);
+            const uniFreeData = formatData(uniFreeMap);
 
             const option = {
                 backgroundColor: 'transparent',
@@ -134,17 +150,20 @@
                     right: '5%'
                 },
                 xAxis: {
-                    type: 'category',
-                    boundaryGap: false,
-                    data: timeData,
+                    type: 'time',
                     axisLine: { lineStyle: { color: '#2d3b6b' } },
                     axisLabel: {
                         color: '#8b95c9',
-                        formatter: function (value) {
-                            // Trim date part if it's too long, showing only time might be cleaner
-                            return value.split(' ')[1] || value;
+                        formatter: {
+                            year: '{yyyy}',
+                            month: '{MMM}',
+                            day: '{d} {MMM}',
+                            hour: '{HH}:{mm}',
+                            minute: '{HH}:{mm}',
+                            none: '{HH}:{mm}'
                         }
-                    }
+                    },
+                    splitLine: { show: false }
                 },
                 yAxis: {
                     type: 'value',
