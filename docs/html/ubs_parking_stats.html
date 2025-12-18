@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
     <!-- Use PapaParse for reliable CSV parsing -->
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <link rel="icon" type="image/png" href="parking_favicon.png" sizes="128x128">
     <style>
         * {
             margin: 0;
@@ -44,8 +45,7 @@
             --shadow: rgba(0, 0, 0, 0.1);
         }
 
-        body,
-        html {
+        body {
             margin: 0;
             padding: 0;
             width: 100%;
@@ -159,8 +159,14 @@
             color: var(--text-secondary);
             margin-top: 2px;
             font-weight: 400;
-            padding-left: 1.6rem;
-            /* Offset for title emoji */
+            padding-left: 1.8rem;
+            /* Match .title-icon width */
+        }
+
+        .title-icon {
+            display: inline-block;
+            width: 1.8rem;
+            text-align: center;
         }
 
         .header-title-group {
@@ -268,7 +274,7 @@
 <body>
     <header class="header-controls">
         <div class="header-title-group">
-            <h1>📈 Parking History</h1>
+            <h1><span class="title-icon">📈</span> Parking History</h1>
             <div id="lastUpdated" class="status-info">Loading...</div>
         </div>
         <div class="header-actions">
@@ -325,7 +331,7 @@
             showSymbols = !showSymbols;
             localStorage.setItem('parking_symbols', showSymbols);
             const btn = document.querySelector('button[onclick="toggleSymbols()"]');
-            btn.textContent = `Dots: ${showSymbols ? 'On' : 'Off'}`;
+            btn.textContent = `Dots: ${showSymbols ? 'Off' : 'On'}`;
             if (chart && lastCSVData) renderChart(lastCSVData);
         }
 
@@ -365,7 +371,7 @@
 
             // Sync Symbols UI
             const symbolBtn = document.querySelector('button[onclick="toggleSymbols()"]');
-            if (symbolBtn) symbolBtn.textContent = `Dots: ${showSymbols ? 'On' : 'Off'}`;
+            if (symbolBtn) symbolBtn.textContent = `Dots: ${showSymbols ? 'Off' : 'On'}`;
 
             initChart();
 
