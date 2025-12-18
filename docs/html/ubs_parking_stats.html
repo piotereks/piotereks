@@ -76,6 +76,7 @@
             background: var(--bg-secondary);
             border-bottom: 1px solid var(--border);
             z-index: 100;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
@@ -158,6 +159,8 @@
             color: var(--text-secondary);
             margin-top: 2px;
             font-weight: 400;
+            padding-left: 1.6rem;
+            /* Offset for title emoji */
         }
 
         .header-title-group {
@@ -591,7 +594,7 @@
                         markLine: {
                             symbol: 'none',
                             data: [
-                                { yAxis: 190, name: 'GD MAX', lineStyle: { color: currentColors.gd, type: 'dotted', width: 2, opacity: 0.5 }, label: { position: 'end', formatter: 'MAX {c}', color: textSecondary, fontSize: isMobile ? 9 : 11 } }
+                                { yAxis: 187, name: 'GD MAX', lineStyle: { color: currentColors.gd, type: 'dotted', width: 2, opacity: 0.5 }, label: { position: 'end', formatter: '187', color: textSecondary, fontSize: isMobile ? 9 : 11 } }
                             ]
                         }
                     },
@@ -627,7 +630,7 @@
                         markLine: {
                             symbol: 'none',
                             data: [
-                                { yAxis: 41, name: 'UNI MAX', lineStyle: { color: currentColors.uni, type: 'dotted', width: 2, opacity: 0.5 }, label: { position: 'end', formatter: 'MAX {c}', color: textSecondary, fontSize: isMobile ? 9 : 11 } }
+                                { yAxis: 41, name: 'UNI MAX', lineStyle: { color: currentColors.uni, type: 'dotted', width: 2, opacity: 0.5 }, label: { position: 'end', formatter: '41', color: textSecondary, fontSize: isMobile ? 9 : 11 } }
                             ]
                         }
                     },
