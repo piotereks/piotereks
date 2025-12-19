@@ -1,0 +1,13 @@
+{
+    "name": "piotereks-monorepo",
+    "private": true,
+    "workspaces": [
+        "esp_dict_react",
+        "vcf_react",
+        "parking"
+    ],
+    "scripts": {
+        "dev": "npm run dev --workspaces --if-present",
+        "build": "npm run build --workspaces --if-present"
+    }
+}
