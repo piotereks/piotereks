@@ -1,10 +1,8 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
 import { useTheme } from './ThemeContext';
 
-const Header = ({ title, icon, onRefresh, updateStatus, children }) => {
+const Header = ({ title, icon, onRefresh, updateStatus, currentView, setView, children }) => {
   const { isLight, toggleTheme } = useTheme();
-  const location = useLocation();
 
   return (
     <header className="header-controls">
@@ -25,18 +23,18 @@ const Header = ({ title, icon, onRefresh, updateStatus, children }) => {
           </button>
         )}
 
-        {location.pathname === '/stats' && (
-          <NavLink to="/" className="nav-btn">
+        {currentView === 'stats' && (
+          <button className="nav-btn" onClick={() => setView('dashboard')}>
             <span style={{ marginRight: '8px', fontSize: '1.1rem' }}>🏠</span>
             <span className="btn-text">Dashboard</span>
-          </NavLink>
+          </button>
         )}
 
-        {location.pathname === '/' && (
-          <NavLink to="/stats" className="nav-btn">
+        {currentView === 'dashboard' && (
+          <button className="nav-btn" onClick={() => setView('stats')}>
             <span style={{ marginRight: '8px', fontSize: '1.1rem' }}>📊</span>
             <span className="btn-text">Statistics</span>
-          </NavLink>
+          </button>
         )}
 
         <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">

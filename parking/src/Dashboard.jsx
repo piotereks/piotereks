@@ -30,7 +30,7 @@ const ParkingCard = ({ data, now }) => {
   );
 };
 
-const Dashboard = () => {
+const Dashboard = ({ setView }) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -69,7 +69,14 @@ const Dashboard = () => {
 
   return (
     <>
-      <Header title="Parking Monitor" icon="🅿️" onRefresh={fetchData} updateStatus={updateStatus} />
+      <Header
+        title="Parking Monitor"
+        icon="🅿️"
+        onRefresh={fetchData}
+        updateStatus={updateStatus}
+        currentView="dashboard"
+        setView={setView}
+      />
       <main className="container">
         <div className="subtitle">Real-time parking availability • UBS Wrocław</div>
 

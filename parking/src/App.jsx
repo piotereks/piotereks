@@ -1,18 +1,18 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
 import { ThemeProvider } from './ThemeContext';
 import Dashboard from './Dashboard';
 import Statistics from './Statistics';
 
 function App() {
+  const [view, setView] = useState('dashboard'); // 'dashboard' or 'stats'
+
   return (
     <ThemeProvider>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/stats" element={<Statistics />} />
-        </Routes>
-      </Router>
+      {view === 'dashboard' ? (
+        <Dashboard setView={setView} />
+      ) : (
+        <Statistics setView={setView} />
+      )}
     </ThemeProvider>
   );
 }

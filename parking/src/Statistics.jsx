@@ -14,7 +14,7 @@ const PALETTES = {
     modern: { gd: '#10b981', uni: '#6366f1' }
 };
 
-const Statistics = () => {
+const Statistics = ({ setView }) => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [palette, setPalette] = useState('neon');
@@ -192,7 +192,7 @@ const Statistics = () => {
                     markLine: {
                         symbol: 'none',
                         data: [{
-                            yAxis: 41 ,
+                            yAxis: 41,
                             lineStyle: { color: colors.uni, type: 'dotted', opacity: 1 },
                             label: { position: 'start', formatter: '41', color: colors.uni, fontWeight: 'bold', fontSize: 13 }
                         }]
@@ -220,7 +220,14 @@ const Statistics = () => {
 
     return (
         <div className="page-wrapper">
-            <Header title="Parking History" icon="📈" onRefresh={fetchData} updateStatus={loading ? 'Updating...' : 'Ready'}>
+            <Header
+                title="Parking History"
+                icon="📈"
+                onRefresh={fetchData}
+                updateStatus={loading ? 'Updating...' : 'Ready'}
+                currentView="stats"
+                setView={setView}
+            >
                 <div className="palette-group">
                     <span className="palette-label">Palette:</span>
                     {Object.keys(PALETTES).map(p => (
