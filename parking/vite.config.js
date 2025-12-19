@@ -1,12 +1,11 @@
-// @ts-check
-import reactPlugin from 'vite-plugin-react'
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-/**
- * @type { import('vite').UserConfig }
- */
-const config = {
-  jsx: 'react',
-  plugins: [reactPlugin]
-}
-
-export default config
+export default defineConfig({
+  plugins: [react()],
+  base: './',
+  build: {
+    outDir: '../docs/html/parking',
+    emptyOutDir: true,
+  }
+})
