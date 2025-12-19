@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import favicon from './favicon.svg';
 
 function countWildcards(phoneNumber) {
   return (phoneNumber.match(/[.x*%]/gi) || []).length;
@@ -164,7 +165,7 @@ const VCFContactGenerator = () => {
   return (
     <div className="container py-4 my-5">
       <h1 className="mb-4">
-        <img src="vcf_ref/favicon.svg" alt="favicon" style={{height:'1.6em',verticalAlign:'middle',marginRight:'0.4em'}} />
+        <img src={favicon} alt="favicon" style={{ height: '1.6em', verticalAlign: 'middle', marginRight: '0.4em' }} />
         VCF Contact Generator
       </h1>
       <form onSubmit={handlePreview}>

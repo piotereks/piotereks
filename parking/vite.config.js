@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: './',
   build: {
-    outDir: '../docs/html/esp_react',
+    outDir: '../docs/html/parking',
     emptyOutDir: true,
   }
 })
