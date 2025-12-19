@@ -1,10 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { RefreshCw, BarChart2, Home, Sun, Moon } from 'lucide-react';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useTheme } from './ThemeContext';
 
-const Header = ({ title, icon, onRefresh, updateStatus }) => {
+const Header = ({ title, icon, onRefresh, updateStatus, children }) => {
   const { isLight, toggleTheme } = useTheme();
+  const location = useLocation();
 
   return (
     <header className="header-controls">
@@ -15,22 +15,32 @@ const Header = ({ title, icon, onRefresh, updateStatus }) => {
         <div className="status-info">{updateStatus}</div>
       </div>
       <div className="header-actions">
+        {/* Extra actions like Palette Selector */}
+        {children}
+
         {onRefresh && (
           <button className="nav-btn" onClick={onRefresh}>
-            <RefreshCw size={18} style={{ marginRight: '8px' }} />
-            Refresh
+            <span style={{ marginRight: '8px', fontSize: '1.1rem' }}>⟳</span>
+            <span className="btn-text">Refresh</span>
           </button>
         )}
-        <NavLink to="/" className="nav-btn">
-          <Home size={18} style={{ marginRight: '8px' }} />
-          Dashboard
-        </NavLink>
-        <NavLink to="/stats" className="nav-btn">
-          <BarChart2 size={18} style={{ marginRight: '8px' }} />
-          Statistics
-        </NavLink>
+
+        {location.pathname === '/stats' && (
+          <NavLink to="/" className="nav-btn">
+            <span style={{ marginRight: '8px', fontSize: '1.1rem' }}>🏠</span>
+            <span className="btn-text">Dashboard</span>
+          </NavLink>
+        )}
+
+        {location.pathname === '/' && (
+          <NavLink to="/stats" className="nav-btn">
+            <span style={{ marginRight: '8px', fontSize: '1.1rem' }}>📊</span>
+            <span className="btn-text">Statistics</span>
+          </NavLink>
+        )}
+
         <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
-          {isLight ? <Moon size={20} /> : <Sun size={20} />}
+          {isLight ? '🌙' : '☀️'}
         </button>
       </div>
     </header>

@@ -37,33 +37,43 @@
   --shadow: rgba(0, 0, 0, 0.1);
 }
 
+html,
 body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+  /* Prevent global scroll */
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
   background: var(--bg-primary);
   color: var(--text-primary);
   transition: background-color 0.3s, color 0.3s;
 }
 
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem 2rem 2rem;
-  margin-top: 60px;
-  min-height: calc(100vh - 60px);
+  padding: 2rem;
+  flex: 1;
+  overflow-y: auto;
+  /* Dashboard can scroll if items overflow */
 }
 
 /* ------------------------------------------
    Header
 ------------------------------------------ */
 .header-controls {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -73,6 +83,8 @@ body {
   border-bottom: 1px solid var(--border);
   z-index: 100;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  /* Important for flex layout */
 }
 
 .header-title-group {
@@ -153,6 +165,59 @@ body {
 .theme-toggle:hover {
   transform: scale(1.1);
   background: var(--bg-card);
+}
+
+/* ------------------------------------------
+   Palette Selector (Header)
+------------------------------------------ */
+.palette-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 0.5rem;
+  padding-right: 0.75rem;
+  border-right: 1px solid var(--border);
+}
+
+.palette-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-right: 0.25rem;
+}
+
+.palette-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.palette-btn:hover {
+  transform: scale(1.2);
+}
+
+.palette-btn.active {
+  border-color: var(--text-primary);
+  box-shadow: 0 0 5px var(--accent);
+}
+
+.palette-toggle-btn {
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.palette-toggle-btn:hover {
+  background: var(--bg-card);
+  color: var(--text-primary);
 }
 
 /* ------------------------------------------
@@ -275,55 +340,11 @@ body {
    Statistics
 ------------------------------------------ */
 .stats-container {
-  margin-top: 60px;
-  height: calc(100vh - 60px);
+  flex: 1;
   position: relative;
-  padding: 1rem;
-}
-
-.controls-overlay {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  background: var(--bg-secondary);
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-  border: 1px solid var(--border);
-  box-shadow: 0 4px 12px var(--shadow);
-  z-index: 10;
-}
-
-.palette-selector {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.palette-dot {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.palette-dot.active {
-  border-color: var(--text-primary);
-  transform: scale(1.2);
-}
-
-.toggle-btn {
-  background: none;
-  border: 1px solid var(--border);
-  color: var(--text-secondary);
-  padding: 0.2rem 0.6rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  font-size: 0.8rem;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* ------------------------------------------
@@ -342,9 +363,18 @@ body {
    Responsive
 ------------------------------------------ */
 @media (max-width: 600px) {
+  .page-wrapper {
+    height: 100vh;
+  }
+
   .container {
-    padding: 0 1rem 1rem 1rem;
-    margin-top: 54px;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .stats-container {
+    flex: 1;
+    padding: 0;
   }
 
   .header-controls {
@@ -353,27 +383,30 @@ body {
   }
 
   .header-title-group h1 {
-    font-size: 0.95rem;
-    max-width: 140px;
+    font-size: 0.9rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
 
+  .btn-text {
+    display: none;
+  }
+
   .nav-btn {
-    width: 75px;
-    font-size: 0.7rem;
-    padding: 0 0.2rem;
-    height: 36px;
+    width: 44px;
+    padding: 0;
+    height: 38px;
   }
 
   .theme-toggle {
-    width: 36px;
-    height: 36px;
+    width: 44px;
+    height: 38px;
+    font-size: 1rem;
   }
 
   .status-info {
-    font-size: 0.65rem;
+    display: none;
   }
 
   .status-panel {
@@ -398,9 +431,18 @@ body {
     font-size: 2.2rem;
   }
 
-  .controls-overlay {
-    bottom: 80px;
-    font-size: 0.7rem;
-    gap: 0.75rem;
+  .palette-group {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .palette-label,
+  .palette-toggle-btn {
+    display: none;
+  }
+
+  .palette-btn {
+    width: 18px;
+    height: 18px;
   }
 }
