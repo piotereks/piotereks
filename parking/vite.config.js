@@ -7,5 +7,15 @@ export default defineConfig({
   build: {
     outDir: '../docs/html/parking',
     emptyOutDir: true,
+    chunkSizeWarningLimit: 2000,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-echarts': ['echarts', 'echarts-for-react'],
+          'vendor-react': ['react', 'react-dom', 'react-router-dom'],
+          'vendor-utils': ['papaparse', 'lucide-react']
+        }
+      }
+    }
   }
 })
