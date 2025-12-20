@@ -3,8 +3,7 @@
     "private": true,
     "workspaces": [
         "esp_dict_react",
-        "vcf_react",
-        "parking"
+        "vcf_react"
     ],
     "scripts": {
         "dev": "npm run dev --workspaces --if-present",
