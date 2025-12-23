@@ -508,6 +508,21 @@
                 }
             });
 
+            // Helper to check if timestamp is in off-hours (21:00-06:00 weekdays or weekends)
+            const isOffHours = (date) => {
+                const dayOfWeek = date.getDay(); // 0 = Sunday, 6 = Saturday
+                const hour = date.getHours();
+                
+                // Check if weekend (Saturday or Sunday)
+                if (dayOfWeek === 0 || dayOfWeek === 6) {
+                    return true;
+                }
+                
+                // Check if weekday off-hours (21:00-06:00)
+                // This means hour >= 21 OR hour < 6
+                return hour >= 21 || hour < 6;
+            };
+
             // Helper to process a series into solid and gap segments
             const processSeriesData = (map) => {
                 const raw = Array.from(map.entries())
@@ -516,14 +531,19 @@
 
                 const solid = [];
                 const gaps = [];
-                const GAP_LIMIT = 40 * 60 * 1000; // 40 minutes in ms
+                const GAP_LIMIT_REGULAR = 40 * 60 * 1000; // 40 minutes in ms
+                const GAP_LIMIT_OFF_HOURS = 2 * 60 * 60 * 1000; // 2 hours in ms
 
                 for (let i = 0; i < raw.length; i++) {
                     solid.push([raw[i].raw, raw[i].v]);
 
                     if (i < raw.length - 1) {
                         const diff = raw[i + 1].t - raw[i].t;
-                        if (diff > GAP_LIMIT) {
+                        
+                        // Determine which gap limit to use based on the current timestamp
+                        const gapLimit = isOffHours(raw[i].t) ? GAP_LIMIT_OFF_HOURS : GAP_LIMIT_REGULAR;
+                        
+                        if (diff > gapLimit) {
                             // End solid line here
                             solid.push([raw[i + 1].raw, null]); // Breaking line
                             // Add connection to gap series
