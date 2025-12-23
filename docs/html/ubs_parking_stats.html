@@ -540,8 +540,11 @@
                     if (i < raw.length - 1) {
                         const diff = raw[i + 1].t - raw[i].t;
                         
-                        // Determine which gap limit to use based on the current timestamp
-                        const gapLimit = isOffHours(raw[i].t) ? GAP_LIMIT_OFF_HOURS : GAP_LIMIT_REGULAR;
+                        // Determine which gap limit to use: if either timestamp is in off-hours, use extended limit
+                        // This handles gaps that span into or occur during off-hours periods
+                        const gapLimit = (isOffHours(raw[i].t) || isOffHours(raw[i + 1].t)) 
+                            ? GAP_LIMIT_OFF_HOURS 
+                            : GAP_LIMIT_REGULAR;
                         
                         if (diff > gapLimit) {
                             // End solid line here
