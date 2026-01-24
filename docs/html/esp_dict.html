@@ -3,57 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WordRef Search</title>
-    	<!-- Favicon -->
-	<link rel="icon" href="esp_res/favicon.ico" sizes="any"><!-- 32×32 -->
-	<link rel="icon" href="esp_res/icon.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" href="esp_res/apple-touch-icon.png"><!-- 180×180 -->
-    <!-- Minimal Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- GitHub Light theme CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/github.min.css">
-    <link rel="stylesheet" href="esp_res/styles.css">
+    <title>Redirecting to WordRef Search</title>
+    <script>
+        // Redirect to esp_react/index.html while preserving query parameters
+        const params = new URLSearchParams(window.location.search);
+        const word = params.get('word');
+        
+        let redirectUrl = 'https://piotereks.top/esp-dict/';
+        if (word) {
+            redirectUrl += '?word=' + encodeURIComponent(word);
+        }
+        
+        window.location.href = redirectUrl;
+    </script>
 </head>
-
-
 <body>
-    <h1 class="text-center title">WordRef Search</h1>
-    <form id="searchForm" class="form-inline justify-content-center mb-4">
-        <label for="word" class="mr-sm-2">Enter a word:</label>
-        <input type="text" id="word" name="word" class="form-control mr-sm-2">
-        <button type="submit" class="btn btn-primary">Search</button>
-    </form>
-
-    <div id="orgLinks" class="text-center mb-4">
-        <a id="defLink" href="#" class="btn btn-secondary mr-2" target="_blank"> ESES </a>
-        <a id="sinLink" href="#" class="btn btn-secondary mr-2" target="_blank"> sinon </a>
-        <a id="spenLink" href="#" class="btn btn-secondary mr-2" target="_blank"> ESEN </a>
-        <a id="raeLink" href="#" class="btn btn-secondary mr-2" target="_blank"> RAE </a>
-        <!--a id="graLink" href="#" class="btn btn-secondary mr-2" target="_blank"> gram </a-->
-        <a id="conLink" href="#" class="btn btn-secondary mr-2" target="_blank"> conjug </a>
-            <button id="collapseAllBtn" class="btn btn-info mr-2"">&#9650; All</button>
-    </div>
-
-
-
-    <button class="collapsible btn btn-light btn-sm" id="defFrameBtn">definicion</button>
-    <div class="content" id="defFrameContent"></div>
-
-    <button class="collapsible btn btn-light btn-sm" id="sinFrameBtn">sinonimos</button>
-    <div class="content" id="sinFrameContent"></div>
-
-    <button class="collapsible btn btn-light btn-sm" id="spenFrameBtn">Esp&#x25BA;Eng</button>
-    <div class="content" id="spenFrameContent"></div>
-
-    <button class="collapsible btn btn-light btn-sm" id="raeFrameBtn">RAE def</button>
-    <div class="content" id="raeFrameContent"></div>
-
-    <button class="collapsible btn btn-light btn-sm" id="conFrameBtn">conjugar</button>
-    <div class="content" id="conFrameContent"></div>
-
-
-    <!-- Highlight.js library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-    <script src="esp_res/script.js"></script>
+    <p>Redirecting to WordRef Search...</p>
 </body>
 </html>
