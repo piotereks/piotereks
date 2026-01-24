@@ -1,11 +1,3 @@
-node_modules/
-/.pnp
-.pnp.js
-dist/
-build/
-.env
-.DS_Store
 .idea/
-parking-deploy/
-xxx/
 tinyurl_addresses.txt
+.vscode/
