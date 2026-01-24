@@ -1,22 +1,8 @@
-0 HEAD
-1 GEDC
-2 VERS 5.5.1
-2 FORM LINEAGE-LINKED
-1 CHAR UTF-8
+0 @I1@ INDI
+1 NAME Drzewo /Sakowscy przeniesione: patrz w prawo ↗️/ click: https://pewu.github.io/topola-viewer/#/view?c=g&gen=-1&i=h&indi=I0004&s=s&url=https%3A%2F%2Fpiotereks.top%2Fgenealogy%2FSakowski_filtered.ged/
 
-0 NOTE
-1 CONT This genealogy data has moved.
-1 CONT Visit the updated version at:
-1 CONT https://pewu.github.io/topola-viewer/#/view?c=g&gen=-1&i=h&indi=I0004&s=s&url=https%3A%2F%2Fpiotereks.top%2Fgenealogy%2FSakowski_filtered.ged
+1 NOTE  Drzewo /Sakowscy  przeniesione. Kliknij:
+1 NOTE  https://pewu.github.io/topola-viewer/#/view?c=g&gen=-1&i=h&indi=I0004&s=s&url=https%3A%2F%2Fpiotereks.top%2Fgenealogy%2FSakowski_filtered.ged
 
-0 @O1@ OBJE
-1 TITL Updated genealogy (clickable in many apps)
-1 FILE
-2 FORM URL
-2 HREF https://pewu.github.io/topola-viewer/#/view?c=g&gen=-1&i=h&indi=I0004&s=s&url=https%3A%2F%2Fpiotereks.top%2Fgenealogy%2FSakowski_filtered.ged
-
-0 NOTE
-1 CONT This file is a pointer only.
-1 CONT See the linked object for the updated genealogy.
-
+0 @F1@ FAM
 0 TRLR
