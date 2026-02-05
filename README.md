@@ -31,8 +31,8 @@ Now I enjoy stitching together **APIs, databases, hardware, and UIs** into syste
 * Using **GitHub Copilot** daily  
 * AI helps—but only if you learn how to *drive* it  
 
-> _🜏 Anyone complaining about dependency ⛧ hell ⛧ in Python or JavaScript_    
-> _☍☌ should try AI — the so-called ☢︎ art of prompting ☣︎_  
+> _Anyone complaining about dependency ⛧ hell ⛧ in Python or JavaScript_    
+> _should try AI — the so-called ☢︎ art of prompting ☣︎_  
 
 
 ---
