@@ -34,10 +34,13 @@ Now I enjoy stitching together **APIs, databases, hardware, and UIs** into syste
 > _Anyone complaining about dependency ⛧ hell ⛧ in Python or JavaScript_    
 > _should try AI — the so-called ☢︎ art of prompting ☣︎_  
 
+## Homepage
+
+https://piotereks.top
 
 ---
 
 ## 📫 Contact  
 
-* **Email**: piotereks@gmail.com  
+* **Email**: piotereks@duck.com   
 * **LinkedIn**: https://www.linkedin.com/in/piotrsakowski/  
