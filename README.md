@@ -3,7 +3,7 @@
 I build **practical tools**—projects that start as “I need this” and end up being useful to others.  
 Mostly web utilities, system integrations, and small projects that quietly do real work.  
 
-> **✨ Linux Rules the World ✨**  
+> **✨ Linux Runs the World ✨**  
 > *My personal credo. Since always.*  
 
 ---
